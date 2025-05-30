@@ -31,7 +31,7 @@ const services = [
     title: 'Desarrollo de Software a Medida',
     description: 'Creamos plataformas únicas diseñadas para potenciar tu negocio con eficiencia, escalabilidad y alto impacto.',
     icon: 'bi bi-code',
-    image: '@/assets/img/services/WhatsApp Image 2025-05-29 at 22.56.46.jpeg',
+    image: '@/assets/img/WhatsApp Image 2025-05-29 at 22.56.46.jpeg',
     link: 'service-details.html'
   },
   {
