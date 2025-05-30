@@ -31,21 +31,21 @@ const services = [
     title: 'Desarrollo de Software a Medida',
     description: 'Creamos plataformas únicas diseñadas para potenciar tu negocio con eficiencia, escalabilidad y alto impacto.',
     icon: 'bi bi-code',
-    image: 'src/assets/img/services/WhatsApp Image 2025-05-29 at 22.56.46.jpeg',
+    image: '@/assets/img/services/WhatsApp Image 2025-05-29 at 22.56.46.jpeg',
     link: 'service-details.html'
   },
   {
     title: 'Diseño UX/UI',
     description: 'Creamos interfaces intuitivas y experiencias memorables, garantizando una interacción fluida.',
     icon: 'bi bi-vector-pen',
-    image: 'src/assets/img/services/1.png',
+    image: '@/assets/img/services/1.png',
     link: 'service-details.html'
   },
   {
     title: 'Integraciones de Sistemas',
     description: 'Conectamos y optimizamos sistemas existentes para garantizar sinergia y eficiencia operativa.',
     icon: 'bi bi-puzzle',
-    image: 'src/assets/img/services/integracionSistemas.png',
+    image: '@/assets/img/services/integracionSistemas.png',
     link: 'service-details.html'
   },
   {
