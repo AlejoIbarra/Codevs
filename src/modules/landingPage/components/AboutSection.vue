@@ -6,7 +6,7 @@
                 <!-- Columna izquierda -->
                 <div class="lg:w-5/12" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="text-3xl font-bold mb-4 text-white">Nosotros</h3>
-                    <p class="text-gray-300 text-lg leading-relaxed text-justify">
+                    <p class="text-gray-300 font-thin leading-relaxed text-justify">
                         <strong class="text-white">Codevs</strong> somos una empresa dedicada al desarrollo de
                         soluciones tecnológicas
                         personalizadas que impulsan a las empresas hacia el éxito. Desde nuestra fundación, hemos
@@ -24,14 +24,14 @@
                 </div>
 
                 <!-- Columna derecha -->
-                <div class="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-8 " data-aos="fade-up" data-aos-delay="200">
                     <!-- Visión -->
-                    <div class="relative">
+                    <div class="relative bg-zinc-800 hover:bg-zinc-900 p-6 rounded-2xl shadow-md hover:shadow-xl transition">
                         <i class="bi bi-briefcase text-4xl text-red-500 mb-2 block"></i>
                         <h4 class="text-xl font-semibold text-white">
                             <a href="#" class="hover:underline text-red-600">Visión</a>
                         </h4>
-                        <p class="text-gray-300">
+                        <p class="text-gray-300 ">
                             Ser líderes en el desarrollo de tecnología innovadora, brindando herramientas que
                             ayuden a
                             empresas de todos
@@ -40,7 +40,7 @@
                     </div>
 
                     <!-- Misión -->
-                    <div class="relative">
+                    <div class="relative bg-zinc-800 p-6 hover:bg-zinc-900  rounded-2xl shadow-md hover:shadow-xl transition">
                         <i class="bi bi-gem text-4xl text-red-500 mb-2 block"></i>
                         <h4 class="text-xl font-semibold text-white">
                             <a href="#" class="hover:underline">Misión</a>
@@ -54,7 +54,7 @@
 
                     <!-- Frase -->
                     <div class="col-span-1 md:col-span-2 text-center">
-                        <h4 class="text-2xl font-medium text-white">
+                        <h4 class="mt-12 border-l-4 border-red-500 pl-6 italic text-lg text-gray-200">
                             "Nuestro compromiso es entregar software de calidad que transforme negocios."
                         </h4>
                     </div>

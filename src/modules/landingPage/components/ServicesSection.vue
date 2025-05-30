@@ -31,42 +31,42 @@ const services = [
     title: 'Desarrollo de Software a Medida',
     description: 'Creamos plataformas únicas diseñadas para potenciar tu negocio con eficiencia, escalabilidad y alto impacto.',
     icon: 'bi bi-code',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/WhatsApp Image 2025-05-29 at 22.56.46.jpeg',
     link: 'service-details.html'
   },
   {
     title: 'Diseño UX/UI',
     description: 'Creamos interfaces intuitivas y experiencias memorables, garantizando una interacción fluida.',
     icon: 'bi bi-vector-pen',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/1.png',
     link: 'service-details.html'
   },
   {
     title: 'Integraciones de Sistemas',
     description: 'Conectamos y optimizamos sistemas existentes para garantizar sinergia y eficiencia operativa.',
     icon: 'bi bi-puzzle',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/integracionSistemas.png',
     link: 'service-details.html'
   },
   {
     title: 'Desarrollo de Paginas Web',
     description: 'Identificamos oportunidades tecnológicas, resolvemos problemas y diseñamos estrategias efectivas.',
     icon: 'bi bi-rocket-takeoff',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/webPage.png',
     link: 'service-details.html'
   },
   {
     title: 'Desarrollo de Aplicaciones Móviles',
     description: 'Aplicaciones Android e iOS con diseño nativo e innovador para experiencias sobresalientes.',
     icon: 'bi bi-phone',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/appMobile.png',
     link: 'service-details.html'
   },
   {
     title: 'Desarrollo de APIs',
     description: 'Creamos APIs robustas y seguras que facilitan la integración y escalabilidad de tus sistemas.',
     icon: 'bi bi-gear',
-    image: 'https://picsum.photos/200',
+    image: 'src/assets/img/services/apiDevelopment.png',
     link: 'service-details.html'
   }
 ];

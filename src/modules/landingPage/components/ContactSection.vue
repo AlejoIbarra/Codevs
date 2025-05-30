@@ -3,8 +3,7 @@
         <!-- Section Title -->
         <div class="container" >
             <div class="section-title">
-                <h2>Contact</h2>
-                <p>Explora nuestros trabajos</p>
+                <h2>Contacto</h2>
             </div>
 
 
@@ -14,22 +13,22 @@
                     <div class="space-y-6">
                         <!-- Address -->
                         <div class="bg-gray-100 p-6 text-center rounded shadow" >
-                            <i class="bi bi-geo-alt text-3xl text-blue-600 mb-2"></i>
-                            <h3 class="text-lg font-semibold mt-2">Address</h3>
-                            <p class="text-gray-600">A108 Adam Street, New York, NY 535022</p>
+                            <i class="bi bi-geo-alt text-3xl text-red-600 mb-2"></i>
+                            <h3 class="text-lg font-semibold mt-2">Dirección</h3>
+                            <p class="text-gray-600">Cl. 8b #15-125 a 15-1, San Juan de Pasto, Nariño</p>
                         </div>
 
                         <!-- Phone and Email Side-by-side -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div class="bg-gray-100 p-6 text-center rounded shadow" >
-                                <i class="bi bi-telephone text-3xl text-blue-600 mb-2"></i>
-                                <h3 class="text-lg font-semibold mt-2">Call Us</h3>
-                                <p class="text-gray-600">+1 5589 55488 55</p>
+                                <i class="bi bi-telephone text-3xl text-red-600 mb-2"></i>
+                                <h3 class="text-lg font-semibold mt-2">llamanos</h3>
+                                <p class="text-gray-600">+57 3138066800</p>
                             </div>
                             <div class="bg-gray-100 p-6 text-center rounded shadow" >
-                                <i class="bi bi-envelope text-3xl text-blue-600 mb-2"></i>
-                                <h3 class="text-lg font-semibold mt-2">Email Us</h3>
-                                <p class="text-gray-600">info@example.com</p>
+                                <i class="bi bi-envelope text-3xl text-red-600 mb-2"></i>
+                                <h3 class="text-lg font-semibold mt-2">Email</h3>
+                                <p class="text-gray-600">comercial@codevs.dev</p>
                             </div>
                         </div>
                     </div>
@@ -38,16 +37,16 @@
                     <div class="bg-gray-50 p-6 rounded shadow" >
                         <form action="forms/contact.php" method="post" class="space-y-4">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="text" name="name" placeholder="Your Name" required
+                                <input type="text" name="name" placeholder="Nombre" required
                                     class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
-                                <input type="email" name="email" placeholder="Your Email" required
+                                <input type="email" name="email" placeholder="correo electronico" required
                                     class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
                             </div>
 
-                            <input type="text" name="subject" placeholder="Subject" required
+                            <input type="text" name="subject" placeholder="Asunto" required
                                 class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" />
 
-                            <textarea name="message" rows="5" placeholder="Message" required
+                            <textarea name="message" rows="5" placeholder="Mensaje" required
                                 class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"></textarea>
 
                             <div class="text-center space-y-2">
@@ -57,8 +56,8 @@
                                     Thank
                                     you!</div>
                                 <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded transition duration-200">
-                                    Send Message
+                                    class="bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-2 rounded transition duration-200">
+                                    Enviar Mensaje
                                 </button>
                             </div>
                         </form>

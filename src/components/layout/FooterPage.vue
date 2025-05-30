@@ -5,19 +5,19 @@
             <!-- About -->
             <div>
                 <a href="index.html" class="flex items-center text-2xl font-bold text-white mb-4">
-                    <span class="sitename">Presento</span>
+                    <span class="sitename">Codevs</span>
                 </a>
                 <div class="space-y-1 text-sm text-gray-300">
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p>Cl. 8b #15-125 a 15-1,</p>
+                    <p>San Juan de Pasto, Nariño</p>
+                    <p class="mt-3"><strong>Celular:</strong> <span>+57 3138066800</span></p>
+                    <p><strong>Email:</strong> <span>comercial@codevs.dev</span></p>
                 </div>
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter-x text-xl"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-facebook text-xl"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-instagram text-xl"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin text-xl"></i></a>
+                    <!-- <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter-x text-xl"></i></a> -->
+                    <a href="https://www.facebook.com/profile.php?id=61576300478505" target="_blank" class="text-gray-400 hover:text-white"><i class="bi bi-facebook text-xl"></i></a>
+                    <a href="https://www.instagram.com/codevs_dev/" target="_blank" class="text-gray-400 hover:text-white"><i class="bi bi-instagram text-xl"></i></a>
+                    <!-- <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin text-xl"></i></a> -->
                 </div>
             </div>
 
