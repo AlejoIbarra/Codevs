@@ -1,7 +1,7 @@
 <script setup>
     import { ref, computed } from 'vue';
     import personaItem from '../ui/PersonaItem.vue';
-    import BaseInput from '@/components/ui/BaseInput.vue';
+    // import BaseInput from '@/components/ui/BaseInput.vue';
     const personaList = [
         { name: 'Andree', numberaccount: '1234567890' },
         { name: 'Carlos', numberaccount: '9876543210' },
@@ -36,7 +36,7 @@
 <template>
     <div class="w-full h-full min-h-[400px] flex flex-col">
         <div class=" pb-4" >
-            <BaseInput v-model="filterText" placeholder="Buscar persona " class="w-full h-10 border border-gray-300 rounded-lg px-4 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600" />
+            <!-- <BaseInput v-model="filterText" placeholder="Buscar persona " class="w-full h-10 border border-gray-300 rounded-lg px-4 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600" /> -->
         </div>
         <div class="flex-1 overflow-y-auto space-y-4 h-[calc(100%-40px)]">
             <personaItem v-for="(persona, index) in filteredPersonas" 

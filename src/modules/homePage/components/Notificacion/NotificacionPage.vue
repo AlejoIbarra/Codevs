@@ -1,3 +1,4 @@
+
 <script setup>
 import NotificationList from './components/NotificationList.vue';
 import { useStore } from '../../store'; // Corrige la importación

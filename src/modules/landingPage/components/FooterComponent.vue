@@ -7,16 +7,12 @@
                         <p class="text-2xl text-white">Suscríbete a Nuestro Newsletter</p>
                         <p class="text-sm text-white opacity-60 font-thin">Mantente informado con las últimas novedades.</p>
                         <div class="flex items-end mt-10">
-                        <BaseInput 
+                        <!-- <BaseInput 
                             v-model="email"
                             type="email"
                             :inputClass="'text-white border-b border-white w-60  md:w-70'"
-                            placeholder="Ingresa tu email..." />
-                            <BaseButton
-                            :buttonClass="' border border-gray-200 md:h-14  w-40 ml-4 py-1 rounded-lg bg-white text-black-900 text-lg cursor-pointer transition-opacity hover:bg-[#B6B3EB]'"
-                            >
-                                Suscribirse
-                            </BaseButton>
+                            placeholder="Ingresa tu email..." /> -->
+
                         </div>
                     </div>
                 </div>
@@ -63,7 +59,7 @@
 </template>
 
 <script setup>
-import BaseButton from "@/components/ui/BaseButton.vue";
-import BaseInput from "@/components/ui/BaseInput.vue";
+// import BaseButton from "@/components/ui/BaseButton.vue";
+// import BaseInput from "@/components/ui/BaseInput.vue";
 
 </script>

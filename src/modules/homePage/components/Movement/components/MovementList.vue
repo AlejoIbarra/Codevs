@@ -1,9 +1,9 @@
 <script setup>
 import { ref, computed, watch, nextTick, onMounted } from 'vue';
-import IconSearch from '@/components/icons/IconSearch.vue';
-import MovementItem from '../UI/MovementItem.vue';
-import IconoTransferencia from '@/components/icons/IconTransferencia.vue';
-import IconoServicios from '@/components/icons/IconService.vue';
+// import IconSearch from '@/components/icons/IconSearch.vue';
+// import MovementItem from '../UI/MovementItem.vue';
+// import IconoTransferencia from '@/components/icons/IconTransferencia.vue';
+// import IconoServicios from '@/components/icons/IconService.vue';
 import { useStore } from '@/modules/homePage/store';
 
 

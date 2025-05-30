@@ -1,5 +1,5 @@
 <script setup>
-import iconGo from '@/components/icons/IconGo.vue';
+// import iconGo from '@/components/icons/IconGo.vue';
 import { useStore } from '../../../store';
 const props = defineProps({
     persona: Object,
@@ -23,7 +23,7 @@ const EnviarItem = () => {
             <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="icono persona" width="30" height="30">
         </div>
         <div>{{ persona.name }}</div>
-        <iconGo class="icon-go ml-auto h-[40px]" @click="EnviarItem" />
+        <!-- <iconGo class="icon-go ml-auto h-[40px]" @click="EnviarItem" /> -->
     </div>
 </template>
 <style scoped>

@@ -1,10 +1,10 @@
 <script setup>
 import { useStore } from '../../../store';
 import { ref, watchEffect, onMounted, computed } from 'vue';
-import IconDown from '@/components/icons/iconDown.vue';
-import BaseInput from '@/components/ui/BaseInput.vue';
-import BaseButton from '@/components/ui/BaseButton.vue';
-import IconStar from '@/components/icons/IconStar.vue';
+// import IconDown from '@/components/icons/iconDown.vue';
+// import BaseInput from '@/components/ui/BaseInput.vue';
+// import BaseButton from '@/components/ui/BaseButton.vue';
+// import IconStar from '@/components/icons/IconStar.vue';
 import { formatToUSD } from '@/utils/jwtid';
 
 const store = useStore();
@@ -106,18 +106,18 @@ const irConfirmacion = async () => {
     <div class="detalles-envio h-full">
         <div class="flex items-center justify-end h-[5%]">
             <div class="text-end">Favoritos</div>
-            <IconStar class="ml-2" />
+            <!-- <IconStar class="ml-2" /> -->
         </div>
         
         <form class="form-transferencia flex flex-col h-[95%]" @submit.prevent="irConfirmacion">
-            <BaseInput 
+            <!-- <BaseInput 
                 input-class='border border-[#CBCBCB] text-sm p-1 py-2 w-full rounded-xl my-1 px-4'
                 type="text"
                 v-model="formattedNumberAccount"
                 @input="formatNumberAccount"
                 placeholder="Número de cuenta"
             />
-            <BaseInput 
+            <BaseInput  -->
         input-class='border border-[#CBCBCB] text-sm p-1 py-2 w-full rounded-xl my-1 px-4 text-start'
         type="text"
         v-model="formattedAmount"
@@ -141,16 +141,16 @@ const irConfirmacion = async () => {
                     <div>{{ formattedNumeroCuenta }}</div>
                     <div>Balance: {{ formattedBalance }}</div>
                 </div>
-                <IconDown class="icon-down ml-auto" />
+                <!-- <IconDown class="icon-down ml-auto" /> -->
             </div>
 
             <div class="mt-auto">
-                <BaseButton  
+                <!-- <BaseButton  
                     @click="irConfirmacion"  
                     class="w-full py-1 rounded-xl bg-gradient text-white text-lg cursor-pointer transition-opacity hover:opacity-80 h-[56px]"
                 >
                     Enviar
-                </BaseButton>
+                </BaseButton> -->
             </div>
         </form>
     </div>

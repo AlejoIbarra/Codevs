@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import NotificationItem from '../UI/NotificationItem.vue'; // Asegúrate de importar el componente de notificación
-import IconoTransferencia from '@/components/icons/iconTransferNotification.vue';
-import IconoSeguridad from '@/components/icons/IconShield.vue';
+// import NotificationItem from '../UI/NotificationItem.vue'; // Asegúrate de importar el componente de notificación
+// import IconoTransferencia from '@/components/icons/iconTransferNotification.vue';
+// import IconoSeguridad from '@/components/icons/IconShield.vue';
 import { useStore } from '@/modules/homePage/store';
 
 const store = useStore();
@@ -31,12 +31,12 @@ const toggleNotification = (id) => {
     </header>
 
     <div class="overflow-y-auto h-[calc(100%-64px)]">
-        <NotificationItem 
+        <!-- <NotificationItem 
             v-for="notificacion in store.notificaciones" 
             :key="notificacion.id" 
             :notificacion="notificacion"
             :toggle="toggleNotification"
             :icon="iconos[notificacion.type]" 
-        />
+        /> -->
     </div>
 </template>

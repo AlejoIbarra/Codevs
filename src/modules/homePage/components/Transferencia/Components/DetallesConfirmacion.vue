@@ -1,7 +1,7 @@
 <script setup>
 import { useStore } from '../../../store';
-import BaseButton from '@/components/ui/BaseButton.vue';
-import IconDown from '@/components/icons/iconDown.vue';
+// import BaseButton from '@/components/ui/BaseButton.vue';
+// import IconDown from '@/components/icons/iconDown.vue';
 import { computed } from 'vue';
 import { formatToUSD } from '@/utils/jwtid';
 
@@ -63,13 +63,13 @@ const formattedBalance = computed(() => {
                         <div>{{ formattedNumberAccount }}</div>
                         <div>balance: {{ formattedBalance }}</div>
                     </div>
-                    <IconDown class="icon-down ml-auto" />
+                    <!-- <IconDown class="icon-down ml-auto" /> -->
             </div>
         </div>
         <div class="mt-auto w-full">
-            <BaseButton   @click="enviar"  class="w-full py-1 rounded-xl bg-gradient text-white text-lg cursor-pointer transition-opacity hover:opacity-80 h-[56px]">
+            <!-- <BaseButton   @click="enviar"  class="w-full py-1 rounded-xl bg-gradient text-white text-lg cursor-pointer transition-opacity hover:opacity-80 h-[56px]">
                 Enviar
-            </BaseButton>
+            </BaseButton> -->
         </div>
     </div>
     <div>
