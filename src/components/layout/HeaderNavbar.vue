@@ -4,7 +4,7 @@
       <HeaderTitle />
 
       <!-- Botón Hamburguesa -->
-      <button @click="toggleMenu" class="lg:hidden focus:outline-none z-50 mr-5">
+      <button @click="toggleMenu" class="focus:outline-none z-50 mr-5">
         <div class="hamburger" :class="{ open: isMenuOpen }">
           <svg viewBox="0 0 32 32">
             <path class="line line-top-bottom"

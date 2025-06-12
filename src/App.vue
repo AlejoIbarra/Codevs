@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import GsapTest from './modules/landingPage/components/GsapTest.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -16,8 +17,9 @@ import { RouterView } from 'vue-router'
       </nav>
     </div>
   </header> -->
+<GsapTest/>
+  <!-- <RouterView /> -->
 
-  <RouterView />
 </template>
 
 <style scoped>
