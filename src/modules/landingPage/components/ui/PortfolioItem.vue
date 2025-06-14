@@ -1,13 +1,16 @@
 <template>
-  <div class="col-lg-4 col-md-6 portfolio-item isotope-item" :class="category">
-    <div class="portfolio-content h-100">
-      <img :src="image" class="img-fluid" alt="" />
-      <div class="portfolio-info">
-        <h4>{{ title }}</h4>
-        <p>{{ description }}</p>
-        <a :href="image" class="glightbox preview-link"><i class="bi bi-plus"></i></a>
-        <a :href="detailsLink" class="details-link"><i class="bi bi-link"></i></a>
-      </div>
+  <div class="group relative rounded-xl overflow-hidden shadow-lg bg-gray-900 hover:shadow-xl transition-shadow duration-300">
+    <img
+      :src="image"
+      alt="Imagen del proyecto"
+      class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+    />
+    <!-- Descripción emergente al hacer hover -->
+    <div
+      class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300"
+    >
+      <h3 class="font-bold text-lg">{{ title }}</h3>
+      <p class="text-sm">{{ description }}</p>
     </div>
   </div>
 </template>

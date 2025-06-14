@@ -14,19 +14,19 @@
 
             <div class="bg-white">
                 <div class="">
-                    <InfoLandingPage />
+                    <!-- <InfoLandingPage /> -->
                 </div>
             </div>
             <div class="pt-20 bg-white">
                 <div class="md:mx-50">
-                    <BannerRegister />
+                    <!-- <BannerRegister /> -->
                 </div>
             </div>
         </template>
         <template #footerContent>
             <div class="w-full h-full bg-purple-100 pt-15">
                 <div class="md:mx-50">
-                    <FooterComponent />
+                    <!-- <FooterComponent /> -->
                 </div>
             </div>
         </template>
@@ -41,5 +41,6 @@ import AboutSection from '../components/AboutSection.vue';
 import ServicesSection from '../components/ServicesSection.vue';
 import PortfolioSection from '../components/PortfolioSection.vue';
 import ContactSection from '../components/ContactSection.vue';
+// import InfoLandingPage from '../components/InfoLandingPage.vue';
 
 </script>

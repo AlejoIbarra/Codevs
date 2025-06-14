@@ -1,4 +1,7 @@
 <template>
+  <h1>prueba</h1>
+</template>
+<!-- <template>
     <div class="flex flex-wrap justify-center">
       <BaseOptionBenefits
         v-for="(option, index) in options"
@@ -42,4 +45,4 @@
       url: "/billetera",
     },
   ];
-  </script>
+  </script> -->

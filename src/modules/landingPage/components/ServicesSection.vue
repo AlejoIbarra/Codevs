@@ -31,7 +31,7 @@ const services = [
     title: 'Desarrollo de Software a la Medida',
     description: 'Creamos plataformas únicas diseñadas para potenciar tu negocio con eficiencia, escalabilidad y alto impacto.',
     icon: 'bi bi-code',
-    image: '/assets/img/testimonials/testimonials-2.jpg',
+    image: '/assets/img/services/2.png',
     link: 'service-details.html'
   },
   {
