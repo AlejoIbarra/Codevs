@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-white shadow-md z-50 sticky top-0">
+  <header class="w-full bg-black/95 border-b border-zinc-800 shadow-md z-50 sticky top-0">
     <div class="flex items-center justify-between max-w-7xl mx-auto px-4 py-3">
       <HeaderTitle />
 
@@ -25,7 +25,7 @@
 
     <!-- Menú flotante en móviles (overlay) -->
     <transition name="fade-slide">
-      <nav v-if="isMenuOpen" class="absolute top-full right-4 bg-white shadow-lg z-40 flex flex-col items-end py-4 w-56 rounded-b-lg border-t"
+      <nav v-if="isMenuOpen" class="absolute top-full right-4 bg-zinc-900 border border-zinc-800 shadow-xl z-40 flex flex-col items-end py-4 w-56 rounded-xl mt-2"
         aria-label="Menú flotante de navegación">
         <BaseButtonNavbarLanding v-for="(option, index) in options" :key="index" :highlight="option.highlight"
           :title="option.title" :url="option.url" :isSelected="option.url === currentRoute" @click="isMenuOpen = false" />
@@ -79,7 +79,7 @@ const options = [
 
 .line {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
