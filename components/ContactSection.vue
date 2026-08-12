@@ -1,4 +1,4 @@
-<template>
+Garantizado<template>
   <section id="contact" class="bg-black text-gray-200 py-20 border-t border-zinc-900">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="text-center mb-16">

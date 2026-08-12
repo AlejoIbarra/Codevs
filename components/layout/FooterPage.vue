@@ -75,8 +75,8 @@
   </footer>
 
   <!-- Scroll Top Button -->
-  <a href="#" id="scroll-top"
-    class="fixed right-6 bottom-6 w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-2xl z-50 transition duration-300 hover:scale-110">
+  <a href="#hero" id="scroll-top"
+    class="fixed right-6 bottom-6 w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center shadow-2xl z-50 transition duration-300 hover:scale-110" aria-label="Volver arriba">
     <i class="bi bi-arrow-up text-white text-xl"></i>
   </a>
 </template>

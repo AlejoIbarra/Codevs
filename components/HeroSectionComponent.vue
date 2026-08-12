@@ -50,8 +50,8 @@
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             <div class="flex justify-between items-center relative z-10">
-              <img src="/assets/img/logo.png" alt="CODEVS Logo" class="h-10 w-auto" />
-              <span class="text-xs text-zinc-500 uppercase tracking-widest">Est. 2024</span>
+              <img src="/assets/img/favicon.png" alt="CODEVS Logo" class="h-10 w-auto" />
+              <span class="text-xs text-zinc-500 uppercase tracking-widest">Est. 2030</span>
             </div>
 
             <div class="space-y-4 relative z-10">
