@@ -16,31 +16,32 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'es'
       },
-      title: 'CODEVS | Desarrollo de Páginas Web en Pasto Nariño',
+      title: 'Desarrollo de Páginas Web en Pasto | CODEVS - Software a la Medida',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Desarrollo de páginas web, software a la medida y soluciones digitales en Pasto, Nariño. Creamos sitios modernos, rápidos y optimizados para Google (SEO) para hacer crecer tu negocio.' 
+          content: 'Desarrollo de páginas web profesionales, aplicaciones y software a la medida en Pasto, Nariño. Creamos plataformas modernas y ultrarrápidas optimizadas para posicionar de #1 en Google.' 
         },
         { 
           name: 'keywords', 
-          content: 'desarrollo de pagina web pasto, paginas web pasto, creacion de paginas web pasto nariño, diseño web pasto, software a la medida pasto, codevs, programadores pasto, agencias de diseño web nariño' 
+          content: 'paginas web en pasto, desarrollo de paginas web, desarrollo de paginas web pasto, paginas web pasto nariño, diseño web pasto, software a la medida pasto, agencia de desarrollo web colombia, codevs' 
         },
         { name: 'author', content: 'CODEVS' },
-        { name: 'robots', content: 'index, follow' },
+        { name: 'robots', content: 'index, follow, max-image-preview:large' },
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'CODEVS | Desarrollo de Páginas Web en Pasto Nariño' },
-        { property: 'og:description', content: 'Empresa líder en desarrollo de software y páginas web en Pasto, Nariño. Innovación y diseño UX/UI a tu alcance.' },
+        { property: 'og:title', content: 'Desarrollo de Páginas Web en Pasto | CODEVS' },
+        { property: 'og:description', content: 'Líderes en desarrollo de páginas web y software a la medida en Pasto, Nariño. Posiciona tu empresa en lo más alto con CODEVS.' },
         { property: 'og:image', content: '/img/codevs.png' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'CODEVS | Desarrollo de Páginas Web en Pasto Nariño' },
-        { name: 'twitter:description', content: 'Desarrollo de páginas web, software a la medida y soluciones digitales en Pasto, Nariño.' }
+        { name: 'twitter:title', content: 'Desarrollo de Páginas Web en Pasto | CODEVS' },
+        { name: 'twitter:description', content: 'Desarrollo de páginas web profesionales y software a la medida en Pasto, Nariño.' }
       ],
       link: [
+        { rel: 'canonical', href: 'https://www.codevs.dev/' },
         { rel: 'icon', type: 'image/png', href: '/img/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },

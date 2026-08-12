@@ -22,15 +22,15 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            Desarrollo e Innovación en Pasto, Nariño
+            Desarrollo Web & Software en Pasto, Nariño
           </div>
 
-          <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-none text-white trigger-anim uppercase">
-            Creamos <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Software</span>
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none text-white trigger-anim uppercase">
+            Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Páginas Web</span> en Pasto
           </h1>
 
           <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-light leading-relaxed trigger-anim text-justify">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos páginas web profesionales y soluciones de software a la medida de alto impacto. Transformamos ideas en experiencias digitales listas para liderar el mercado y posicionar tu marca en los primeros lugares de búsqueda.
+            Somos <strong class="text-white font-semibold">CODEVS</strong>. Especialistas en <strong class="text-white font-semibold">desarrollo de páginas web</strong> y software a la medida en Pasto, Nariño. Diseñamos plataformas rápidas, seguras y optimizadas para hacer crecer tu negocio y posicionar tu marca en el lugar #1 de Google.
           </p>
 
           <div class="flex flex-wrap gap-4 pt-4 trigger-anim">
