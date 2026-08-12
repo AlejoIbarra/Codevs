@@ -27,25 +27,25 @@ import PortfolioItem from '~/components/ui/PortfolioItem.vue';
 
 const items = [
   {
-    image: '/img/portfolio/app-1.jpg', // Usamos assets disponibles en temp_backup/src/assets/img
+    image: '/assets/img/projects/image1.png',
     title: 'IPTV Max UI',
-    description: 'Interfaz principal optimizada para consumo de contenidos multimedia.',
-    category: 'app móvil',
-    detailsLink: '#contact'
+    description: 'Interfaz principal con navegación optimizada.',
+    category: 'app',
+    detailsLink: '#'
   },
   {
-    image: '/img/portfolio/product-1.jpg',
+    image: '/assets/img/projects/image2.png',
     title: 'IPTV Max Player',
-    description: 'Reproductor nativo de alta velocidad para streaming en directo y películas.',
-    category: 'app móvil',
-    detailsLink: '#contact'
+    description: 'Reproductor para canales en vivo y películas.',
+    category: 'app',
+    detailsLink: '#'
   },
   {
-    image: '/img/portfolio/branding-1.jpg',
-    title: 'Panel Administrador',
-    description: 'Sistema administrativo seguro de analíticas, usuarios y control de accesos.',
-    category: 'desarrollo web',
-    detailsLink: '#contact'
+    image: '/assets/img/projects/image3.png',
+    title: 'Panel Admin',
+    description: 'Sistema de administración de usuarios y listas.',
+    category: 'web',
+    detailsLink: '#'
   }
 ];
 </script>

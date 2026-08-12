@@ -32,42 +32,42 @@ const services = [
     title: 'Desarrollo de Software a la Medida',
     description: 'Creamos plataformas de software únicas y robustas adaptadas al flujo de trabajo de tu empresa en Pasto. Escalabilidad y seguridad garantizadas.',
     icon: 'bi bi-code',
-    image: '/img/services.jpg',
+    image: '/assets/img/services/2.png',
     link: '#contact'
   },
   {
     title: 'Desarrollo de Páginas Web',
     description: 'Creación de páginas web profesionales en Pasto Nariño. Sitios de carga ultra rápida, adaptados a celulares y optimizados (SEO) para aparecer primeros en Google.',
     icon: 'bi bi-rocket-takeoff',
-    image: '/img/working-1.jpg',
+    image: '/assets/img/services/webPage.png',
     link: '#contact'
   },
   {
     title: 'Diseño UX/UI',
     description: 'Interfaces interactivas y experiencias memorables que reducen el rebote del usuario y aumentan la tasa de conversión en tu sitio web.',
     icon: 'bi bi-vector-pen',
-    image: '/img/working-2.jpg',
+    image: '/assets/img/services/1.png',
     link: '#contact'
   },
   {
     title: 'Integraciones de Sistemas y APIs',
     description: 'Conectamos tu CRM, pasarelas de pago y sistemas internos con APIs robustas para optimizar la sinergia y automatizar tareas operativas.',
     icon: 'bi bi-puzzle',
-    image: '/img/working-3.jpg',
+    image: '/assets/img/services/integracionSistemas.png',
     link: '#contact'
   },
   {
     title: 'Desarrollo de Aplicaciones Móviles',
     description: 'Llevamos tu idea a celulares Android y Apple iOS con desarrollos modernos e interactivos de alto rendimiento.',
     icon: 'bi bi-phone',
-    image: '/img/working-4.jpg',
+    image: '/assets/img/services/appMobile.png',
     link: '#contact'
   },
   {
     title: 'Posicionamiento SEO Local',
     description: 'Estrategias SEO personalizadas para que cuando busquen diseño web en Pasto o servicios de software en Nariño tu marca aparezca en primer lugar.',
     icon: 'bi bi-search',
-    image: '/img/codevs.png',
+    image: '/assets/img/services/apiDevelopment.png',
     link: '#contact'
   }
 ];

@@ -21,9 +21,7 @@
             Somos <span class="text-red-600 font-black relative inline-block">CODEVS</span>
           </h1>
 
-          <h2 class="text-xl sm:text-3xl text-gray-300 font-semibold tracking-wide leading-relaxed trigger-anim">
-            Desarrollo de Páginas Web en <span class="text-red-500 underline decoration-red-600 underline-offset-8">Pasto Nariño</span>
-          </h2>
+
 
           <p class="text-base sm:text-lg text-gray-400 max-w-2xl font-light leading-relaxed trigger-anim text-justify">
             "Innovamos y desarrollamos soluciones digitales a medida. Creamos el software y la presencia web que tu negocio necesita para destacar y vender más."
