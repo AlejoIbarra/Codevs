@@ -47,11 +47,11 @@ const toggleMenu = () => {
 const currentRoute = ref('#hero');
 
 const options = [
-  { title: "Inicio", url: "#hero", highlight: false },
-  { title: "Nosotros", url: "#about", highlight: false },
-  { title: "Servicios", url: "#services", highlight: false },
-  { title: "Proyectos", url: "#portfolio", highlight: false },
-  { title: "Contacto", url: "#contact", highlight: false }
+  { title: "Inicio", url: "/#hero", highlight: false },
+  { title: "Nosotros", url: "/#about", highlight: false },
+  { title: "Servicios", url: "/#services", highlight: false },
+  { title: "Proyectos", url: "/#portfolio", highlight: false },
+  { title: "Contacto", url: "/#contact", highlight: false }
 ];
 </script>
 
