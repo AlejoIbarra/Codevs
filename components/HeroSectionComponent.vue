@@ -127,11 +127,9 @@ onMounted(() => {
     });
   });
 
-  // Movimiento interactivo del Glow y de la Tarjeta 3D al mover el mouse
+  // Gradiente Radial Interactivo de Fondo
   window.addEventListener('mousemove', (e) => {
     const { clientX, clientY } = e;
-    
-    // Gradiente Radial Interactivo
     if (glowBg.value) {
       gsap.to(glowBg.value, {
         background: `radial-gradient(circle 350px at ${clientX}px ${clientY}px, rgba(231, 0, 11, 0.12), transparent 80%)`,
@@ -139,39 +137,41 @@ onMounted(() => {
         ease: 'power1.out'
       });
     }
+  });
 
-    // Efecto de inclinación 3D para la tarjeta
-    if (card3DContainer.value) {
-      const card = card3DContainer.value.querySelector('.card-3d');
-      if (card) {
+  // Efecto de inclinación 3D para la tarjeta limitado únicamente a su propio recuadro
+  if (card3DContainer.value) {
+    const card = card3DContainer.value.querySelector('.card-3d');
+    if (card) {
+      card3DContainer.value.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
-        const cardX = rect.left + rect.width / 2;
-        const cardY = rect.top + rect.height / 2;
-        const angleX = (clientY - cardY) / 12;
-        const angleY = -(clientX - cardX) / 12;
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        // Inclinación 3D sutil y acotada (-12° a 12°)
+        const angleX = Math.max(-12, Math.min(12, -((y - centerY) / centerY) * 12));
+        const angleY = Math.max(-12, Math.min(12, ((x - centerX) / centerX) * 12));
 
         gsap.to(card, {
           rotationX: angleX,
           rotationY: angleY,
-          transformPerspective: 800,
+          transformPerspective: 1000,
           ease: 'power2.out',
-          duration: 0.5
+          duration: 0.3
         });
-      }
-    }
-  });
-
-  // Restaurar tarjeta al salir el mouse
-  if (card3DContainer.value) {
-    const card = card3DContainer.value.querySelector('.card-3d');
-    card3DContainer.value.addEventListener('mouseleave', () => {
-      gsap.to(card, {
-        rotationX: 0,
-        rotationY: 0,
-        duration: 0.8,
-        ease: 'power3.out'
       });
-    });
+
+      card3DContainer.value.addEventListener('mouseleave', () => {
+        gsap.to(card, {
+          rotationX: 0,
+          rotationY: 0,
+          duration: 0.6,
+          ease: 'power3.out'
+        });
+      });
+    }
   }
 });
 </script>
