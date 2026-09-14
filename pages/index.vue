@@ -30,20 +30,20 @@ import ContactSection from '~/components/ContactSection.vue';
 
 // Metadatos SEO e Indexación
 useHead({
-  title: 'CODEVS | Desarrollo de Software y Páginas Web en Pasto Nariño',
+  title: 'Desarrollo de Páginas Web en Pasto | CODEVS - Páginas Web & Software',
   meta: [
     { 
       name: 'description', 
-      content: 'Expertos en desarrollo de páginas web y software a la medida en Pasto, Nariño. Creamos sitios premium de alto rendimiento con diseño UX/UI exclusivo y posicionamiento SEO estratégico.' 
+      content: 'Líderes en desarrollo de páginas web y software a la medida en Pasto, Nariño. Diseñamos sitios web profesionales de alto rendimiento, optimizados para salir de #1 en Google.' 
     }
   ]
 });
 
-// Configuración de Datos Estructurados Schema.org LocalBusiness para optimizar al máximo el SEO Local en Pasto Nariño
+// Configuración de Datos Estructurados Schema.org ProfessionalService para optimizar al máximo el SEO Local en Pasto Nariño
 useJsonld(() => ({
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  'name': 'CODEVS',
+  'name': 'CODEVS - Desarrollo de Páginas Web en Pasto',
   'image': 'https://www.codevs.dev/img/codevs.png',
   '@id': 'https://www.codevs.dev/#localbusiness',
   'url': 'https://www.codevs.dev',
@@ -61,6 +61,49 @@ useJsonld(() => ({
     '@type': 'GeoCoordinates',
     'latitude': 1.2136,
     'longitude': -77.2811
+  },
+  'areaServed': [
+    {
+      '@type': 'City',
+      'name': 'San Juan de Pasto'
+    },
+    {
+      '@type': 'AdministrativeArea',
+      'name': 'Nariño'
+    },
+    {
+      '@type': 'Country',
+      'name': 'Colombia'
+    }
+  ],
+  'knowsAbout': [
+    'Desarrollo de Páginas Web',
+    'Diseño Web Profesional',
+    'Software a la Medida',
+    'Posicionamiento SEO Local',
+    'Desarrollo de Aplicaciones Web'
+  ],
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'Servicios de Desarrollo Web y Software',
+    'itemListElement': [
+      {
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Desarrollo de Páginas Web en Pasto',
+          'description': 'Diseño y creación de sitios web corporativos y tiendas virtuales optimizados para motores de búsqueda.'
+        }
+      },
+      {
+        '@type': 'Offer',
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Desarrollo de Software a la Medida',
+          'description': 'Soluciones digitales personalizadas e ingeniería de software para empresas.'
+        }
+      }
+    ]
   },
   'openingHoursSpecification': {
     '@type': 'OpeningHoursSpecification',

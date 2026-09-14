@@ -1,7 +1,7 @@
 <template>
-  <section id="clients" class="clients py-12 bg-white flex items-center justify-center border-b border-gray-100">
+  <section id="clients" class="clients py-12 bg-black flex items-center justify-center border-b border-zinc-900">
     <div class="container mx-auto px-4">
-      <h2 class="text-center text-2xl font-bold mb-8 text-black">Tecnologías en las que somos Expertos</h2>
+      <h2 class="text-center text-2xl font-bold mb-8 text-white">Tecnologías en las que somos Expertos</h2>
       
       <Swiper :modules="[Autoplay, Pagination]" :loop="true" :speed="600" :autoplay="{ delay: 3500 }"
         :slides-per-view="'auto'" :pagination="{ el: '.swiper-pagination', clickable: true, type: 'bullets' }"

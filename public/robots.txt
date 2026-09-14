@@ -1,2 +1,6 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+# Host & Sitemap
+Host: https://www.codevs.dev
+Sitemap: https://www.codevs.dev/sitemap.xml
