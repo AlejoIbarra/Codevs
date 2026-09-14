@@ -1,15 +1,21 @@
 <template>
   <div class="min-h-screen bg-black text-white">
-    
+
     <!-- Hero Banner -->
     <section class="relative pt-32 pb-20 overflow-hidden">
       <!-- Ambient lights -->
-      <div class="absolute top-0 left-1/3 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-rose-900/5 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2312_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2312_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)] pointer-events-none"></div>
+      <div
+        class="absolute top-0 left-1/3 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none">
+      </div>
+      <div
+        class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-rose-900/5 rounded-full blur-[100px] pointer-events-none">
+      </div>
+      <div
+        class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2312_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2312_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)] pointer-events-none">
+      </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <!-- Breadcrumb -->
         <nav class="flex items-center gap-2 text-sm text-zinc-500 mb-8">
           <NuxtLink to="/" class="hover:text-red-500 transition-colors">Inicio</NuxtLink>
@@ -22,7 +28,8 @@
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 backdrop-blur-xl">
+            <div
+              class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 backdrop-blur-xl">
               <i :class="service.icon" class="text-red-500"></i>
               <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Servicio Premium</span>
             </div>
@@ -39,10 +46,12 @@
             </p>
 
             <div class="flex flex-wrap gap-4 pt-4">
-              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-red-600 hover:bg-red-700 text-white rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg shadow-red-950/40">
+              <NuxtLink to="/#contact"
+                class="inline-flex items-center justify-center px-8 py-3.5 bg-red-600 hover:bg-red-700 text-white rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg shadow-red-950/40">
                 Solicitar Cotización
               </NuxtLink>
-              <NuxtLink to="/#services" class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
+              <NuxtLink to="/#services"
+                class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
                 Ver Más Servicios
               </NuxtLink>
             </div>
@@ -53,7 +62,8 @@
             <div class="relative rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl shadow-red-950/20">
               <img :src="service.image" :alt="service.title" class="w-full h-80 object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-              <div class="absolute top-4 right-4 w-12 h-12 rounded-xl bg-black/70 border border-zinc-700 backdrop-blur-md flex items-center justify-center">
+              <div
+                class="absolute top-4 right-4 w-12 h-12 rounded-xl bg-black/70 border border-zinc-700 backdrop-blur-md flex items-center justify-center">
                 <i :class="service.icon" class="text-2xl text-red-500"></i>
               </div>
             </div>
@@ -66,14 +76,16 @@
     <section class="py-20 border-t border-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">¿Qué incluye este <span class="text-red-500">servicio</span>?</h2>
+          <h2 class="text-3xl sm:text-4xl font-black text-white">¿Qué incluye este <span
+              class="text-red-500">servicio</span>?</h2>
           <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div v-for="(feature, i) in service.features" :key="i"
             class="group bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600/20 to-red-950/50 flex items-center justify-center border border-red-500/30 mb-4 group-hover:scale-110 transition-transform">
+            <div
+              class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600/20 to-red-950/50 flex items-center justify-center border border-red-500/30 mb-4 group-hover:scale-110 transition-transform">
               <i :class="feature.icon" class="text-xl text-red-500"></i>
             </div>
             <h3 class="text-lg font-bold text-white mb-2">{{ feature.title }}</h3>
@@ -87,7 +99,8 @@
     <section class="py-20 border-t border-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">Tecnologías que <span class="text-red-500">Utilizamos</span></h2>
+          <h2 class="text-3xl sm:text-4xl font-black text-white">Tecnologías que <span
+              class="text-red-500">Utilizamos</span></h2>
           <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -103,10 +116,14 @@
     <!-- CTA -->
     <section class="py-20 border-t border-zinc-900">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 rounded-3xl p-10 sm:p-14">
-          <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">¿Listo para empezar tu <span class="text-red-500">proyecto</span>?</h2>
-          <p class="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">Contáctanos y en menos de 24 horas recibirás una propuesta personalizada para tu negocio.</p>
-          <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-10 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-base transition-all duration-300 shadow-lg shadow-red-950/40">
+        <div
+          class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 rounded-3xl p-10 sm:p-14">
+          <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">¿Listo para empezar tu <span
+              class="text-red-500">proyecto</span>?</h2>
+          <p class="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">Contáctanos y en menos de 24 horas recibirás una
+            propuesta personalizada para tu negocio.</p>
+          <NuxtLink to="/#contact"
+            class="inline-flex items-center justify-center px-10 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-base transition-all duration-300 shadow-lg shadow-red-950/40">
             Solicitar Cotización Gratis
             <i class="bi bi-arrow-right ml-2"></i>
           </NuxtLink>
@@ -199,9 +216,9 @@ const servicesData = {
   },
   'seo-avanzado': {
     title: 'Optimización SEO Avanzada',
-    description: 'Estrategias de posicionamiento SEO local para empresas que buscan ser encontradas primero en Pasto, Nariño y todo el territorio nacional.',
+    description: 'Estrategias de posicionamiento SEO local para empresas que buscan ser encontradas primero en tu ciudad o a nivel nacional e Internacional.',
     icon: 'bi bi-search',
-    image: '/assets/img/services/apiDevelopment.png',
+    image: '/img/image.png',
     features: [
       { icon: 'bi bi-geo-alt', title: 'SEO Local', text: 'Optimización para Google Maps, Google Business Profile y búsquedas locales en Pasto y Nariño.' },
       { icon: 'bi bi-file-earmark-code', title: 'SEO Técnico', text: 'Auditoría técnica completa: velocidad, Core Web Vitals, indexación y crawlabilidad.' },
