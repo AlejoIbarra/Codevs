@@ -128,18 +128,19 @@ const items = [
     detailsLink: '/proyectos/iptv-max-ui'
   },
   {
-    image: '/assets/img/projects/image2.png',
+    image: '/img/iptv/iptv-max.png',
     title: 'IPTV Max Player',
     description: 'Motor de reproducción optimizado para streaming de vídeo continuo sin cortes.',
     category: 'App Móvil',
     detailsLink: '/proyectos/iptv-max-player'
   },
   {
-    image: '/assets/img/projects/image3.png',
-    title: 'Panel Administrativo',
-    description: 'Panel de control privado con gráficos en tiempo real y seguridad reforzada.',
-    category: 'Desarrollo Web',
-    detailsLink: '/proyectos/panel-administrativo'
+    image: '/assets/img/projects/moments.jpg',
+    title: 'Moments Gallery - Red Social & Marketplace',
+    description: 'Plataforma web tipo red social y marketplace de fotografía para eventos con autenticación, pasarela de pagos y arquitectura Spring Boot + Nuxt.',
+    category: 'Plataforma Web & Pagos',
+    detailsLink: '/proyectos/moments-gallery',
+    liveUrl: 'https://www.moments-gallery.com/'
   }
 ];
 </script>

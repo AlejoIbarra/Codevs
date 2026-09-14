@@ -296,7 +296,15 @@ const projectsData = {
     category: 'App Móvil',
     description: 'Motor de reproducción optimizado para streaming de vídeo continuo sin cortes.',
     fullDescription: 'Desarrollamos el motor de reproducción de IPTV Max Player, una aplicación móvil para Android e iOS que ofrece streaming continuo de video en alta calidad. El reproductor incluye soporte para múltiples protocolos de streaming, buffer inteligente adaptativo y gestión eficiente de recursos para minimizar el consumo de batería.',
-    image: '/assets/img/projects/image2.png',
+    image: '/img/iptv/iptv-max.png',
+    gallery: [
+      {
+        image: '/img/iptv/iptv-max.png',
+        tag: 'Player Engine TV & Mobile',
+        title: 'Reproductor Multimedia de Alto Rendimiento',
+        description: 'Motor de reproducción nativo con búfer inteligente adaptativo, decodificación por hardware y streaming continuo de video en alta calidad sin cortes.'
+      }
+    ],
     details: [
       { icon: 'bi bi-camera-video', title: 'Streaming Adaptativo', text: 'Buffer inteligente que ajusta la calidad del video según la velocidad de conexión disponible.' },
       { icon: 'bi bi-phone', title: 'Multiplataforma', text: 'Aplicación disponible para Android e iOS con experiencia nativa en ambas plataformas.' },
@@ -307,21 +315,22 @@ const projectsData = {
     ],
     technologies: ['Flutter', 'Dart', 'FFmpeg', 'ExoPlayer', 'Firebase', 'Kotlin', 'Swift']
   },
-  'panel-administrativo': {
-    title: 'Panel Administrativo',
-    category: 'Desarrollo Web',
-    description: 'Panel de control privado con gráficos en tiempo real y seguridad reforzada.',
-    fullDescription: 'Construimos un panel de administración web completo con dashboard de métricas en tiempo real, gestión de usuarios con roles y permisos, sistema de reportes automatizados y seguridad empresarial con autenticación multifactor. El panel se integra con múltiples fuentes de datos y ofrece visualizaciones interactivas.',
-    image: '/assets/img/projects/image3.png',
+  'moments-gallery': {
+    title: 'Moments Gallery - Red Social & Marketplace de Fotografía',
+    category: 'Plataforma Web & Pagos',
+    description: 'Plataforma web tipo red social y marketplace de fotografía para eventos con autenticación de usuarios y pasarela de pagos.',
+    fullDescription: 'Moments Gallery es un desarrollo exclusivo de CODEVS diseñado como una plataforma integral tipo red social y marketplace fotográfico para eventos sociales y corporativos (bodas, fiestas, cumpleaños y conferencias). La solución integra autenticación segura con JWT y gestión de perfiles/roles (fotógrafos, anfitriones y compradores), feeds interactivos de fotos con likes y comentarios, procesamiento backend en Spring Boot para marcas de agua dinámicas y protección de derechos de autor, pasarela de pagos integrada para venta directa de fotografías digitales en alta definición, base de datos relacional MySQL optimizada y arquitectura frontend en Nuxt.js con Server-Side Rendering (SSR) para máximo rendimiento y posicionamiento SEO en Google.',
+    image: '/assets/img/projects/moments.jpg',
+    liveUrl: 'https://www.moments-gallery.com/',
     details: [
-      { icon: 'bi bi-graph-up-arrow', title: 'Dashboard en Tiempo Real', text: 'Gráficos interactivos y métricas actualizadas en tiempo real con WebSockets.' },
-      { icon: 'bi bi-people', title: 'Gestión de Usuarios', text: 'Sistema completo de roles y permisos con RBAC para control granular de acceso.' },
-      { icon: 'bi bi-shield-lock', title: 'Seguridad Empresarial', text: 'Autenticación multifactor (MFA), cifrado de datos y auditoría completa de acciones.' },
-      { icon: 'bi bi-file-earmark-bar-graph', title: 'Reportes Automatizados', text: 'Generación automática de reportes en PDF y Excel con programación de envío por correo.' },
-      { icon: 'bi bi-plug', title: 'Integraciones', text: 'Conexión con APIs externas, bases de datos múltiples y servicios de terceros.' },
-      { icon: 'bi bi-phone', title: 'Responsive', text: 'Panel completamente adaptado para gestionar tu negocio desde cualquier dispositivo.' }
+      { icon: 'bi bi-person-badge', title: 'Autenticación & Red Social', text: 'Sistema de login/registro seguro con JWT, perfiles de usuario, roles de acceso, gestión de avatares y feed social interactivo con likes y comentarios.' },
+      { icon: 'bi bi-credit-card-2-front', title: 'Pasarela de Pagos Integrada', text: 'Checkout seguro para venta individual o por paquetes de fotos digitales en alta resolución con entrega de links de descarga protegidos.' },
+      { icon: 'bi bi-shield-check', title: 'Backend Robusto en Spring Boot', text: 'Arquitectura escalable en Spring Boot (Java) para procesamiento concurrente, seguridad estricta, APIs REST y marcas de agua dinámicas.' },
+      { icon: 'bi bi-database-check', title: 'Base de Datos MySQL', text: 'Modelado relacional estructurado en MySQL para transacciones financieras, control de compras, usuarios y álbumes de eventos.' },
+      { icon: 'bi bi-google', title: 'Optimización SEO con Nuxt (SSR)', text: 'Renderizado del lado del servidor (SSR) con Nuxt.js / Vue para máxima velocidad de carga e indexación #1 en motores de búsqueda.' },
+      { icon: 'bi bi-images', title: 'Galerías & Álbumes en Alta Resolución', text: 'Visor multimedia inmersivo a pantalla completa con compresión inteligente y distribución CDN de ultra baja latencia.' }
     ],
-    technologies: ['Vue.js', 'Nuxt.js', 'Spring Boot', 'PostgreSQL', 'Chart.js', 'WebSockets', 'Docker', 'JWT']
+    technologies: ['Spring Boot (Java)', 'Nuxt.js / Vue.js (SSR)', 'MySQL', 'Spring Security & JWT', 'Pasarela de Pagos', 'TailwindCSS', 'REST APIs', 'Cloud Storage / CDN', 'SEO Avanzado']
   }
 };
 
