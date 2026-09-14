@@ -29,11 +29,12 @@
       <div>
         <h4 class="text-lg font-bold text-white mb-6 border-l-2 border-red-600 pl-3">Navegación</h4>
         <ul class="space-y-3 text-sm text-gray-400">
-          <li><a href="#hero" class="hover:text-red-500 transition">Inicio</a></li>
-          <li><a href="#about" class="hover:text-red-500 transition">Nosotros</a></li>
-          <li><a href="#services" class="hover:text-red-500 transition">Servicios</a></li>
-          <li><a href="#portfolio" class="hover:text-red-500 transition">Proyectos</a></li>
-          <li><a href="#contact" class="hover:text-red-500 transition">Contacto</a></li>
+          <li><a href="/#hero" class="hover:text-red-500 transition">Inicio</a></li>
+          <li><a href="/#about" class="hover:text-red-500 transition">Nosotros</a></li>
+          <li><a href="/#services" class="hover:text-red-500 transition">Servicios</a></li>
+          <li><a href="/#portfolio" class="hover:text-red-500 transition">Proyectos</a></li>
+          <li><NuxtLink to="/blog" class="hover:text-red-500 transition text-red-400 font-semibold">Blog de Tecnología</NuxtLink></li>
+          <li><a href="/#contact" class="hover:text-red-500 transition">Contacto</a></li>
         </ul>
       </div>
 

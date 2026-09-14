@@ -15,6 +15,9 @@
     <!-- Sección Portafolio de Proyectos -->
     <PortfolioSection />
 
+    <!-- Sección de Blog & Tendencias Tecnológicas -->
+    <BlogSection />
+
     <!-- Sección de Contacto -->
     <ContactSection />
   </div>
@@ -26,15 +29,16 @@ import SwiperComponent from '~/components/SwiperComponent.vue';
 import AboutSection from '~/components/AboutSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';
+import BlogSection from '~/components/BlogSection.vue';
 import ContactSection from '~/components/ContactSection.vue';
 
 // Metadatos SEO e Indexación
 useHead({
-  title: 'Desarrollo de Páginas Web en Pasto | CODEVS - Páginas Web & Software',
+  title: 'Desarrollo de Páginas Web & Software en Pasto | CODEVS #1 en Google',
   meta: [
     { 
       name: 'description', 
-      content: 'Líderes en desarrollo de páginas web y software a la medida en Pasto, Nariño. Diseñamos sitios web profesionales de alto rendimiento, optimizados para salir de #1 en Google.' 
+      content: 'Líderes en desarrollo de páginas web, ingeniería de software a medida y plataformas cloud en Pasto, Nariño. Posicionamos tu negocio en el #1 de Google con soluciones tecnológicas de alto rendimiento.' 
     }
   ]
 });

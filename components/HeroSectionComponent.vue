@@ -22,15 +22,15 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            Desarrollo Web & Software en Pasto, Nariño
+            Líderes en Tecnología & Software en Pasto, Nariño
           </div>
 
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none text-white trigger-anim uppercase">
-            Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Páginas Web</span> en Pasto
+            Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Páginas Web</span> & Software en Pasto
           </h1>
 
           <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-light leading-relaxed trigger-anim text-justify">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Especialistas en <strong class="text-white font-semibold">desarrollo de páginas web</strong> y software a la medida en Pasto, Nariño. Diseñamos plataformas rápidas, seguras y optimizadas para hacer crecer tu negocio y posicionar tu marca en el lugar #1 de Google.
+            Somos <strong class="text-white font-semibold">CODEVS</strong>, líderes en <strong class="text-white font-semibold">desarrollo de páginas web</strong>, ingeniería de software a la medida y plataformas digitales avanzadas en Pasto, Nariño. Creamos soluciones tecnológicas rápidas, escalables y preparadas para posicionar tu negocio en el <strong class="text-red-400 font-semibold">lugar #1 de Google</strong> y conquistar el mercado digital.
           </p>
 
           <div class="flex flex-wrap gap-4 pt-4 trigger-anim">
@@ -40,6 +40,32 @@
             <a href="#services" class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
               Conocer Servicios
             </a>
+            <NuxtLink to="/blog" class="inline-flex items-center justify-center px-6 py-3.5 border border-zinc-800 hover:border-red-500/40 rounded-xl text-zinc-300 hover:text-white transition-all duration-300 font-medium text-sm bg-zinc-900/30 backdrop-blur-sm gap-2">
+              <i class="bi bi-journal-text text-red-500"></i>
+              <span>Nuestro Blog</span>
+            </NuxtLink>
+          </div>
+
+          <!-- Sellos de confianza y liderazgo -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-zinc-850/80 trigger-anim max-w-2xl">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-red-600/10 border border-red-500/20 flex items-center justify-center shrink-0">
+                <i class="bi bi-trophy text-red-500 text-sm"></i>
+              </div>
+              <span class="text-xs text-zinc-300 font-medium leading-tight">Posicionamiento #1 en Google</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-red-600/10 border border-red-500/20 flex items-center justify-center shrink-0">
+                <i class="bi bi-cpu text-red-500 text-sm"></i>
+              </div>
+              <span class="text-xs text-zinc-300 font-medium leading-tight">Ingeniería de Software a Medida</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-red-600/10 border border-red-500/20 flex items-center justify-center shrink-0">
+                <i class="bi bi-lightning-charge text-red-500 text-sm"></i>
+              </div>
+              <span class="text-xs text-zinc-300 font-medium leading-tight">100% Velocidad & Escalabilidad</span>
+            </div>
           </div>
 
         </div>
