@@ -26,19 +26,24 @@ export default defineNuxtConfig({
         },
         { 
           name: 'keywords', 
-          content: 'paginas web en pasto, desarrollo de paginas web, desarrollo de paginas web pasto, paginas web pasto nariño, diseño web pasto, software a la medida pasto, agencia de desarrollo web colombia, codevs' 
+          content: 'paginas web en pasto, desarrollo de paginas web pasto, paginas web pasto nariño, diseño web pasto, software a la medida pasto, san juan de pasto, desarrollo de software pasto, aplicaciones moviles pasto, agencia de desarrollo web colombia, codevs' 
         },
         { name: 'author', content: 'CODEVS' },
         { name: 'robots', content: 'index, follow, max-image-preview:large' },
+        // Geo Tags para Posicionamiento Local en San Juan de Pasto
+        { name: 'geo.region', content: 'CO-NAR' },
+        { name: 'geo.placename', content: 'San Juan de Pasto, Nariño, Colombia' },
+        { name: 'geo.position', content: '1.2136;-77.2811' },
+        { name: 'ICBM', content: '1.2136, -77.2811' },
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'Desarrollo de Páginas Web en Pasto | CODEVS' },
-        { property: 'og:description', content: 'Líderes en desarrollo de páginas web y software a la medida en Pasto, Nariño. Posiciona tu empresa en lo más alto con CODEVS.' },
+        { property: 'og:title', content: 'Desarrollo de Páginas Web en Pasto | CODEVS - Software a la Medida' },
+        { property: 'og:description', content: 'Líderes en desarrollo de páginas web, aplicaciones y software a la medida en San Juan de Pasto, Nariño. Posiciona tu empresa en el #1 de Google con CODEVS.' },
         { property: 'og:image', content: '/img/codevs.png' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Desarrollo de Páginas Web en Pasto | CODEVS' },
-        { name: 'twitter:description', content: 'Desarrollo de páginas web profesionales y software a la medida en Pasto, Nariño.' }
+        { name: 'twitter:description', content: 'Desarrollo de páginas web profesionales y software a la medida en San Juan de Pasto, Nariño.' }
       ],
       link: [
         { rel: 'canonical', href: 'https://www.codevs.dev/' },

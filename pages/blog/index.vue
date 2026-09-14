@@ -139,49 +139,102 @@ const categories = [
   'SEO & Posicionamiento',
   'Ingeniería de Software',
   'Rendimiento & UX',
-  'Arquitectura Web'
+  'Ciberseguridad & Pagos',
+  'Apps Móviles',
+  'Arquitectura Web',
+  'Estrategia Digital',
+  'Bases de Datos'
 ];
 
 const posts = [
   {
     slug: 'posicionar-empresa-google-pasto-seo',
-    title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño',
-    excerpt: 'Estrategias probadas de SEO local, optimización en Google Maps y rendimiento técnico para superar a la competencia en búsquedas orgánicas.',
+    title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño: Guía Maestra de SEO Local y Técnico',
+    excerpt: 'Guía técnica profunda de SEO local, Core Web Vitals, marcado Schema.org JSON-LD y optimización en Google Maps para dominar el mercado orgánico.',
     category: 'SEO & Posicionamiento',
     image: '/img/blog/blog-1.jpg',
     date: '12 Septiembre, 2026',
     author: 'Equipo CODEVS',
-    readTime: '5 min de lectura'
+    readTime: '12 min de lectura'
   },
   {
     slug: 'por-que-desarrollo-software-a-medida',
-    title: 'Software a Medida vs Plantillas: Por Qué Tu Negocio Necesita Arquitectura Propia',
-    excerpt: 'Descubre las razones por las cuales las plataformas desarrolladas a medida con Spring Boot y Nuxt ofrecen mayor seguridad, escalabilidad y retorno de inversión.',
+    title: 'Software a Medida vs Plantillas: Por Qué Tu Negocio Necesita Arquitectura Propia para Escalar',
+    excerpt: 'Análisis técnico y financiero comparativo entre soluciones genéricas y arquitecturas a medida con Spring Boot y Nuxt 3 para eliminar costos ocultos.',
     category: 'Ingeniería de Software',
     image: '/img/blog/blog-2.jpg',
     date: '08 Septiembre, 2026',
     author: 'Equipo CODEVS',
-    readTime: '7 min de lectura'
+    readTime: '14 min de lectura'
   },
   {
     slug: 'velocidad-web-conversion-ventas',
-    title: 'Impacto de la Velocidad de Carga en las Ventas y Retención de Usuarios',
-    excerpt: 'Un sitio web que tarda más de 3 segundos pierde el 40% de sus visitantes. Te explicamos cómo optimizamos nuestras aplicaciones para lograr 100% en Lighthouse.',
+    title: 'Impacto de la Velocidad de Carga en las Ventas y Retención: Cada Milisegundo Cuenta',
+    excerpt: 'Estudio sobre la correlación directa entre latencia web, tasas de abandono de carritos, optimización de imágenes AVIF y rendimiento móvil.',
     category: 'Rendimiento & UX',
     image: '/img/blog/blog-3.jpg',
-    date: '01 Septiembre, 2026',
+    date: '20 Agosto, 2026',
     author: 'Equipo CODEVS',
-    readTime: '6 min de lectura'
+    readTime: '11 min de lectura'
+  },
+  {
+    slug: 'seguridad-apis-pasarelas-pago-colombia',
+    title: 'Seguridad en APIs y Pasarelas de Pago: Cómo Blindar tu Comercio Electrónico Contra Fraudes',
+    excerpt: 'Guía de ciberseguridad con autenticación JWT asimétrica, firmas HMAC SHA-256 en webhooks e integraciones seguras con Wompi, Stripe y PSE.',
+    category: 'Ciberseguridad & Pagos',
+    image: '/img/blog/blog-recent-1.jpg',
+    date: '15 Julio, 2026',
+    author: 'Equipo CODEVS',
+    readTime: '13 min de lectura'
   },
   {
     slug: 'astro-nuxt-nextjs-arquitecturas-modernas',
-    title: 'Astro vs Nuxt vs Next.js: Cómo Seleccionar el Stack Perfecto para tu Proyecto',
-    excerpt: 'Comparativa exhaustiva entre los frameworks más potentes de la industria y cuándo conviene aplicar Server-Side Rendering (SSR) o Static Site Generation (SSG).',
+    title: 'Astro vs Nuxt vs Next.js: Guía Definitiva de Arquitectura Frontend para 2026',
+    excerpt: 'Comparativa profunda entre arquitecturas de islas sin JS, SSR dinámico en Vue 3 y Server Components de React para seleccionar el stack ideal.',
     category: 'Arquitectura Web',
     image: '/img/blog/blog-4.jpg',
-    date: '25 Agosto, 2026',
+    date: '10 Mayo, 2026',
     author: 'Equipo CODEVS',
-    readTime: '8 min de lectura'
+    readTime: '13 min de lectura'
+  },
+  {
+    slug: 'apps-moviles-flutter-vs-nativas',
+    title: 'Desarrollo Móvil con Flutter: Rendimiento Nativo en iOS y Android con un Solo Código',
+    excerpt: 'Arquitectura limpia, motor gráfico Impeller, gestión de estados con BLoC y sincronización offline para aplicaciones móviles fluidas a 120 FPS.',
+    category: 'Apps Móviles',
+    image: '/img/blog/blog-recent-2.jpg',
+    date: '18 Febrero, 2026',
+    author: 'Equipo CODEVS',
+    readTime: '12 min de lectura'
+  },
+  {
+    slug: 'microservicios-spring-boot-escalabilidad',
+    title: 'Arquitectura de Microservicios con Spring Boot: Guía Práctica de Escalabilidad y Alta Disponibilidad',
+    category: 'Ingeniería de Software',
+    image: '/img/blog/blog-recent-3.jpg',
+    date: '14 Noviembre, 2025',
+    author: 'Equipo CODEVS',
+    readTime: '15 min de lectura'
+  },
+  {
+    slug: 'transformacion-digital-empresas-narino',
+    title: 'Transformación Digital en Nariño: Casos Reales de Automatización, Eficiencia y Rentabilidad',
+    excerpt: 'Metodología en 3 fases y casos de éxito para digitalizar empresas comerciales, industriales y de servicios en San Juan de Pasto e Ipiales.',
+    category: 'Estrategia Digital',
+    image: '/img/blog/blog-recent-4.jpg',
+    date: '22 Junio, 2025',
+    author: 'Equipo CODEVS',
+    readTime: '11 min de lectura'
+  },
+  {
+    slug: 'bases-datos-mysql-postgresql-rendimiento',
+    title: 'Optimización de Consultas e Índices en Bases de Datos Relacionales: De Segundos a Milisegundos',
+    excerpt: 'Auditoría con EXPLAIN, diseño de índices B-Tree compuestos y patrones Cache-Aside con Redis para bases de datos de alto volumen.',
+    category: 'Bases de Datos',
+    image: '/img/blog/blog-recent-5.jpg',
+    date: '05 Octubre, 2024',
+    author: 'Equipo CODEVS',
+    readTime: '14 min de lectura'
   }
 ];
 

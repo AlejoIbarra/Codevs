@@ -107,33 +107,33 @@
 const featuredPosts = [
   {
     slug: 'posicionar-empresa-google-pasto-seo',
-    title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño',
-    excerpt: 'Descubre las claves del SEO local, Core Web Vitals y optimización técnica que aplicamos en CODEVS para dominar las búsquedas locales.',
+    title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño: Guía Maestra',
+    excerpt: 'Descubre las claves de ingeniería SEO local, Core Web Vitals y marcado Schema.org que aplicamos en CODEVS para dominar las búsquedas orgánicas.',
     category: 'SEO & Posicionamiento',
     image: '/img/blog/blog-1.jpg',
     date: '12 Septiembre, 2026',
     author: 'Equipo CODEVS',
-    readTime: '5 min de lectura'
+    readTime: '12 min de lectura'
   },
   {
     slug: 'por-que-desarrollo-software-a-medida',
     title: 'Software a Medida vs Plantillas: Por Qué Tu Negocio Necesita Arquitectura Propia',
-    excerpt: 'Analizamos las limitaciones de los constructores genéricos frente a soluciones escalables desarrolladas con Spring Boot, Nuxt y arquitecturas modernas.',
+    excerpt: 'Analizamos las limitaciones de los constructores genéricos frente a soluciones escalables desarrolladas con Spring Boot, Nuxt 3 y arquitecturas modernas.',
     category: 'Ingeniería de Software',
     image: '/img/blog/blog-2.jpg',
     date: '08 Septiembre, 2026',
     author: 'Equipo CODEVS',
-    readTime: '7 min de lectura'
+    readTime: '14 min de lectura'
   },
   {
     slug: 'velocidad-web-conversion-ventas',
-    title: 'Impacto de la Velocidad de Carga en las Ventas y Retención de Usuarios',
-    excerpt: 'Cada segundo de retraso cuesta hasta un 20% en conversiones. Conoce cómo optimizamos el rendimiento a 60fps y 100% en Lighthouse.',
+    title: 'Impacto de la Velocidad de Carga en las Ventas y Retención: Cada Milisegundo Cuenta',
+    excerpt: 'Cada segundo de retraso cuesta hasta un 20% en conversiones. Conoce cómo optimizamos el rendimiento a 60fps y 100% en PageSpeed.',
     category: 'Rendimiento & UX',
     image: '/img/blog/blog-3.jpg',
-    date: '01 Septiembre, 2026',
+    date: '20 Agosto, 2026',
     author: 'Equipo CODEVS',
-    readTime: '6 min de lectura'
+    readTime: '11 min de lectura'
   }
 ];
 </script>

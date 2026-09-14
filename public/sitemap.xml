@@ -46,15 +46,57 @@
   </url>
   <url>
     <loc>https://www.codevs.dev/blog/posicionar-empresa-google-pasto-seo</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.codevs.dev/blog/por-que-desarrollo-software-a-medida</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/velocidad-web-conversion-ventas</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/seguridad-apis-pasarelas-pago-colombia</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/astro-nuxt-nextjs-arquitecturas-modernas</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/apps-moviles-flutter-vs-nativas</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/microservicios-spring-boot-escalabilidad</loc>
+    <lastmod>2025-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/transformacion-digital-empresas-narino</loc>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/bases-datos-mysql-postgresql-rendimiento</loc>
+    <lastmod>2024-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.codevs.dev/#contact</loc>

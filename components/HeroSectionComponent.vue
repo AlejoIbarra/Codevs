@@ -22,15 +22,15 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            Líderes en Tecnología & Software en Pasto, Nariño
+            Líderes en Tecnología & Software de Alto Rendimiento
           </div>
 
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none text-white trigger-anim uppercase">
-            Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Páginas Web</span> & Software en Pasto
+            Desarrollo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-600 to-red-800 font-extrabold relative inline-block">Páginas Web</span> & Software a la Medida
           </h1>
 
           <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-light leading-relaxed trigger-anim text-justify">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>, líderes en <strong class="text-white font-semibold">desarrollo de páginas web</strong>, ingeniería de software a la medida y plataformas digitales avanzadas en Pasto, Nariño. Creamos soluciones tecnológicas rápidas, escalables y preparadas para posicionar tu negocio en el <strong class="text-red-400 font-semibold">lugar #1 de Google</strong> y conquistar el mercado digital.
+            Somos <strong class="text-white font-semibold">CODEVS</strong>, líderes en <strong class="text-white font-semibold">desarrollo de páginas web</strong>, ingeniería de software a la medida y plataformas digitales avanzadas. Creamos soluciones tecnológicas rápidas, escalables y preparadas para posicionar tu negocio en el <strong class="text-red-400 font-semibold">lugar #1 de Google</strong> y conquistar el mercado digital.
           </p>
 
           <div class="flex flex-wrap gap-4 pt-4 trigger-anim">
