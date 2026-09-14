@@ -43,7 +43,17 @@
             </p>
 
             <div class="flex flex-wrap gap-4 pt-4">
-              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-red-600 hover:bg-red-700 text-white rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg shadow-red-950/40">
+              <a
+                v-if="project.liveUrl"
+                :href="project.liveUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white rounded-xl font-bold text-sm transition-all duration-300 shadow-lg shadow-red-950/40 hover:scale-105"
+              >
+                <span>Visitar Sitio Web</span>
+                <i class="bi bi-box-arrow-up-right text-xs"></i>
+              </a>
+              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-zinc-900 border border-zinc-800 hover:border-red-500 text-white rounded-xl font-semibold text-sm transition-all duration-300">
                 Solicitar Proyecto Similar
               </NuxtLink>
               <NuxtLink to="/#portfolio" class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
@@ -62,6 +72,116 @@
         </div>
       </div>
     </section>
+
+    <!-- Visual Showcase / Gallery (if available) -->
+    <section v-if="project.gallery && project.gallery.length" class="py-20 border-t border-zinc-900 relative overflow-hidden">
+      <!-- Ambient light -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-xl">
+            <i class="bi bi-display text-red-500"></i>
+            Showcase Visual
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+            Diseño de <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Interfaz</span> & Prototipos
+          </h2>
+          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 mb-4 rounded-full"></div>
+          <p class="text-zinc-400 max-w-xl mx-auto text-base">
+            Explora las pantallas clave, el sistema de componentes en Figma y el resultado final implementado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div
+            v-for="(item, idx) in project.gallery"
+            :key="idx"
+            @click="selectedGalleryImg = item"
+            class="group bg-zinc-900/70 border border-zinc-800 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-2xl hover:shadow-red-950/30 transition-all duration-500 flex flex-col justify-between cursor-pointer"
+          >
+            <!-- Mockup Window Header -->
+            <div class="px-6 py-3.5 bg-zinc-950/90 border-b border-zinc-800/80 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-zinc-500">{{ item.tag }}</span>
+                <i class="bi bi-arrows-fullscreen text-zinc-600 group-hover:text-red-400 text-xs transition-colors"></i>
+              </div>
+            </div>
+
+            <!-- Image View -->
+            <div class="relative overflow-hidden bg-zinc-950">
+              <img
+                :src="item.image"
+                :alt="item.title"
+                class="w-full h-80 object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-60 group-hover:opacity-30 transition-opacity"></div>
+              
+              <!-- Hover indicator button -->
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="px-4 py-2 rounded-xl bg-red-600/90 text-white text-xs font-bold shadow-lg shadow-red-950/60 backdrop-blur-md flex items-center gap-2">
+                  <i class="bi bi-zoom-in"></i>
+                  <span>Ver en Pantalla Completa</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info Details -->
+            <div class="p-6 sm:p-8 space-y-3 bg-zinc-900/90 border-t border-zinc-800/60 relative z-10">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-red-500 uppercase tracking-wider">{{ item.tag }}</span>
+                <span class="text-xs text-zinc-500 font-mono">0{{ idx + 1 }}</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">
+                {{ item.title }}
+              </h3>
+              <p class="text-zinc-400 text-sm leading-relaxed">
+                {{ item.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Lightbox for Image Preview -->
+    <div
+      v-if="selectedGalleryImg"
+      @click="selectedGalleryImg = null"
+      class="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8 animate-fadeIn"
+    >
+      <div
+        @click.stop
+        class="relative max-w-5xl w-full bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl shadow-red-950/40"
+      >
+        <div class="p-4 bg-zinc-950 border-b border-zinc-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-red-500 uppercase tracking-wider px-2.5 py-1 bg-red-500/10 border border-red-500/20 rounded-md">
+              {{ selectedGalleryImg.tag }}
+            </span>
+            <span class="text-sm font-semibold text-white">{{ selectedGalleryImg.title }}</span>
+          </div>
+          <button
+            @click="selectedGalleryImg = null"
+            class="w-8 h-8 rounded-full bg-zinc-800 hover:bg-red-600 text-zinc-400 hover:text-white flex items-center justify-center transition-colors"
+          >
+            <i class="bi bi-x-lg text-sm"></i>
+          </button>
+        </div>
+        <div class="p-2 sm:p-4 bg-zinc-950/60 max-h-[75vh] overflow-auto flex items-center justify-center">
+          <img
+            :src="selectedGalleryImg.image"
+            :alt="selectedGalleryImg.title"
+            class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-2xl"
+          />
+        </div>
+      </div>
+    </div>
 
     <!-- Project Details -->
     <section class="py-20 border-t border-zinc-900">
@@ -121,14 +241,46 @@
 <script setup>
 const route = useRoute();
 const slug = route.params.slug;
+const selectedGalleryImg = ref(null);
 
 const projectsData = {
+  'alacranes-afc': {
+    title: 'Alacranes AFC - Plataforma Web Oficial',
+    category: 'Desarrollo Web & Branding',
+    description: 'Plataforma web oficial del equipo de fútbol americano Alacranes AFC de Pasto, Nariño.',
+    fullDescription: 'Diseñamos y desarrollamos la plataforma web oficial de Alacranes AFC, el club insignia de fútbol americano de Pasto, Nariño ("Sangre y Pólvora"). Creamos una experiencia digital inmersiva y de alto impacto visual con arquitectura Astro ultrarrápida, galería interactiva estilo Bento Grid con visor Lightbox de 17 fotografías de alta resolución, catálogo oficial de indumentaria y uniformes, carrusel infinito de patrocinadores oficiales (donde CODEVS participa como sponsor tecnológico), e integración con Instagram para su comunidad de atletas y aficionados.',
+    image: '/assets/img/projects/alacranes.jpg',
+    liveUrl: 'https://alacranes-afc.vercel.app/',
+    details: [
+      { icon: 'bi bi-lightning-charge', title: 'Diseño Temático & Identidad Visual', text: 'Identidad visual deportiva de alto impacto "Sangre & Pólvora" con microinteracciones y animaciones GSAP fluidas.' },
+      { icon: 'bi bi-images', title: 'Galería Épica & Lightbox Interactivo', text: 'Galería estilo Bento Grid con 17 momentos de juego, visor Lightbox con navegación por miniaturas y cursor interactivo.' },
+      { icon: 'bi bi-bag-check', title: 'Catálogo de Merchandising', text: 'Módulo de exhibición de jerseys oficiales, sudaderas y gorras con conexión directa a compras.' },
+      { icon: 'bi bi-award', title: 'Gestión de Patrocinadores', text: 'Marquee infinito y sección dedicada para dar visibilidad de marca a los sponsors oficiales y aliados del club.' },
+      { icon: 'bi bi-instagram', title: 'Integración Social & Feed', text: 'Conexión con el perfil oficial de Instagram @alacranespasto para impulsar el alcance y engagement comunitario.' },
+      { icon: 'bi bi-speedometer2', title: 'Arquitectura Astro & SEO Deportivo', text: 'Carga ultrarrápida (Score 100 Lighthouse), optimización SEO local y despliegue continuo en Vercel.' }
+    ],
+    technologies: ['Astro', 'TailwindCSS', 'GSAP Animations', 'Vercel', 'JavaScript ES6+', 'SEO Local Deportivo', 'Lightbox Interactivo', 'UI/UX Design']
+  },
   'iptv-max-ui': {
     title: 'IPTV Max UI',
     category: 'Diseño UX/UI',
     description: 'Interfaz multimedia de alto rendimiento optimizada para decodificadores y TV.',
     fullDescription: 'Diseñamos la interfaz completa de IPTV Max, una plataforma de streaming multimedia optimizada para decodificadores Android y Smart TVs. La interfaz incluye navegación por control remoto, carrusel de contenido en vivo, guía EPG interactiva y sistema de favoritos con rendimiento fluido a 60fps.',
-    image: '/assets/img/projects/image1.png',
+    image: '/img/UI/pantalla-principal.png',
+    gallery: [
+      {
+        image: '/img/UI/figma.png',
+        tag: 'Diseño en Figma',
+        title: 'Arquitectura & Sistema de Diseño',
+        description: 'Prototipado interactivo en Figma con componentes modulares, guía de estilos y mapas de navegación adaptados a control remoto.'
+      },
+      {
+        image: '/img/UI/pantalla-principal.png',
+        tag: 'UI en Producción',
+        title: 'Pantalla Principal & Home TV',
+        description: 'Interfaz final renderizada con carrusel dinámico de canales, categorías inteligentes y navegación fluida a 60fps.'
+      }
+    ],
     details: [
       { icon: 'bi bi-tv', title: 'Optimizado para TV', text: 'Interfaz diseñada específicamente para pantallas grandes y navegación por control remoto D-Pad.' },
       { icon: 'bi bi-play-circle', title: 'Player Integrado', text: 'Reproductor de video nativo con soporte para HLS, DASH y múltiples codecs de audio y video.' },
@@ -137,7 +289,7 @@ const projectsData = {
       { icon: 'bi bi-speedometer2', title: '60fps Fluidos', text: 'Animaciones y transiciones optimizadas para mantener 60 cuadros por segundo en todo momento.' },
       { icon: 'bi bi-palette', title: 'Tema Dinámico', text: 'Sistema de temas personalizables con modo oscuro y modo claro para diferentes preferencias.' }
     ],
-    technologies: ['Flutter', 'Dart', 'ExoPlayer', 'Android TV', 'Leanback', 'SQLite', 'REST API']
+    technologies: ['Flutter', 'Dart', 'Figma UX/UI', 'ExoPlayer', 'Android TV', 'Leanback', 'SQLite', 'REST API']
   },
   'iptv-max-player': {
     title: 'IPTV Max Player',

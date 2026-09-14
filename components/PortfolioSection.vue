@@ -26,8 +26,8 @@
         </p>
       </div>
 
-      <!-- Projects Grid (3 Columns) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div
           v-for="(item, i) in items"
           :key="i"
@@ -38,7 +38,7 @@
 
           <div>
             <!-- Image Area -->
-            <div class="relative h-60 overflow-hidden border-b border-zinc-800/80">
+            <div class="relative h-64 overflow-hidden border-b border-zinc-800/80">
               <img
                 :src="item.image"
                 :alt="item.title"
@@ -76,16 +76,30 @@
 
           <!-- Card Footer Link -->
           <div class="p-6 pt-0 relative z-10">
-            <div class="pt-4 border-t border-zinc-850 flex justify-between items-center">
-              <NuxtLink
-                :to="item.detailsLink"
-                class="inline-flex items-center gap-2 text-sm font-bold text-red-500 hover:text-red-400 transition-colors group/btn"
-              >
-                <span>Explorar Detalles</span>
-                <div class="w-7 h-7 rounded-full bg-red-600/20 border border-red-500/30 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
-                  <i class="bi bi-arrow-up-right text-xs text-red-500 group-hover/btn:text-white transition-colors"></i>
-                </div>
-              </NuxtLink>
+            <div class="pt-4 border-t border-zinc-850 flex flex-wrap justify-between items-center gap-3">
+              <div class="flex items-center gap-3">
+                <NuxtLink
+                  :to="item.detailsLink"
+                  class="inline-flex items-center gap-2 text-sm font-bold text-red-500 hover:text-red-400 transition-colors group/btn"
+                >
+                  <span>Explorar Detalles</span>
+                  <div class="w-7 h-7 rounded-full bg-red-600/20 border border-red-500/30 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
+                    <i class="bi bi-arrow-up-right text-xs text-red-500 group-hover/btn:text-white transition-colors"></i>
+                  </div>
+                </NuxtLink>
+
+                <a
+                  v-if="item.liveUrl"
+                  :href="item.liveUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg bg-zinc-800/90 hover:bg-red-600/20 border border-zinc-700/60 hover:border-red-500/40"
+                  title="Visitar sitio web oficial"
+                >
+                  <i class="bi bi-box-arrow-up-right text-red-400 text-xs"></i>
+                  <span>Sitio En Vivo</span>
+                </a>
+              </div>
               <span class="text-[10px] text-zinc-600 tracking-widest font-bold uppercase">CODEVS</span>
             </div>
           </div>
@@ -99,7 +113,15 @@
 <script setup>
 const items = [
   {
-    image: '/assets/img/projects/image1.png',
+    image: '/assets/img/projects/alacranes.jpg',
+    title: 'Alacranes AFC - Plataforma Web',
+    description: 'Plataforma web oficial del equipo de fútbol americano de Pasto, Nariño con galería épica, catálogo merch e integración de sponsors.',
+    category: 'Desarrollo Web & Branding',
+    detailsLink: '/proyectos/alacranes-afc',
+    liveUrl: 'https://alacranes-afc.vercel.app/'
+  },
+  {
+    image: '/img/UI/pantalla-principal.png',
     title: 'IPTV Max UI',
     description: 'Interfaz multimedia de alto rendimiento optimizada para decodificadores y TV.',
     category: 'Diseño UX/UI',
