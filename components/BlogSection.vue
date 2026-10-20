@@ -105,52 +105,6 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-const blogSection = ref(null);
-let ctx = null;
-
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ctx = gsap.context(() => {
-      gsap.from('.blog-header', {
-        scrollTrigger: {
-          trigger: blogSection.value,
-          start: 'top 85%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
-      gsap.from('.blog-item', {
-        scrollTrigger: {
-          trigger: '.blog-grid',
-          start: 'top 80%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.7,
-        stagger: 0.1,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-    });
-  }
-});
-
-onBeforeUnmount(() => {
-  if (ctx) ctx.revert();
-});
-
 const featuredPosts = [
   {
     slug: 'posicionar-empresa-google-pasto-seo',

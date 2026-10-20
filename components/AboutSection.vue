@@ -167,67 +167,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref } from 'vue';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import RocketScroll from '~/components/ui/RocketScroll.vue';
 
 const aboutSection = ref(null);
 const visionCard = ref(null);
 const misionCard = ref(null);
-let ctx = null;
-
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ctx = gsap.context(() => {
-      gsap.from('.gsap-fade-left', {
-        scrollTrigger: {
-          trigger: aboutSection.value,
-          start: 'top 85%',
-          once: true
-        },
-        opacity: 0,
-        x: -30,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
-      gsap.from('.gsap-fade-right', {
-        scrollTrigger: {
-          trigger: aboutSection.value,
-          start: 'top 80%',
-          once: true
-        },
-        opacity: 0,
-        x: 30,
-        duration: 0.8,
-        delay: 0.1,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
-      gsap.from('.gsap-quote', {
-        scrollTrigger: {
-          trigger: '.gsap-quote',
-          start: 'top 90%',
-          once: true
-        },
-        opacity: 0,
-        y: 25,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-    });
-  }
-});
-
-onBeforeUnmount(() => {
-  if (ctx) ctx.revert();
-});
 
 const handleCardTilt = (e, cardRef) => {
   if (!cardRef) return;

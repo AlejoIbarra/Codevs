@@ -79,52 +79,6 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-const servicesSection = ref(null);
-let ctx = null;
-
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ctx = gsap.context(() => {
-      gsap.from('.services-header', {
-        scrollTrigger: {
-          trigger: servicesSection.value,
-          start: 'top 85%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
-      gsap.from('.service-item', {
-        scrollTrigger: {
-          trigger: '.services-grid',
-          start: 'top 80%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.7,
-        stagger: 0.08,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-    });
-  }
-});
-
-onBeforeUnmount(() => {
-  if (ctx) ctx.revert();
-});
-
 const services = [
   {
     title: 'Desarrollo de Software a la Medida',

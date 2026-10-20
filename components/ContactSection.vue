@@ -153,17 +153,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
 import emailjs from 'emailjs-com'
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const contactSection = ref(null);
 const form = ref(null)
 const loading = ref(false)
 const success = ref(false)
 const error = ref('')
-let ctx = null;
 
 const projectTypes = [
   'Página Web Corporativa',
@@ -184,44 +181,6 @@ const selectProjectType = (type) => {
 const SERVICE_ID = 'service_hr46a0m'
 const TEMPLATE_ID = 'template_ukb8rwn'
 const USER_ID = 'acYcG-H_ve6kHe1tn'
-
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ctx = gsap.context(() => {
-      gsap.from('.contact-header', {
-        scrollTrigger: {
-          trigger: contactSection.value,
-          start: 'top 85%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
-      gsap.from('.contact-content', {
-        scrollTrigger: {
-          trigger: contactSection.value,
-          start: 'top 80%',
-          once: true
-        },
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-    });
-  }
-});
-
-onBeforeUnmount(() => {
-  if (ctx) ctx.revert();
-});
 
 const sendEmail = async () => {
   loading.value = true
