@@ -233,7 +233,7 @@ const servicesData = {
     title: 'Automatizaciones & Sistema de Omnicanalidad',
     description: 'Expertos en automatización de procesos operativos y plataformas de omnicanalidad unificadas. Centralizamos WhatsApp Business API, Instagram Direct, web chats, email y CRM en una sola interfaz inteligente con agentes y flujos automatizados para maximizar ventas y brindar atención al cliente 24/7 sin fricción.',
     icon: 'bi bi-diagram-3',
-    image: '/assets/img/services/apiDevelopment.png',
+    image: '/assets/img/services/omnichannel-dashboard.jpg',
     features: [
       { icon: 'bi bi-chat-dots', title: 'Bandeja Omnicanal Unificada', text: 'Centraliza WhatsApp Business API, Instagram Direct, Facebook Messenger y chat web en un solo panel para tu equipo comercial y de soporte.' },
       { icon: 'bi bi-cpu', title: 'Flujos Inteligentes & Bots con IA', text: 'Automatización de respuestas inmediatas, calificación de clientes potenciales (leads), enrutamiento inteligente y agenda de citas 24/7.' },
