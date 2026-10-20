@@ -104,41 +104,50 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, onBeforeUnmount, ref } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const portfolioSection = ref(null);
+let ctx = null;
 
 onMounted(() => {
   if (import.meta.client) {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('.portfolio-header', {
-      scrollTrigger: {
-        trigger: portfolioSection.value,
-        start: 'top 80%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      y: 35,
-      duration: 0.9,
-      ease: 'power3.out'
-    });
+    ctx = gsap.context(() => {
+      gsap.from('.portfolio-header', {
+        scrollTrigger: {
+          trigger: portfolioSection.value,
+          start: 'top 85%',
+          once: true
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: 'power3.out',
+        clearProps: 'all'
+      });
 
-    gsap.from('.portfolio-item', {
-      scrollTrigger: {
-        trigger: '.portfolio-grid',
-        start: 'top 75%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      y: 35,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: 'power3.out'
+      gsap.from('.portfolio-item', {
+        scrollTrigger: {
+          trigger: '.portfolio-grid',
+          start: 'top 80%',
+          once: true
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: 'power3.out',
+        clearProps: 'all'
+      });
     });
   }
+});
+
+onBeforeUnmount(() => {
+  if (ctx) ctx.revert();
 });
 
 const items = [

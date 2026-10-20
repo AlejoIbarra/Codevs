@@ -1,7 +1,11 @@
 import Lenis from 'lenis'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export default defineNuxtPlugin((nuxtApp) => {
   if (import.meta.client) {
+    gsap.registerPlugin(ScrollTrigger)
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -9,12 +13,14 @@ export default defineNuxtPlugin((nuxtApp) => {
       touchMultiplier: 1.5,
     })
 
-    function raf(time: number) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+    // Sincronizar Lenis con GSAP ScrollTrigger
+    lenis.on('scroll', ScrollTrigger.update)
 
-    requestAnimationFrame(raf)
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000)
+    })
+
+    gsap.ticker.lagSmoothing(0)
 
     // Handle anchor links for smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

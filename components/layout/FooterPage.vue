@@ -7,12 +7,11 @@
 
       <!-- Sobre CODEVS -->
       <div class="space-y-4">
-        <a href="#hero" class="inline-flex items-center gap-2 group">
-          <img src="/img/favicon.png" alt="CODEVS Logo" class="h-9 w-auto" />
-          <span class="text-2xl font-display font-black tracking-wider text-white group-hover:text-red-500 transition-colors">CODEVS</span>
+        <a href="#hero" class="flex items-center text-3xl font-extrabold text-white">
+          <span class="text-red-600">CODEVS</span>
         </a>
-        <p class="text-xs font-mono text-zinc-400 leading-relaxed">
-          Estudio de Ingeniería de Software & Diseño Web de Alto Rendimiento en Pasto, Nariño.
+        <p class="text-xs text-zinc-400 leading-relaxed">
+          Desarrollo de páginas web profesionales, aplicaciones y software a la medida en Pasto, Nariño.
         </p>
         <div class="space-y-1.5 text-xs font-mono text-zinc-400 pt-1">
           <p>Cl. 8b #15-125, San Juan de Pasto</p>
