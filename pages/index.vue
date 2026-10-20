@@ -6,7 +6,10 @@
     <!-- Sección Sobre Nosotros con Rocket Scroll Animation Preservada -->
     <AboutSection />
 
-    <!-- Sección Servicios con enfoque en SEO Local y LATAM -->
+    <!-- Sección Huge Inc: Never one and done -->
+    <NeverDoneSection />
+
+    <!-- Sección Huge Inc: Solutions con Stacking Cards 01 a 06 -->
     <ServicesSection />
 
     <!-- Sección Portafolio de Proyectos y Casos de Éxito -->
@@ -26,6 +29,7 @@
 <script setup>
 import HeroSectionComponent from '~/components/HeroSectionComponent.vue';
 import AboutSection from '~/components/AboutSection.vue';
+import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';
 import BlogSection from '~/components/BlogSection.vue';

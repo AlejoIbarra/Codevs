@@ -1,72 +1,79 @@
 <template>
   <section id="services" ref="servicesSection"
-    class="services-section relative bg-white text-zinc-900 overflow-hidden py-24 lg:py-32 border-t border-zinc-200">
+    class="services-section relative bg-white text-zinc-900 py-24 lg:py-36 border-t border-zinc-200">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-      <!-- Encabezado de la Sección con Estilo Editorial Huge Inc -->
-      <div class="max-w-3xl mb-16 services-header">
-        <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
-          Lo que hacemos <br />
-          <span class="text-red-600">
-            mejor que nadie.
-          </span>
+      <!-- Encabezado Monumental Estilo Huge Inc "Solutions." -->
+      <div class="max-w-3xl mb-16 lg:mb-24 services-header">
+        <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
+          Solutions.
         </h2>
-        <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
-          Diseñamos y desarrollamos a tu medida. Nada de plantillas genéricas ni soluciones desechables: arquitectura limpia, velocidad extrema y posicionamiento garantizado en Google.
+        <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
+          AI-native. Systems-driven. Expert-led. The capabilities that turn ideas into impact.
         </p>
       </div>
 
-      <!-- Cuadrícula de Servicios Limpia y Elegante con Fondo Blanco -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 services-grid">
-        <div v-for="(service, index) in services" :key="index"
-          class="service-item group relative bg-zinc-50/70 hover:bg-white rounded-[28px] p-8 border border-zinc-200/90 hover:border-zinc-950/80 transition-all duration-300 hover:shadow-xl flex flex-col justify-between overflow-hidden">
-          
-          <div>
-            <!-- Encabezado de la tarjeta: Número e Icono Minimalista -->
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-3xl font-black text-zinc-300 group-hover:text-red-600 transition-colors">
-                0{{ index + 1 }}
+      <!-- Stacking Cards List (Efecto de Tarjetas que se Apilan al Scroll de Huge Inc) -->
+      <div class="space-y-8 relative pb-12">
+        <article
+          v-for="(item, index) in solutions"
+          :key="index"
+          class="sticky-stack-card group rounded-[32px] sm:rounded-[44px] bg-white border border-zinc-200/90 shadow-[0_20px_50px_rgba(0,0,0,0.08)] p-8 sm:p-12 lg:p-16 flex flex-col justify-between transition-all duration-300"
+          :style="{
+            top: `calc(5.5rem + ${index * 1.5}rem)`,
+            zIndex: index + 1
+          }"
+        >
+          <!-- Fila Superior: Número Huge + Categoría Técnica -->
+          <div class="flex items-start justify-between gap-6 mb-8">
+            <span class="text-4xl sm:text-6xl lg:text-7xl font-black text-red-600 tracking-tighter">
+              {{ item.number }}
+            </span>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-zinc-500 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-200">
+                {{ item.tag }}
               </span>
-              <div class="w-12 h-12 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-zinc-900 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 transition-all duration-300 shadow-sm">
-                <i :class="service.icon" class="text-xl"></i>
-              </div>
-            </div>
-
-            <!-- Imagen representativa con marco nítido y zoom cinemático -->
-            <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-zinc-200/80 bg-zinc-100">
-              <img :src="service.image" :alt="service.title"
-                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" />
-            </div>
-
-            <!-- Título y Descripción -->
-            <div class="space-y-3">
-              <h3 class="text-xl font-black text-zinc-950 group-hover:text-red-600 transition-colors">
-                {{ service.title }}
-              </h3>
-              <p class="text-zinc-600 text-sm leading-relaxed text-justify">
-                {{ service.description }}
-              </p>
+              <NuxtLink
+                :to="item.link"
+                class="w-12 h-12 rounded-full bg-zinc-950 hover:bg-red-600 text-white flex items-center justify-center transition-all duration-300 shadow-md group-hover:scale-105"
+                aria-label="Explorar solución"
+              >
+                <i class="bi bi-arrow-up-right text-base group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </NuxtLink>
             </div>
           </div>
 
-          <!-- Pie de tarjeta con Badge y Enlace Directo -->
-          <div class="pt-6 mt-6 border-t border-zinc-200/80 flex items-center justify-between">
-            <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200/80">
-              {{ service.badge }}
-            </span>
-            <NuxtLink :to="service.link"
-              class="inline-flex items-center gap-1.5 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors group/btn">
-              <span>Conocer Más</span>
-              <i class="bi bi-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform"></i>
+          <!-- Fila Central: Título Monumental & Subtítulo Exacto de Huge Inc -->
+          <div class="space-y-4 my-6">
+            <h3 class="text-3xl sm:text-5xl lg:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05] group-hover:text-red-600 transition-colors">
+              <NuxtLink :to="item.link">
+                {{ item.title }}
+              </NuxtLink>
+            </h3>
+            <p class="text-zinc-600 text-lg sm:text-2xl font-medium leading-relaxed max-w-2xl">
+              {{ item.subtitle }}
+            </p>
+          </div>
+
+          <!-- Fila Inferior: Detalles de Ingeniería CODEVS -->
+          <div class="pt-6 border-t border-zinc-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <p class="text-xs sm:text-sm text-zinc-500 font-normal">
+              {{ item.description }}
+            </p>
+            <NuxtLink
+              :to="item.link"
+              class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors shrink-0"
+            >
+              <span>Conocer Solución</span>
+              <i class="bi bi-arrow-right text-xs"></i>
             </NuxtLink>
           </div>
-
-        </div>
+        </article>
       </div>
 
-      <!-- Métricas de Impacto & Credenciales (Estilo Monos Expertos) -->
-      <div class="mt-20 pt-12 border-t border-zinc-200 grid grid-cols-2 md:grid-cols-4 gap-8 text-center services-metrics-bar">
+      <!-- Métricas de Impacto & Credenciales -->
+      <div class="mt-24 pt-14 border-t border-zinc-200 grid grid-cols-2 md:grid-cols-4 gap-8 text-center services-metrics-bar">
         <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">+45</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Proyectos Entregados</div>
@@ -118,20 +125,6 @@ onMounted(() => {
         ease: 'power3.out'
       });
 
-      gsap.from('.service-item', {
-        scrollTrigger: {
-          trigger: servicesSection.value,
-          start: 'top 80%',
-          once: true
-        },
-        y: 40,
-        opacity: 0,
-        duration: 0.75,
-        stagger: 0.1,
-        ease: 'power3.out',
-        clearProps: 'all'
-      });
-
       gsap.from('.services-metric', {
         scrollTrigger: {
           trigger: '.services-metrics-bar',
@@ -153,54 +146,65 @@ onBeforeUnmount(() => {
   if (ctx) ctx.revert();
 });
 
-const services = [
+const solutions = [
   {
-    title: 'Desarrollo de Software a la Medida',
-    description: 'Ingeniería de software de alta calidad. Diseñamos plataformas web seguras, escalables y optimizadas para automatizar las operaciones complejas de tu negocio.',
-    icon: 'bi bi-code-slash',
-    image: '/assets/img/services/2.png',
-    link: '/servicios/desarrollo-software',
-    badge: 'Arquitectura Cloud'
+    number: '01',
+    title: 'Brand strategy & design.',
+    subtitle: 'Brands that move with culture.',
+    description: 'Diseño de identidad visual de alto impacto, prototipado interactivo en Figma y sistemas de diseño escalables.',
+    tag: 'Diseño UX/UI',
+    link: '/servicios/diseno-ux-ui'
   },
   {
-    title: 'Desarrollo de Páginas Web',
-    description: 'Creación de sitios web corporativos y de comercio electrónico (E-commerce). Páginas veloces, adaptadas a dispositivos móviles y estructuradas semánticamente para SEO.',
-    icon: 'bi bi-rocket-takeoff',
-    image: '/assets/img/services/webPage.png',
-    link: '/servicios/desarrollo-web',
-    badge: 'Web & E-Commerce'
+    number: '02',
+    title: 'Marketing & content.',
+    subtitle: 'Insight and creative that cut through.',
+    description: 'Estrategias de posicionamiento SEO local y orgánico en Google con arquitectura semántica para convertir visitas en clientes.',
+    tag: 'SEO Rank #1',
+    link: '/servicios/seo-avanzado'
   },
   {
-    title: 'Diseño de Interfaces UX/UI',
-    description: 'Diseño de experiencias centradas en el usuario. Creamos prototipos interactivos modernos que aumentan la retención y la conversión de leads.',
-    icon: 'bi bi-vector-pen',
-    image: '/assets/img/services/1.png',
-    link: '/servicios/diseno-ux-ui',
-    badge: 'Design Systems'
+    number: '03',
+    title: 'Products & platforms.',
+    subtitle: 'From idea to adoption, fast.',
+    description: 'Ingeniería de software a la medida con Spring Boot, PostgreSQL, Docker y Nuxt para operaciones complejas.',
+    tag: 'Software a Medida',
+    link: '/servicios/desarrollo-software'
   },
   {
-    title: 'Integraciones de APIs',
-    description: 'Conectamos sistemas existentes con pasarelas de pago, CRMs y plataformas logísticas mediante integraciones de APIs robustas y eficientes.',
-    icon: 'bi bi-puzzle',
-    image: '/assets/img/services/integracionSistemas.png',
-    link: '/servicios/integraciones-apis',
-    badge: 'Sistemas & Pagos'
+    number: '04',
+    title: 'Composable commerce.',
+    subtitle: 'Commerce built around your business.',
+    description: 'Desarrollo de páginas web corporativas y tiendas online veloces, adaptables y con pasarelas de pago seguras.',
+    tag: 'Desarrollo Web',
+    link: '/servicios/desarrollo-web'
   },
   {
-    title: 'Desarrollo de Apps Móviles',
-    description: 'Desarrollo para plataformas Android e iOS usando arquitecturas modernas nativas (Swift) o híbridas (Flutter) de gran fluidez.',
-    icon: 'bi bi-phone',
-    image: '/assets/img/services/appMobile.png',
-    link: '/servicios/apps-moviles',
-    badge: 'iOS & Android'
+    number: '05',
+    title: 'Customer experience.',
+    subtitle: 'Experiences that meet every moment.',
+    description: 'Aplicaciones móviles para iOS y Android con Flutter y Swift que ofrecen interacciones fluidas a 60 FPS.',
+    tag: 'Apps Móviles',
+    link: '/servicios/apps-moviles'
   },
   {
-    title: 'Optimización SEO Avanzada',
-    description: 'Estrategias de posicionamiento SEO local para empresas que buscan ser encontradas primero en tu ciudad o a nivel nacional e internacional.',
-    icon: 'bi bi-search',
-    image: '/img/image.png',
-    link: '/servicios/seo-avanzado',
-    badge: 'Google Rank #1'
+    number: '06',
+    title: 'AI activation.',
+    subtitle: 'Transforming how teams work, today.',
+    description: 'Integración de APIs inteligentes, automatización de flujos de trabajo y conexión con sistemas empresariales.',
+    tag: 'Integraciones & IA',
+    link: '/servicios/integraciones-apis'
   }
 ];
 </script>
+
+<style scoped>
+.sticky-stack-card {
+  position: sticky;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky-stack-card:hover {
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+</style>
