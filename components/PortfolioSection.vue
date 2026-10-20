@@ -1,21 +1,21 @@
 <template>
-  <section id="portfolio" ref="portfolioSection" class="portfolio-section relative bg-[#08080b] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
+  <section id="portfolio" ref="portfolioSection" class="portfolio-section relative bg-[#07070a] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
     
-    <!-- Ambient lights -->
-    <div class="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-950/20 rounded-full blur-[140px] pointer-events-none"></div>
+    <!-- Esferas Mesh Gradient Rojas Suaves -->
+    <div class="absolute top-1/4 left-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
       
       <!-- Section Header -->
       <div class="max-w-3xl mb-20 portfolio-header">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 text-xs font-semibold tracking-wider uppercase mb-4">
-          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-4 backdrop-blur-md">
+          <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
           Casos de Éxito & Portafolio
         </div>
-        <h2 class="text-4xl sm:text-6xl font-display font-black text-white tracking-tight uppercase leading-[1.05]">
+        <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Proyectos <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
             Destacados.
           </span>
         </h2>
@@ -29,7 +29,7 @@
         <div
           v-for="(item, i) in items"
           :key="i"
-          class="portfolio-item group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-[28px] overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/25 flex flex-col justify-between backdrop-blur-xl"
+          class="portfolio-item group relative mesh-glass-card rounded-[32px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-red-500/50 flex flex-col justify-between"
         >
           <!-- Hover glow overlay -->
           <div class="absolute inset-0 bg-gradient-to-t from-red-600/15 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>

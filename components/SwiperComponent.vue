@@ -1,19 +1,24 @@
 <template>
-  <section id="clients" class="clients py-12 bg-black flex items-center justify-center border-b border-zinc-900">
-    <div class="container mx-auto px-4">
-      <h2 class="text-center text-2xl font-bold mb-8 text-white">Tecnologías en las que somos Expertos</h2>
-      
-      <Swiper :modules="[Autoplay, Pagination]" :loop="true" :speed="600" :autoplay="{ delay: 3500 }"
-        :slides-per-view="'auto'" :pagination="{ el: '.swiper-pagination', clickable: true, type: 'bullets' }"
-        :breakpoints="breakpoints" class="init-swiper max-w-7xl mx-auto">
-        <SwiperSlide v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center px-4">
-          <div class="h-20 w-32 flex items-center justify-center p-2 grayscale hover:grayscale-0 transition duration-300">
-            <img :src="logo.src" :alt="logo.alt" class="max-h-12 max-w-full object-contain" />
-          </div>
-        </SwiperSlide>
+  <section id="clients" class="clients py-14 bg-[#07070a] relative overflow-hidden flex items-center justify-center border-b border-zinc-900">
+    <!-- Luz Mesh Gradient Suave -->
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
 
-        <div class="swiper-pagination mt-6"></div>
-      </Swiper>
+    <div class="container mx-auto px-4 max-w-7xl relative z-10">
+      <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-6 sm:p-10">
+        <h2 class="text-center text-xl sm:text-2xl font-bold mb-8 text-white">Tecnologías en las que somos Expertos</h2>
+        
+        <Swiper :modules="[Autoplay, Pagination]" :loop="true" :speed="600" :autoplay="{ delay: 3500 }"
+          :slides-per-view="'auto'" :pagination="{ el: '.swiper-pagination', clickable: true, type: 'bullets' }"
+          :breakpoints="breakpoints" class="init-swiper max-w-6xl mx-auto">
+          <SwiperSlide v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center px-4">
+            <div class="h-20 w-32 flex items-center justify-center p-2 grayscale hover:grayscale-0 transition duration-300">
+              <img :src="logo.src" :alt="logo.alt" class="max-h-12 max-w-full object-contain" />
+            </div>
+          </SwiperSlide>
+
+          <div class="swiper-pagination mt-6"></div>
+        </Swiper>
+      </div>
     </div>
   </section>
 </template>

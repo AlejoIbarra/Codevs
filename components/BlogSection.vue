@@ -1,21 +1,21 @@
 <template>
-  <section id="blog" ref="blogSection" class="blog-section relative bg-[#08080b] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
-    <!-- Ambient light -->
-    <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-rose-950/20 rounded-full blur-[140px] pointer-events-none"></div>
+  <section id="blog" ref="blogSection" class="blog-section relative bg-[#07070a] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
+    <!-- Esferas Mesh Gradient Rojas Suaves -->
+    <div class="absolute top-1/4 right-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute bottom-10 left-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6 blog-header">
         <div class="max-w-2xl">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 text-xs font-semibold tracking-wider uppercase mb-4">
-            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-4 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
             Conocimiento & Tendencias
           </div>
-          <h2 class="text-4xl sm:text-6xl font-display font-black text-white tracking-tight uppercase leading-[1.05]">
+          <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
             Blog de <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
               Tecnología & SEO.
             </span>
           </h2>
@@ -27,10 +27,10 @@
         <div>
           <NuxtLink
             to="/blog"
-            class="inline-flex items-center gap-3 px-6 py-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-red-500/50 rounded-2xl text-white font-semibold text-sm transition-all duration-300 shadow-lg group"
+            class="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm transition-all duration-300 backdrop-blur-md shadow-lg group hover:scale-105"
           >
             <span>Ver Todos los Artículos</span>
-            <i class="bi bi-arrow-right text-red-500 group-hover:translate-x-1 transition-transform"></i>
+            <i class="bi bi-arrow-right text-red-400 group-hover:translate-x-1 transition-transform"></i>
           </NuxtLink>
         </div>
       </div>
@@ -40,7 +40,7 @@
         <article
           v-for="(post, index) in featuredPosts"
           :key="index"
-          class="blog-item group bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-[28px] overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/25 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between backdrop-blur-xl"
+          class="blog-item group mesh-glass-card rounded-[32px] overflow-hidden hover:border-red-500/50 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between"
         >
           <div>
             <!-- Image Frame -->

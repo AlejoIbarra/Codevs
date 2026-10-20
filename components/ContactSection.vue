@@ -1,19 +1,20 @@
 <template>
-  <section id="contact" ref="contactSection" class="contact-section bg-[#08080b] text-gray-200 py-28 border-t border-zinc-900 relative overflow-hidden">
-    <!-- Ambient glow -->
-    <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
+  <section id="contact" ref="contactSection" class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden">
+    <!-- Esferas Mesh Gradient Rojas Suaves -->
+    <div class="absolute top-10 left-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[170px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
       
       <!-- Encabezado de la Sección -->
       <div class="max-w-3xl mb-20 contact-header">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 text-xs font-semibold tracking-wider uppercase mb-4">
-          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-4 backdrop-blur-md">
+          <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
           Conversemos // Inicia tu Proyecto
         </div>
-        <h2 class="text-4xl sm:text-6xl font-display font-black text-white tracking-tight uppercase leading-[1.05]">
+        <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Hablemos de tu <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
             Próximo Proyecto.
           </span>
         </h2>
