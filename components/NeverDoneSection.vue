@@ -8,11 +8,11 @@
     <div class="absolute top-1/3 left-[-10%] w-[650px] h-[650px] bg-red-600/12 rounded-full blur-[170px] pointer-events-none"></div>
     <div class="absolute bottom-10 right-[-10%] w-[600px] h-[600px] bg-red-700/10 rounded-full blur-[160px] pointer-events-none"></div>
 
-    <!-- Encabezado Fijo Superior Estilo Huge Inc -->
+    <!-- Encabezado Fijo Superior en Español -->
     <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20">
       <div class="max-w-3xl">
         <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.08]">
-          We co-create the future with our clients, measure the impact and do it again.
+          Co-creamos el futuro con nuestros clientes, medimos el impacto y volvemos a innovar.
         </h2>
       </div>
     </div>
@@ -49,7 +49,7 @@
             </div>
           </div>
 
-          <!-- Texto Narrativo Monumental en Blanco Puro -->
+          <!-- Texto Narrativo Monumental en Español -->
           <div class="relative z-10 space-y-2">
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">
               {{ card.title }}
@@ -85,39 +85,39 @@ let ctx = null;
 
 const cards = [
   {
-    brand: 'Google Cloud & AI',
-    title: '14 years. Multiple businesses. Constant reinvention.',
-    subtitle: 'Alianzas estratégicas continuas que transforman negocios tradicionales en líderes tecnológicos.',
+    brand: 'Ingeniería & Cloud',
+    title: 'Evolución continua. Múltiples industrias. Reinvención constante.',
+    subtitle: 'Alianzas estratégicas que transforman empresas tradicionales en referentes tecnológicos.',
     image: '/img/working-2.jpg'
   },
   {
     brand: 'Alacranes AFC',
-    title: 'Disrupting tradition with a new digital brand expression.',
+    title: 'Desafiando lo convencional con una nueva identidad digital.',
     subtitle: 'Plataforma oficial con catálogo interactivo de merchandising e integración de sponsors.',
     image: '/assets/img/projects/alacranes.jpg'
   },
   {
-    brand: 'Enterprise Cloud',
-    title: 'Enabling a suite of intelligent digital products.',
+    brand: 'Sistemas Empresariales',
+    title: 'Desarrollando un ecosistema de productos digitales inteligentes.',
     subtitle: 'Arquitectura escalable en Spring Boot y Nuxt para operaciones de alta concurrencia.',
     image: '/img/working-4.jpg'
   },
   {
     brand: 'Moments Gallery',
-    title: 'Composable commerce for a luxury BBQ brand.',
-    subtitle: 'Plataforma de venta y marketplace fotográfico con pasarelas transaccionales seguras.',
+    title: 'Comercio electrónico avanzado con pasarelas de pago seguras.',
+    subtitle: 'Plataforma transaccional y marketplace fotográfico automatizado sin fricción.',
     image: '/assets/img/projects/moments.jpg'
   },
   {
     brand: 'IPTV Max UI',
-    title: 'Building a brand that can carry the weight of clinical science.',
-    subtitle: 'Diseño UX/UI de alto impacto concebido para navegación táctil y pantallas interactivas.',
+    title: 'Diseñando interfaces modernas con precisión milimétrica.',
+    subtitle: 'Diseño UX/UI de alto impacto concebido para navegación intuitiva en pantallas interactivas.',
     image: '/img/UI/pantalla-principal.png'
   },
   {
     brand: 'IPTV Max Player',
-    title: 'Engaging gamer audiences for blockbuster releases.',
-    subtitle: 'Streaming multimedia continuo de baja latencia con arquitectura nativa y 60 FPS.',
+    title: 'Experiencias multimedia de alta fidelidad para audiencias exigentes.',
+    subtitle: 'Motor de reproducción continua con arquitectura nativa, baja latencia y 60 FPS.',
     image: '/img/iptv/iptv-max.png'
   }
 ];
