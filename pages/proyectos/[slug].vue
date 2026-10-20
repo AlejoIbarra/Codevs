@@ -26,10 +26,6 @@
               <span class="bg-red-600/90 text-white text-[10px] font-bold tracking-widest px-3 py-1.5 rounded-full uppercase">
                 {{ project.category }}
               </span>
-              <span class="flex items-center gap-1.5 text-[11px] text-zinc-400 font-semibold">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                Proyecto Activo
-              </span>
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">

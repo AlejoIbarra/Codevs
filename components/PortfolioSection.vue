@@ -36,12 +36,6 @@
               <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                 {{ item.category }}
               </span>
-
-              <!-- Status Badge -->
-              <div class="absolute bottom-3 left-4 flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-zinc-200 backdrop-blur-md shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span class="text-[11px] text-zinc-700 font-semibold">Proyecto Activo</span>
-              </div>
             </div>
 
             <!-- Content Area -->
