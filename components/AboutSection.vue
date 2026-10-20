@@ -13,12 +13,6 @@
         <!-- Columna Izquierda: Historia, Manifiesto y Comparativa de Calidad -->
         <div class="lg:col-span-6 space-y-8 gsap-fade-left">
           
-          <!-- Insignia de Estudio -->
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
-            Quiénes Somos & Filosofía
-          </div>
-
           <!-- Título Principal -->
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
             Nos Apasiona <br />

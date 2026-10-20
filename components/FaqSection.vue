@@ -8,10 +8,6 @@
       
       <!-- Encabezado de la Sección FAQ -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-4 backdrop-blur-md">
-          <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
-          Centro de Ayuda & Respuestas
-        </div>
         <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.1]">
           Preguntas Frecuentes sobre <br />
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">

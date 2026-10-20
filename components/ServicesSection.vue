@@ -9,11 +9,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
       <!-- Encabezado de la Sección con Voz de Estudio Creativo -->
-      <div class="max-w-3xl mb-20 services-header">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider uppercase mb-4 backdrop-blur-md">
-          <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_#E7000B]"></span>
-          Servicios & Soluciones Digitales
-        </div>
+      <div class="max-w-3xl mb-16 services-header">
         <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Lo que hacemos <br />
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
