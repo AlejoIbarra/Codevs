@@ -12,12 +12,23 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     'bootstrap-icons/font/bootstrap-icons.css'
   ],
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Content-Type-Options': 'nosniff',
+        'X-Frame-Options': 'SAMEORIGIN',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+        'Permissions-Policy': 'camera=(), microphone=(), geolocation=()'
+      }
+    }
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: [
         '/',
         '/blog',
+        '/politica-privacidad',
         '/servicios/desarrollo-web',
         '/servicios/desarrollo-software',
         '/servicios/seo-avanzado',
@@ -82,6 +93,22 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap' }
+      ],
+      script: [
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'analytics_storage': 'denied',
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'wait_for_update': 500
+            });
+          `,
+          type: 'text/javascript'
+        }
       ]
     }
   }

@@ -8,6 +8,7 @@
       <slot />
     </main>
     <FooterPage />
+    <CookieConsent />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 import gsap from 'gsap';
 import HeaderNavbar from '~/components/layout/HeaderNavbar.vue';
 import FooterPage from '~/components/layout/FooterPage.vue';
+import CookieConsent from '~/components/CookieConsent.vue';
 
 const appWrapper = ref(null);
 const globalGlow = ref(null);

@@ -81,9 +81,23 @@
 
     </div>
 
-    <!-- Copyright -->
-    <div class="mt-16 pt-8 border-t border-zinc-900 text-center text-xs text-gray-500">
+    <!-- Copyright & Enlaces Legales para Google Trust & E-E-A-T -->
+    <div class="mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
       <p>© <span>{{ currentYear }}</span> <a href="https://www.codevs.dev/" class="text-gray-400 hover:text-white font-semibold">CODEVS</a>. San Juan de Pasto, Nariño, Colombia. Todos los derechos reservados.</p>
+      
+      <div class="flex flex-wrap items-center gap-4 text-gray-400">
+        <NuxtLink to="/politica-privacidad" class="hover:text-red-500 transition-colors">
+          Privacidad & Datos
+        </NuxtLink>
+        <span>•</span>
+        <button type="button" @click="openCookieSettings" class="hover:text-red-500 transition-colors cursor-pointer">
+          Preferencias de Cookies
+        </button>
+        <span>•</span>
+        <a href="/sitemap.xml" target="_blank" class="hover:text-red-500 transition-colors">
+          Sitemap
+        </a>
+      </div>
     </div>
   </footer>
 
@@ -111,4 +125,10 @@ const whatsappMessage = encodeURIComponent(
   'Hola CODEVS, me comunico desde su sitio web codevs.dev. Estoy interesado en cotizar un servicio para mi negocio (Desarrollo Web / Software a la Medida / SEO). ¿Me podrían brindar más información?'
 );
 const whatsappUrl = `https://wa.me/573138066800?text=${whatsappMessage}`;
+
+const openCookieSettings = () => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('open-cookie-settings'));
+  }
+};
 </script>
