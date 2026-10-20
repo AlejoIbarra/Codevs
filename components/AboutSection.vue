@@ -1,90 +1,98 @@
 <template>
-  <section id="about" ref="aboutSection" class="about-section relative bg-black text-white overflow-hidden py-28 lg:py-36 border-b border-zinc-900">
+  <section id="about" ref="aboutSection" class="about-section relative bg-[#08080a] text-white overflow-hidden py-24 lg:py-32 border-b border-white/5">
     
-    <!-- Malla de gradientes de fondo neón y destellos ambientales -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-red-600/15 via-rose-600/10 to-transparent rounded-full blur-[150px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-10 w-[500px] h-[500px] bg-red-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <!-- Gradientes ambientales de iluminación roja CODEVS -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-[450px] h-[450px] bg-rose-950/20 rounded-full blur-[120px] pointer-events-none"></div>
     
-    <!-- Patrón geométrico sutil cyberpunk -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2315_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2315_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
+    <!-- Grilla técnica de estudio -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff04_1px,transparent_1px),linear-gradient(to_bottom,#ffffff04_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
       
       <!-- Presentación Principal y Contenido Corporativo -->
-      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         <!-- Columna Izquierda: Historia y Valores de CODEVS -->
-        <div class="lg:w-6/12 space-y-8 gsap-fade-left">
+        <div class="lg:col-span-6 space-y-8 gsap-fade-left">
           
-          <!-- Insignia Neón -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 shadow-lg shadow-red-950/20 backdrop-blur-xl">
-            <span class="relative flex h-2.5 w-2.5">
+          <!-- Insignia Editorial de Estudio -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 shadow-lg shadow-red-950/20 backdrop-blur-xl">
+            <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Quiénes Somos</span>
+            <span class="text-red-400 font-mono font-bold uppercase tracking-widest text-xs">Manifiesto & Valores // CODEVS</span>
           </div>
 
-          <!-- Título Principal con Gradiente Text -->
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.08]">
+          <!-- Título Principal con Tipografía Editorial Fuerte -->
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.05] uppercase">
             Nos Apasiona <br />
-            <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
+            <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
               La Tecnología
             </span>
           </h2>
 
-          <div class="w-24 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 rounded-full"></div>
+          <div class="w-20 h-1 bg-gradient-to-r from-red-600 to-rose-500 rounded-full"></div>
 
-          <!-- Párrafos descriptivos principales en alta visibilidad sobre fondo negro -->
-          <div class="space-y-6 text-zinc-200 font-normal leading-relaxed text-justify text-base sm:text-lg">
-            <p class="border-l-4 border-red-600 pl-4 py-1 bg-zinc-900/40 rounded-r-xl">
+          <!-- Párrafos descriptivos principales con tono de estudio artesanal -->
+          <div class="space-y-5 text-zinc-300 font-normal leading-relaxed text-justify text-base sm:text-lg">
+            <p class="border-l-2 border-red-600 pl-4 py-1.5 bg-zinc-900/40 rounded-r-xl">
               En <strong class="text-white font-bold">CODEVS</strong> desarrollamos soluciones tecnológicas de alto nivel para empresas decididas a destacar. Creamos productos digitales eficientes, modernos e interactivos a la medida de tus necesidades.
             </p>
-            <p class="text-zinc-300 text-base leading-relaxed">
-              Nuestro equipo de programadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en San Juan de Pasto y el departamento de Nariño.
+            <p class="text-zinc-400 text-base leading-relaxed">
+              Nuestro equipo de programadores y diseñadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en San Juan de Pasto y el departamento de Nariño.
             </p>
           </div>
 
-          <!-- Tarjetas de Métricas Directas -->
-          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-zinc-800/80">
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-white group-hover:text-red-500 transition-colors">100%</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">Código Limpio</div>
+          <!-- Tarjetas de Métricas Directas con Estética Editorial -->
+          <div class="grid grid-cols-3 gap-3.5 pt-4 border-t border-zinc-800/80">
+            <div class="p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
+              <div class="text-2xl sm:text-3xl font-display font-black text-white group-hover:text-red-500 transition-colors">100%</div>
+              <div class="text-[10px] text-zinc-400 font-mono font-semibold uppercase tracking-wider mt-1">Código Limpio</div>
             </div>
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-red-500">SEO</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">Posicionamiento</div>
+            <div class="p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
+              <div class="text-2xl sm:text-3xl font-display font-black text-red-500">SEO #1</div>
+              <div class="text-[10px] text-zinc-400 font-mono font-semibold uppercase tracking-wider mt-1">Google Posición</div>
             </div>
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-white group-hover:text-red-500 transition-colors">UX/UI</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">De Vanguardia</div>
+            <div class="p-4 rounded-2xl bg-zinc-900/60 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
+              <div class="text-2xl sm:text-3xl font-display font-black text-white group-hover:text-red-500 transition-colors">UX/UI</div>
+              <div class="text-[10px] text-zinc-400 font-mono font-semibold uppercase tracking-wider mt-1">Vanguardia</div>
             </div>
           </div>
 
         </div>
 
-        <!-- Columna Derecha: Tarjetas Glassmorphic de Visión y Misión con Tilt 3D -->
-        <div class="lg:w-6/12 grid grid-cols-1 gap-8 w-full gsap-fade-right">
+        <!-- Columna Derecha: Tarjetas Bento de Visión & Misión enriquecidas con Fotos Reales del Estudio -->
+        <div class="lg:col-span-6 space-y-6 w-full gsap-fade-right">
           
-          <!-- Tarjeta Visión -->
+          <!-- Tarjeta Visión con Foto Real de Taller / Colaboración -->
           <div 
             ref="visionCard" 
             @mousemove="handleCardTilt($event, visionCard)" 
             @mouseleave="resetCardTilt(visionCard)"
-            class="group relative bg-zinc-900/80 border border-zinc-800 hover:border-red-500/50 p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
+            class="group relative bg-zinc-900/70 border border-zinc-800 hover:border-red-500/50 p-6 sm:p-7 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
           >
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 text-xs font-mono text-zinc-600 group-hover:text-red-500 transition-colors font-bold">01 / VISIÓN</div>
+            <div class="absolute top-4 right-4 text-[10px] font-mono text-zinc-500 group-hover:text-red-400 transition-colors font-bold tracking-widest">[ 01 // VISIÓN ]</div>
             
-            <div class="flex items-start gap-6 relative z-10">
-              <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-red-600/20 to-red-950/60 flex items-center justify-center border border-red-500/30 group-hover:scale-110 transition-transform duration-300 shadow-xl shadow-red-950/50">
-                <i class="bi bi-eye text-3xl text-red-500"></i>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 relative z-10">
+              <!-- Mini Foto Editorial Integrada -->
+              <div class="w-full sm:w-28 h-28 shrink-0 rounded-2xl overflow-hidden border border-zinc-700/60 relative group/img">
+                <img 
+                  src="/img/working-2.jpg" 
+                  alt="Equipo diseñando experiencias digitales" 
+                  class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-1.5 left-2 text-[9px] font-mono text-zinc-300 uppercase">Taller UI</span>
               </div>
-              <div class="space-y-3">
-                <h3 class="text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
-                  Visión
-                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Futuro</span>
-                </h3>
+
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-xl font-display font-extrabold text-white tracking-wide">Visión de Futuro</h3>
+                  <span class="text-[9px] font-mono font-bold uppercase px-2 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Escalar</span>
+                </div>
                 <p class="text-zinc-300 text-sm leading-relaxed text-justify">
                   Posicionarnos como el referente tecnológico principal en el sur de Colombia, entregando plataformas web modernas y aplicaciones móviles de clase mundial listas para triunfar en internet.
                 </p>
@@ -92,25 +100,33 @@
             </div>
           </div>
 
-          <!-- Tarjeta Misión -->
+          <!-- Tarjeta Misión con Foto Real de Desarrollo -->
           <div 
             ref="misionCard" 
             @mousemove="handleCardTilt($event, misionCard)" 
             @mouseleave="resetCardTilt(misionCard)"
-            class="group relative bg-zinc-900/80 border border-zinc-800 hover:border-red-500/50 p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
+            class="group relative bg-zinc-900/70 border border-zinc-800 hover:border-red-500/50 p-6 sm:p-7 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
           >
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 text-xs font-mono text-zinc-600 group-hover:text-red-500 transition-colors font-bold">02 / MISIÓN</div>
+            <div class="absolute top-4 right-4 text-[10px] font-mono text-zinc-500 group-hover:text-red-400 transition-colors font-bold tracking-widest">[ 02 // MISIÓN ]</div>
             
-            <div class="flex items-start gap-6 relative z-10">
-              <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-red-600/20 to-red-950/60 flex items-center justify-center border border-red-500/30 group-hover:scale-110 transition-transform duration-300 shadow-xl shadow-red-950/50">
-                <i class="bi bi-rocket-takeoff text-3xl text-red-500"></i>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 relative z-10">
+              <!-- Mini Foto Editorial Integrada -->
+              <div class="w-full sm:w-28 h-28 shrink-0 rounded-2xl overflow-hidden border border-zinc-700/60 relative group/img">
+                <img 
+                  src="/img/working-4.jpg" 
+                  alt="Desarrollo de ingeniería de software a medida" 
+                  class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <span class="absolute bottom-1.5 left-2 text-[9px] font-mono text-zinc-300 uppercase">Dev Lab</span>
               </div>
-              <div class="space-y-3">
-                <h3 class="text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
-                  Misión
-                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Propósito</span>
-                </h3>
+
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <h3 class="text-xl font-display font-extrabold text-white tracking-wide">Misión & Propósito</h3>
+                  <span class="text-[9px] font-mono font-bold uppercase px-2 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Impacto</span>
+                </div>
                 <p class="text-zinc-300 text-sm leading-relaxed text-justify">
                   Empoderar a las empresas de Pasto y Nariño mediante software robusto, páginas web veloces y asesorías en SEO que multipliquen su visibilidad y facturación online.
                 </p>
@@ -122,22 +138,22 @@
 
       </div>
 
-      <!-- Banner de Cita Inspiradora con Estilo Neón Futurista -->
+      <!-- Banner de Cita Inspiradora con Estilo Estudio Creativo -->
       <div class="mt-16 sm:mt-20 gsap-quote">
-        <div class="relative bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
+        <div class="relative bg-gradient-to-r from-zinc-900/90 via-[#0d0d12] to-zinc-900/90 border border-zinc-800 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
           
-          <div class="absolute -top-8 left-8 text-8xl font-serif text-red-600/10 pointer-events-none select-none">“</div>
-          <div class="absolute -bottom-14 right-8 text-8xl font-serif text-red-600/10 pointer-events-none select-none">”</div>
+          <div class="absolute -top-6 left-8 text-7xl font-serif text-red-600/10 pointer-events-none select-none">“</div>
+          <div class="absolute -bottom-12 right-8 text-7xl font-serif text-red-600/10 pointer-events-none select-none">”</div>
           <div class="absolute inset-0 bg-gradient-to-r from-red-600/10 via-transparent to-red-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-          <p class="relative z-10 text-lg sm:text-xl md:text-2xl italic text-white font-light max-w-4xl mx-auto leading-relaxed">
-            "El éxito digital no es un accidente, es el resultado de combinar <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">código limpio</span>, <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">diseño centrado en el usuario</span> y una <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">estrategia SEO ganadora</span>."
+          <p class="relative z-10 text-lg sm:text-xl md:text-2xl text-white font-light max-w-4xl mx-auto leading-relaxed">
+            "El éxito digital no es un accidente, es el resultado de combinar <strong class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">código limpio</strong>, <strong class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">diseño centrado en el usuario</strong> y una <strong class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">estrategia SEO ganadora</strong>."
           </p>
 
           <div class="mt-6 flex items-center justify-center gap-3">
-            <span class="w-10 h-[2px] bg-red-600"></span>
-            <span class="text-xs font-extrabold tracking-widest text-red-500 uppercase">Filosofía CODEVS</span>
-            <span class="w-10 h-[2px] bg-red-600"></span>
+            <span class="w-8 h-[2px] bg-red-600"></span>
+            <span class="text-xs font-mono font-bold tracking-widest text-red-500 uppercase">Filosofía CODEVS // Pasto, Nariño</span>
+            <span class="w-8 h-[2px] bg-red-600"></span>
           </div>
         </div>
       </div>
@@ -171,12 +187,12 @@ onMounted(() => {
         toggleActions: 'play none none reverse'
       },
       opacity: 0,
-      x: -50,
-      duration: 1.2,
+      x: -40,
+      duration: 1,
       ease: 'power3.out'
     });
 
-    // Animación de entrada derecha (Tarjetas Misión y Visión)
+    // Animación de entrada derecha (Tarjetas Misión y Visión con fotos)
     gsap.from('.gsap-fade-right', {
       scrollTrigger: {
         trigger: aboutSection.value,
@@ -184,9 +200,9 @@ onMounted(() => {
         toggleActions: 'play none none reverse'
       },
       opacity: 0,
-      x: 50,
-      duration: 1.2,
-      delay: 0.2,
+      x: 40,
+      duration: 1,
+      delay: 0.15,
       ease: 'power3.out'
     });
 
@@ -198,10 +214,10 @@ onMounted(() => {
         toggleActions: 'play none none reverse'
       },
       opacity: 0,
-      y: 40,
-      scale: 0.96,
-      duration: 1,
-      ease: 'back.out(1.4)'
+      y: 30,
+      scale: 0.98,
+      duration: 0.9,
+      ease: 'power3.out'
     });
   }
 });
@@ -215,14 +231,14 @@ const handleCardTilt = (e, cardRef) => {
   const centerX = rect.width / 2;
   const centerY = rect.height / 2;
 
-  const rotateX = (y - centerY) / 18;
-  const rotateY = (centerX - x) / 18;
+  const rotateX = (y - centerY) / 20;
+  const rotateY = (centerX - x) / 20;
 
   gsap.to(cardRef, {
     rotateX: rotateX,
     rotateY: rotateY,
     transformPerspective: 1000,
-    duration: 0.4,
+    duration: 0.35,
     ease: 'power2.out'
   });
 };
@@ -232,7 +248,7 @@ const resetCardTilt = (cardRef) => {
   gsap.to(cardRef, {
     rotateX: 0,
     rotateY: 0,
-    duration: 0.6,
+    duration: 0.5,
     ease: 'power2.out'
   });
 };
@@ -240,8 +256,6 @@ const resetCardTilt = (cardRef) => {
 
 <style scoped>
 .about-section {
-  background-color: #000000 !important;
-  color: #ffffff !important;
   perspective: 1000px;
 }
 </style>
