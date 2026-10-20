@@ -228,6 +228,21 @@ const servicesData = {
       { icon: 'bi bi-trophy', title: 'Posicionamiento #1', text: 'Estrategias probadas para llevar tu sitio web a las primeras posiciones de Google.' }
     ],
     technologies: ['Google Search Console', 'Google Analytics', 'SEMrush', 'Ahrefs', 'Schema.org', 'Lighthouse', 'Screaming Frog']
+  },
+  'automatizaciones-omnicanalidad': {
+    title: 'Automatizaciones & Sistema de Omnicanalidad',
+    description: 'Expertos en automatización de procesos operativos y plataformas de omnicanalidad unificadas. Centralizamos WhatsApp Business API, Instagram Direct, web chats, email y CRM en una sola interfaz inteligente con agentes y flujos automatizados para maximizar ventas y brindar atención al cliente 24/7 sin fricción.',
+    icon: 'bi bi-diagram-3',
+    image: '/assets/img/services/apiDevelopment.png',
+    features: [
+      { icon: 'bi bi-chat-dots', title: 'Bandeja Omnicanal Unificada', text: 'Centraliza WhatsApp Business API, Instagram Direct, Facebook Messenger y chat web en un solo panel para tu equipo comercial y de soporte.' },
+      { icon: 'bi bi-cpu', title: 'Flujos Inteligentes & Bots con IA', text: 'Automatización de respuestas inmediatas, calificación de clientes potenciales (leads), enrutamiento inteligente y agenda de citas 24/7.' },
+      { icon: 'bi bi-database-check', title: 'Sincronización Directa con CRM', text: 'Conexión automática bidireccional con HubSpot, Salesforce, Zoho, Google Sheets o tu base de datos interna para evitar fuga de prospectos.' },
+      { icon: 'bi bi-broadcast', title: 'Campañas Masivas y Notificaciones', text: 'Disparadores automáticos de confirmación de compras, carritos abandonados, recordatorios de pago y campañas masivas 100% verificadas por Meta.' },
+      { icon: 'bi bi-speedometer2', title: 'Métricas, SLA y Reportes en Vivo', text: 'Controla tiempos de primera respuesta, satisfacción de clientes (CSAT), volumen de conversaciones y rendimiento por agente en tiempo real.' },
+      { icon: 'bi bi-arrow-repeat', title: 'Automatización de Tareas Repetitivas', text: 'Orquestación de flujos de trabajo avanzados con n8n, Python, webhooks y microservicios que reducen hasta un 80% la carga operativa manual.' }
+    ],
+    technologies: ['WhatsApp Cloud API', 'Meta Graph API', 'Webhooks', 'n8n', 'Python', 'Node.js', 'PostgreSQL', 'Redis', 'CRM Integrations']
   }
 };
 

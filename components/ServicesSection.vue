@@ -194,6 +194,14 @@ const solutions = [
     description: 'Estrategias de posicionamiento SEO local y orgánico para empresas que buscan liderar las búsquedas orgánicas en Colombia y a nivel internacional.',
     tag: 'Google Rank #1',
     link: '/servicios/seo-avanzado'
+  },
+  {
+    number: '07',
+    title: 'Automatizaciones & Omnicanalidad.',
+    subtitle: 'Sistemas inteligentes, CRM y centralización de canales.',
+    description: 'Expertos en automatización de flujos y plataformas omnicanal: centralizamos WhatsApp Business API, Instagram, web chats y CRM en una sola interfaz con bots inteligentes para escalar tus ventas y soporte 24/7 sin fricción.',
+    tag: 'Automatización & CRM',
+    link: '/servicios/automatizaciones-omnicanalidad'
   }
 ];
 </script>

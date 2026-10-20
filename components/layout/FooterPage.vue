@@ -59,6 +59,7 @@
           <li><NuxtLink to="/servicios/seo-avanzado" class="hover:text-red-500 transition">Posicionamiento SEO Local Google #1</NuxtLink></li>
           <li><NuxtLink to="/servicios/apps-moviles" class="hover:text-red-500 transition">Aplicaciones Móviles iOS & Android</NuxtLink></li>
           <li><NuxtLink to="/servicios/integraciones-apis" class="hover:text-red-500 transition">Integración de Pasarelas & APIs</NuxtLink></li>
+          <li><NuxtLink to="/servicios/automatizaciones-omnicanalidad" class="hover:text-red-500 transition font-medium text-zinc-300">Automatizaciones & Omnicanalidad</NuxtLink></li>
         </ul>
       </div>
 
