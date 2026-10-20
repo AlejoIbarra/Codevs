@@ -87,7 +87,7 @@
         <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">#1 SEO</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Ranking en Google</div>
-          <div class="text-xs text-zinc-500">En Pasto, Colombia y LATAM</div>
+          <div class="text-xs text-zinc-500">En Colombia y LATAM</div>
         </div>
         <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">60 FPS</div>
@@ -191,7 +191,7 @@ const solutions = [
     number: '06',
     title: 'Optimización SEO Avanzada.',
     subtitle: 'Posicionamiento #1 en Google y motores de búsqueda con IA.',
-    description: 'Estrategias de posicionamiento SEO local y orgánico para empresas que buscan liderar las búsquedas orgánicas en Pasto, Nariño, Colombia y a nivel internacional.',
+    description: 'Estrategias de posicionamiento SEO local y orgánico para empresas que buscan liderar las búsquedas orgánicas en Colombia y a nivel internacional.',
     tag: 'Google Rank #1',
     link: '/servicios/seo-avanzado'
   }

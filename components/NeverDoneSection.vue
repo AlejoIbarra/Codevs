@@ -125,7 +125,7 @@ const cards = [
   },
   {
     title: 'Rendimiento extremo a 60 FPS y #1 garantizado en Google.',
-    subtitle: 'Ingeniería de optimización para Core Web Vitals y posicionamiento SEO orgánico en Pasto y LATAM.',
+    subtitle: 'Ingeniería de optimización para Core Web Vitals y posicionamiento SEO orgánico en Colombia y LATAM.',
     tag: 'SEO Rank #1',
     image: '/img/iptv/iptv-max.png'
   }

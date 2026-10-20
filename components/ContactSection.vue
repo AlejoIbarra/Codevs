@@ -115,7 +115,7 @@
 
             <div>
               <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Asunto o Tipo de Proyecto *</label>
-              <input type="text" name="subject" v-model="subjectField" placeholder="Ej. Desarrollo de Página Web en Pasto" required
+              <input type="text" name="subject" v-model="subjectField" placeholder="Ej. Desarrollo de Plataforma Web / Software a la Medida" required
                 class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm transition-colors" />
             </div>
 
@@ -168,7 +168,7 @@ const projectTypes = [
 ];
 
 const selectedType = ref('Página Web Corporativa');
-const subjectField = ref('Desarrollo de Página Web Corporativa en Pasto');
+const subjectField = ref('Desarrollo de Plataforma Web Corporativa');
 
 const selectProjectType = (type) => {
   selectedType.value = type;
@@ -188,7 +188,7 @@ const sendEmail = async () => {
     await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.value, USER_ID)
     success.value = true
     form.value.reset()
-    subjectField.value = 'Desarrollo de Página Web en Pasto'
+    subjectField.value = 'Desarrollo de Plataforma Web Corporativa'
   } catch (err) {
     error.value = 'Error al enviar el mensaje. Intenta nuevamente o contáctanos directamente por WhatsApp.'
   } finally {

@@ -52,7 +52,7 @@
 
       <!-- Servicios Destacados con Enlaces Directos de Autoridad SEO -->
       <div>
-        <h4 class="text-base font-bold text-white mb-6 border-l-2 border-red-600 pl-3">Servicios en Pasto</h4>
+        <h4 class="text-base font-bold text-white mb-6 border-l-2 border-red-600 pl-3">Servicios Digitales</h4>
         <ul class="space-y-3 text-sm text-gray-400">
           <li><NuxtLink to="/servicios/desarrollo-software" class="hover:text-red-500 transition">Desarrollo de Software a Medida</NuxtLink></li>
           <li><NuxtLink to="/servicios/desarrollo-web" class="hover:text-red-500 transition">Páginas Web Profesionales</NuxtLink></li>
