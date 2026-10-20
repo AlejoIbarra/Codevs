@@ -1,247 +1,239 @@
 <template>
-  <section id="about" ref="aboutSection" class="about-section relative bg-black text-white overflow-hidden py-28 lg:py-36 border-b border-zinc-900">
-    
-    <!-- Malla de gradientes de fondo neón y destellos ambientales -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-red-600/15 via-rose-600/10 to-transparent rounded-full blur-[150px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-10 w-[500px] h-[500px] bg-red-900/10 rounded-full blur-[120px] pointer-events-none"></div>
-    
-    <!-- Patrón geométrico sutil cyberpunk -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2315_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2315_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
+  <section id="about" ref="aboutSection" class="relative bg-white text-[#1B1B1F] py-24 lg:py-36">
+    <div class="max-w-[1340px] mx-auto px-5 sm:px-8">
 
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
-      
-      <!-- Presentación Principal y Contenido Corporativo -->
-      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
-        
-        <!-- Columna Izquierda: Historia y Valores de CODEVS -->
-        <div class="lg:w-6/12 space-y-8 gsap-fade-left">
-          
-          <!-- Insignia Neón -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 shadow-lg shadow-red-950/20 backdrop-blur-xl">
-            <span class="relative flex h-2.5 w-2.5">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
-            </span>
-            <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Quiénes Somos</span>
-          </div>
-
-          <!-- Título Principal con Gradiente Text -->
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.08]">
-            Nos Apasiona <br />
-            <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent drop-shadow-sm">
-              La Tecnología
-            </span>
-          </h2>
-
-          <div class="w-24 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 rounded-full"></div>
-
-          <!-- Párrafos descriptivos principales en alta visibilidad sobre fondo negro -->
-          <div class="space-y-6 text-zinc-200 font-normal leading-relaxed text-justify text-base sm:text-lg">
-            <p class="border-l-4 border-red-600 pl-4 py-1 bg-zinc-900/40 rounded-r-xl">
-              En <strong class="text-white font-bold">CODEVS</strong> desarrollamos soluciones tecnológicas de alto nivel para empresas decididas a destacar. Creamos productos digitales eficientes, modernos e interactivos a la medida de tus necesidades.
-            </p>
-            <p class="text-zinc-300 text-base leading-relaxed">
-              Nuestro equipo de programadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en San Juan de Pasto y el departamento de Nariño.
-            </p>
-          </div>
-
-          <!-- Tarjetas de Métricas Directas -->
-          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-zinc-800/80">
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-white group-hover:text-red-500 transition-colors">100%</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">Código Limpio</div>
-            </div>
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-red-500">SEO</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">Posicionamiento</div>
-            </div>
-            <div class="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 transition-all duration-300 group">
-              <div class="text-2xl sm:text-3xl font-black text-white group-hover:text-red-500 transition-colors">UX/UI</div>
-              <div class="text-[11px] text-zinc-400 font-semibold uppercase tracking-wider mt-1">De Vanguardia</div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Columna Derecha: Tarjetas Glassmorphic de Visión y Misión con Tilt 3D -->
-        <div class="lg:w-6/12 grid grid-cols-1 gap-8 w-full gsap-fade-right">
-          
-          <!-- Tarjeta Visión -->
-          <div 
-            ref="visionCard" 
-            @mousemove="handleCardTilt($event, visionCard)" 
-            @mouseleave="resetCardTilt(visionCard)"
-            class="group relative bg-zinc-900/80 border border-zinc-800 hover:border-red-500/50 p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 text-xs font-mono text-zinc-600 group-hover:text-red-500 transition-colors font-bold">01 / VISIÓN</div>
-            
-            <div class="flex items-start gap-6 relative z-10">
-              <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-red-600/20 to-red-950/60 flex items-center justify-center border border-red-500/30 group-hover:scale-110 transition-transform duration-300 shadow-xl shadow-red-950/50">
-                <i class="bi bi-eye text-3xl text-red-500"></i>
-              </div>
-              <div class="space-y-3">
-                <h3 class="text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
-                  Visión
-                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Futuro</span>
-                </h3>
-                <p class="text-zinc-300 text-sm leading-relaxed text-justify">
-                  Posicionarnos como el referente tecnológico principal en el sur de Colombia, entregando plataformas web modernas y aplicaciones móviles de clase mundial listas para triunfar en internet.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tarjeta Misión -->
-          <div 
-            ref="misionCard" 
-            @mousemove="handleCardTilt($event, misionCard)" 
-            @mouseleave="resetCardTilt(misionCard)"
-            class="group relative bg-zinc-900/80 border border-zinc-800 hover:border-red-500/50 p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 text-xs font-mono text-zinc-600 group-hover:text-red-500 transition-colors font-bold">02 / MISIÓN</div>
-            
-            <div class="flex items-start gap-6 relative z-10">
-              <div class="w-16 h-16 shrink-0 rounded-2xl bg-gradient-to-br from-red-600/20 to-red-950/60 flex items-center justify-center border border-red-500/30 group-hover:scale-110 transition-transform duration-300 shadow-xl shadow-red-950/50">
-                <i class="bi bi-rocket-takeoff text-3xl text-red-500"></i>
-              </div>
-              <div class="space-y-3">
-                <h3 class="text-2xl font-extrabold text-white tracking-wide flex items-center gap-2">
-                  Misión
-                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Propósito</span>
-                </h3>
-                <p class="text-zinc-300 text-sm leading-relaxed text-justify">
-                  Empoderar a las empresas de Pasto y Nariño mediante software robusto, páginas web veloces y asesorías en SEO que multipliquen su visibilidad y facturación online.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+      <!-- 1. Monos Expertos Big Editorial Statement with Inline Pills & Hand-drawn Circle -->
+      <div class="max-w-5xl mx-auto text-center pb-24 lg:pb-32 gsap-fade-up">
+        <p class="text-[28px] sm:text-[44px] lg:text-[56px] font-normal text-[#1B1B1F] leading-[1.22] tracking-[-0.03em]">
+          Diseñamos y desarrollamos
+          <span class="inline-flex items-center align-middle mx-1.5 px-4 py-1 rounded-full bg-[#DBFF9C] border-2 border-[#1B1B1F] text-sm sm:text-lg font-medium -rotate-3 shadow-[2px_2px_0px_#1B1B1F]">
+            <i class="bi bi-vector-pen mr-1.5"></i> UX/UI
+          </span>
+          <span class="relative inline-block px-3 py-0.5 mx-1">
+            <!-- Hand-drawn oval highlight (#A5A1FF) -->
+            <svg class="absolute inset-0 w-full h-full -z-10 scale-105 pointer-events-none" viewBox="0 0 500 110" fill="none" preserveAspectRatio="none">
+              <path d="M18 58C22 22 140 8 265 10C395 12 488 28 486 58C484 88 375 102 245 100C110 98 15 84 26 50" stroke="#A5A1FF" stroke-width="5" stroke-linecap="round" />
+            </svg>
+            <span class="font-serif-italic text-[#1B1B1F]">plataformas centradas en el usuario</span>
+          </span>
+          que capturan a la
+          <span class="inline-flex items-center align-middle mx-1.5 px-3.5 py-1 rounded-full bg-[#FFF480] border-2 border-[#1B1B1F] text-sm sm:text-lg font-medium rotate-3 shadow-[2px_2px_0px_#1B1B1F]">
+            ✦ 100%
+          </span>
+          perfección la esencia y el valor de tu marca.
+        </p>
       </div>
 
-      <!-- Banner de Cita Inspiradora con Estilo Neón Futurista -->
-      <div class="mt-16 sm:mt-20 gsap-quote">
-        <div class="relative bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
-          
-          <div class="absolute -top-8 left-8 text-8xl font-serif text-red-600/10 pointer-events-none select-none">“</div>
-          <div class="absolute -bottom-14 right-8 text-8xl font-serif text-red-600/10 pointer-events-none select-none">”</div>
-          <div class="absolute inset-0 bg-gradient-to-r from-red-600/10 via-transparent to-red-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+      <!-- 2. Two-Column Sticky Layout (Left Sticky Narrative + Right Stacking Dark Cards) -->
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
-          <p class="relative z-10 text-lg sm:text-xl md:text-2xl italic text-white font-light max-w-4xl mx-auto leading-relaxed">
-            "El éxito digital no es un accidente, es el resultado de combinar <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">código limpio</span>, <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">diseño centrado en el usuario</span> y una <span class="text-white font-bold underline decoration-red-500 decoration-2 underline-offset-4">estrategia SEO ganadora</span>."
+        <!-- Left Column (Sticky on Desktop like monosexpertos.com) -->
+        <div class="lg:w-7/12 lg:sticky lg:top-28 space-y-8">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F9FAFA] border border-[#1B1B1F]/20 text-xs font-mono uppercase tracking-wider text-[#1B1B1F]">
+            <span class="w-2 h-2 rounded-full bg-[#FFACAA] border border-[#1B1B1F]"></span>
+            Quiénes Somos • Estudio &amp; Academia
+          </div>
+
+          <div class="flex items-start gap-4">
+            <!-- Decorative Sparkle SVG -->
+            <svg class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 text-[#1B1B1F] mt-1" viewBox="0 0 64 64" fill="none">
+              <path d="M32 4C34 20 44 30 60 32C44 34 34 44 32 60C30 44 20 34 4 32C20 30 30 20 32 4Z" fill="#FFF480" stroke="#1B1B1F" stroke-width="3" stroke-linejoin="round"/>
+            </svg>
+
+            <h2 class="text-4xl sm:text-5xl lg:text-[58px] font-normal text-[#1B1B1F] tracking-[-0.035em] leading-[1.12]">
+              Enamora a tus
+              <span class="relative inline-block px-2">
+                <svg class="absolute inset-0 w-full h-full -z-10 scale-110" viewBox="0 0 220 80" fill="none" preserveAspectRatio="none">
+                  <path d="M12 44C15 16 70 8 118 10C172 12 210 26 208 46C206 66 155 74 102 72C48 70 10 60 18 38" stroke="#A5A1FF" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+                <span class="font-serif-italic">clientes</span>
+              </span>
+              desde el primer click
+            </h2>
+          </div>
+
+          <div class="space-y-4 text-[#1B1B1F]/80 font-light text-base sm:text-[17px] leading-relaxed max-w-xl">
+            <p>
+              En <strong class="font-semibold text-[#1B1B1F]">CODEVS</strong> nos apasiona la tecnología y el diseño con criterio. Desarrollamos soluciones digitales de alto nivel para empresas decididas a destacar, sin plantillas genéricas ni diseños prefabricados.
+            </p>
+            <p>
+              Nuestro equipo combina dirección de arte <strong class="font-medium text-[#1B1B1F]">UX/UI de vanguardia</strong> e ingeniería de software ágil para construir portales ultrarrápidos optimizados para Google (SEO) desde San Juan de Pasto y Nariño para todo el mundo.
+            </p>
+          </div>
+
+          <!-- Studio Direct Metrics -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 max-w-xl pt-2">
+            <div class="p-4 rounded-[20px] bg-[#FFF480]/50 border border-[#1B1B1F]/20">
+              <div class="text-2xl sm:text-3xl font-semibold text-[#1B1B1F]">100%</div>
+              <div class="text-[11px] font-mono uppercase tracking-wider text-[#1B1B1F]/70 mt-1">Código Limpio</div>
+            </div>
+            <div class="p-4 rounded-[20px] bg-[#DBFF9C]/60 border border-[#1B1B1F]/20">
+              <div class="text-2xl sm:text-3xl font-serif-italic text-[#1B1B1F]">SEO #1</div>
+              <div class="text-[11px] font-mono uppercase tracking-wider text-[#1B1B1F]/70 mt-1">Posicionamiento</div>
+            </div>
+            <div class="p-4 rounded-[20px] bg-[#EFEEFF] border border-[#1B1B1F]/20">
+              <div class="text-2xl sm:text-3xl font-semibold text-[#1B1B1F]">UX/UI</div>
+              <div class="text-[11px] font-mono uppercase tracking-wider text-[#1B1B1F]/70 mt-1">De Academia</div>
+            </div>
+          </div>
+
+          <!-- Prompt + Hand-drawn Arrow pointing to Stacking Cards -->
+          <div class="flex items-center gap-4 pt-4">
+            <div class="w-12 h-12 rounded-full bg-[#1B1B1F] text-[#FFF480] flex items-center justify-center shrink-0">
+              <i class="bi bi-arrow-down-right text-lg"></i>
+            </div>
+            <p class="text-sm sm:text-base font-medium text-[#6A7077] max-w-xs">
+              ¿Por qué tu empresa debería confiar en el equipo de <span class="text-[#1B1B1F] underline decoration-[#FFF480] decoration-2">CODEVS</span>?
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: 4 Sticky Stacking Cards (#1B1B1F like Monos Expertos) -->
+        <div class="lg:w-5/12 w-full space-y-8">
+
+          <!-- Card 1: Diseño encantador & Visión (#FFACAA) -->
+          <div class="sticky top-24 bg-[#1B1B1F] text-white rounded-[24px] p-8 sm:p-10 min-h-[430px] flex flex-col justify-between shadow-2xl border border-white/10">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono uppercase tracking-widest text-[#FFACAA]">01 / VISIÓN &amp; ESTÉTICA</span>
+                <span class="px-3 py-1 rounded-full bg-[#FFACAA]/15 text-[#FFACAA] text-xs font-medium">Futuro</span>
+              </div>
+              <h3 class="text-3xl sm:text-[36px] font-medium text-[#FFACAA] leading-[1.15] tracking-tight">
+                Diseño encantador &amp; Visión
+              </h3>
+              <p class="text-[#EBEBEB] text-[15px] font-light leading-relaxed">
+                Creamos sitios y plataformas con personalidad propia, diseñados a tu medida. Nada de plantillas ni clichés: nos posicionamos como el referente tecnológico y de diseño digital en el sur de Colombia.
+              </p>
+            </div>
+
+            <!-- Custom Studio Illustration -->
+            <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-[#FFACAA] text-[#1B1B1F] flex items-center justify-center text-2xl font-bold">
+                  ✦
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-white">Autenticidad &amp; Buen Gusto</div>
+                  <div class="text-[11px] text-white/60">Dirección de arte a medida</div>
+                </div>
+              </div>
+              <span class="font-serif-italic text-2xl text-[#FFACAA]">01</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Trabajo colaborativo & Misión (#FFF480) -->
+          <div class="sticky top-28 bg-[#1B1B1F] text-white rounded-[24px] p-8 sm:p-10 min-h-[430px] flex flex-col justify-between shadow-2xl border border-white/10">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono uppercase tracking-widest text-[#FFF480]">02 / MISIÓN &amp; EQUIPO</span>
+                <span class="px-3 py-1 rounded-full bg-[#FFF480]/15 text-[#FFF480] text-xs font-medium">Propósito</span>
+              </div>
+              <h3 class="text-3xl sm:text-[36px] font-medium text-[#FFF480] leading-[1.15] tracking-tight">
+                Trabajo colaborativo &amp; Misión
+              </h3>
+              <p class="text-[#E0E0E0] text-[15px] font-light leading-relaxed">
+                Desde su concepción hasta su lanzamiento, trabajamos estrechamente contigo para empoderar a las empresas de Pasto, Nariño y Colombia mediante software robusto y páginas web que multiplican su facturación.
+              </p>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-[#FFF480] text-[#1B1B1F] flex items-center justify-center text-xl">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-white">Co-creación Ágil</div>
+                  <div class="text-[11px] text-white/60">Acompañamiento paso a paso</div>
+                </div>
+              </div>
+              <span class="font-serif-italic text-2xl text-[#FFF480]">02</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Lealtad a tus usuarios (#DBFF9C) -->
+          <div class="sticky top-32 bg-[#1B1B1F] text-white rounded-[24px] p-8 sm:p-10 min-h-[430px] flex flex-col justify-between shadow-2xl border border-white/10">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono uppercase tracking-widest text-[#DBFF9C]">03 / EXPERIENCIA UX/UI</span>
+                <span class="px-3 py-1 rounded-full bg-[#DBFF9C]/15 text-[#DBFF9C] text-xs font-medium">Human-First</span>
+              </div>
+              <h3 class="text-3xl sm:text-[36px] font-medium text-[#DBFF9C] leading-[1.15] tracking-tight">
+                Lealtad a tus usuarios
+              </h3>
+              <p class="text-[#E2E2E2] text-[15px] font-light leading-relaxed">
+                Diseñamos con la mente en las personas. Nuestro enfoque de academia en UI/UX asegura arquitecturas de información claras, micro-interacciones memorables y recorridos que convierten visitantes en clientes.
+              </p>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-[#DBFF9C] text-[#1B1B1F] flex items-center justify-center text-xl">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-white">Interfaces Intuitivas</div>
+                  <div class="text-[11px] text-white/60">Prototipado en Figma de alta fidelidad</div>
+                </div>
+              </div>
+              <span class="font-serif-italic text-2xl text-[#DBFF9C]">03</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Rendimiento superior (#A5A1FF) -->
+          <div class="sticky top-36 bg-[#1B1B1F] text-white rounded-[24px] p-8 sm:p-10 min-h-[430px] flex flex-col justify-between shadow-2xl border border-white/10">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono uppercase tracking-widest text-[#A5A1FF]">04 / GOOGLE LOVE &amp; SPEED</span>
+                <span class="px-3 py-1 rounded-full bg-[#A5A1FF]/15 text-[#A5A1FF] text-xs font-medium">100/100</span>
+              </div>
+              <h3 class="text-3xl sm:text-[36px] font-medium text-[#A5A1FF] leading-[1.15] tracking-tight">
+                Rendimiento superior
+              </h3>
+              <p class="text-[#D5D5D5] text-[15px] font-light leading-relaxed">
+                Construimos sitios ultra-eficientes. Impulsamos sus Core Web Vitals y optimizamos su posicionamiento SEO técnico y local para generar mayores oportunidades reales de conversión.
+              </p>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-[#A5A1FF] text-[#1B1B1F] flex items-center justify-center text-xl">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-medium text-white">Posicionamiento #1 en Google</div>
+                  <div class="text-[11px] text-white/60">SSR, Schema.org &amp; Velocidad</div>
+                </div>
+              </div>
+              <span class="font-serif-italic text-2xl text-[#A5A1FF]">04</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. Editorial Philosophy Quote Banner -->
+      <div class="mt-24 sm:mt-32">
+        <div class="relative bg-[#F9FAFA] border-2 border-[#1B1B1F] p-8 sm:p-14 rounded-[28px] shadow-[6px_6px_0px_#1B1B1F] text-center overflow-hidden">
+          <span class="inline-block px-4 py-1 rounded-full bg-[#FFF480] border border-[#1B1B1F] text-xs font-mono uppercase tracking-widest text-[#1B1B1F] mb-6">
+            Manifiesto CODEVS
+          </span>
+
+          <p class="text-xl sm:text-3xl lg:text-[34px] text-[#1B1B1F] font-normal max-w-4xl mx-auto leading-[1.35] tracking-tight">
+            “El éxito digital no es un accidente: es el resultado de unir
+            <span class="font-serif-italic bg-[#DBFF9C] px-2 rounded">código limpio</span>,
+            <span class="font-serif-italic bg-[#FFF480] px-2 rounded">diseño centrado en el usuario</span>
+            y una
+            <span class="font-serif-italic bg-[#EFEEFF] px-2 rounded">estrategia SEO ganadora</span>.”
           </p>
-
-          <div class="mt-6 flex items-center justify-center gap-3">
-            <span class="w-10 h-[2px] bg-red-600"></span>
-            <span class="text-xs font-extrabold tracking-widest text-red-500 uppercase">Filosofía CODEVS</span>
-            <span class="w-10 h-[2px] bg-red-600"></span>
-          </div>
         </div>
       </div>
-      
-      <!-- Componente Interactivo de Animación de Cohete -->
-      <RocketScroll />
 
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import RocketScroll from '~/components/ui/RocketScroll.vue';
+import { ref } from 'vue';
 
 const aboutSection = ref(null);
-const visionCard = ref(null);
-const misionCard = ref(null);
-
-onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Animación de entrada izquierda (Texto corporativo)
-    gsap.from('.gsap-fade-left', {
-      scrollTrigger: {
-        trigger: aboutSection.value,
-        start: 'top 80%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      x: -50,
-      duration: 1.2,
-      ease: 'power3.out'
-    });
-
-    // Animación de entrada derecha (Tarjetas Misión y Visión)
-    gsap.from('.gsap-fade-right', {
-      scrollTrigger: {
-        trigger: aboutSection.value,
-        start: 'top 75%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      x: 50,
-      duration: 1.2,
-      delay: 0.2,
-      ease: 'power3.out'
-    });
-
-    // Animación de entrada de la Cita Inspiradora
-    gsap.from('.gsap-quote', {
-      scrollTrigger: {
-        trigger: '.gsap-quote',
-        start: 'top 85%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      y: 40,
-      scale: 0.96,
-      duration: 1,
-      ease: 'back.out(1.4)'
-    });
-  }
-});
-
-// Tilt 3D interactivo con el mouse en las tarjetas
-const handleCardTilt = (e, cardRef) => {
-  if (!cardRef) return;
-  const rect = cardRef.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
-
-  const rotateX = (y - centerY) / 18;
-  const rotateY = (centerX - x) / 18;
-
-  gsap.to(cardRef, {
-    rotateX: rotateX,
-    rotateY: rotateY,
-    transformPerspective: 1000,
-    duration: 0.4,
-    ease: 'power2.out'
-  });
-};
-
-const resetCardTilt = (cardRef) => {
-  if (!cardRef) return;
-  gsap.to(cardRef, {
-    rotateX: 0,
-    rotateY: 0,
-    duration: 0.6,
-    ease: 'power2.out'
-  });
-};
 </script>
-
-<style scoped>
-.about-section {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  perspective: 1000px;
-}
-</style>

@@ -1,103 +1,131 @@
 <template>
-  <section id="services" ref="servicesSection"
-    class="services-section relative bg-black overflow-hidden py-24 lg:py-32 border-t border-zinc-900">
+  <section id="services" ref="servicesSection" class="relative bg-white text-[#1B1B1F] pt-16 pb-24 lg:py-28">
 
-    <!-- Ambient lights -->
-    <div
-      class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none">
-    </div>
-    <div
-      class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-rose-900/10 rounded-full blur-[120px] pointer-events-none">
-    </div>
-
-    <!-- Background Grid Pattern -->
-    <div
-      class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2315_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2315_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none">
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-
-      <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-16">
-        <div
-          class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-red-500/30 shadow-lg shadow-red-950/30 backdrop-blur-xl mb-4">
-          <span class="relative flex h-2.5 w-2.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+    <!-- Editorial Section Header -->
+    <div class="max-w-[1340px] mx-auto px-5 sm:px-8 mb-14">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F9FAFA] border border-[#1B1B1F]/20 text-xs font-mono uppercase tracking-wider text-[#1B1B1F] mb-4">
+            <span class="w-2 h-2 rounded-full bg-[#DBFF9C] border border-[#1B1B1F]"></span>
+            Nuestra Experiencia • Servicios
           </span>
-          <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Nuestra Experiencia</span>
+          <h2 class="text-4xl sm:text-5xl lg:text-[58px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.1]">
+            Soluciones digitales con <span class="font-serif-italic underline decoration-[#FFF480] decoration-4 underline-offset-4">sello de autor</span>
+          </h2>
         </div>
-        <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight">Servicios <span
-            class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Premium</span>
-        </h2>
-        <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 mb-4 rounded-full"></div>
-        <p class="text-zinc-300 font-normal text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-          Diseñamos arquitecturas digitales optimizadas para posicionar tu negocio en lo más alto de Google en Pasto y
-          Nariño.
+        <p class="text-[#6A7077] font-light text-base sm:text-[17px] max-w-md leading-relaxed">
+          Diseñamos arquitecturas digitales, marcas y software a medida optimizados para liderar en Google en Pasto, Nariño y Colombia.
         </p>
       </div>
+    </div>
 
-      <!-- Services Grid (2 Columns, 6 Cards) -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div v-for="(service, index) in services" :key="index"
-          class="group relative bg-zinc-900/70 border border-zinc-800 hover:border-red-500/50 rounded-3xl p-6 transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/20 backdrop-blur-xl flex flex-col sm:flex-row items-stretch gap-6">
-          <!-- Hover Glow Overlay -->
-          <div
-            class="absolute inset-0 rounded-3xl bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-          </div>
+    <!-- Monos Expertos Full-Width Pastel Service Bands -->
+    <div class="w-full border-t border-[#6A7077]/40">
+      <div
+        v-for="(service, index) in services"
+        :key="index"
+        :style="{ backgroundColor: service.bg }"
+        class="group relative w-full border-b border-[#6A7077]/40 transition-all duration-500 py-10 lg:py-8 px-5 sm:px-8"
+      >
+        <div class="max-w-[1340px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
 
-          <!-- Image Box -->
-          <div
-            class="sm:w-5/12 w-full h-52 sm:h-auto shrink-0 relative rounded-2xl overflow-hidden border border-zinc-800/80">
-            <img :src="service.image" :alt="service.title"
-              class="w-full h-full object-cover transform transition duration-700 group-hover:scale-110" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-
-            <!-- Number badge -->
-            <span
-              class="absolute top-3 left-3 bg-black/80 border border-zinc-700 text-red-500 text-xs font-mono font-bold px-2.5 py-1 rounded-lg backdrop-blur-md">
+          <!-- Left: Index + Noto Serif Italic Title -->
+          <div class="lg:col-span-4 flex items-baseline gap-4">
+            <span class="text-xs font-mono font-semibold px-2.5 py-1 rounded-full bg-white/80 border border-[#1B1B1F] text-[#1B1B1F] shrink-0">
               0{{ index + 1 }}
             </span>
+            <h3 class="font-serif-italic text-3xl sm:text-4xl lg:text-[40px] text-[#171717] leading-[1.15] group-hover:translate-x-1.5 transition-transform duration-300">
+              {{ service.title }}
+            </h3>
           </div>
 
-          <!-- Content Box -->
-          <div class="sm:w-7/12 flex flex-col justify-between space-y-4 relative z-10">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between gap-2">
-                <h3
-                  class="text-xl font-extrabold text-white group-hover:text-red-400 transition-colors duration-300 leading-snug">
-                  {{ service.title }}
-                </h3>
-                <div
-                  class="w-10 h-10 shrink-0 rounded-xl bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500">
-                  <i :class="service.icon" class="text-lg"></i>
-                </div>
+          <!-- Center: Overlapping Tilted Studio Image -->
+          <div class="lg:col-span-3 flex justify-start lg:justify-center">
+            <NuxtLink
+              :to="service.link"
+              class="relative w-full sm:w-64 lg:w-56 h-40 sm:h-44 lg:-my-5 rounded-[12px] overflow-hidden border-2 border-[#1B1B1F] shadow-[5px_5px_0px_#1B1B1F] bg-[#1B1B1F] transform transition-all duration-500 group-hover:-rotate-2 group-hover:scale-105 block"
+            >
+              <img
+                :src="service.image"
+                :alt="service.title"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-white border border-[#1B1B1F] flex items-center justify-center text-[#1B1B1F] text-sm">
+                <i :class="service.icon"></i>
               </div>
+            </NuxtLink>
+          </div>
 
-              <p class="text-zinc-300 text-sm leading-relaxed">
-                {{ service.description }}
-              </p>
+          <!-- Right: Editorial Description + CTA Pill -->
+          <div class="lg:col-span-5 flex flex-col sm:flex-row lg:items-center justify-between gap-5 lg:pl-4">
+            <p class="text-[#1E1E1E] text-[15px] font-light leading-relaxed max-w-md">
+              {{ service.description }}
+            </p>
+
+            <NuxtLink
+              :to="service.link"
+              class="shrink-0 self-start sm:self-center inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white hover:bg-[#1B1B1F] text-[#1B1B1F] hover:text-white border border-[#1B1B1F] text-xs font-medium transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]"
+            >
+              <span>Ver Detalles</span>
+              <i class="bi bi-arrow-up-right text-xs"></i>
+            </NuxtLink>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Monos Expertos "Nuestra metodología" 3-Phase Studio Section -->
+    <div class="max-w-[1340px] mx-auto px-5 sm:px-8 pt-24 lg:pt-32">
+      <div class="flex flex-wrap items-center gap-4 mb-14">
+        <div class="w-14 h-14 rounded-2xl bg-[#FFF480] border-2 border-[#1B1B1F] flex items-center justify-center text-2xl transition-transform duration-500 hover:rotate-180 shadow-[3px_3px_0px_#1B1B1F]">
+          ✦
+        </div>
+        <h3 class="text-4xl sm:text-5xl lg:text-[56px] font-medium text-[#1B1B1F] tracking-[-0.03em] leading-none">
+          Nuestra <span class="font-serif-italic font-normal">metodología</span>
+        </h3>
+        <span class="hidden sm:inline-flex items-center gap-2 ml-2 px-4 py-1.5 rounded-full bg-[#F9FAFA] border border-[#1B1B1F]/15 text-xs font-mono text-[#6A7077]">
+          De la idea al lanzamiento →
+        </span>
+      </div>
+
+      <!-- 3 Phase Cards (Hover turns #EFEEFF like post-4432.css) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div
+          v-for="(phase, idx) in methodologyPhases"
+          :key="idx"
+          class="group rounded-[20px] bg-[#F9FAFA] hover:bg-[#EFEEFF] border border-[#1B1B1F]/15 hover:border-[#1B1B1F] p-8 sm:p-10 transition-all duration-300 flex flex-col justify-between"
+        >
+          <div class="space-y-5">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl border border-[#1B1B1F] flex items-center justify-center text-xl font-bold" :style="{ backgroundColor: phase.badgeBg }">
+                {{ phase.symbol }}
+              </div>
+              <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 rounded-full bg-white border border-[#1B1B1F]/20 text-[#1B1B1F]">
+                {{ phase.timeline }}
+              </span>
             </div>
 
-            <div class="pt-2">
-              <NuxtLink :to="service.link"
-                class="inline-flex items-center gap-2 text-sm font-bold text-red-500 hover:text-red-400 transition-colors group/btn">
-                <span>Ver Detalles</span>
-                <div
-                  class="w-7 h-7 rounded-full bg-red-600/20 border border-red-500/30 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
-                  <svg viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                    class="w-3.5 h-3.5 text-red-500 group-hover/btn:text-white transition-colors">
-                    <path d="M5 12h14m-7-7l7 7-7 7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
-                    </path>
-                  </svg>
-                </div>
-              </NuxtLink>
-            </div>
+            <h4 class="text-2xl sm:text-3xl font-medium text-[#1B1B1F]">
+              {{ phase.title }}
+              <span class="font-serif-italic font-normal block text-xl text-[#6A7077] group-hover:text-[#1B1B1F] mt-1">{{ phase.subtitle }}</span>
+            </h4>
+
+            <p class="text-sm text-[#1E1E1E]/80 font-light leading-relaxed">
+              {{ phase.description }}
+            </p>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-[#1B1B1F]/10 space-y-2">
+            <div class="text-xs font-mono uppercase tracking-wider text-[#1B1B1F] font-semibold">Entregable clave:</div>
+            <p class="text-xs text-[#6A7077] group-hover:text-[#1B1B1F] leading-relaxed">
+              {{ phase.deliverable }}
+            </p>
           </div>
         </div>
       </div>
-
     </div>
+
   </section>
 </template>
 
@@ -108,49 +136,78 @@ const services = [
     description: 'Ingeniería de software de alta calidad. Diseñamos plataformas web seguras, escalables y optimizadas para automatizar las operaciones complejas de tu negocio.',
     icon: 'bi bi-code-slash',
     image: '/assets/img/services/2.png',
-    link: '/servicios/desarrollo-software'
+    link: '/servicios/desarrollo-software',
+    bg: '#E1FFAB'
   },
   {
     title: 'Desarrollo de Páginas Web',
     description: 'Creación de sitios web corporativos y de comercio electrónico (E-commerce). Páginas veloces, adaptadas a dispositivos móviles y estructuradas semánticamente para SEO.',
     icon: 'bi bi-rocket-takeoff',
     image: '/assets/img/services/webPage.png',
-    link: '/servicios/desarrollo-web'
+    link: '/servicios/desarrollo-web',
+    bg: '#FFF7A6'
   },
   {
     title: 'Diseño de Interfaces UX/UI',
-    description: 'Diseño de experiencias centradas en el usuario. Creamos prototipos interactivos modernos que aumentan la retención y la conversión de leads.',
+    description: 'Diseño de experiencias centradas en el usuario. Creamos prototipos interactivos modernos en Figma que aumentan la retención y la conversión de leads.',
     icon: 'bi bi-vector-pen',
     image: '/assets/img/services/1.png',
-    link: '/servicios/diseno-ux-ui'
+    link: '/servicios/diseno-ux-ui',
+    bg: '#CFCDFF'
   },
   {
     title: 'Integraciones de APIs',
     description: 'Conectamos sistemas existentes con pasarelas de pago, CRMs y plataformas logísticas mediante integraciones de APIs robustas y eficientes.',
     icon: 'bi bi-puzzle',
     image: '/assets/img/services/integracionSistemas.png',
-    link: '/servicios/integraciones-apis'
+    link: '/servicios/integraciones-apis',
+    bg: '#FFC6C5'
   },
   {
     title: 'Desarrollo de Apps Móviles',
     description: 'Desarrollo para plataformas Android e iOS usando arquitecturas modernas nativas o híbridas (Flutter) de gran fluidez.',
     icon: 'bi bi-phone',
     image: '/assets/img/services/appMobile.png',
-    link: '/servicios/apps-moviles'
+    link: '/servicios/apps-moviles',
+    bg: '#E4EFF3'
   },
   {
     title: 'Optimización SEO Avanzada',
-    description: 'Estrategias de posicionamiento SEO local para empresas que buscan ser encontradas primero en tu ciudad o a nivel nacional e Internacional.',
+    description: 'Estrategias de posicionamiento SEO local y técnico para empresas que buscan ser encontradas primero en su ciudad o a nivel nacional e internacional.',
     icon: 'bi bi-search',
     image: '/img/image.png',
-    link: '/servicios/seo-avanzado'
+    link: '/servicios/seo-avanzado',
+    bg: '#FAF0AD'
+  }
+];
+
+const methodologyPhases = [
+  {
+    title: 'Fase 1:',
+    subtitle: 'Exploración & Arquitectura',
+    timeline: 'Inicio • Semana 2',
+    symbol: '◎',
+    badgeBg: '#FFF480',
+    description: 'Analizamos las necesidades de tu marca, investigamos referentes de tu sector y diseñamos la arquitectura de información y estrategia SEO local.',
+    deliverable: 'Recibirás el concepto creativo, mapa de arquitectura y lineamientos técnicos para tu plataforma.'
+  },
+  {
+    title: 'Fase 2:',
+    subtitle: 'Dirección de Arte & UI/UX',
+    timeline: 'Semana 4',
+    symbol: '△',
+    badgeBg: '#DBFF9C',
+    description: 'Diseñamos la interfaz de usuario en Figma de acuerdo al concepto gráfico: paletas de color, tipografías editoriales, layouts y prototipos interactivos.',
+    deliverable: 'Obtendrás un prototipo visual de alta fidelidad que muestra exactamente cómo lucirá y funcionará tu producto.'
+  },
+  {
+    title: 'Fase 3:',
+    subtitle: 'Ingeniería, QA & Lanzamiento',
+    timeline: 'Semana 6',
+    symbol: '⚡',
+    badgeBg: '#A5A1FF',
+    description: 'Implementamos el desarrollo con código limpio (Nuxt, Spring Boot, Astro o Flutter), optimizamos Core Web Vitals al 100% y desplegamos en producción.',
+    deliverable: 'Recibirás tu sitio o software funcional, ultrarrápido y listo para conquistar el #1 de Google.'
   }
 ];
 </script>
-
-<style scoped>
-.services-section {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-</style>

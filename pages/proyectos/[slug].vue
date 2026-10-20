@@ -1,72 +1,66 @@
 <template>
-  <div class="min-h-screen bg-black text-white">
+  <div class="min-h-screen bg-white text-[#1B1B1F]">
     
     <!-- Hero Banner -->
-    <section class="relative pt-32 pb-20 overflow-hidden">
-      <!-- Ambient lights -->
-      <div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-900/5 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative pt-20 pb-16 overflow-hidden border-b border-[#1B1B1F]/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
         
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-sm text-zinc-500 mb-8">
-          <NuxtLink to="/" class="hover:text-red-500 transition-colors">Inicio</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <NuxtLink to="/#portfolio" class="hover:text-red-500 transition-colors">Proyectos</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <span class="text-zinc-300">{{ project.title }}</span>
+        <nav class="flex items-center gap-2 text-xs font-mono text-[#6A7077] mb-8">
+          <NuxtLink to="/" class="hover:text-[#1B1B1F] hover:underline">Inicio</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <NuxtLink to="/#portfolio" class="hover:text-[#1B1B1F] hover:underline">Proyectos</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <span class="text-[#1B1B1F] font-medium">{{ project.title }}</span>
         </nav>
 
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
             <div class="flex items-center gap-3">
-              <span class="bg-red-600/90 text-white text-[10px] font-bold tracking-widest px-3 py-1.5 rounded-full uppercase">
+              <span class="bg-[#FFF480] text-[#1B1B1F] border border-[#1B1B1F] text-[11px] font-semibold tracking-wider px-3.5 py-1 rounded-full uppercase">
                 {{ project.category }}
               </span>
-              <span class="flex items-center gap-1.5 text-[11px] text-zinc-400 font-semibold">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              <span class="flex items-center gap-1.5 text-xs text-[#6A7077] font-mono">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                 Proyecto Activo
               </span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
-              <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
+            <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.12]">
+              <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">
                 {{ project.title }}
               </span>
             </h1>
 
-            <p class="text-zinc-300 text-lg leading-relaxed max-w-2xl">
+            <p class="text-[#1E1E1E]/80 text-lg leading-relaxed max-w-2xl font-light">
               {{ project.fullDescription }}
             </p>
 
-            <div class="flex flex-wrap gap-4 pt-4">
+            <div class="flex flex-wrap gap-4 pt-2">
               <a
                 v-if="project.liveUrl"
                 :href="project.liveUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white rounded-xl font-bold text-sm transition-all duration-300 shadow-lg shadow-red-950/40 hover:scale-105"
+                class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]"
               >
                 <span>Visitar Sitio Web</span>
-                <i class="bi bi-box-arrow-up-right text-xs"></i>
+                <i class="bi bi-arrow-up-right text-xs"></i>
               </a>
-              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-zinc-900 border border-zinc-800 hover:border-red-500 text-white rounded-xl font-semibold text-sm transition-all duration-300">
+              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-[#1B1B1F] hover:bg-[#FFF480] text-white hover:text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]">
                 Solicitar Proyecto Similar
               </NuxtLink>
-              <NuxtLink to="/#portfolio" class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
+              <NuxtLink to="/#portfolio" class="inline-flex items-center justify-center px-7 py-3.5 border border-[#1B1B1F] rounded-full hover:bg-[#1B1B1F] hover:text-white text-[#1B1B1F] transition-all duration-300 font-medium text-sm bg-white">
                 Ver Más Proyectos
               </NuxtLink>
             </div>
           </div>
 
           <!-- Image -->
-          <div class="lg:w-5/12">
-            <div class="relative rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl shadow-red-950/20 group">
+          <div class="lg:w-5/12 w-full">
+            <div class="relative rounded-[24px] overflow-hidden border-2 border-[#1B1B1F] shadow-[6px_6px_0px_#1B1B1F] bg-[#1B1B1F] group">
               <img :src="project.image" :alt="project.title" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
@@ -74,23 +68,13 @@
     </section>
 
     <!-- Visual Showcase / Gallery (if available) -->
-    <section v-if="project.gallery && project.gallery.length" class="py-20 border-t border-zinc-900 relative overflow-hidden">
-      <!-- Ambient light -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-xl">
-            <i class="bi bi-display text-red-500"></i>
-            Showcase Visual
-          </div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-            Diseño de <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Interfaz</span> & Prototipos
+    <section v-if="project.gallery && project.gallery.length" class="py-20 border-b border-[#1B1B1F]/10 bg-[#F9FAFA]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="max-w-2xl mb-14">
+          <span class="text-xs font-mono uppercase tracking-wider text-[#6A7077] block mb-2">Showcase Visual &amp; Figma</span>
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] tracking-tight">
+            Diseño de <span class="font-serif-italic underline decoration-[#FFF480] decoration-4 underline-offset-4">Interfaz</span> &amp; Prototipos
           </h2>
-          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 mb-4 rounded-full"></div>
-          <p class="text-zinc-400 max-w-xl mx-auto text-base">
-            Explora las pantallas clave, el sistema de componentes en Figma y el resultado final implementado.
-          </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -98,49 +82,40 @@
             v-for="(item, idx) in project.gallery"
             :key="idx"
             @click="selectedGalleryImg = item"
-            class="group bg-zinc-900/70 border border-zinc-800 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-2xl hover:shadow-red-950/30 transition-all duration-500 flex flex-col justify-between cursor-pointer"
+            class="group bg-white border border-[#1B1B1F]/20 hover:border-[#1B1B1F] rounded-[24px] overflow-hidden shadow-sm hover:shadow-[5px_5px_0px_#1B1B1F] transition-all duration-300 flex flex-col justify-between cursor-pointer"
           >
             <!-- Mockup Window Header -->
-            <div class="px-6 py-3.5 bg-zinc-950/90 border-b border-zinc-800/80 flex items-center justify-between">
+            <div class="px-6 py-3.5 bg-[#F9FAFA] border-b border-[#1B1B1F]/15 flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
-                <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFACAA]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFF480]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#DBFF9C]"></span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="text-xs font-mono text-zinc-500">{{ item.tag }}</span>
-                <i class="bi bi-arrows-fullscreen text-zinc-600 group-hover:text-red-400 text-xs transition-colors"></i>
+                <span class="text-xs font-mono text-[#6A7077]">{{ item.tag }}</span>
+                <i class="bi bi-arrows-fullscreen text-[#6A7077] text-xs"></i>
               </div>
             </div>
 
             <!-- Image View -->
-            <div class="relative overflow-hidden bg-zinc-950">
+            <div class="relative overflow-hidden bg-[#1B1B1F] h-80">
               <img
                 :src="item.image"
                 :alt="item.title"
-                class="w-full h-80 object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
+                class="w-full h-full object-cover object-top transform transition-transform duration-700 group-hover:scale-105"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent opacity-60 group-hover:opacity-30 transition-opacity"></div>
-              
-              <!-- Hover indicator button -->
-              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div class="px-4 py-2 rounded-xl bg-red-600/90 text-white text-xs font-bold shadow-lg shadow-red-950/60 backdrop-blur-md flex items-center gap-2">
-                  <i class="bi bi-zoom-in"></i>
-                  <span>Ver en Pantalla Completa</span>
-                </div>
-              </div>
             </div>
 
             <!-- Info Details -->
-            <div class="p-6 sm:p-8 space-y-3 bg-zinc-900/90 border-t border-zinc-800/60 relative z-10">
+            <div class="p-6 sm:p-8 space-y-2.5 bg-white border-t border-[#1B1B1F]/10">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-bold text-red-500 uppercase tracking-wider">{{ item.tag }}</span>
-                <span class="text-xs text-zinc-500 font-mono">0{{ idx + 1 }}</span>
+                <span class="text-xs font-mono font-semibold text-[#1B1B1F] uppercase tracking-wider">{{ item.tag }}</span>
+                <span class="text-xs text-[#6A7077] font-mono">0{{ idx + 1 }}</span>
               </div>
-              <h3 class="text-xl font-bold text-white group-hover:text-red-400 transition-colors">
+              <h3 class="text-xl font-medium text-[#1B1B1F]">
                 {{ item.title }}
               </h3>
-              <p class="text-zinc-400 text-sm leading-relaxed">
+              <p class="text-[#6A7077] text-sm leading-relaxed font-light">
                 {{ item.description }}
               </p>
             </div>
@@ -153,68 +128,77 @@
     <div
       v-if="selectedGalleryImg"
       @click="selectedGalleryImg = null"
-      class="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8 animate-fadeIn"
+      class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
     >
       <div
         @click.stop
-        class="relative max-w-5xl w-full bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl shadow-red-950/40"
+        class="relative max-w-5xl w-full bg-white border-2 border-[#1B1B1F] rounded-[24px] overflow-hidden shadow-2xl"
       >
-        <div class="p-4 bg-zinc-950 border-b border-zinc-800 flex items-center justify-between">
+        <div class="p-4 bg-[#F9FAFA] border-b border-[#1B1B1F]/15 flex items-center justify-between">
           <div class="flex items-center gap-3">
-            <span class="text-xs font-bold text-red-500 uppercase tracking-wider px-2.5 py-1 bg-red-500/10 border border-red-500/20 rounded-md">
+            <span class="text-xs font-mono uppercase tracking-wider px-3 py-1 bg-[#FFF480] border border-[#1B1B1F] rounded-full text-[#1B1B1F]">
               {{ selectedGalleryImg.tag }}
             </span>
-            <span class="text-sm font-semibold text-white">{{ selectedGalleryImg.title }}</span>
+            <span class="text-sm font-semibold text-[#1B1B1F]">{{ selectedGalleryImg.title }}</span>
           </div>
           <button
             @click="selectedGalleryImg = null"
-            class="w-8 h-8 rounded-full bg-zinc-800 hover:bg-red-600 text-zinc-400 hover:text-white flex items-center justify-center transition-colors"
+            class="w-8 h-8 rounded-full bg-[#1B1B1F] text-white flex items-center justify-center transition-colors"
           >
-            <i class="bi bi-x-lg text-sm"></i>
+            <i class="bi bi-x-lg text-xs"></i>
           </button>
         </div>
-        <div class="p-2 sm:p-4 bg-zinc-950/60 max-h-[75vh] overflow-auto flex items-center justify-center">
+        <div class="p-4 bg-white max-h-[75vh] overflow-auto flex items-center justify-center">
           <img
             :src="selectedGalleryImg.image"
             :alt="selectedGalleryImg.title"
-            class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-2xl"
+            class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-lg border border-[#1B1B1F]/10"
           />
         </div>
       </div>
     </div>
 
     <!-- Project Details -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">Detalles del <span class="text-red-500">Proyecto</span></h2>
-          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
+    <section class="py-20 border-b border-[#1B1B1F]/10 bg-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="max-w-2xl mb-14">
+          <span class="text-xs font-mono uppercase tracking-wider text-[#6A7077] block mb-2">Ingeniería &amp; Diseño</span>
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] tracking-tight">
+            Detalles del <span class="font-serif-italic underline decoration-[#DBFF9C] decoration-4 underline-offset-4">Proyecto</span>
+          </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="(detail, i) in project.details" :key="i"
-            class="group bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600/20 to-red-950/50 flex items-center justify-center border border-red-500/30 mb-4 group-hover:scale-110 transition-transform">
-              <i :class="detail.icon" class="text-xl text-red-500"></i>
+          <div
+            v-for="(detail, i) in project.details"
+            :key="i"
+            class="group bg-[#F9FAFA] border border-[#1B1B1F]/15 hover:border-[#1B1B1F] rounded-[20px] p-7 transition-all duration-300 hover:shadow-[4px_4px_0px_#1B1B1F]"
+          >
+            <div class="w-12 h-12 rounded-2xl bg-[#FFF480] border border-[#1B1B1F] flex items-center justify-center mb-5 text-[#1B1B1F] group-hover:bg-[#DBFF9C] transition-colors">
+              <i :class="detail.icon" class="text-xl"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">{{ detail.title }}</h3>
-            <p class="text-zinc-400 text-sm leading-relaxed">{{ detail.text }}</p>
+            <h3 class="text-lg font-medium text-[#1B1B1F] mb-2">{{ detail.title }}</h3>
+            <p class="text-[#6A7077] text-sm leading-relaxed font-light">{{ detail.text }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Tech Stack -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">Stack <span class="text-red-500">Tecnológico</span></h2>
-          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
+    <section class="py-20 border-b border-[#1B1B1F]/10 bg-[#F9FAFA]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] tracking-tight">
+            Stack <span class="font-serif-italic underline decoration-[#FFF480] decoration-4 underline-offset-4">Tecnológico</span>
+          </h2>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-4">
-          <span v-for="(tech, i) in project.technologies" :key="i"
-            class="px-5 py-2.5 bg-zinc-900/80 border border-zinc-800 rounded-full text-sm font-semibold text-zinc-300 hover:border-red-500/40 hover:text-red-400 transition-all duration-300">
+        <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+          <span
+            v-for="(tech, i) in project.technologies"
+            :key="i"
+            class="px-5 py-2.5 bg-white border border-[#1B1B1F]/20 rounded-full text-xs font-mono font-medium text-[#1B1B1F] hover:bg-[#FFF480] transition-colors"
+          >
             {{ tech }}
           </span>
         </div>
@@ -222,14 +206,21 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 rounded-3xl p-10 sm:p-14">
-          <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">¿Necesitas algo <span class="text-red-500">similar</span>?</h2>
-          <p class="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">Cuéntanos tu idea y te entregamos una propuesta personalizada en menos de 24 horas.</p>
-          <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-10 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-base transition-all duration-300 shadow-lg shadow-red-950/40">
-            Iniciar Mi Proyecto
-            <i class="bi bi-arrow-right ml-2"></i>
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-5 text-center">
+        <div class="bg-[#FFFDE5] border-2 border-[#1B1B1F] rounded-[28px] p-10 sm:p-14 shadow-[6px_6px_0px_#1B1B1F]">
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] mb-3">
+            ¿Necesitas algo <span class="font-serif-italic underline decoration-[#1B1B1F]">similar</span>?
+          </h2>
+          <p class="text-[#6A7077] text-base mb-8 max-w-lg mx-auto font-light">
+            Cuéntanos tu idea y te entregamos una propuesta personalizada en menos de 24 horas.
+          </p>
+          <NuxtLink
+            to="/#contact"
+            class="inline-flex items-center justify-center gap-2 px-9 py-4 bg-[#1B1B1F] hover:bg-[#FFF480] text-white hover:text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all shadow-[2px_2px_0px_#1B1B1F]"
+          >
+            <span>Iniciar Mi Proyecto</span>
+            <i class="bi bi-arrow-up-right text-xs"></i>
           </NuxtLink>
         </div>
       </div>
@@ -239,6 +230,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
 const route = useRoute();
 const slug = route.params.slug;
 const selectedGalleryImg = ref(null);
@@ -252,7 +245,7 @@ const projectsData = {
     image: '/assets/img/projects/alacranes.jpg',
     liveUrl: 'https://alacranes-afc.vercel.app/',
     details: [
-      { icon: 'bi bi-lightning-charge', title: 'Diseño Temático & Identidad Visual', text: 'Identidad visual deportiva de alto impacto "Sangre & Pólvora" con microinteracciones y animaciones GSAP fluidas.' },
+      { icon: 'bi bi-lightning-charge', title: 'Diseño Temático & Identidad Visual', text: 'Identidad visual deportiva de alto impacto "Sangre & Pólvora" con microinteracciones y animaciones fluidas.' },
       { icon: 'bi bi-images', title: 'Galería Épica & Lightbox Interactivo', text: 'Galería estilo Bento Grid con 17 momentos de juego, visor Lightbox con navegación por miniaturas y cursor interactivo.' },
       { icon: 'bi bi-bag-check', title: 'Catálogo de Merchandising', text: 'Módulo de exhibición de jerseys oficiales, sudaderas y gorras con conexión directa a compras.' },
       { icon: 'bi bi-award', title: 'Gestión de Patrocinadores', text: 'Marquee infinito y sección dedicada para dar visibilidad de marca a los sponsors oficiales y aliados del club.' },
@@ -347,9 +340,3 @@ useHead({
   ]
 });
 </script>
-
-<style scoped>
-section {
-  background-color: #000000 !important;
-}
-</style>

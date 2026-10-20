@@ -1,19 +1,60 @@
 <template>
-  <section id="clients" class="clients py-12 bg-black flex items-center justify-center border-b border-zinc-900">
-    <div class="container mx-auto px-4">
-      <h2 class="text-center text-2xl font-bold mb-8 text-white">Tecnologías en las que somos Expertos</h2>
-      
-      <Swiper :modules="[Autoplay, Pagination]" :loop="true" :speed="600" :autoplay="{ delay: 3500 }"
-        :slides-per-view="'auto'" :pagination="{ el: '.swiper-pagination', clickable: true, type: 'bullets' }"
-        :breakpoints="breakpoints" class="init-swiper max-w-7xl mx-auto">
-        <SwiperSlide v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center px-4">
-          <div class="h-20 w-32 flex items-center justify-center p-2 grayscale hover:grayscale-0 transition duration-300">
-            <img :src="logo.src" :alt="logo.alt" class="max-h-12 max-w-full object-contain" />
-          </div>
-        </SwiperSlide>
+  <section id="clients" class="py-20 sm:py-24 bg-white text-[#1B1B1F] border-b border-[#1B1B1F]/10">
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-8">
 
-        <div class="swiper-pagination mt-6"></div>
-      </Swiper>
+      <!-- Monos Expertos Split Header + Counters -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-14">
+        <div class="lg:col-span-6">
+          <span class="inline-block text-xs font-mono uppercase tracking-widest text-[#6A7077] mb-3">
+            Stack &amp; Confianza Digital
+          </span>
+          <h2 class="text-3xl sm:text-[40px] font-normal text-[#171717] tracking-[-0.03em] leading-[1.15]">
+            Acompañamos a nuestros clientes a hacer realidad sus <span class="font-serif-italic underline decoration-[#FFF480] decoration-4 underline-offset-4">proyectos</span>
+          </h2>
+        </div>
+
+        <div class="lg:col-span-6 grid grid-cols-2 gap-6 sm:gap-10 lg:pl-8">
+          <div class="border-l-2 border-[#1B1B1F] pl-5">
+            <div class="flex items-baseline gap-1 text-4xl sm:text-5xl font-light text-[#1B1B1F] tracking-tight">
+              <span>5.0</span>
+              <span class="text-2xl text-[#FFF480] drop-shadow-[1px_1px_0px_#1B1B1F]">★</span>
+            </div>
+            <div class="text-sm text-[#6A7077] font-light mt-1 leading-snug">
+              Promedio de calificación y rendimiento en Google
+            </div>
+          </div>
+
+          <div class="border-l-2 border-[#1B1B1F] pl-5">
+            <div class="text-4xl sm:text-5xl font-light text-[#1B1B1F] tracking-tight">
+              100<span class="font-serif-italic text-3xl">%</span>
+            </div>
+            <div class="text-sm text-[#6A7077] font-light mt-1 leading-snug">
+              Tecnologías modernas en las que somos expertos
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technologies Carousel -->
+      <div class="pt-6 border-t border-[#1B1B1F]/10">
+        <Swiper
+          :modules="[Autoplay, Pagination]"
+          :loop="true"
+          :speed="700"
+          :autoplay="{ delay: 2800, disableOnInteraction: false }"
+          :slides-per-view="'auto'"
+          :breakpoints="breakpoints"
+          class="init-swiper"
+        >
+          <SwiperSlide v-for="(logo, index) in logos" :key="index" class="flex justify-center items-center py-4">
+            <div class="h-24 w-44 rounded-[20px] bg-[#F9FAFA] hover:bg-[#FFF480]/50 border border-[#1B1B1F]/10 hover:border-[#1B1B1F] flex flex-col items-center justify-center p-4 transition-all duration-300 group cursor-pointer">
+              <img :src="logo.src" :alt="logo.alt" class="max-h-10 max-w-[110px] object-contain grayscale group-hover:grayscale-0 transition duration-300" />
+              <span class="text-[11px] font-mono text-[#6A7077] group-hover:text-[#1B1B1F] mt-2">{{ logo.name }}</span>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
     </div>
   </section>
 </template>
@@ -27,19 +68,19 @@ import 'swiper/css/pagination'
 const breakpoints = {
   320: {
     slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 16,
   },
   480: {
     slidesPerView: 3,
-    spaceBetween: 40,
+    spaceBetween: 24,
   },
   768: {
     slidesPerView: 4,
-    spaceBetween: 60,
+    spaceBetween: 32,
   },
   1024: {
     slidesPerView: 5,
-    spaceBetween: 80,
+    spaceBetween: 40,
   },
 }
 
@@ -47,26 +88,32 @@ const logos = [
   {
     src: '/img/technologies/spring.png',
     alt: 'Logo Spring Boot',
+    name: 'Spring Boot'
   },
   {
     src: '/img/technologies/Angular.png',
     alt: 'Logo Angular Framework',
+    name: 'Angular / Nuxt'
   },
   {
     src: '/img/technologies/mongo.png',
     alt: 'Logo MongoDB',
+    name: 'MongoDB / SQL'
   },
   {
     src: '/img/technologies/php.png',
     alt: 'Logo PHP',
+    name: 'Cloud & APIs'
   },
   {
     src: '/img/technologies/swift.png',
     alt: 'Logo Swift Apple',
+    name: 'Swift iOS'
   },
   {
     src: '/img/technologies/flutter.png',
     alt: 'Logo Flutter Google',
+    name: 'Flutter Mobile'
   },
 ]
 </script>

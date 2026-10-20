@@ -1,70 +1,60 @@
 <template>
-  <div class="min-h-screen bg-black text-white">
+  <div class="min-h-screen bg-white text-[#1B1B1F]">
 
     <!-- Hero Banner -->
-    <section class="relative pt-32 pb-20 overflow-hidden">
-      <!-- Ambient lights -->
-      <div
-        class="absolute top-0 left-1/3 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none">
-      </div>
-      <div
-        class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-rose-900/5 rounded-full blur-[100px] pointer-events-none">
-      </div>
-      <div
-        class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f2312_1px,transparent_1px),linear-gradient(to_bottom,#1f1f2312_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_70%_50%_at_50%_50%,#000_60%,transparent_100%)] pointer-events-none">
-      </div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative pt-20 pb-16 overflow-hidden border-b border-[#1B1B1F]/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
 
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-sm text-zinc-500 mb-8">
-          <NuxtLink to="/" class="hover:text-red-500 transition-colors">Inicio</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <NuxtLink to="/#services" class="hover:text-red-500 transition-colors">Servicios</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <span class="text-zinc-300">{{ service.title }}</span>
+        <nav class="flex items-center gap-2 text-xs font-mono text-[#6A7077] mb-8">
+          <NuxtLink to="/" class="hover:text-[#1B1B1F] hover:underline">Inicio</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <NuxtLink to="/#services" class="hover:text-[#1B1B1F] hover:underline">Servicios</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <span class="text-[#1B1B1F] font-medium">{{ service.title }}</span>
         </nav>
 
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
-            <div
-              class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 backdrop-blur-xl">
-              <i :class="service.icon" class="text-red-500"></i>
-              <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Servicio Premium</span>
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#FFF480] border border-[#1B1B1F] text-[#1B1B1F]">
+              <i :class="service.icon" class="text-sm"></i>
+              <span class="font-mono font-semibold uppercase tracking-wider text-xs">Especialidad de Estudio</span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
+            <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.12]">
               {{ service.title.split(' ').slice(0, -1).join(' ') }}
-              <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
+              <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">
                 {{ service.title.split(' ').slice(-1)[0] }}
               </span>
             </h1>
 
-            <p class="text-zinc-300 text-lg leading-relaxed max-w-2xl">
+            <p class="text-[#1E1E1E]/80 text-lg leading-relaxed max-w-2xl font-light">
               {{ service.description }}
             </p>
 
-            <div class="flex flex-wrap gap-4 pt-4">
-              <NuxtLink to="/#contact"
-                class="inline-flex items-center justify-center px-8 py-3.5 bg-red-600 hover:bg-red-700 text-white rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg shadow-red-950/40">
+            <div class="flex flex-wrap gap-4 pt-2">
+              <NuxtLink
+                to="/#contact"
+                class="inline-flex items-center justify-center px-8 py-3.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]"
+              >
                 Solicitar Cotización
               </NuxtLink>
-              <NuxtLink to="/#services"
-                class="inline-flex items-center justify-center px-8 py-3.5 border border-zinc-800 rounded-xl hover:border-red-600 hover:text-red-500 transition-all duration-300 font-medium text-sm bg-zinc-900/40 backdrop-blur-sm">
+              <NuxtLink
+                to="/#services"
+                class="inline-flex items-center justify-center px-7 py-3.5 border border-[#1B1B1F] rounded-full hover:bg-[#1B1B1F] hover:text-white text-[#1B1B1F] transition-all duration-300 font-medium text-sm bg-white"
+              >
                 Ver Más Servicios
               </NuxtLink>
             </div>
           </div>
 
-          <!-- Image -->
-          <div class="lg:w-5/12">
-            <div class="relative rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl shadow-red-950/20">
+          <!-- Image Frame -->
+          <div class="lg:w-5/12 w-full">
+            <div class="relative rounded-[24px] overflow-hidden border-2 border-[#1B1B1F] shadow-[6px_6px_0px_#1B1B1F] bg-[#1B1B1F]">
               <img :src="service.image" :alt="service.title" class="w-full h-80 object-cover" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-              <div
-                class="absolute top-4 right-4 w-12 h-12 rounded-xl bg-black/70 border border-zinc-700 backdrop-blur-md flex items-center justify-center">
-                <i :class="service.icon" class="text-2xl text-red-500"></i>
+              <div class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white border border-[#1B1B1F] flex items-center justify-center text-[#1B1B1F]">
+                <i :class="service.icon" class="text-lg"></i>
               </div>
             </div>
           </div>
@@ -73,40 +63,46 @@
     </section>
 
     <!-- Features / What We Offer -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">¿Qué incluye este <span
-              class="text-red-500">servicio</span>?</h2>
-          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
+    <section class="py-20 border-b border-[#1B1B1F]/10 bg-[#F9FAFA]">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="max-w-2xl mb-14">
+          <span class="text-xs font-mono uppercase tracking-wider text-[#6A7077] block mb-2">Alcance &amp; Capacidades</span>
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] tracking-tight">
+            ¿Qué incluye este <span class="font-serif-italic underline decoration-[#FFF480] decoration-4 underline-offset-4">servicio</span>?
+          </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div v-for="(feature, i) in service.features" :key="i"
-            class="group bg-zinc-900/80 border border-zinc-800 hover:border-red-500/40 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
-            <div
-              class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-600/20 to-red-950/50 flex items-center justify-center border border-red-500/30 mb-4 group-hover:scale-110 transition-transform">
-              <i :class="feature.icon" class="text-xl text-red-500"></i>
+          <div
+            v-for="(feature, i) in service.features"
+            :key="i"
+            class="group bg-white border border-[#1B1B1F]/15 hover:border-[#1B1B1F] rounded-[20px] p-7 transition-all duration-300 hover:shadow-[4px_4px_0px_#1B1B1F]"
+          >
+            <div class="w-12 h-12 rounded-2xl bg-[#FFF480] border border-[#1B1B1F] flex items-center justify-center mb-5 text-[#1B1B1F] group-hover:bg-[#DBFF9C] transition-colors">
+              <i :class="feature.icon" class="text-xl"></i>
             </div>
-            <h3 class="text-lg font-bold text-white mb-2">{{ feature.title }}</h3>
-            <p class="text-zinc-400 text-sm leading-relaxed">{{ feature.text }}</p>
+            <h3 class="text-lg font-medium text-[#1B1B1F] mb-2">{{ feature.title }}</h3>
+            <p class="text-[#6A7077] text-sm leading-relaxed font-light">{{ feature.text }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Technologies -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl sm:text-4xl font-black text-white">Tecnologías que <span
-              class="text-red-500">Utilizamos</span></h2>
-          <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
+    <section class="py-20 border-b border-[#1B1B1F]/10 bg-white">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] tracking-tight">
+            Tecnologías que <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">Utilizamos</span>
+          </h2>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-4">
-          <span v-for="(tech, i) in service.technologies" :key="i"
-            class="px-5 py-2.5 bg-zinc-900/80 border border-zinc-800 rounded-full text-sm font-semibold text-zinc-300 hover:border-red-500/40 hover:text-red-400 transition-all duration-300">
+        <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+          <span
+            v-for="(tech, i) in service.technologies"
+            :key="i"
+            class="px-5 py-2.5 bg-[#F9FAFA] border border-[#1B1B1F]/20 rounded-full text-xs font-mono font-medium text-[#1B1B1F] hover:bg-[#FFF480] transition-colors"
+          >
             {{ tech }}
           </span>
         </div>
@@ -114,18 +110,21 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-20 border-t border-zinc-900">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <div
-          class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 rounded-3xl p-10 sm:p-14">
-          <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">¿Listo para empezar tu <span
-              class="text-red-500">proyecto</span>?</h2>
-          <p class="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">Contáctanos y en menos de 24 horas recibirás una
-            propuesta personalizada para tu negocio.</p>
-          <NuxtLink to="/#contact"
-            class="inline-flex items-center justify-center px-10 py-4 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-base transition-all duration-300 shadow-lg shadow-red-950/40">
-            Solicitar Cotización Gratis
-            <i class="bi bi-arrow-right ml-2"></i>
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-5 text-center">
+        <div class="bg-[#FFFDE5] border-2 border-[#1B1B1F] rounded-[28px] p-10 sm:p-14 shadow-[6px_6px_0px_#1B1B1F]">
+          <h2 class="text-3xl sm:text-4xl font-normal text-[#1B1B1F] mb-3">
+            ¿Listo para empezar tu <span class="font-serif-italic underline decoration-[#1B1B1F]">proyecto</span>?
+          </h2>
+          <p class="text-[#6A7077] text-base mb-8 max-w-lg mx-auto font-light">
+            Contáctanos y en menos de 24 horas recibirás una propuesta técnica y visual a la medida de tu negocio.
+          </p>
+          <NuxtLink
+            to="/#contact"
+            class="inline-flex items-center justify-center gap-2 px-9 py-4 bg-[#1B1B1F] hover:bg-[#FFF480] text-white hover:text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all shadow-[2px_2px_0px_#1B1B1F]"
+          >
+            <span>Solicitar Cotización Gratis</span>
+            <i class="bi bi-arrow-up-right text-xs"></i>
           </NuxtLink>
         </div>
       </div>
@@ -244,9 +243,3 @@ useHead({
   ]
 });
 </script>
-
-<style scoped>
-section {
-  background-color: #000000 !important;
-}
-</style>

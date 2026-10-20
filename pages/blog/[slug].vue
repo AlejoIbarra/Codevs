@@ -1,126 +1,121 @@
 <template>
-  <div class="min-h-screen bg-black text-white">
+  <div class="min-h-screen bg-white text-[#1B1B1F]">
     <!-- Header Banner -->
-    <section class="relative pt-32 pb-16 overflow-hidden">
-      <!-- Ambient light -->
-      <div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-900/5 rounded-full blur-[100px] pointer-events-none"></div>
-
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section class="relative pt-20 pb-16 overflow-hidden border-b border-[#1B1B1F]/10">
+      <div class="max-w-4xl mx-auto px-5 sm:px-8 relative z-10">
         <!-- Breadcrumb -->
-        <nav class="flex items-center gap-2 text-sm text-zinc-500 mb-8">
-          <NuxtLink to="/" class="hover:text-red-500 transition-colors">Inicio</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <NuxtLink to="/blog" class="hover:text-red-500 transition-colors">Blog</NuxtLink>
-          <i class="bi bi-chevron-right text-xs"></i>
-          <span class="text-zinc-400 truncate">{{ post.title }}</span>
+        <nav class="flex items-center gap-2 text-xs font-mono text-[#6A7077] mb-8">
+          <NuxtLink to="/" class="hover:text-[#1B1B1F] hover:underline">Inicio</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <NuxtLink to="/blog" class="hover:text-[#1B1B1F] hover:underline">Blog</NuxtLink>
+          <i class="bi bi-chevron-right text-[10px]"></i>
+          <span class="text-[#1B1B1F] font-medium truncate">{{ post.title }}</span>
         </nav>
 
         <!-- Category & Meta -->
         <div class="flex flex-wrap items-center gap-3 mb-6">
-          <span class="bg-red-600/90 text-white text-xs font-bold tracking-widest px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40">
+          <span class="bg-[#FFF480] text-[#1B1B1F] border border-[#1B1B1F] text-xs font-semibold tracking-wider px-3.5 py-1 rounded-full uppercase">
             {{ post.category }}
           </span>
-          <span class="text-xs text-zinc-400 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800">
-            <i class="bi bi-clock text-red-500"></i>
+          <span class="text-xs text-[#6A7077] font-mono flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F9FAFA] border border-[#1B1B1F]/15">
+            <i class="bi bi-clock text-[10px]"></i>
             {{ post.readTime }}
           </span>
-          <span class="text-xs text-zinc-400 flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800">
-            <i class="bi bi-calendar3 text-red-500"></i>
+          <span class="text-xs text-[#6A7077] font-mono flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F9FAFA] border border-[#1B1B1F]/15">
+            <i class="bi bi-calendar3 text-[10px]"></i>
             {{ post.date }}
           </span>
         </div>
 
         <!-- Title -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-8">
+        <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.15] mb-8">
           {{ post.title }}
         </h1>
 
         <!-- Author Info Bar -->
-        <div class="flex items-center justify-between p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 backdrop-blur-xl">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-500 font-bold">
-              <i class="bi bi-code-slash text-xl"></i>
+        <div class="flex items-center justify-between p-4 rounded-[20px] bg-[#F9FAFA] border border-[#1B1B1F]/15">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-[#1B1B1F] text-white flex items-center justify-center font-bold">
+              <i class="bi bi-code-slash text-sm"></i>
             </div>
             <div>
-              <div class="text-sm font-bold text-white">{{ post.author }}</div>
-              <div class="text-xs text-zinc-400">Ingeniería & Soluciones Tecnológicas en Pasto, Nariño</div>
+              <div class="text-sm font-semibold text-[#1B1B1F]">{{ post.author }}</div>
+              <div class="text-xs text-[#6A7077]">Ingeniería &amp; Soluciones Tecnológicas en Pasto, Nariño</div>
             </div>
           </div>
-          <span class="hidden sm:inline-flex text-[11px] font-mono text-zinc-500 bg-black/60 px-3 py-1 rounded-lg border border-zinc-800">
-            CODEVS Research & Tech
+          <span class="hidden sm:inline-flex text-[11px] font-mono text-[#6A7077] bg-white px-3 py-1 rounded-full border border-[#1B1B1F]/15">
+            CODEVS Research &amp; Tech
           </span>
         </div>
       </div>
     </section>
 
     <!-- Main Content & Cover Image -->
-    <section class="pb-24 border-t border-zinc-900">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-16 bg-[#F9FAFA]">
+      <div class="max-w-4xl mx-auto px-5 sm:px-8">
         <!-- Cover Image -->
-        <div class="relative -mt-6 mb-12 rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl shadow-red-950/20">
-          <img :src="post.image" :alt="post.title" class="w-full h-80 sm:h-[420px] object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="relative mb-12 rounded-[24px] overflow-hidden border-2 border-[#1B1B1F] shadow-[6px_6px_0px_#1B1B1F] bg-[#1B1B1F]">
+          <img :src="post.image" :alt="post.title" class="w-full h-80 sm:h-[440px] object-cover" />
         </div>
 
         <!-- Article Summary Box -->
-        <div v-if="post.summary" class="p-6 sm:p-8 rounded-3xl bg-zinc-900/90 border border-zinc-800 mb-12 shadow-xl">
-          <div class="flex items-center gap-2 text-red-500 font-bold text-xs uppercase tracking-widest mb-3">
-            <i class="bi bi-journal-bookmark-fill"></i>
+        <div v-if="post.summary" class="p-6 sm:p-8 rounded-[24px] bg-[#FFFDE5] border-2 border-[#1B1B1F] mb-12 shadow-[4px_4px_0px_#1B1B1F]">
+          <div class="flex items-center gap-2 text-[#1B1B1F] font-mono font-semibold text-xs uppercase tracking-wider mb-3">
+            <i class="bi bi-journal-bookmark-fill text-sm"></i>
             En este artículo aprenderás
           </div>
-          <p class="text-zinc-200 text-base leading-relaxed font-medium">
+          <p class="text-[#1E1E1E] text-base sm:text-lg leading-relaxed font-light">
             {{ post.summary }}
           </p>
         </div>
 
         <!-- Article Body -->
-        <div class="space-y-12 text-zinc-300 leading-relaxed text-base sm:text-lg">
+        <div class="space-y-12 text-[#1E1E1E] leading-relaxed text-base sm:text-lg bg-white p-8 sm:p-12 rounded-[28px] border border-[#1B1B1F]/15">
           <div v-for="(section, idx) in post.sections" :key="idx" class="space-y-6">
             <!-- Section Heading -->
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-white pt-6 border-l-4 border-red-600 pl-4">
+            <h2 class="text-2xl sm:text-3xl font-medium text-[#171717] pt-4 border-l-4 border-[#FFF480] pl-4">
               {{ section.heading }}
             </h2>
 
             <!-- Paragraphs -->
-            <p v-for="(paragraph, pIdx) in section.paragraphs" :key="pIdx" class="text-zinc-300 leading-relaxed">
+            <p v-for="(paragraph, pIdx) in section.paragraphs" :key="pIdx" class="text-[#1E1E1E]/85 leading-relaxed font-light">
               {{ paragraph }}
             </p>
 
             <!-- Bullets / Key Points -->
             <div v-if="section.bullets && section.bullets.length" class="space-y-3 pl-2 sm:pl-4 py-2">
               <div v-for="(bullet, bIdx) in section.bullets" :key="bIdx" class="flex items-start gap-3">
-                <div class="w-5 h-5 rounded-full bg-red-600/20 border border-red-500/40 flex items-center justify-center shrink-0 mt-1">
-                  <i class="bi bi-check2 text-xs text-red-400 font-bold"></i>
+                <div class="w-5 h-5 rounded-full bg-[#FFF480] border border-[#1B1B1F] flex items-center justify-center shrink-0 mt-1">
+                  <i class="bi bi-check2 text-xs text-[#1B1B1F] font-bold"></i>
                 </div>
-                <div class="text-sm sm:text-base text-zinc-300" v-html="bullet"></div>
+                <div class="text-sm sm:text-base text-[#1E1E1E]/85 font-light" v-html="bullet"></div>
               </div>
             </div>
 
             <!-- Code or Architecture block -->
-            <div v-if="section.code" class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 my-6 shadow-2xl">
-              <div class="px-4 py-2.5 bg-zinc-900/90 border-b border-zinc-800 flex items-center justify-between text-xs text-zinc-400 font-mono">
+            <div v-if="section.code" class="rounded-[20px] overflow-hidden border-2 border-[#1B1B1F] bg-[#1B1B1F] text-white my-6 shadow-[5px_5px_0px_#A5A1FF]">
+              <div class="px-4 py-2.5 bg-[#26262B] border-b border-white/10 flex items-center justify-between text-xs text-white/70 font-mono">
                 <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#FFACAA]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#FFF480]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#DBFF9C]"></span>
                 </div>
                 <span>{{ section.codeTitle || 'Estructura Técnica' }}</span>
               </div>
-              <pre class="p-4 sm:p-6 overflow-x-auto text-xs sm:text-sm font-mono text-zinc-300 leading-relaxed"><code>{{ section.code }}</code></pre>
+              <pre class="p-4 sm:p-6 overflow-x-auto text-xs sm:text-sm font-mono text-[#DBFF9C] leading-relaxed"><code>{{ section.code }}</code></pre>
             </div>
 
             <!-- Subsections -->
             <div v-if="section.subsections && section.subsections.length" class="space-y-6 pt-4">
-              <div v-for="(sub, sIdx) in section.subsections" :key="sIdx" class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-850 space-y-3">
-                <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                  <span class="text-red-500 font-mono text-sm">#{{ sIdx + 1 }}</span>
+              <div v-for="(sub, sIdx) in section.subsections" :key="sIdx" class="p-6 rounded-[20px] bg-[#F9FAFA] border border-[#1B1B1F]/15 space-y-3">
+                <h3 class="text-xl font-medium text-[#1B1B1F] flex items-center gap-2">
+                  <span class="text-xs font-mono font-semibold px-2 py-0.5 rounded-full bg-[#FFF480] border border-[#1B1B1F]">#{{ sIdx + 1 }}</span>
                   {{ sub.title }}
                 </h3>
-                <p class="text-sm sm:text-base text-zinc-400 leading-relaxed">{{ sub.text }}</p>
+                <p class="text-sm sm:text-base text-[#6A7077] leading-relaxed font-light">{{ sub.text }}</p>
                 <div v-if="sub.bullets" class="space-y-2 pt-2">
-                  <div v-for="(sb, sbIdx) in sub.bullets" :key="sbIdx" class="flex items-start gap-2.5 text-xs sm:text-sm text-zinc-300">
-                    <i class="bi bi-chevron-right text-red-500 text-xs shrink-0 mt-1"></i>
+                  <div v-for="(sb, sbIdx) in sub.bullets" :key="sbIdx" class="flex items-start gap-2.5 text-xs sm:text-sm text-[#1E1E1E]/80 font-light">
+                    <i class="bi bi-chevron-right text-[#1B1B1F] text-xs shrink-0 mt-1"></i>
                     <span v-html="sb"></span>
                   </div>
                 </div>
@@ -128,48 +123,48 @@
             </div>
 
             <!-- Strategic Tip / Alert Box -->
-            <div v-if="section.tip" class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900/90 to-zinc-950 border border-red-500/30 flex items-start gap-4 my-6 shadow-xl shadow-red-950/20">
-              <div class="w-10 h-10 rounded-2xl bg-red-600/20 border border-red-500/40 flex items-center justify-center shrink-0 mt-0.5">
-                <i class="bi bi-lightbulb-fill text-red-500 text-lg"></i>
+            <div v-if="section.tip" class="p-6 sm:p-8 rounded-[24px] bg-[#EFEEFF] border border-[#1B1B1F]/20 flex items-start gap-4 my-6">
+              <div class="w-10 h-10 rounded-2xl bg-[#1B1B1F] text-[#FFF480] flex items-center justify-center shrink-0 mt-0.5 text-lg">
+                <i class="bi bi-lightbulb-fill"></i>
               </div>
-              <div class="text-sm sm:text-base text-zinc-300">
-                <strong class="text-white block mb-1 font-bold">Clave Estratégica CODEVS:</strong>
-                {{ section.tip }}
+              <div class="text-sm sm:text-base text-[#1B1B1F]">
+                <strong class="text-[#1B1B1F] block mb-1 font-semibold">Clave Estratégica CODEVS:</strong>
+                <span class="font-light text-[#1E1E1E]/85">{{ section.tip }}</span>
               </div>
             </div>
           </div>
 
           <!-- Key Takeaways Box -->
-          <div v-if="post.keyTakeaways && post.keyTakeaways.length" class="mt-12 p-8 rounded-3xl bg-zinc-900/80 border border-zinc-800 shadow-2xl">
-            <h3 class="text-2xl font-black text-white mb-6 flex items-center gap-3">
-              <i class="bi bi-clipboard-check-fill text-red-500"></i>
+          <div v-if="post.keyTakeaways && post.keyTakeaways.length" class="mt-12 p-8 rounded-[24px] bg-[#F9FAFA] border border-[#1B1B1F]/20">
+            <h3 class="text-2xl font-medium text-[#1B1B1F] mb-6 flex items-center gap-3">
+              <i class="bi bi-clipboard-check text-xl"></i>
               Conclusiones Clave para tu Negocio
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div v-for="(item, tIdx) in post.keyTakeaways" :key="tIdx" class="p-4 rounded-2xl bg-black/50 border border-zinc-800 flex items-start gap-3">
-                <i class="bi bi-check-circle-fill text-red-500 shrink-0 mt-1"></i>
-                <span class="text-sm text-zinc-300">{{ item }}</span>
+              <div v-for="(item, tIdx) in post.keyTakeaways" :key="tIdx" class="p-4 rounded-[16px] bg-white border border-[#1B1B1F]/15 flex items-start gap-3">
+                <i class="bi bi-check-circle-fill text-[#1B1B1F] shrink-0 mt-0.5"></i>
+                <span class="text-sm text-[#1E1E1E]/80 font-light">{{ item }}</span>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Share & Back -->
-        <div class="mt-16 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-6">
+        <div class="mt-16 pt-8 border-t border-[#1B1B1F]/15 flex flex-col sm:flex-row justify-between items-center gap-6">
           <NuxtLink
             to="/blog"
-            class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl text-white text-sm font-semibold transition"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-[#F9FAFA] border border-[#1B1B1F] rounded-full text-[#1B1B1F] text-xs font-medium transition"
           >
-            <i class="bi bi-arrow-left text-red-500"></i>
+            <i class="bi bi-arrow-left"></i>
             <span>Volver a Todos los Artículos</span>
           </NuxtLink>
 
           <NuxtLink
             to="/#contact"
-            class="inline-flex items-center gap-2 px-8 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded-xl transition shadow-lg shadow-red-950/40 hover:scale-105"
+            class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] font-medium text-xs rounded-full transition shadow-[2px_2px_0px_#1B1B1F]"
           >
             <span>Impulsar Mi Proyecto con CODEVS</span>
-            <i class="bi bi-rocket-takeoff"></i>
+            <i class="bi bi-arrow-up-right text-[11px]"></i>
           </NuxtLink>
         </div>
       </div>

@@ -37,29 +37,29 @@
   }
   
 :root {
-    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --heading-font: "Raleway",  sans-serif;
-    --nav-font: "Poppins",  sans-serif;
+    --default-font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --heading-font: "Plus Jakarta Sans", sans-serif;
+    --nav-font: "Plus Jakarta Sans", sans-serif;
   }
   
-  /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+  /* Global Colors - Inspired by Monos Expertos Creative Studio */
   :root { 
-    --background-color: #000000; /* Background color for the entire website */
-    --default-color: #f4f4f5; /* Default color used for text content */
-    --heading-color: #ffffff; /* Color for headings */
-    --accent-color: #dc2626; /* Accent color */
-    --surface-color: #09090b; /* Surface color for boxed elements */
-    --contrast-color: #ffffff; /* Contrast color for text */
+    --background-color: #FFFFFF;
+    --default-color: #1B1B1F;
+    --heading-color: #1B1B1F;
+    --accent-color: #FFF480;
+    --surface-color: #F9FAFA;
+    --contrast-color: #1B1B1F;
   }
   
   /* Nav Menu Colors */
   :root {
-    --nav-color: #f4f4f5;
-    --nav-hover-color: #ef4444;
-    --nav-mobile-background-color: #09090b;
-    --nav-dropdown-background-color: #09090b;
-    --nav-dropdown-color: #f4f4f5;
-    --nav-dropdown-hover-color: #ef4444;
+    --nav-color: #1B1B1F;
+    --nav-hover-color: #1B1B1F;
+    --nav-mobile-background-color: #FFFFFF;
+    --nav-dropdown-background-color: #FFFFFF;
+    --nav-dropdown-color: #1B1B1F;
+    --nav-dropdown-hover-color: #1B1B1F;
   }
   
   /* Color Presets */
