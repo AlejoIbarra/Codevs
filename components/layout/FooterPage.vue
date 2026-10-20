@@ -13,6 +13,16 @@
           <p class="pt-3"><strong class="text-white">Celular / WA:</strong> <span>+57 313 806 6800</span></p>
           <p><strong class="text-white">Email:</strong> <span>comercial@codevs.dev</span></p>
         </div>
+
+        <!-- Botón de Contacto Rápido por WhatsApp -->
+        <div class="pt-1">
+          <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-emerald-950/40 hover:-translate-y-0.5 group">
+            <i class="bi bi-whatsapp text-lg"></i>
+            <span>Contactar por WhatsApp</span>
+          </a>
+        </div>
+
         <div class="flex space-x-3 pt-2">
           <a href="https://www.facebook.com/profile.php?id=61576300478505" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 bg-zinc-900 hover:bg-red-600 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition duration-300"
@@ -77,6 +87,14 @@
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Action -->
+  <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer"
+    class="fixed left-6 bottom-6 flex items-center gap-2.5 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-2xl shadow-emerald-950/60 z-50 transition duration-300 hover:scale-105 group"
+    aria-label="Contactar por WhatsApp">
+    <i class="bi bi-whatsapp text-lg"></i>
+    <span class="text-xs font-semibold hidden sm:inline">Chatear por WhatsApp</span>
+  </a>
+
   <!-- Scroll Top Button -->
   <a href="#hero" id="scroll-top"
     class="fixed right-6 bottom-6 w-11 h-11 bg-[#E7000B] hover:bg-red-700 rounded-xl flex items-center justify-center shadow-2xl shadow-red-950/50 z-50 transition duration-300 hover:scale-105" aria-label="Volver arriba">
@@ -88,4 +106,9 @@
 import { computed } from 'vue';
 
 const currentYear = computed(() => new Date().getFullYear());
+
+const whatsappMessage = encodeURIComponent(
+  'Hola CODEVS, me comunico desde su sitio web codevs.dev. Estoy interesado en cotizar un servicio para mi negocio (Desarrollo Web / Software a la Medida / SEO). ¿Me podrían brindar más información?'
+);
+const whatsappUrl = `https://wa.me/573138066800?text=${whatsappMessage}`;
 </script>
