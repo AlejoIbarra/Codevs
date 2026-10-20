@@ -40,7 +40,7 @@
         <article
           v-for="(post, index) in featuredPosts"
           :key="index"
-          class="blog-item group bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/25 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between"
+          class="blog-item group bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-[28px] overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/25 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between backdrop-blur-xl"
         >
           <div>
             <!-- Image Frame -->

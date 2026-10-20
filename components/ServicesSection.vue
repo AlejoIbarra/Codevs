@@ -28,7 +28,7 @@
       <!-- Cuadrícula de Servicios Limpia y Elegante (3 Columnas en Desktop) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 services-grid">
         <div v-for="(service, index) in services" :key="index"
-          class="service-item group relative bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/50 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/25 flex flex-col justify-between overflow-hidden">
+          class="service-item group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-[28px] p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/25 flex flex-col justify-between overflow-hidden">
           
           <!-- Brillo de fondo al hacer hover -->
           <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>

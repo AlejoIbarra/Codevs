@@ -29,7 +29,7 @@
         <div
           v-for="(item, i) in items"
           :key="i"
-          class="portfolio-item group relative bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/50 rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/25 flex flex-col justify-between"
+          class="portfolio-item group relative bg-white/[0.03] border border-white/10 hover:border-red-500/50 rounded-[28px] overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl hover:shadow-red-950/25 flex flex-col justify-between backdrop-blur-xl"
         >
           <!-- Hover glow overlay -->
           <div class="absolute inset-0 bg-gradient-to-t from-red-600/15 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>

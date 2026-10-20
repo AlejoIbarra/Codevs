@@ -28,7 +28,7 @@
         <div class="lg:col-span-5 space-y-6">
           
           <!-- Sede Principal -->
-          <div class="bg-[#0e0e13] border border-zinc-800/80 p-8 rounded-3xl shadow-xl group hover:border-red-500/40 transition-colors">
+          <div class="bg-white/[0.04] border border-white/15 p-8 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors backdrop-blur-xl">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0">
                 <i class="bi bi-geo-alt text-2xl"></i>
@@ -44,7 +44,7 @@
           <!-- Canales Directos -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <a href="https://wa.me/573138066800" target="_blank" rel="noopener noreferrer" 
-               class="bg-[#0e0e13] border border-zinc-800/80 p-7 rounded-3xl shadow-xl group hover:border-red-500/40 transition-colors block">
+               class="bg-white/[0.04] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block backdrop-blur-xl">
               <div class="w-12 h-12 rounded-2xl bg-emerald-600/15 border border-emerald-500/30 flex items-center justify-center text-emerald-500 mb-4">
                 <i class="bi bi-whatsapp text-2xl"></i>
               </div>
@@ -54,7 +54,7 @@
             </a>
 
             <a href="mailto:comercial@codevs.dev"
-               class="bg-[#0e0e13] border border-zinc-800/80 p-7 rounded-3xl shadow-xl group hover:border-red-500/40 transition-colors block">
+               class="bg-white/[0.04] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block backdrop-blur-xl">
               <div class="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 mb-4">
                 <i class="bi bi-envelope text-2xl"></i>
               </div>
@@ -65,7 +65,7 @@
           </div>
 
           <!-- Estado Operativo de Estudio -->
-          <div class="p-6 rounded-3xl bg-black/60 border border-zinc-800/80 backdrop-blur-xl flex items-center gap-4">
+          <div class="p-6 rounded-[28px] bg-white/[0.02] border border-white/10 backdrop-blur-xl flex items-center gap-4">
             <span class="relative flex h-3 w-3 shrink-0">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
@@ -77,7 +77,7 @@
         </div>
 
         <!-- Columna Derecha: Formulario Interactivo -->
-        <div class="lg:col-span-7 bg-[#0e0e13] border border-zinc-800/80 p-8 sm:p-10 rounded-3xl shadow-2xl">
+        <div class="lg:col-span-7 bg-white/[0.04] border border-white/15 p-8 sm:p-10 rounded-[32px] shadow-2xl backdrop-blur-2xl">
           
           <!-- Selector Rápido de Tipo de Proyecto -->
           <div class="mb-6 space-y-3">
