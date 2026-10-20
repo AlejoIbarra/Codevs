@@ -1,25 +1,22 @@
 <template>
-  <section id="blog" ref="blogSection" class="blog-section relative bg-[#08080a] overflow-hidden py-24 lg:py-32 border-b border-white/5">
+  <section id="blog" ref="blogSection" class="blog-section relative bg-[#060608] overflow-hidden py-24 lg:py-32 border-b border-white/10">
     <!-- Ambient light -->
     <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[150px] pointer-events-none"></div>
     <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-rose-950/20 rounded-full blur-[120px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 blog-header">
         <div>
-          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 shadow-lg shadow-red-950/30 backdrop-blur-xl mb-4">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-            </span>
-            <span class="text-red-400 font-mono font-bold uppercase tracking-widest text-xs">Publicaciones & Artículos</span>
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-white/10 text-xs font-mono text-zinc-300 mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+            <span class="text-red-400 font-bold uppercase tracking-widest text-[11px]">04 // Publicaciones & Artículos</span>
           </div>
           <h2 class="text-4xl sm:text-5xl font-display font-extrabold text-white tracking-tight uppercase">
             Blog de <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Tecnología & SEO</span>
           </h2>
-          <div class="w-20 h-1 bg-gradient-to-r from-red-600 to-rose-500 mt-4 mb-4 rounded-full"></div>
-          <p class="text-zinc-300 font-normal text-base sm:text-lg max-w-xl leading-relaxed">
+          <p class="text-zinc-400 font-mono text-xs max-w-xl leading-relaxed mt-2">
             Estrategias de desarrollo de software, posicionamiento en Google y arquitectura cloud desde Pasto para el mundo.
           </p>
         </div>
@@ -27,7 +24,7 @@
         <div>
           <NuxtLink
             to="/blog"
-            class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-red-500/50 rounded-xl text-white font-mono text-xs uppercase tracking-wider transition-all duration-300 shadow-lg group"
+            class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-zinc-900 hover:bg-zinc-850 border border-white/10 hover:border-red-500/50 rounded-xl text-white font-mono text-xs uppercase tracking-wider transition-all duration-300 shadow-lg group"
           >
             <span>Ver Todos los Artículos</span>
             <i class="bi bi-arrow-right text-red-500 group-hover:translate-x-1 transition-transform"></i>
@@ -35,44 +32,84 @@
         </div>
       </div>
 
-      <!-- Articles Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 blog-grid">
+      <!-- Articles Grid: Magazine Asymmetric Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 blog-grid">
+        
+        <!-- Artículo Principal Destacado (7 Columnas) -->
         <article
-          v-for="(post, index) in featuredPosts"
-          :key="index"
-          class="blog-item group bg-zinc-900/60 border border-zinc-800 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/25 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between backdrop-blur-xl"
+          v-if="featuredPosts[0]"
+          class="blog-item lg:col-span-7 group bg-[#0b0b0f] border border-white/10 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/20 transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between"
         >
           <div>
-            <!-- Image Frame -->
-            <div class="relative h-56 overflow-hidden border-b border-zinc-800/80 bg-black">
+            <div class="relative h-72 sm:h-80 overflow-hidden bg-black border-b border-white/10">
               <img
-                :src="post.image"
-                :alt="post.title"
+                :src="featuredPosts[0].image"
+                :alt="featuredPosts[0].title"
                 class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition-transform duration-700"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#08080a] via-black/30 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0b0b0f] via-black/40 to-transparent"></div>
               
-              <!-- Category Badge -->
-              <span class="absolute top-4 left-4 bg-red-600/90 text-white text-[10px] font-mono font-bold tracking-widest px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40">
-                {{ post.category }}
+              <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-mono font-bold tracking-widest px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40">
+                {{ featuredPosts[0].category }}
               </span>
 
-              <!-- Read Time Badge -->
-              <span class="absolute bottom-3 right-4 bg-black/85 border border-zinc-700/80 text-zinc-300 text-[10px] font-mono font-medium px-2.5 py-1 rounded-md backdrop-blur-md flex items-center gap-1.5">
+              <span class="absolute bottom-3 right-4 bg-black/85 border border-white/10 text-zinc-300 text-[10px] font-mono font-medium px-2.5 py-1 rounded-md backdrop-blur-md flex items-center gap-1.5">
                 <i class="bi bi-clock text-red-400 text-xs"></i>
-                {{ post.readTime }}
+                {{ featuredPosts[0].readTime }}
               </span>
             </div>
 
-            <!-- Content -->
-            <div class="p-6 sm:p-7 space-y-3">
+            <div class="p-8 space-y-4">
               <div class="flex items-center gap-3 text-xs font-mono text-zinc-500">
-                <span><i class="bi bi-calendar3 mr-1 text-red-500"></i>{{ post.date }}</span>
+                <span><i class="bi bi-calendar3 mr-1 text-red-500"></i>{{ featuredPosts[0].date }}</span>
                 <span>•</span>
-                <span><i class="bi bi-person mr-1 text-red-500"></i>{{ post.author }}</span>
+                <span><i class="bi bi-person mr-1 text-red-500"></i>{{ featuredPosts[0].author }}</span>
               </div>
 
-              <h3 class="text-xl font-display font-bold text-white group-hover:text-red-400 transition-colors duration-300 leading-snug">
+              <h3 class="text-2xl sm:text-3xl font-display font-bold text-white group-hover:text-red-400 transition-colors leading-snug">
+                <NuxtLink :to="`/blog/${featuredPosts[0].slug}`">
+                  {{ featuredPosts[0].title }}
+                </NuxtLink>
+              </h3>
+
+              <p class="text-zinc-300 text-sm leading-relaxed text-justify">
+                {{ featuredPosts[0].excerpt }}
+              </p>
+            </div>
+          </div>
+
+          <div class="p-8 pt-0">
+            <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+              <NuxtLink
+                :to="`/blog/${featuredPosts[0].slug}`"
+                class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-red-500 hover:text-red-400 transition-colors group/link"
+              >
+                <span>Leer Guía Completa</span>
+                <i class="bi bi-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
+              </NuxtLink>
+              <span class="text-[10px] font-mono text-zinc-500 uppercase">EDICIÓN ESPECIAL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Columna de Artículos Secundarios (5 Columnas) -->
+        <div class="lg:col-span-5 space-y-8 flex flex-col justify-between">
+          <article
+            v-for="(post, index) in featuredPosts.slice(1)"
+            :key="index"
+            class="blog-item group bg-[#0b0b0f] border border-white/10 hover:border-red-500/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-950/20 transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between p-7"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-red-500 px-2.5 py-1 rounded bg-red-600/10 border border-red-500/20">
+                  {{ post.category }}
+                </span>
+                <span class="text-[10px] font-mono text-zinc-500">
+                  {{ post.readTime }}
+                </span>
+              </div>
+
+              <h3 class="text-xl font-display font-bold text-white group-hover:text-red-400 transition-colors leading-snug">
                 <NuxtLink :to="`/blog/${post.slug}`">
                   {{ post.title }}
                 </NuxtLink>
@@ -82,11 +119,8 @@
                 {{ post.excerpt }}
               </p>
             </div>
-          </div>
 
-          <!-- Card Footer -->
-          <div class="p-6 sm:p-7 pt-0">
-            <div class="pt-4 border-t border-zinc-800/80 flex items-center justify-between">
+            <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
               <NuxtLink
                 :to="`/blog/${post.slug}`"
                 class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-red-500 hover:text-red-400 transition-colors group/link"
@@ -94,10 +128,11 @@
                 <span>Leer Artículo</span>
                 <i class="bi bi-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
               </NuxtLink>
-              <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">CODEVS Lab</span>
+              <span class="text-[10px] font-mono text-zinc-500">{{ post.date }}</span>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
+
       </div>
     </div>
   </section>
@@ -133,7 +168,7 @@ onMounted(() => {
         toggleActions: 'play none none reverse'
       },
       opacity: 0,
-      y: 40,
+      y: 35,
       duration: 0.8,
       stagger: 0.15,
       ease: 'power3.out'

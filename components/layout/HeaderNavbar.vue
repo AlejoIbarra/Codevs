@@ -1,12 +1,12 @@
 <template>
-  <header class="w-full bg-[#08080a]/90 backdrop-blur-xl border-b border-white/5 shadow-md z-50 sticky top-0">
+  <header class="w-full bg-[#060608]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl z-50 sticky top-0">
     <div class="flex items-center justify-between max-w-7xl mx-auto px-4 py-3.5">
       <HeaderTitle />
 
       <!-- Botón Hamburguesa Móvil -->
-      <button @click="toggleMenu" class="lg:hidden focus:outline-none z-50 mr-2" aria-label="Abrir menú">
+      <button @click="toggleMenu" class="lg:hidden focus:outline-none z-50 mr-2 p-1 rounded-lg border border-white/10 bg-zinc-900" aria-label="Abrir menú">
         <div class="hamburger" :class="{ open: isMenuOpen }">
-          <svg viewBox="0 0 32 32" class="w-7 h-7">
+          <svg viewBox="0 0 32 32" class="w-6 h-6">
             <path class="line line-top-bottom"
               d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
             </path>
@@ -15,7 +15,7 @@
         </div>
       </button>
 
-      <!-- Menú Desktop -->
+      <!-- Menú Desktop con Índices Numéricos de Estudio -->
       <nav class="hidden lg:flex items-center space-x-1" aria-label="menu desktop">
         <BaseButtonNavbarLanding v-for="(option, index) in options" :key="index" :highlight="option.highlight"
           :isDesktop="true"
@@ -23,25 +23,29 @@
       </nav>
 
       <!-- CTA Botón Desktop -->
-      <div class="hidden lg:flex items-center">
-        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-600/15 border border-red-500/30 text-red-400 hover:bg-[#E7000B] hover:text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-300">
+      <div class="hidden lg:flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-[10px] font-mono text-zinc-400 border border-white/10 px-2.5 py-1 rounded-full bg-black/60">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Disponibles Q4
+        </span>
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600/15 border border-red-500/30 text-red-400 hover:bg-[#E7000B] hover:text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-300">
           <span>Iniciar Proyecto</span>
-          <i class="bi bi-arrow-right"></i>
+          <i class="bi bi-arrow-up-right text-xs"></i>
         </a>
       </div>
     </div>
 
     <!-- Menú flotante en móviles (overlay) -->
     <transition name="fade-slide">
-      <nav v-if="isMenuOpen" class="lg:hidden absolute top-full left-4 right-4 bg-[#0e0e12] border border-zinc-800 shadow-2xl z-40 flex flex-col p-4 rounded-2xl mt-2 backdrop-blur-2xl space-y-1"
+      <nav v-if="isMenuOpen" class="lg:hidden absolute top-full left-4 right-4 bg-[#0c0c10] border border-white/10 shadow-2xl z-40 flex flex-col p-5 rounded-2xl mt-2 backdrop-blur-2xl space-y-2"
         aria-label="Menú flotante de navegación">
         <BaseButtonNavbarLanding v-for="(option, index) in options" :key="index" :highlight="option.highlight"
           :title="option.title" :url="option.url" :isSelected="option.url === currentRoute" @click="isMenuOpen = false" />
         
-        <div class="pt-3 border-t border-zinc-800">
-          <a href="#contact" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white font-mono text-xs font-bold uppercase tracking-wider">
+        <div class="pt-4 border-t border-white/10">
+          <a href="#contact" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#E7000B] text-white font-mono text-xs font-bold uppercase tracking-wider">
             <span>Iniciar Proyecto</span>
-            <i class="bi bi-arrow-right"></i>
+            <i class="bi bi-arrow-up-right text-xs"></i>
           </a>
         </div>
       </nav>
