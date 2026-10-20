@@ -23,9 +23,17 @@
       </nav>
 
       <!-- CTA Botón Desktop -->
-      <div class="hidden lg:flex items-center">
-        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#E7000B] hover:bg-red-700 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-red-950/40">
-          <span>Iniciar Proyecto</span>
+      <div class="hidden lg:flex items-center gap-3">
+        <NuxtLink :to="isEnglish ? '/' : '/en'"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-zinc-800 bg-zinc-900/80 hover:border-red-500/40 text-xs font-bold transition-colors"
+          :title="isEnglish ? 'Ver versión en Español' : 'Switch to US English site'">
+          <span :class="isEnglish ? 'text-zinc-500 hover:text-white' : 'text-red-500 font-extrabold'">ES</span>
+          <span class="text-zinc-600">/</span>
+          <span :class="isEnglish ? 'text-red-500 font-extrabold' : 'text-zinc-500 hover:text-white'">EN</span>
+        </NuxtLink>
+
+        <a :href="isEnglish ? '/en#quote-form' : '/#contact'" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#E7000B] hover:bg-red-700 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-red-950/40">
+          <span>{{ isEnglish ? 'Hire Engineers' : 'Iniciar Proyecto' }}</span>
           <i class="bi bi-arrow-up-right text-xs"></i>
         </a>
       </div>
@@ -38,9 +46,13 @@
         <BaseButtonNavbarLanding v-for="(option, index) in options" :key="index" :highlight="option.highlight"
           :title="option.title" :url="option.url" :isSelected="option.url === currentRoute" @click="isMenuOpen = false" />
         
-        <div class="pt-4 border-t border-white/10">
-          <a href="#contact" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white text-sm font-semibold">
-            <span>Iniciar Proyecto</span>
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <NuxtLink :to="isEnglish ? '/' : '/en'" @click="isMenuOpen = false"
+            class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-zinc-800 bg-zinc-900 text-xs font-bold text-white">
+            <span>{{ isEnglish ? 'Cambiar a Español 🇨🇴' : 'Switch to English (US) 🇺🇸' }}</span>
+          </NuxtLink>
+          <a :href="isEnglish ? '/en#quote-form' : '/#contact'" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white text-sm font-semibold">
+            <span>{{ isEnglish ? 'Hire Engineers' : 'Iniciar Proyecto' }}</span>
             <i class="bi bi-arrow-up-right text-xs"></i>
           </a>
         </div>
@@ -50,9 +62,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
 import HeaderTitle from '~/components/common/Title.vue';
 import BaseButtonNavbarLanding from '~/components/common/BaseButtonNavbarLanding.vue';
+
+const route = useRoute();
+const isEnglish = computed(() => route?.path ? route.path.startsWith('/en') : false);
 
 const isMenuOpen = ref(false);
 const toggleMenu = () => {
@@ -61,7 +77,7 @@ const toggleMenu = () => {
 
 const currentRoute = ref('#hero');
 
-const options = [
+const spanishOptions = [
   { title: "Inicio", url: "/#hero", highlight: false },
   { title: "Nosotros", url: "/#about", highlight: false },
   { title: "Servicios", url: "/#services", highlight: false },
@@ -69,6 +85,16 @@ const options = [
   { title: "Blog", url: "/blog", highlight: false },
   { title: "Contacto", url: "/#contact", highlight: false }
 ];
+
+const englishOptions = [
+  { title: "Overview", url: "/en", highlight: false },
+  { title: "Nearshore", url: "/en#advantage", highlight: false },
+  { title: "Engagement Models", url: "/en#models", highlight: false },
+  { title: "Engineering Work", url: "/en#work", highlight: false },
+  { title: "Instant Quote", url: "/en#quote-form", highlight: false }
+];
+
+const options = computed(() => isEnglish.value ? englishOptions : spanishOptions);
 </script>
 
 <style scoped>

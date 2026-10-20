@@ -27,6 +27,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [
         '/',
+        '/en',
         '/blog',
         '/blog/agentes-ia-flujos-trabajo-automatizacion-software',
         '/blog/geo-posicionamiento-motores-ia-google-overviews',

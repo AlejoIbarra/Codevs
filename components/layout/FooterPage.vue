@@ -87,6 +87,10 @@
       <p>© <span>{{ currentYear }}</span> <a href="https://www.codevs.dev/" class="text-gray-400 hover:text-white font-semibold">CODEVS</a>. San Juan de Pasto, Nariño, Colombia. Todos los derechos reservados.</p>
       
       <div class="flex flex-wrap items-center gap-4 text-gray-400">
+        <NuxtLink to="/en" class="text-zinc-300 hover:text-red-500 font-bold transition-colors">
+          🇺🇸 English (US Nearshore)
+        </NuxtLink>
+        <span>•</span>
         <NuxtLink to="/politica-privacidad" class="hover:text-red-500 transition-colors">
           Privacidad & Datos
         </NuxtLink>
