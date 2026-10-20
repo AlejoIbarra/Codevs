@@ -18,26 +18,6 @@
         <!-- Detalle de luz superior interior del cristal -->
         <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-3/4 h-48 bg-gradient-to-b from-white/20 to-transparent blur-2xl pointer-events-none"></div>
 
-        <!-- Barra Superior de la Tarjeta de Cristal (Como en la Imagen de Referencia) -->
-        <div class="flex items-center justify-between pb-8 mb-8 border-b border-white/10 text-xs text-white/70">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-500 shadow-[0_0_10px_#E7000B]"></span>
-            <span class="font-semibold tracking-wider text-white">CODEVS // Digital Studio</span>
-          </div>
-
-          <div class="hidden md:flex items-center gap-6 text-xs text-white/80 font-medium">
-            <a href="#services" class="hover:text-white transition">Servicios</a>
-            <a href="#portfolio" class="hover:text-white transition">Proyectos</a>
-            <a href="/blog" class="hover:text-white transition">Blog</a>
-            <a href="#contact" class="hover:text-white transition">Contacto</a>
-          </div>
-
-          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/25 bg-white/10 hover:bg-white/20 text-white text-xs font-medium tracking-wide transition-all backdrop-blur-md">
-            <span>Iniciar Proyecto</span>
-            <i class="bi bi-chevron-right text-[10px]"></i>
-          </a>
-        </div>
-
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4 sm:my-8">
           
@@ -73,33 +53,6 @@
               <i class="bi bi-journal-code text-red-400"></i>
               <span class="underline decoration-white/30 underline-offset-4 hover:decoration-white">Blog de Tecnología</span>
             </NuxtLink>
-          </div>
-
-        </div>
-
-        <!-- Barra Inferior de Métricas y Créditos de Estudio (Como en la Imagen de Referencia) -->
-        <div class="mt-12 sm:mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-white/70">
-          
-          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-6">
-            <div class="flex items-center gap-2">
-              <i class="bi bi-trophy text-red-500 text-sm"></i>
-              <span class="text-white font-semibold">Google Rank #1</span>
-              <span class="text-white/40">• SEO Local y Nacional</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i class="bi bi-cpu text-red-500 text-sm"></i>
-              <span class="text-white font-semibold">100% Código Limpio</span>
-              <span class="text-white/40">• Cero Plantillas</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <i class="bi bi-lightning-charge text-red-500 text-sm"></i>
-              <span class="text-white font-semibold">Rendimiento 60 FPS</span>
-            </div>
-          </div>
-
-          <div class="text-center sm:text-right">
-            <div class="text-white/90 font-semibold">San Juan de Pasto</div>
-            <div class="text-[11px] text-white/50">Nariño, Colombia</div>
           </div>
 
         </div>
