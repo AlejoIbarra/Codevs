@@ -1,6 +1,6 @@
 <template>
-  <div class="rocket-wrapper">
-    <svg ref="rocketSvg" width="54" height="54" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg" class="rocket">
+  <div class="rocket-wrapper mt-10">
+    <svg ref="rocketSvg" width="52" height="52" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg" class="rocket">
       <path
         d="M39.3962 21.1313C28.4312 33.44 20.9062 51.1238 20.2075 52.79L0.75 44.4588L26.6038 18.605L39.3962 21.1313ZM50.0387 78.375C50.0387 78.375 70.1412 70.0438 81.6975 58.4875C110.722 29.4625 105.885 6.78001 104.326 1.67376C99.22 0.0612618 76.5375 -4.72249 47.5125 24.3025C35.9563 35.8588 27.625 55.9613 27.625 55.9613L50.0387 78.375ZM84.8688 66.6038C72.56 77.5688 54.8763 85.0938 53.21 85.7925L61.5413 105.25L87.395 79.3963L84.8688 66.6038ZM59.875 35.375C59.875 29.4625 64.7125 24.625 70.625 24.625C76.5375 24.625 81.375 29.4625 81.375 35.375C81.375 41.2875 76.5375 46.125 70.625 46.125C64.7125 46.125 59.875 41.2875 59.875 35.375Z"
         fill="#E7000B" />
@@ -14,68 +14,71 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from 'vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const rocketSvg = ref(null); 
-let ctx = null;
+let handleScroll = null;
 
 onMounted(() => {
-  if (import.meta.client) {
-    gsap.registerPlugin(ScrollTrigger);
+  const section = document.querySelector('#about');
+  if (!section) return;
 
-    const section = document.querySelector('#about');
-    if (!section || !rocketSvg.value) return;
+  handleScroll = () => {
+    const rect = section.getBoundingClientRect();
+    const sectionHeight = section.offsetHeight;
+    const windowHeight = window.innerHeight;
+    
+    // Progreso exacto del scroll por la seccion
+    const progress = Math.min(Math.max((windowHeight - rect.top) / (sectionHeight + windowHeight), 0), 1);
 
-    ctx = gsap.context(() => {
-      gsap.to(rocketSvg.value, {
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 80%',
-          end: 'bottom 20%',
-          scrub: 1.2,
-        },
-        x: () => (section.offsetWidth - 80),
-        y: 60,
-        rotation: 20,
-        ease: 'power1.inOut'
-      });
-    });
-  }
+    const maxX = section.offsetWidth - 70;
+    const x = progress * maxX;
+    const y = Math.sin(progress * Math.PI * 2) * 55; // Ondulación visible y dinámica
+
+    if (rocketSvg.value) {
+      rocketSvg.value.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${y * 0.5 + 15}deg)`;
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
 });
 
 onBeforeUnmount(() => {
-  if (ctx) ctx.revert();
+  if (handleScroll) {
+    window.removeEventListener('scroll', handleScroll);
+  }
 });
 </script>
 
 <style scoped>
 .rocket-wrapper {
   position: absolute;
-  top: 40px;
-  left: 20px;
-  width: calc(100% - 40px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  z-index: 20;
+  z-index: 25;
 }
 
 .rocket {
-  filter: drop-shadow(0 0 12px rgba(231, 0, 11, 0.6));
+  transition: transform 0.04s linear;
+  filter: drop-shadow(0 0 16px rgba(231, 0, 11, 0.85));
   will-change: transform;
 }
 
 .flame {
   transform-origin: center;
-  animation: scaleFire 0.35s ease-in-out infinite alternate;
+  animation: scaleFire 0.3s ease-in-out infinite alternate;
 }
 
 @keyframes scaleFire {
   from {
-    transform: scale(0.95);
-    opacity: 0.85;
+    transform: scale(0.9);
+    opacity: 0.8;
   }
   to {
-    transform: scale(1.25);
+    transform: scale(1.35);
     opacity: 1;
   }
 }

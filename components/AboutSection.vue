@@ -167,13 +167,54 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import RocketScroll from '~/components/ui/RocketScroll.vue';
 
 const aboutSection = ref(null);
 const visionCard = ref(null);
 const misionCard = ref(null);
+let ctx = null;
+
+onMounted(() => {
+  if (import.meta.client) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ctx = gsap.context(() => {
+      gsap.from('.gsap-fade-left', {
+        scrollTrigger: {
+          trigger: aboutSection.value,
+          start: 'top 92%',
+          once: true
+        },
+        x: -24,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+        clearProps: 'all'
+      });
+
+      gsap.from('.gsap-fade-right', {
+        scrollTrigger: {
+          trigger: aboutSection.value,
+          start: 'top 92%',
+          once: true
+        },
+        x: 24,
+        opacity: 0,
+        duration: 0.6,
+        delay: 0.08,
+        ease: 'power2.out',
+        clearProps: 'all'
+      });
+    });
+  }
+});
+
+onBeforeUnmount(() => {
+  if (ctx) ctx.revert();
+});
 
 const handleCardTilt = (e, cardRef) => {
   if (!cardRef) return;
