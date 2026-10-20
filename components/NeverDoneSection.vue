@@ -7,15 +7,15 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 mb-14">
       <div class="max-w-4xl">
         <h2 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-[1.02]">
-          Never one and done.
+          Innovación sin pausa.
         </h2>
         <p class="text-zinc-400 text-lg sm:text-2xl mt-4 font-normal leading-relaxed">
-          We co-create the future with our clients, measure the impact and do it again.
+          Co-creamos el futuro digital de nuestros clientes: medimos el impacto en ventas, optimizamos y volvemos a innovar.
         </p>
       </div>
     </div>
 
-    <!-- Radial Cards Marquee Infinito (Estilo Huge Inc) -->
+    <!-- Radial Cards Marquee Infinito (Estilo Huge Inc en Español) -->
     <div class="relative w-full overflow-hidden py-4">
       <div class="marquee-track flex gap-6 sm:gap-8 items-center">
         <!-- Primer bucle de tarjetas -->
@@ -43,7 +43,7 @@
             </div>
           </div>
 
-          <!-- Texto Narrativo Monumental de Huge Inc -->
+          <!-- Texto Narrativo Monumental en Español -->
           <div class="relative z-10 space-y-2">
             <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight tracking-tight group-hover:text-red-300 transition-colors">
               {{ card.title }}
@@ -94,39 +94,39 @@
 <script setup>
 const cards = [
   {
-    title: '14 years. Multiple businesses. Constant reinvention.',
-    subtitle: 'Alianzas continuas que transforman negocios tradicionales en líderes tecnológicos digitales.',
+    title: 'Evolución continua. Múltiples industrias. Reinvención digital.',
+    subtitle: 'Alianzas a largo plazo que transforman empresas tradicionales en referentes tecnológicos.',
     tag: 'Evolución Digital',
     image: '/img/working-2.jpg'
   },
   {
-    title: 'Disrupting tradition with a new digital brand expression.',
-    subtitle: 'Redefiniendo la presencia visual y operativa de marcas que buscan impacto perdurable.',
-    tag: 'Brand Systems',
+    title: 'Rompiendo esquemas con una presencia web de alto impacto.',
+    subtitle: 'Alacranes AFC: plataforma oficial con galería interactiva, catálogo de merchandising y sponsors.',
+    tag: 'Web & Branding',
     image: '/assets/img/projects/alacranes.jpg'
   },
   {
-    title: 'Enabling a suite of intelligent digital products.',
-    subtitle: 'Arquitectura escalable en Spring Boot y Nuxt para ecosistemas de alta concurrencia.',
-    tag: 'Sistemas Cloud',
+    title: 'Arquitectura de software inteligente para operaciones complejas.',
+    subtitle: 'Sistemas empresariales y plataformas en la nube desarrolladas con Spring Boot y Nuxt.',
+    tag: 'Software Cloud',
     image: '/img/working-4.jpg'
   },
   {
-    title: 'Composable commerce for a luxury BBQ brand.',
-    subtitle: 'Plataformas de venta automatizada con pasarelas transaccionales sin fricción.',
-    tag: 'Commerce & Pagos',
+    title: 'Comercio electrónico y pasarelas de pago seguras para escalar.',
+    subtitle: 'Moments Gallery: marketplace fotográfico para eventos con cobros automatizados.',
+    tag: 'E-Commerce & Pagos',
     image: '/assets/img/projects/moments.jpg'
   },
   {
-    title: 'Building a brand that can carry the weight of clinical science.',
-    subtitle: 'Diseño UX/UI de grado empresarial para plataformas de salud y precisión operativa.',
-    tag: 'UX / UI Enterprise',
+    title: 'Interfaces UX/UI modernas concebidas para retener y convertir.',
+    subtitle: 'IPTV Max UI: experiencia multimedia intuitiva y optimizada para pantallas interactivas.',
+    tag: 'Diseño UX/UI',
     image: '/img/UI/pantalla-principal.png'
   },
   {
-    title: 'Engaging gamer audiences for blockbuster releases.',
-    subtitle: 'Streaming interactivo, baja latencia y experiencias multimedia de alta fidelidad.',
-    tag: 'Streaming Media',
+    title: 'Rendimiento extremo a 60 FPS y #1 garantizado en Google.',
+    subtitle: 'Ingeniería de optimización para Core Web Vitals y posicionamiento SEO orgánico en Pasto y LATAM.',
+    tag: 'SEO Rank #1',
     image: '/img/iptv/iptv-max.png'
   }
 ];

@@ -4,13 +4,13 @@
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-      <!-- Encabezado Monumental Estilo Huge Inc "Solutions." -->
+      <!-- Encabezado Monumental en Español -->
       <div class="max-w-3xl mb-16 lg:mb-24 services-header">
         <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
-          Solutions.
+          Soluciones.
         </h2>
         <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
-          AI-native. Systems-driven. Expert-led. The capabilities that turn ideas into impact.
+          Ingeniería de software a la medida, velocidad extrema y arquitectura limpia. Las capacidades tecnológicas que transforman tus ideas en negocios de alto impacto.
         </p>
       </div>
 
@@ -31,7 +31,7 @@
               {{ item.number }}
             </span>
             <div class="flex items-center gap-3">
-              <span class="text-xs font-bold uppercase tracking-wider text-zinc-500 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-200">
+              <span class="text-xs font-bold uppercase tracking-wider text-zinc-600 px-4 py-1.5 rounded-full bg-zinc-100 border border-zinc-200">
                 {{ item.tag }}
               </span>
               <NuxtLink
@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <!-- Fila Central: Título Monumental & Subtítulo Exacto de Huge Inc -->
+          <!-- Fila Central: Título Monumental & Subtítulo en Español -->
           <div class="space-y-4 my-6">
             <h3 class="text-3xl sm:text-5xl lg:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05] group-hover:text-red-600 transition-colors">
               <NuxtLink :to="item.link">
@@ -58,14 +58,14 @@
 
           <!-- Fila Inferior: Detalles de Ingeniería CODEVS -->
           <div class="pt-6 border-t border-zinc-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <p class="text-xs sm:text-sm text-zinc-500 font-normal">
+            <p class="text-xs sm:text-sm text-zinc-500 font-normal max-w-2xl text-justify">
               {{ item.description }}
             </p>
             <NuxtLink
               :to="item.link"
               class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors shrink-0"
             >
-              <span>Conocer Solución</span>
+              <span>Conocer Más</span>
               <i class="bi bi-arrow-right text-xs"></i>
             </NuxtLink>
           </div>
@@ -149,51 +149,51 @@ onBeforeUnmount(() => {
 const solutions = [
   {
     number: '01',
-    title: 'Brand strategy & design.',
-    subtitle: 'Brands that move with culture.',
-    description: 'Diseño de identidad visual de alto impacto, prototipado interactivo en Figma y sistemas de diseño escalables.',
-    tag: 'Diseño UX/UI',
-    link: '/servicios/diseno-ux-ui'
-  },
-  {
-    number: '02',
-    title: 'Marketing & content.',
-    subtitle: 'Insight and creative that cut through.',
-    description: 'Estrategias de posicionamiento SEO local y orgánico en Google con arquitectura semántica para convertir visitas en clientes.',
-    tag: 'SEO Rank #1',
-    link: '/servicios/seo-avanzado'
-  },
-  {
-    number: '03',
-    title: 'Products & platforms.',
-    subtitle: 'From idea to adoption, fast.',
-    description: 'Ingeniería de software a la medida con Spring Boot, PostgreSQL, Docker y Nuxt para operaciones complejas.',
-    tag: 'Software a Medida',
+    title: 'Desarrollo de Software a la Medida.',
+    subtitle: 'Plataformas empresariales y arquitectura cloud.',
+    description: 'Ingeniería de software de alta calidad. Diseñamos plataformas web seguras, escalables y optimizadas para automatizar las operaciones complejas de tu negocio con Spring Boot, Java y PostgreSQL.',
+    tag: 'Arquitectura Cloud',
     link: '/servicios/desarrollo-software'
   },
   {
-    number: '04',
-    title: 'Composable commerce.',
-    subtitle: 'Commerce built around your business.',
-    description: 'Desarrollo de páginas web corporativas y tiendas online veloces, adaptables y con pasarelas de pago seguras.',
-    tag: 'Desarrollo Web',
+    number: '02',
+    title: 'Desarrollo de Páginas Web.',
+    subtitle: 'Sitios corporativos y tiendas online de alta velocidad.',
+    description: 'Creación de sitios web corporativos y comercio electrónico (E-commerce). Páginas veloces, adaptadas a dispositivos móviles y estructuradas semánticamente para posicionar en Google.',
+    tag: 'Web & E-Commerce',
     link: '/servicios/desarrollo-web'
   },
   {
+    number: '03',
+    title: 'Diseño de Interfaces UX/UI.',
+    subtitle: 'Experiencias centradas en la retención y conversión.',
+    description: 'Diseño de experiencias de usuario memorables. Creamos prototipos interactivos modernos en Figma y sistemas de diseño visual que aumentan la conversión de clientes potenciales.',
+    tag: 'Design Systems',
+    link: '/servicios/diseno-ux-ui'
+  },
+  {
+    number: '04',
+    title: 'Integraciones de APIs & Sistemas.',
+    subtitle: 'Conexiones seguras con pasarelas de pago y CRMs.',
+    description: 'Conectamos tus sistemas existentes con pasarelas bancarias (Stripe, PayU, PSE, Wompi), CRMs y plataformas logísticas mediante integraciones de APIs robustas y eficientes.',
+    tag: 'Sistemas & Pagos',
+    link: '/servicios/integraciones-apis'
+  },
+  {
     number: '05',
-    title: 'Customer experience.',
-    subtitle: 'Experiences that meet every moment.',
-    description: 'Aplicaciones móviles para iOS y Android con Flutter y Swift que ofrecen interacciones fluidas a 60 FPS.',
-    tag: 'Apps Móviles',
+    title: 'Desarrollo de Apps Móviles.',
+    subtitle: 'Fluidez nativa y desempeño en iOS y Android.',
+    description: 'Desarrollo para plataformas Android e iOS usando arquitecturas modernas nativas (Swift) o híbridas (Flutter) con animaciones a 60 FPS, baja latencia y alta retención.',
+    tag: 'iOS & Android',
     link: '/servicios/apps-moviles'
   },
   {
     number: '06',
-    title: 'AI activation.',
-    subtitle: 'Transforming how teams work, today.',
-    description: 'Integración de APIs inteligentes, automatización de flujos de trabajo y conexión con sistemas empresariales.',
-    tag: 'Integraciones & IA',
-    link: '/servicios/integraciones-apis'
+    title: 'Optimización SEO Avanzada.',
+    subtitle: 'Posicionamiento #1 en Google y motores de búsqueda con IA.',
+    description: 'Estrategias de posicionamiento SEO local y orgánico para empresas que buscan liderar las búsquedas orgánicas en Pasto, Nariño, Colombia y a nivel internacional.',
+    tag: 'Google Rank #1',
+    link: '/servicios/seo-avanzado'
   }
 ];
 </script>
