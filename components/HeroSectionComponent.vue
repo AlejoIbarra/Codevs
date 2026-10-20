@@ -11,24 +11,6 @@
 
     <div class="container mx-auto max-w-7xl relative z-10">
       
-      <!-- Barra Superior de Metadatos de Estudio -->
-      <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-10 border-b border-zinc-850 trigger-anim text-xs text-zinc-400">
-        <div class="flex items-center gap-3">
-          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 font-semibold tracking-wider uppercase text-[11px]">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            Estudio de Diseño & Software
-          </span>
-          <span class="hidden sm:inline text-zinc-600">•</span>
-          <span class="hidden sm:inline">San Juan de Pasto, Nariño, Colombia</span>
-        </div>
-        <div class="flex items-center gap-4">
-          <span class="inline-flex items-center gap-2 text-zinc-300">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Disponibles para Nuevos Proyectos
-          </span>
-        </div>
-      </div>
-
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         <!-- Columna Izquierda: Titular Monumental & Acciones -->
@@ -54,17 +36,17 @@
 
           <!-- Acciones de Conversión -->
           <div class="flex flex-wrap items-center gap-4 pt-2 trigger-anim">
-            <a href="#contact" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#E7000B] hover:bg-[#d0000a] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 shadow-xl shadow-red-950/40 hover:shadow-red-600/40 hover:-translate-y-0.5">
+            <a href="#contact" class="group relative inline-flex items-center gap-3 px-8 py-3.5 bg-[#E7000B] hover:bg-[#d0000a] text-white font-semibold text-sm rounded-xl transition-all duration-300 shadow-xl shadow-red-950/40 hover:shadow-red-600/40 hover:-translate-y-0.5">
               <span>Iniciar Mi Proyecto</span>
               <i class="bi bi-arrow-up-right text-sm group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
 
-            <a href="#portfolio" class="inline-flex items-center gap-2.5 px-6 py-4 border border-zinc-800 hover:border-red-500/40 rounded-xl text-zinc-300 hover:text-white transition-all duration-300 text-xs font-semibold uppercase tracking-wider bg-zinc-900/40 backdrop-blur-sm group">
+            <a href="#portfolio" class="inline-flex items-center gap-2.5 px-6 py-3.5 border border-zinc-800 hover:border-red-500/40 rounded-xl text-zinc-300 hover:text-white transition-all duration-300 text-sm font-medium bg-zinc-900/40 backdrop-blur-sm group">
               <i class="bi bi-collection text-red-500"></i>
               <span>Ver Casos de Éxito</span>
             </a>
 
-            <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-5 py-4 text-zinc-400 hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider group">
+            <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-5 py-3.5 text-zinc-400 hover:text-white transition-colors text-sm font-medium group">
               <i class="bi bi-journal-code text-red-500"></i>
               <span class="underline decoration-zinc-700 underline-offset-4 group-hover:decoration-red-500">Blog de Tecnología</span>
             </NuxtLink>

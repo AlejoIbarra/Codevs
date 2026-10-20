@@ -15,20 +15,16 @@
         </div>
       </button>
 
-      <!-- Menú Desktop con Índices Numéricos de Estudio -->
-      <nav class="hidden lg:flex items-center space-x-1" aria-label="menu desktop">
+      <!-- Menú Desktop -->
+      <nav class="hidden lg:flex items-center space-x-2" aria-label="menu desktop">
         <BaseButtonNavbarLanding v-for="(option, index) in options" :key="index" :highlight="option.highlight"
           :isDesktop="true"
           :title="option.title" :url="option.url" :isSelected="option.url === currentRoute" />
       </nav>
 
       <!-- CTA Botón Desktop -->
-      <div class="hidden lg:flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 text-[10px] font-mono text-zinc-400 border border-white/10 px-2.5 py-1 rounded-full bg-black/60">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          Disponibles Q4
-        </span>
-        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600/15 border border-red-500/30 text-red-400 hover:bg-[#E7000B] hover:text-white font-mono text-xs font-bold uppercase tracking-wider transition-all duration-300">
+      <div class="hidden lg:flex items-center">
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#E7000B] hover:bg-red-700 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-red-950/40">
           <span>Iniciar Proyecto</span>
           <i class="bi bi-arrow-up-right text-xs"></i>
         </a>
@@ -43,7 +39,7 @@
           :title="option.title" :url="option.url" :isSelected="option.url === currentRoute" @click="isMenuOpen = false" />
         
         <div class="pt-4 border-t border-white/10">
-          <a href="#contact" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#E7000B] text-white font-mono text-xs font-bold uppercase tracking-wider">
+          <a href="#contact" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white text-sm font-semibold">
             <span>Iniciar Proyecto</span>
             <i class="bi bi-arrow-up-right text-xs"></i>
           </a>
