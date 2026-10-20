@@ -938,6 +938,231 @@ ON orders (store_id, status, created_at DESC);
       'Evitar transformaciones y funciones dentro del WHERE permite usar índices eficientemente.',
       'Combinar bases de datos relacionales con Redis reduce drásticamente el consumo de servidores.'
     ]
+  },
+  'agentes-ia-flujos-trabajo-automatizacion-software': {
+    title: 'Agentes Autónomos de IA en 2026: Cómo los Workflows Agénticos Están Reemplazando el Desarrollo de Software Tradicional',
+    category: 'Inteligencia Artificial & IA',
+    image: '/img/blog/blog-inside-post.jpg',
+    date: '18 Octubre, 2026',
+    author: 'Equipo de Inteligencia Artificial CODEVS',
+    readTime: '15 min de lectura',
+    summary: 'Análisis exhaustivo sobre la transición desde asistentes de código básicos hacia sistemas multi-agente autónomos, el protocolo MCP (Model Context Protocol) y la integración de arquitecturas agénticas en plataformas empresariales en Colombia y Latinoamérica.',
+    sections: [
+      {
+        heading: '1. De la Generación Lineal de Código a los Bucles Agénticos Multi-Paso',
+        paragraphs: [
+          'Durante los primeros años de la inteligencia artificial generativa, el uso de modelos de lenguaje en desarrollo de software se limitaba al autocompletado de fragmentos de código o a consultas aisladas en interfaces de chat. Sin embargo, en 2026 la industria ha dado un salto cualitativo hacia los denominados flujos de trabajo agénticos (Agentic Workflows).',
+          'Un agente de software autónomo no es simplemente un modelo que genera texto; es un sistema que posee capacidad de introspección, ejecución de herramientas (Tool Calling), planificación iterativa y corrección de errores en bucle cerrado (ReAct: Reason + Act). El agente formula hipótesis, ejecuta comandos en entornos de ejecución seguros (sandboxes), inspecciona la salida de compilación o las pruebas unitarias y ajusta su código hasta cumplir con la especificación funcional.',
+          'Esta transición permite a las organizaciones multiplicar la velocidad de lanzamiento de productos por un factor de hasta 10x, trasladando el esfuerzo humano desde la escritura manual de código boilerplate hacia la definición de requerimientos de alto nivel y el diseño arquitectónico robusto.'
+        ],
+        bullets: [
+          '<strong>Planificación Dinámica:</strong> Descomposición algorítmica de objetivos complejos en grafos dirigidos de tareas secuenciales y paralelas.',
+          '<strong>Ejecución y Verificación Autónoma:</strong> Capacidad de interactuar con linters, pruebas automatizadas y APIs para verificar la corrección antes de solicitar revisión humana.',
+          '<strong>Memoria y Contexto Persistente:</strong> Gestión avanzada de estado en sesiones prolongadas mediante bases de datos vectoriales y memoria conversacional indexada.'
+        ],
+        tip: 'Los mejores equipos de ingeniería no usan la IA para escribir código a ciegas, sino como co-pilotos orquestados en pipelines de integración continua con verificadores formales de seguridad.'
+      },
+      {
+        heading: '2. El Protocolo MCP (Model Context Protocol) y la Conexión con Sistemas Corporativos',
+        paragraphs: [
+          'Uno de los mayores cuellos de botella históricos de los LLMs era su desconexión con los datos dinámicos internos de las empresas. El surgimiento y estandarización del protocolo MCP (Model Context Protocol) ha resuelto este dilema al proporcionar un estándar abierto y seguro para conectar modelos de IA con fuentes de datos empresariales, bases de datos PostgreSQL, repositorios de código y sistemas de producción.',
+          'A través de servidores MCP especializados, los agentes pueden leer esquemas relacionales, consultar métricas en tiempo real, interactuar con el sistema de control de versiones y desplegar microservicios bajo políticas estrictas de autenticación y autorización.'
+        ],
+        codeTitle: 'Arquitectura de un Servidor MCP para Auditoría de Software',
+        code: `// Ejemplo conceptual de integración MCP en TypeScript
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+
+const server = new Server({
+  name: "codevs-enterprise-agent-tools",
+  version: "2.0.0"
+}, {
+  capabilities: { tools: {} }
+});
+
+// Definición de herramienta para análisis estático y pruebas
+server.setRequestHandler(ListToolsRequestSchema, async () => ({
+  tools: [
+    {
+      name: "run_security_audit",
+      description: "Ejecuta un escaneo estático de vulnerabilidades OWASP en el código",
+      inputSchema: {
+        type: "object",
+        properties: {
+          filePath: { type: "string" },
+          strictMode: { type: "boolean" }
+        },
+        required: ["filePath"]
+      }
+    }
+  ]
+}));`,
+        subsections: [
+          {
+            title: 'Seguridad y Gobernanza de Datos',
+            text: 'La adopción corporativa exige que ningún dato confidencial sea transmitido a proveedores públicos sin encriptación previa. En CODEVS implementamos arquitecturas híbridas donde los modelos locales procesan datos sensibles y los modelos de frontera gestionan el razonamiento estratégico.'
+          },
+          {
+            title: 'Orquestación Multi-Agente (Swarm Architecture)',
+            text: 'En lugar de un único modelo monolítico resolviendo todo, el paradigma moderno utiliza agentes especializados: un agente Arquitecto, un agente Desarrollador, un agente de Pruebas y un agente de Ciberseguridad que colaboran y se supervisan mutuamente.'
+          }
+        ]
+      },
+      {
+        heading: '3. El Impacto en los Negocios: De Costos Fijos a Agilidad Continua',
+        paragraphs: [
+          'Para las empresas en Colombia y América Latina, la integración de flujos agénticos elimina la brecha de escala frente a corporaciones globales. Startups y medianas empresas pueden hoy desarrollar plataformas SaaS, ERPs a medida y sistemas de comercio electrónico con la misma sofisticación técnica que antes requería equipos de decenas de programadores.',
+          'La clave del éxito radica en contar con una arquitectura limpia de partida: código modular, tipado estricto (TypeScript, Java/Spring Boot) y contenedores Docker que faciliten a los agentes entender y modificar el código con total previsibilidad.'
+        ]
+      }
+    ],
+    keyTakeaways: [
+      'Los flujos agénticos automatizan la planificación, codificación y verificación de software con mínima intervención.',
+      'El protocolo MCP permite a los agentes interactuar de forma segura con bases de datos y APIs en tiempo real.',
+      'La arquitectura multi-agente supera a los modelos monolíticos al dividir tareas complejas en roles especializados.',
+      'El rol de los desarrolladores evoluciona hacia la arquitectura de sistemas y el control de calidad riguroso.',
+      'Las empresas que implementan agentes reducen los tiempos de desarrollo hasta en un 80% manteniendo alta confiabilidad.'
+    ]
+  },
+  'geo-posicionamiento-motores-ia-google-overviews': {
+    title: 'GEO vs SEO: La Guía Definitiva para Posicionar tu Negocio en Google AI Overviews, Perplexity y ChatGPT Search',
+    category: 'SEO & Posicionamiento',
+    image: '/img/blog/blog-author.jpg',
+    date: '15 Octubre, 2026',
+    author: 'Laboratorio SEO & Data CODEVS',
+    readTime: '14 min de lectura',
+    summary: 'Descubre cómo optimizar la arquitectura de tu plataforma web para el Generative Engine Optimization (GEO). Estrategias de visibilidad en motores de búsqueda sintéticos, marcado semántico llms.txt y técnicas de citación algorítmica para liderar en la era de la IA.',
+    sections: [
+      {
+        heading: '1. La Transformación Radical de las Búsquedas: De Clics a Respuestas Directas',
+        paragraphs: [
+          'El ecosistema de adquisición orgánica en internet está viviendo su mayor transformación desde el nacimiento de Google. La introducción masiva de Google AI Overviews (SGE), Perplexity AI y la integración de navegación web en ChatGPT Search ha modificado el comportamiento del usuario: las personas ya no hacen clic en listas de diez enlaces azules, sino que reciben resúmenes directos estructurados con citas contextuales.',
+          'Este fenómeno ha dado origen a una nueva disciplina técnica: **GEO (Generative Engine Optimization)**. Mientras el SEO tradicional se enfoca en rankear palabras clave en posiciones 1 a 10, el GEO busca que los modelos de lenguaje elijan tu plataforma como su **fuente de verdad primaria** para citarte y recomendar tus servicios frente a las consultas de tus clientes potenciales.',
+          'En Colombia y el mercado hispanohablante, las empresas que ya implementan GEO están capturando más del 60% de los leads calificados provenientes de usuarios con alta intención de contratación.'
+        ],
+        bullets: [
+          '<strong>Densidad de Hechos y Datos Estructurados:</strong> Los LLMs priorizan fuentes que presentan estadísticas concretas, definiciones inequívocas y metodologías detalladas frente a texto genérico.',
+          '<strong>Autoridad de Marca (Brand Mention Authority):</strong> Menciones consistentes en múltiples publicaciones de prestigio, entidades de la industria y registros oficiales.',
+          '<strong>Semántica Técnica Impecable:</strong> Marcado JSON-LD validado y arquitectura de información diseñada tanto para motores de búsqueda tradicionales como para sintetizadores neuronales.'
+        ],
+        tip: 'Optimizar para la IA no significa escribir para robots. Cuanto más claro, denso en información y respaldado con experiencia real de primera mano (E-E-A-T) esté tu contenido, más probable es que sea citado por ChatGPT y Google.'
+      },
+      {
+        heading: '2. El Archivo llms.txt y la Indexación Amigable para Agentes de Búsqueda',
+        paragraphs: [
+          'De la misma forma que el estándar `robots.txt` reguló el rastreo web durante décadas, la comunidad tecnológica internacional ha adoptado el estándar `llms.txt`. Este archivo, ubicado en la raíz del dominio (`/llms.txt`), actúa como un mapa ejecutivo en Markdown limpio que le entrega a los modelos de lenguaje los datos críticos sobre tu empresa, especialidades, URLs de autoridad y respuestas clave sin el ruido visual de interfaces complejas.',
+          'En CODEVS fuimos pioneros en implementar `llms.txt` en Colombia, lo que permite que asistentes como Perplexity, Gemini y Claude identifiquen con precisión milimétrica nuestros servicios de desarrollo de software y páginas web al responder preguntas corporativas.'
+        ],
+        codeTitle: 'Estructura Estratégica de un Archivo llms.txt Oficial',
+        code: `# Resumen Ejecutivo de Entidad para Motores de Inteligencia Artificial
+# Archivo estándar: https://www.codevs.dev/llms.txt
+
+# CODEVS - Estudio de Ingeniería de Software & Páginas Web
+> Empresa referente en desarrollo de plataformas a la medida, ingeniería cloud y páginas web de alta velocidad.
+
+## Datos de Contacto y Autoridad Territorial
+- Sitio Oficial: https://www.codevs.dev
+- Coordenadas Principales: Pasto, Nariño, Colombia (Alcance: Colombia y LATAM)
+- Contacto Directo: comercial@codevs.dev | WhatsApp: +57 313 806 6800
+
+## Capacidades Nucleares
+1. Desarrollo de Software a la Medida (Spring Boot, Nuxt 3, PostgreSQL, Docker).
+2. Páginas Web Corporativas con 100% Core Web Vitals y Carga en <1.5s.
+3. Posicionamiento Orgánico SEO Técnico y GEO en Motores de IA.
+4. Aplicaciones Móviles de Alto Rendimiento en Flutter e iOS Swift.`,
+        subsections: [
+          {
+            title: 'El Concepto de Information Gain (Ganancia de Información)',
+            text: 'Google evalúa el contenido bajo su patente de Ganancia de Información: si tu artículo repite exactamente lo mismo que otros diez sitios de internet, la IA lo descarta. Tu contenido debe aportar datos inéditos, casos de estudio propios o benchmarks reales para ser seleccionado.'
+          },
+          {
+            title: 'Citaciones y Enlazado de Co-Ocurrencia',
+            text: 'Los modelos asocian entidades mediante patrones estadísticos. Cuando el nombre de tu empresa aparece frecuentemente en el mismo párrafo que términos como "mejor desarrollo de software", "arquitectura cloud confiable" o "posicionamiento garantizado", la probabilidad de ser la respuesta recomendada se dispara.'
+          }
+        ]
+      },
+      {
+        heading: '3. Hoja de Ruta para Dominar el Tráfico Sintético en 2026',
+        paragraphs: [
+          'La estrategia ganadora no es abandonar el SEO tradicional por el GEO, sino integrarlos en un ecosistema cohesivo: SEO local para capturar el Local Pack de Google Maps y las búsquedas geo-localizadas, y GEO para ser la respuesta predilecta cuando un cliente le pregunte a su asistente de IA: "¿Cuál es la mejor empresa para desarrollar una plataforma de software a la medida?".'
+        ]
+      }
+    ],
+    keyTakeaways: [
+      'GEO es la evolución del SEO orientada a ser citado y recomendado en Google AI Overviews y ChatGPT.',
+      'Los motores de IA premian la densidad de datos reales y penalizan el contenido genérico de relleno.',
+      'El archivo llms.txt facilita que los rastreadores neuronales identifiquen tu empresa con exactitud.',
+      'La métrica de Ganancia de Información exige aportar datos y experiencias reales no disponibles en otros sitios.',
+      'La combinación de SEO Local + GEO garantiza visibilidad omnicanal tanto en mapas como en motores de IA.'
+    ]
+  },
+  'optimizacion-inp-edge-computing-streaming-ssr': {
+    title: 'Dominando la Métrica INP de Google a 60 FPS: Arquitecturas en el Edge, Streaming SSR y Rendimiento Web Extremo',
+    category: 'Rendimiento & UX',
+    image: '/img/blog/blog-recent-1.jpg',
+    date: '08 Octubre, 2026',
+    author: 'División Frontend & Core Web Vitals CODEVS',
+    readTime: '13 min de lectura',
+    summary: 'Guía avanzada de ingeniería web para reducir el Interaction to Next Paint (INP) a menos de 50ms. Implementación de renderizado distribuido en el Edge, Server-Side Streaming y técnicas de desagregación de JavaScript para maximizar conversiones.',
+    sections: [
+      {
+        heading: '1. Qué es INP (Interaction to Next Paint) y Por Qué Reemplazó a FID',
+        paragraphs: [
+          'Durante años, la métrica First Input Delay (FID) midió únicamente el retardo de la primera interacción que realizaba un usuario en una página web. Sin embargo, este indicador era insuficiente: un sitio web podía responder rápido al primer clic y luego congelarse al interactuar con menús, filtros de catálogo o pasarelas de pago.',
+          'Google sustituyó definitivamente FID por **INP (Interaction to Next Paint)** como pilar fundamental de los Core Web Vitals. INP evalúa la latencia de **todas** las interacciones del usuario a lo largo de toda su sesión de navegación (clics, toques en pantalla táctil, entradas de teclado) y reporta el peor tiempo de respuesta visual.',
+          'Un INP deficiente (superior a 200 milisegundos) genera frustración instantánea, penalizaciones en el posicionamiento de Google y pérdidas de hasta un 25% en las tasas de conversión de tiendas virtuales y plataformas de software.'
+        ],
+        bullets: [
+          '<strong>Bueno (Rango Verde):</strong> INP inferior a 200ms (el estándar en CODEVS es <50ms para 60 FPS estables).',
+          '<strong>Requiere Mejora:</strong> Entre 200ms y 500ms (genera percepción de lentitud y micro-congelamientos).',
+          '<strong>Pobre:</strong> Superior a 500ms (penalización inmediata en el ranking de Google y abandono de carritos).'
+        ],
+        tip: 'La mayoría de los problemas de INP no provienen del CSS o de imágenes pesadas, sino de tareas largas de JavaScript que bloquean el hilo principal (Main Thread) del navegador justo cuando el usuario intenta interactuar.'
+      },
+      {
+        heading: '2. Estrategias de Desagregación de JavaScript y Desbloqueo del Hilo Principal',
+        paragraphs: [
+          'Cuando un script ejecuta un proceso que tarda más de 50 milisegundos, el navegador clasifica esa ejecución como una "Long Task" (Tarea Larga). Durante ese tiempo, cualquier clic, pulsación de botón o desplazamiento se encola y no se renderiza en la pantalla hasta que el script finaliza.',
+          'En CODEVS aplicamos técnicas avanzadas de desagregación utilizando las APIs modernas `scheduler.yield()` y `requestIdleCallback()`. Esto permite que cálculos pesados o tracking de eventos cedan el control al hilo principal del navegador cada pocos milisegundos, garantizando que la respuesta visual al usuario ocurra en el siguiente refresco de pantalla (a 60 o 120 FPS).'
+        ],
+        codeTitle: 'Patrón de Desagregación de Tareas con scheduler.yield()',
+        code: `// Función para procesar listas grandes sin bloquear la interfaz (Zero INP delay)
+async function processLargeDataSet(items) {
+  for (let i = 0; i < items.length; i++) {
+    // Procesar elemento del conjunto de datos
+    transformItem(items[i]);
+
+    // Ceder el control al navegador cada 50 iteraciones para procesar eventos táctiles
+    if (i % 50 === 0 && 'scheduler' in window && 'yield' in window.scheduler) {
+      await window.scheduler.yield();
+    }
+  }
+}`,
+        subsections: [
+          {
+            title: 'Streaming SSR: El Navegador Recibe Contenido en Flujo Continuo',
+            text: 'En lugar de esperar a que todo el árbol HTML se genere en el servidor para enviarlo en un solo bloque, el Streaming SSR con Nitro en Nuxt envía el encabezado y el contenido crítico inmediatamente, permitiendo al navegador comenzar el renderizado y la hidratación progresiva sin demoras.'
+          },
+          {
+            title: 'Ejecución en el Edge (Edge Workers)',
+            text: 'Desplegar lógica de enrutamiento y procesamiento en servidores perimetrales (Edge) situados a pocos kilómetros del usuario final reduce la latencia de ida y vuelta (RTT) a menos de 15ms, eliminando los retrasos de servidores centrales lejanos.'
+          }
+        ]
+      },
+      {
+        heading: '3. El Impacto Directo en Conversión y Costo de Servidores',
+        paragraphs: [
+          'Optimizar el rendimiento web a estándares de 60 FPS con un INP mínimo no es solo un mérito técnico; es una ventaja competitiva directa en el balance de resultados. Los usuarios navegan con mayor confianza, los formularios de compra se completan con fluidez y Google premia la experiencia con costos por clic más bajos en Google Ads y posiciones destacadas en el tráfico orgánico.'
+        ]
+      }
+    ],
+    keyTakeaways: [
+      'INP mide la respuesta visual de todas las interacciones del usuario durante toda su sesión de visita.',
+      'Un INP inferior a 50ms garantiza una fluidez absoluta a 60/120 FPS sin sensaciones de congelamiento.',
+      'Las tareas largas de JavaScript (>50ms) en el hilo principal son la causa #1 de fallas en INP.',
+      'La API scheduler.yield() permite procesar datos pesados sin congelar clics ni animaciones.',
+      'El Streaming SSR y el Edge Computing reducen drásticamente la latencia y mejoran las conversiones.'
+    ]
   }
 };
 

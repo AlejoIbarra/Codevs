@@ -143,6 +143,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.codevs.dev/blog/agentes-ia-flujos-trabajo-automatizacion-software</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/geo-posicionamiento-motores-ia-google-overviews</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/optimizacion-inp-edge-computing-streaming-ssr</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.codevs.dev/politica-privacidad</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>

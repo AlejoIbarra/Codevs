@@ -143,34 +143,34 @@ onBeforeUnmount(() => {
 
 const featuredPosts = [
   {
-    slug: 'posicionar-empresa-google-pasto-seo',
-    title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño: Guía Maestra',
-    excerpt: 'Descubre las claves de ingeniería SEO local, Core Web Vitals y marcado Schema.org que aplicamos en CODEVS para dominar las búsquedas orgánicas.',
-    category: 'SEO & Posicionamiento',
-    image: '/img/blog/blog-1.jpg',
-    date: '12 Septiembre, 2026',
-    author: 'Equipo CODEVS',
-    readTime: '12 min de lectura'
+    slug: 'agentes-ia-flujos-trabajo-automatizacion-software',
+    title: 'Agentes Autónomos de IA en 2026: Cómo los Workflows Agénticos Están Reemplazando el Desarrollo Tradicional',
+    excerpt: 'Análisis sobre la evolución de asistentes de código hacia sistemas multi-agente autónomos, el protocolo MCP y la automatización de software en empresas.',
+    category: 'Inteligencia Artificial & IA',
+    image: '/img/blog/blog-inside-post.jpg',
+    date: '18 Octubre, 2026',
+    author: 'Equipo de IA CODEVS',
+    readTime: '15 min de lectura'
   },
   {
-    slug: 'por-que-desarrollo-software-a-medida',
-    title: 'Software a Medida vs Plantillas: Por Qué Tu Negocio Necesita Arquitectura Propia',
-    excerpt: 'Analizamos las limitaciones de los constructores genéricos frente a soluciones escalables desarrolladas con Spring Boot, Nuxt 3 y arquitecturas modernas.',
-    category: 'Ingeniería de Software',
-    image: '/img/blog/blog-2.jpg',
-    date: '08 Septiembre, 2026',
-    author: 'Equipo CODEVS',
+    slug: 'geo-posicionamiento-motores-ia-google-overviews',
+    title: 'GEO vs SEO: La Guía Definitiva para Posicionar tu Negocio en Google AI Overviews, Perplexity y ChatGPT Search',
+    excerpt: 'Estrategias de Generative Engine Optimization (GEO), marcado llms.txt y técnicas de citación algorítmica para liderar en motores de búsqueda de IA.',
+    category: 'SEO & Posicionamiento',
+    image: '/img/blog/blog-author.jpg',
+    date: '15 Octubre, 2026',
+    author: 'Laboratorio SEO CODEVS',
     readTime: '14 min de lectura'
   },
   {
-    slug: 'velocidad-web-conversion-ventas',
-    title: 'Impacto de la Velocidad de Carga en las Ventas y Retención: Cada Milisegundo Cuenta',
-    excerpt: 'Cada segundo de retraso cuesta hasta un 20% en conversiones. Conoce cómo optimizamos el rendimiento a 60fps y 100% en PageSpeed.',
+    slug: 'optimizacion-inp-edge-computing-streaming-ssr',
+    title: 'Dominando la Métrica INP de Google a 60 FPS: Arquitecturas en el Edge, Streaming SSR y Rendimiento Web Extremo',
+    excerpt: 'Guía técnica para reducir el Interaction to Next Paint (INP) a menos de 50ms mediante renderizado en el Edge, desagregación de JavaScript y Streaming.',
     category: 'Rendimiento & UX',
-    image: '/img/blog/blog-3.jpg',
-    date: '20 Agosto, 2026',
-    author: 'Equipo CODEVS',
-    readTime: '11 min de lectura'
+    image: '/img/blog/blog-recent-1.jpg',
+    date: '08 Octubre, 2026',
+    author: 'División Frontend CODEVS',
+    readTime: '13 min de lectura'
   }
 ];
 </script>

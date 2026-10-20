@@ -28,6 +28,9 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/blog',
+        '/blog/agentes-ia-flujos-trabajo-automatizacion-software',
+        '/blog/geo-posicionamiento-motores-ia-google-overviews',
+        '/blog/optimizacion-inp-edge-computing-streaming-ssr',
         '/politica-privacidad',
         '/servicios/desarrollo-web',
         '/servicios/desarrollo-software',

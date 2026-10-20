@@ -136,6 +136,7 @@ const selectedCategory = ref('Todos');
 
 const categories = [
   'Todos',
+  'Inteligencia Artificial & IA',
   'SEO & Posicionamiento',
   'Ingeniería de Software',
   'Rendimiento & UX',
@@ -147,6 +148,36 @@ const categories = [
 ];
 
 const posts = [
+  {
+    slug: 'agentes-ia-flujos-trabajo-automatizacion-software',
+    title: 'Agentes Autónomos de IA en 2026: Cómo los Workflows Agénticos Están Reemplazando el Desarrollo Tradicional',
+    excerpt: 'Análisis sobre la evolución de asistentes de código hacia sistemas multi-agente autónomos, el protocolo MCP y la automatización de software en empresas.',
+    category: 'Inteligencia Artificial & IA',
+    image: '/img/blog/blog-inside-post.jpg',
+    date: '18 Octubre, 2026',
+    author: 'Equipo de IA CODEVS',
+    readTime: '15 min de lectura'
+  },
+  {
+    slug: 'geo-posicionamiento-motores-ia-google-overviews',
+    title: 'GEO vs SEO: La Guía Definitiva para Posicionar tu Negocio en Google AI Overviews, Perplexity y ChatGPT Search',
+    excerpt: 'Estrategias de Generative Engine Optimization (GEO), marcado llms.txt y técnicas de citación algorítmica para liderar en motores de búsqueda de IA.',
+    category: 'SEO & Posicionamiento',
+    image: '/img/blog/blog-author.jpg',
+    date: '15 Octubre, 2026',
+    author: 'Laboratorio SEO CODEVS',
+    readTime: '14 min de lectura'
+  },
+  {
+    slug: 'optimizacion-inp-edge-computing-streaming-ssr',
+    title: 'Dominando la Métrica INP de Google a 60 FPS: Arquitecturas en el Edge, Streaming SSR y Rendimiento Web Extremo',
+    excerpt: 'Guía técnica para reducir el Interaction to Next Paint (INP) a menos de 50ms mediante renderizado en el Edge, desagregación de JavaScript y Streaming.',
+    category: 'Rendimiento & UX',
+    image: '/img/blog/blog-recent-1.jpg',
+    date: '08 Octubre, 2026',
+    author: 'División Frontend CODEVS',
+    readTime: '13 min de lectura'
+  },
   {
     slug: 'posicionar-empresa-google-pasto-seo',
     title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño: Guía Maestra de SEO Local y Técnico',
