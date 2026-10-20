@@ -1,10 +1,7 @@
 <template>
   <div>
-    <!-- Hero con estilo Mesh Gradient y Tarjeta Flotante -->
+    <!-- Hero con estilo Mesh Gradient, Tecnologías Integradas y Degradado Continuo -->
     <HeroSectionComponent />
-
-    <!-- Sección de Tecnologías Swiper con contenedor Glassmorphism -->
-    <SwiperComponent />
 
     <!-- Sección Sobre Nosotros con Rocket Scroll Animation Preservada -->
     <AboutSection />
@@ -28,7 +25,6 @@
 
 <script setup>
 import HeroSectionComponent from '~/components/HeroSectionComponent.vue';
-import SwiperComponent from '~/components/SwiperComponent.vue';
 import AboutSection from '~/components/AboutSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';
