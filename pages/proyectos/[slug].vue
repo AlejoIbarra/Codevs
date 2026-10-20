@@ -18,7 +18,7 @@
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
             <div class="flex items-center gap-3">
-              <span class="bg-[#FFF480] text-[#1B1B1F] border border-[#1B1B1F] text-[11px] font-semibold tracking-wider px-3.5 py-1 rounded-full uppercase">
+              <span class="bg-[#E7000B] text-white border border-[#141416] text-[11px] font-semibold tracking-wider px-3.5 py-1 rounded-full uppercase shadow-[2px_2px_0px_#141416]">
                 {{ project.category }}
               </span>
               <span class="flex items-center gap-1.5 text-xs text-[#6A7077] font-mono">
@@ -28,7 +28,7 @@
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.12]">
-              <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">
+              <span class="font-serif-italic underline decoration-[#E7000B] decoration-4 underline-offset-4">
                 {{ project.title }}
               </span>
             </h1>
@@ -43,12 +43,12 @@
                 :href="project.liveUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]"
+                class="inline-flex items-center gap-2 px-8 py-3.5 bg-[#E7000B] hover:bg-[#C80009] text-white border border-[#141416] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#141416]"
               >
                 <span>Visitar Sitio Web</span>
                 <i class="bi bi-arrow-up-right text-xs"></i>
               </a>
-              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-[#1B1B1F] hover:bg-[#FFF480] text-white hover:text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]">
+              <NuxtLink to="/#contact" class="inline-flex items-center justify-center px-8 py-3.5 bg-[#141416] hover:bg-[#E7000B] text-white border border-[#141416] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#141416]">
                 Solicitar Proyecto Similar
               </NuxtLink>
               <NuxtLink to="/#portfolio" class="inline-flex items-center justify-center px-7 py-3.5 border border-[#1B1B1F] rounded-full hover:bg-[#1B1B1F] hover:text-white text-[#1B1B1F] transition-all duration-300 font-medium text-sm bg-white">

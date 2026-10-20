@@ -42,24 +42,24 @@
     --nav-font: "Plus Jakarta Sans", sans-serif;
   }
   
-  /* Global Colors - Inspired by Monos Expertos Creative Studio */
+  /* Global Colors - CODEVS Design Studio & Engineering */
   :root { 
     --background-color: #FFFFFF;
-    --default-color: #1B1B1F;
-    --heading-color: #1B1B1F;
-    --accent-color: #FFF480;
-    --surface-color: #F9FAFA;
-    --contrast-color: #1B1B1F;
+    --default-color: #141416;
+    --heading-color: #141416;
+    --accent-color: #E7000B;
+    --surface-color: #FAFAFC;
+    --contrast-color: #FFFFFF;
   }
   
   /* Nav Menu Colors */
   :root {
-    --nav-color: #1B1B1F;
-    --nav-hover-color: #1B1B1F;
+    --nav-color: #141416;
+    --nav-hover-color: #E7000B;
     --nav-mobile-background-color: #FFFFFF;
     --nav-dropdown-background-color: #FFFFFF;
-    --nav-dropdown-color: #1B1B1F;
-    --nav-dropdown-hover-color: #1B1B1F;
+    --nav-dropdown-color: #141416;
+    --nav-dropdown-hover-color: #E7000B;
   }
   
   /* Color Presets */

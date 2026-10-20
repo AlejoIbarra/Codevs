@@ -2,21 +2,17 @@
 
 :root {
   --monos-bg: #FFFFFF;
-  --monos-surface: #F9FAFA;
-  --monos-ink: #1B1B1F;
-  --monos-dark: #1E1E1E;
-  --monos-muted: #6A7077;
-  --monos-yellow: #FFF480;
-  --monos-yellow-bright: #F3FE71;
-  --monos-yellow-soft: #FFF7A6;
+  --monos-surface: #FAFAFC;
+  --monos-ink: #141416;
+  --monos-dark: #1E1E22;
+  --monos-muted: #64646D;
+  --monos-red: #E7000B;
+  --monos-red-hover: #C80009;
+  --monos-red-light: #FFF1F2;
+  --monos-red-soft: #FFE4E6;
   --monos-lime: #DBFF9C;
-  --monos-lime-soft: #E1FFAB;
   --monos-purple: #A5A1FF;
-  --monos-purple-soft: #CFCDFF;
-  --monos-purple-pale: #EFEEFF;
-  --monos-coral: #FFACAA;
-  --monos-coral-soft: #FFC6C5;
-  --monos-pink: #FAADD6;
+  --monos-coral: #FF8B89;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Noto Serif', Georgia, serif;
 }
@@ -53,13 +49,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFFFFF;
-  color: #1B1B1F;
+  color: #141416;
   overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #FFF480;
-  color: #1B1B1F;
+  background-color: #E7000B;
+  color: #FFFFFF;
 }
 
 .font-serif-italic {
@@ -68,7 +64,7 @@ body {
   font-weight: 400;
 }
 
-/* Marquee animation like monosexpertos.com */
+/* Marquee animation */
 @keyframes monos-marquee {
   0% {
     transform: translate3d(0%, 0, 0);

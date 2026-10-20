@@ -17,14 +17,14 @@
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#FFF480] border border-[#1B1B1F] text-[#1B1B1F]">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#E7000B] border border-[#141416] text-white shadow-[2px_2px_0px_#141416]">
               <i :class="service.icon" class="text-sm"></i>
               <span class="font-mono font-semibold uppercase tracking-wider text-xs">Especialidad de Estudio</span>
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-normal text-[#171717] tracking-[-0.035em] leading-[1.12]">
               {{ service.title.split(' ').slice(0, -1).join(' ') }}
-              <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">
+              <span class="font-serif-italic underline decoration-[#E7000B] decoration-4 underline-offset-4">
                 {{ service.title.split(' ').slice(-1)[0] }}
               </span>
             </h1>
@@ -36,7 +36,7 @@
             <div class="flex flex-wrap gap-4 pt-2">
               <NuxtLink
                 to="/#contact"
-                class="inline-flex items-center justify-center px-8 py-3.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F]"
+                class="inline-flex items-center justify-center px-8 py-3.5 bg-[#E7000B] hover:bg-[#C80009] text-white border border-[#141416] rounded-full font-medium text-sm transition-all duration-300 shadow-[2px_2px_0px_#141416]"
               >
                 Solicitar Cotización
               </NuxtLink>

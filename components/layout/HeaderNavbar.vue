@@ -1,11 +1,11 @@
 <template>
-  <header class="w-full bg-white/90 backdrop-blur-md border-b border-[#1B1B1F]/10 z-50 sticky top-0 transition-all duration-300">
+  <header class="w-full bg-white/95 backdrop-blur-md border-b border-[#141416]/10 z-50 sticky top-0 transition-all duration-300">
     <div class="flex items-center justify-between max-w-[1400px] mx-auto px-5 sm:px-[5%] h-[84px]">
-      <!-- Left: Brand Wordmark -->
+      <!-- Left: Brand Wordmark with Red Accent -->
       <HeaderTitle />
 
-      <!-- Center: Desktop Menu (Monos Expertos style) -->
-      <nav class="hidden lg:flex items-center gap-1 bg-[#F9FAFA] border border-[#1B1B1F]/10 rounded-full px-2 py-1.5" aria-label="menu desktop">
+      <!-- Center: Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-1 bg-[#FAFAFC] border border-[#141416]/10 rounded-full px-2 py-1.5" aria-label="menu desktop">
         <BaseButtonNavbarLanding
           v-for="(option, index) in navOptions"
           :key="index"
@@ -18,21 +18,21 @@
         />
       </nav>
 
-      <!-- Right: Studio CTA Pill Button -->
+      <!-- Right: Studio CTA Pill Button in Vibrant Red -->
       <div class="hidden lg:flex items-center gap-3">
         <a
           href="/#contact"
-          class="group inline-flex items-center gap-2.5 bg-[#FFF480] hover:bg-[#DBFF9C] text-[#1B1B1F] border border-[#1B1B1F] rounded-full px-6 py-2.5 text-[14px] font-medium transition-all duration-300 shadow-[2px_2px_0px_#1B1B1F] hover:shadow-[4px_4px_0px_#1B1B1F] hover:-translate-y-0.5"
+          class="group inline-flex items-center gap-2.5 bg-[#E7000B] hover:bg-[#C80009] text-white border border-[#141416] rounded-full px-6 py-2.5 text-[14px] font-medium transition-all duration-300 shadow-[2px_2px_0px_#141416] hover:shadow-[4px_4px_0px_#141416] hover:-translate-y-0.5"
         >
           <span>Solicitar presupuesto</span>
-          <span class="w-5 h-5 rounded-full bg-[#1B1B1F] text-[#FFF480] flex items-center justify-center transition-transform duration-300 group-hover:rotate-45">
-            <i class="bi bi-arrow-up-right text-[10px]"></i>
+          <span class="w-5 h-5 rounded-full bg-white text-[#E7000B] flex items-center justify-center transition-transform duration-300 group-hover:rotate-45">
+            <i class="bi bi-arrow-up-right text-[10px] font-bold"></i>
           </span>
         </a>
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button @click="toggleMenu" class="lg:hidden focus:outline-none z-50 p-2 rounded-full border border-[#1B1B1F]/15 bg-[#F9FAFA]" aria-label="Abrir menú">
+      <button @click="toggleMenu" class="lg:hidden focus:outline-none z-50 p-2 rounded-full border border-[#141416]/15 bg-[#FAFAFC]" aria-label="Abrir menú">
         <div class="hamburger" :class="{ open: isMenuOpen }">
           <svg viewBox="0 0 32 32" class="w-7 h-7">
             <path class="line line-top-bottom"
@@ -48,7 +48,7 @@
     <transition name="fade-slide">
       <nav
         v-if="isMenuOpen"
-        class="lg:hidden absolute top-full left-4 right-4 bg-white border-2 border-[#1B1B1F] shadow-[6px_6px_0px_#1B1B1F] z-40 flex flex-col p-6 rounded-[24px] mt-2 space-y-2"
+        class="lg:hidden absolute top-full left-4 right-4 bg-white border-2 border-[#141416] shadow-[6px_6px_0px_#141416] z-40 flex flex-col p-6 rounded-[24px] mt-2 space-y-2"
         aria-label="Menú flotante de navegación"
       >
         <BaseButtonNavbarLanding
@@ -60,11 +60,11 @@
           :isSelected="option.url === currentRoute"
           @click="isMenuOpen = false"
         />
-        <div class="pt-3 border-t border-[#1B1B1F]/10">
+        <div class="pt-3 border-t border-[#141416]/10">
           <a
             href="/#contact"
             @click="isMenuOpen = false"
-            class="w-full inline-flex items-center justify-center gap-2 bg-[#FFF480] text-[#1B1B1F] border border-[#1B1B1F] rounded-full py-3 font-medium text-sm shadow-[2px_2px_0px_#1B1B1F]"
+            class="w-full inline-flex items-center justify-center gap-2 bg-[#E7000B] text-white border border-[#141416] rounded-full py-3 font-medium text-sm shadow-[2px_2px_0px_#141416]"
           >
             <span>Solicitar presupuesto</span>
             <i class="bi bi-arrow-up-right text-xs"></i>
@@ -122,7 +122,7 @@ const navOptions = computed(() => options);
 
 .line {
   fill: none;
-  stroke: #1B1B1F;
+  stroke: #141416;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2.5;

@@ -11,13 +11,13 @@
         </nav>
 
         <div class="max-w-3xl space-y-5 text-left">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFF480] border border-[#1B1B1F] text-xs font-mono uppercase tracking-wider text-[#1B1B1F]">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E7000B] border border-[#141416] text-xs font-mono uppercase tracking-wider text-white shadow-[2px_2px_0px_#141416]">
             <span>✦</span>
             <span>CODEVS Knowledge Hub</span>
           </div>
 
           <h1 class="text-4xl sm:text-6xl font-normal text-[#171717] tracking-[-0.035em] leading-[1.1]">
-            Artículos, Tendencias &amp; <span class="font-serif-italic underline decoration-[#A5A1FF] decoration-4 underline-offset-4">Ingeniería Digital</span>
+            Artículos, Tendencias &amp; <span class="font-serif-italic underline decoration-[#E7000B] decoration-4 underline-offset-4">Ingeniería Digital</span>
           </h1>
 
           <p class="text-[#1E1E1E]/80 text-lg leading-relaxed max-w-2xl font-light">
