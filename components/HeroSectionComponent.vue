@@ -1,12 +1,8 @@
 <template>
-  <section id="hero" class="relative min-h-[96vh] flex items-center justify-center overflow-hidden bg-[#060608] text-white py-20 lg:py-28 px-4 border-b border-white/10">
+  <section id="hero" class="relative min-h-[94vh] flex items-center justify-center overflow-hidden bg-[#08080b] text-white py-20 lg:py-28 px-4 border-b border-zinc-900">
     
     <!-- Luz Ambiental Roja Dinámica (Seguidor de Cursor con GSAP) -->
     <div class="glow-bg absolute inset-0 z-0 pointer-events-none transition-transform duration-150 ease-out" ref="glowBg"></div>
-
-    <!-- Grano sutil analógico y cuadrícula de estudio -->
-    <div class="absolute inset-0 z-0 grain-overlay opacity-25 pointer-events-none"></div>
-    <div class="absolute inset-0 z-0 grid-blueprint opacity-20 pointer-events-none"></div>
 
     <!-- Chispas sutiles suspendidas en el espacio -->
     <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" ref="particlesBg">
@@ -15,51 +11,38 @@
 
     <div class="container mx-auto max-w-7xl relative z-10">
       
-      <!-- Barra Superior de Metadatos de Estudio (Look Arquitectónico / Monocromo) -->
-      <div class="flex flex-wrap items-center justify-between gap-4 pb-8 mb-10 border-b border-white/10 trigger-anim text-xs font-mono text-zinc-400">
+      <!-- Barra Superior de Metadatos de Estudio -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-10 border-b border-zinc-850 trigger-anim text-xs text-zinc-400">
         <div class="flex items-center gap-3">
-          <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-red-600/10 border border-red-500/30 text-red-400 font-semibold uppercase tracking-widest text-[10px]">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
-            Estudio & Lab 2026
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 font-semibold tracking-wider uppercase text-[11px]">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            Estudio de Diseño & Software
           </span>
-          <span class="hidden sm:inline text-zinc-500">//</span>
-          <span class="hidden sm:inline">San Juan de Pasto, Colombia [01°12'N 77°16'W]</span>
+          <span class="hidden sm:inline text-zinc-600">•</span>
+          <span class="hidden sm:inline">San Juan de Pasto, Nariño, Colombia</span>
         </div>
-        <div class="flex items-center gap-6">
-          <span class="hidden md:inline"><strong class="text-zinc-200">Enfoque:</strong> Páginas Web & Software a Medida</span>
-          <span class="text-zinc-500">//</span>
-          <span class="inline-flex items-center gap-1.5 text-zinc-300">
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-2 text-zinc-300">
             <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            Aceptando Proyectos Q4
+            Disponibles para Nuevos Proyectos
           </span>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
-        <!-- Columna Izquierda: Tipografía Escultórica & Contenido Principal -->
+        <!-- Columna Izquierda: Titular Monumental & Acciones -->
         <div class="lg:col-span-7 space-y-8 text-left">
           
-          <!-- Titular Principal con Tensión Tipográfica Editorial -->
-          <div class="space-y-3 trigger-anim">
-            <div class="text-xs font-mono text-red-500 uppercase tracking-[0.25em] font-semibold flex items-center gap-2">
-              <span class="w-6 h-[1px] bg-red-600"></span>
-              Ingeniería Digital & Experiencias Web
-            </div>
-
-            <h1 class="text-4xl sm:text-6xl lg:text-[4.4rem] font-display font-black tracking-tight leading-[0.98] text-white uppercase">
+          <!-- Titular Principal con Presencia de Academia & Estudio de Diseño -->
+          <div class="space-y-4 trigger-anim">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-black tracking-tight leading-[1.02] text-white uppercase">
               Desarrollo de <br />
-              <span class="relative inline-block text-white">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">
                 Páginas Web
-                <!-- Línea de acento quirúrgica debajo -->
-                <span class="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-red-600 via-[#E7000B] to-transparent"></span>
               </span>
-              <br />
-              <span class="text-transparent text-stroke-white hover:text-white transition-colors duration-500">
-                & Software
-              </span>
-              <span class="block text-2xl sm:text-4xl font-light text-zinc-400 normal-case tracking-normal mt-3">
-                a la Medida de tu Negocio.
+              <span class="block text-2xl sm:text-4xl font-light text-zinc-400 normal-case tracking-normal mt-2">
+                & Software a la Medida
               </span>
             </h1>
           </div>
@@ -69,54 +52,53 @@
             Somos <strong class="text-white font-semibold">CODEVS</strong>, líderes en <strong class="text-white font-semibold">desarrollo de páginas web</strong>, ingeniería de software a la medida y plataformas digitales avanzadas. Creamos soluciones tecnológicas rápidas, escalables y preparadas para posicionar tu negocio en el <strong class="text-red-400 font-semibold">lugar #1 de Google</strong> y conquistar el mercado digital.
           </p>
 
-          <!-- Acciones de Conversión de Alto Impacto -->
+          <!-- Acciones de Conversión -->
           <div class="flex flex-wrap items-center gap-4 pt-2 trigger-anim">
-            <a href="#contact" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#E7000B] hover:bg-[#d0000a] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 shadow-xl shadow-red-950/40 hover:shadow-red-600/40 hover:-translate-y-0.5">
+            <a href="#contact" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-[#E7000B] hover:bg-[#d0000a] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 shadow-xl shadow-red-950/40 hover:shadow-red-600/40 hover:-translate-y-0.5">
               <span>Iniciar Mi Proyecto</span>
               <i class="bi bi-arrow-up-right text-sm group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </a>
 
-            <a href="#portfolio" class="inline-flex items-center gap-2.5 px-6 py-4 border border-zinc-800 hover:border-zinc-600 rounded-xl text-zinc-300 hover:text-white transition-all duration-300 font-mono text-xs uppercase tracking-wider bg-zinc-900/40 backdrop-blur-sm group">
+            <a href="#portfolio" class="inline-flex items-center gap-2.5 px-6 py-4 border border-zinc-800 hover:border-red-500/40 rounded-xl text-zinc-300 hover:text-white transition-all duration-300 text-xs font-semibold uppercase tracking-wider bg-zinc-900/40 backdrop-blur-sm group">
               <i class="bi bi-collection text-red-500"></i>
-              <span>Casos de Estudio</span>
-              <i class="bi bi-arrow-down text-xs text-zinc-500 group-hover:translate-y-0.5 transition-transform"></i>
+              <span>Ver Casos de Éxito</span>
             </a>
 
-            <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-5 py-4 text-zinc-400 hover:text-white transition-colors font-mono text-xs uppercase tracking-wider group">
+            <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-5 py-4 text-zinc-400 hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider group">
               <i class="bi bi-journal-code text-red-500"></i>
-              <span class="underline decoration-zinc-700 underline-offset-4 group-hover:decoration-red-500">Blog Técnico</span>
+              <span class="underline decoration-zinc-700 underline-offset-4 group-hover:decoration-red-500">Blog de Tecnología</span>
             </NuxtLink>
           </div>
 
-          <!-- Franja de Sellos Arquitectónicos de Confianza -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/10 trigger-anim max-w-2xl">
+          <!-- Franja de Sellos de Confianza y Liderazgo -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-zinc-850 trigger-anim max-w-2xl">
             <div class="space-y-1">
-              <div class="flex items-center gap-2 text-xs font-mono text-red-400 font-bold uppercase">
-                <span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
-                01 / Google Rank #1
+              <div class="flex items-center gap-2 text-xs text-white font-bold uppercase tracking-wider">
+                <i class="bi bi-trophy text-red-500 text-sm"></i>
+                Google Rank #1
               </div>
               <p class="text-xs text-zinc-400 leading-snug">
-                Estrategia SEO local probada para dominar búsquedas orgánicas.
+                SEO local probado para dominar búsquedas orgánicas en Pasto y Colombia.
               </p>
             </div>
             
             <div class="space-y-1">
-              <div class="flex items-center gap-2 text-xs font-mono text-red-400 font-bold uppercase">
-                <span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
-                02 / Código de Autor
+              <div class="flex items-center gap-2 text-xs text-white font-bold uppercase tracking-wider">
+                <i class="bi bi-cpu text-red-500 text-sm"></i>
+                Software de Autor
               </div>
               <p class="text-xs text-zinc-400 leading-snug">
-                Cero plantillas infladas; arquitectura Nuxt 3, Spring Boot y Vue.
+                Código artesanal sin plantillas: Nuxt 3, Spring Boot y Vue.
               </p>
             </div>
             
             <div class="space-y-1">
-              <div class="flex items-center gap-2 text-xs font-mono text-red-400 font-bold uppercase">
-                <span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
-                03 / Fluidez 60 FPS
+              <div class="flex items-center gap-2 text-xs text-white font-bold uppercase tracking-wider">
+                <i class="bi bi-lightning-charge text-red-500 text-sm"></i>
+                100% Velocidad
               </div>
               <p class="text-xs text-zinc-400 leading-snug">
-                Core Web Vitals optimizados al 100% para máxima retención.
+                Rendimiento a 60 FPS y optimización máxima en Core Web Vitals.
               </p>
             </div>
           </div>
@@ -129,49 +111,43 @@
           <div class="photo-composition relative w-full max-w-md mx-auto">
             
             <!-- Marco Principal de Fotografía: Estudio en Acción -->
-            <div class="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0d0d12] shadow-2xl shadow-black group">
+            <div class="relative rounded-3xl overflow-hidden border border-zinc-800 bg-[#0e0e13] shadow-2xl shadow-black group">
               
-              <!-- Marcadores de Esquina Arquitectónicos [ + ] -->
-              <div class="absolute top-3 left-3 text-zinc-500 font-mono text-xs select-none pointer-events-none z-20">+</div>
-              <div class="absolute top-3 right-3 text-zinc-500 font-mono text-xs select-none pointer-events-none z-20">+</div>
-              <div class="absolute bottom-3 left-3 text-zinc-500 font-mono text-xs select-none pointer-events-none z-20">+</div>
-              <div class="absolute bottom-3 right-3 text-zinc-500 font-mono text-xs select-none pointer-events-none z-20">+</div>
-
               <!-- Foto Real del Estudio -->
-              <div class="relative h-[410px] w-full overflow-hidden">
+              <div class="relative h-[420px] w-full overflow-hidden">
                 <img 
                   src="/img/working-1.jpg" 
                   alt="Equipo de diseño y desarrollo en el estudio CODEVS Pasto" 
                   class="w-full h-full object-cover object-center filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-[#060608] via-black/40 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#08080b] via-black/40 to-transparent"></div>
               </div>
 
-              <!-- Anotación Técnica Superior -->
+              <!-- Anotación Superior -->
               <div class="absolute top-4 left-6 right-6 flex justify-between items-center z-10">
-                <span class="px-2.5 py-1 rounded bg-black/80 border border-white/10 text-[10px] font-mono uppercase tracking-widest text-zinc-300 backdrop-blur-md">
-                  FIG. 01 — WORKSPACE LAB
+                <span class="px-3 py-1 rounded-full bg-black/80 border border-zinc-700/80 text-[11px] font-semibold tracking-wider text-zinc-300 backdrop-blur-md">
+                  Estudio Creativo & Lab
                 </span>
-                <span class="text-[10px] font-mono text-zinc-400 bg-black/80 px-2 py-1 rounded border border-white/10 backdrop-blur-md">
-                  PASTO 2026
+                <span class="text-[11px] text-zinc-400 bg-black/80 px-2.5 py-1 rounded-full border border-zinc-700/80 backdrop-blur-md font-medium">
+                  Pasto, Nariño
                 </span>
               </div>
 
-              <!-- Bloque Editorial Inferior -->
-              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-black/85 border border-white/10 backdrop-blur-xl space-y-1.5 z-10">
+              <!-- Bloque Inferior -->
+              <div class="absolute bottom-4 left-4 right-4 p-5 rounded-2xl bg-[#0e0e13]/90 border border-zinc-800 backdrop-blur-xl space-y-1.5 z-10">
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-mono font-bold uppercase text-white tracking-wider">Laboratorio de Interfaces & Código</span>
-                  <span class="text-[9px] font-mono text-red-400 font-bold bg-red-600/15 px-2 py-0.5 rounded border border-red-500/20">PROD-READY</span>
+                  <span class="text-sm font-bold text-white tracking-wide">Diseño UI & Desarrollo a Medida</span>
+                  <span class="text-[10px] font-bold text-red-400 bg-red-600/15 px-2.5 py-0.5 rounded-full border border-red-500/20">EST. 2024</span>
                 </div>
-                <p class="text-[11px] text-zinc-400 leading-snug">
-                  Diseño de interacción milimétrico y desarrollo full-stack concebido para marcas que no se conforman con lo estándar.
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                  Creamos marcas e interfaces digitales que no parecen hechas con plantillas ni inteligencia artificial.
                 </p>
               </div>
 
             </div>
 
             <!-- Tarjeta Flotante Solapada: Figma Design Prototype Asset -->
-            <div class="absolute -top-6 -right-6 hidden sm:block w-40 rounded-2xl overflow-hidden border border-red-500/40 bg-[#0d0d12] shadow-2xl group/card z-20 hover:scale-105 transition-transform duration-300">
+            <div class="absolute -top-6 -right-6 hidden sm:block w-40 rounded-2xl overflow-hidden border border-red-500/30 bg-[#0e0e13] shadow-2xl group/card z-20 hover:scale-105 transition-transform duration-300">
               <div class="relative h-28 overflow-hidden bg-zinc-900">
                 <img 
                   src="/img/UI/figma.png" 
@@ -181,19 +157,19 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
               </div>
               <div class="p-2.5 bg-black/90 text-center border-t border-zinc-800">
-                <div class="text-[9px] font-mono text-red-400 uppercase tracking-widest font-bold">Figma Prototyping</div>
-                <div class="text-[10px] font-display font-semibold text-white">Diseño UI Pixel-Perfect</div>
+                <div class="text-[10px] text-red-400 uppercase tracking-wider font-bold">Diseño UX/UI</div>
+                <div class="text-xs font-semibold text-white">Prototipos en Figma</div>
               </div>
             </div>
 
-            <!-- Sello Circular Giratorio de Autor (Badge de Academia / Estudio) -->
-            <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#0b0b0e] border border-white/10 shadow-2xl backdrop-blur-xl z-20 group/seal">
+            <!-- Sello Circular de Garantía -->
+            <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3 p-3.5 rounded-2xl bg-[#0e0e13] border border-zinc-800 shadow-2xl backdrop-blur-xl z-20">
               <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-500 shrink-0">
                 <i class="bi bi-patch-check text-xl"></i>
               </div>
               <div class="pr-3">
-                <div class="text-xs font-mono font-bold text-white tracking-wide">0% Plantillas Genéricas</div>
-                <div class="text-[10px] text-zinc-400 font-mono">100% Ingeniería Propietaria</div>
+                <div class="text-xs font-bold text-white tracking-wide">0% Plantillas Genéricas</div>
+                <div class="text-[11px] text-zinc-400">100% Diseñado a tu Medida</div>
               </div>
             </div>
 

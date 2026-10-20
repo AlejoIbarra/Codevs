@@ -1,12 +1,9 @@
 <template>
-  <section id="about" ref="aboutSection" class="about-section relative bg-[#060608] text-white overflow-hidden py-24 lg:py-32 border-b border-white/10">
+  <section id="about" ref="aboutSection" class="about-section relative bg-[#08080b] text-white overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
     
     <!-- Gradientes ambientales de iluminación roja CODEVS -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-10 w-[450px] h-[450px] bg-rose-950/20 rounded-full blur-[130px] pointer-events-none"></div>
-    
-    <!-- Grilla técnica de estudio -->
-    <div class="absolute inset-0 grid-blueprint opacity-20 pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-[450px] h-[450px] bg-rose-950/20 rounded-full blur-[140px] pointer-events-none"></div>
 
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
       
@@ -16,23 +13,23 @@
         <!-- Columna Izquierda: Historia, Manifiesto y Comparativa de Calidad -->
         <div class="lg:col-span-6 space-y-8 gsap-fade-left">
           
-          <!-- Insignia Editorial de Estudio -->
-          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-white/10 text-xs font-mono text-zinc-300">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-            <span class="text-red-400 font-bold uppercase tracking-widest text-[11px]">01 // Manifiesto & Quiénes Somos</span>
+          <!-- Insignia de Estudio -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600/10 border border-red-500/20 text-red-500 text-xs font-semibold tracking-wider uppercase">
+            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+            Quiénes Somos & Filosofía
           </div>
 
-          <!-- Título Principal de Estudio -->
-          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight leading-[1.02] uppercase">
+          <!-- Título Principal con Presencia Editorial -->
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-black text-white tracking-tight leading-[1.05] uppercase">
             Nos Apasiona <br />
-            <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
-              La Tecnología
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-600">
+              La Tecnología.
             </span>
           </h2>
 
           <!-- Párrafos descriptivos principales (SEO & Valor del Estudio) -->
           <div class="space-y-4 text-zinc-300 font-normal leading-relaxed text-justify text-base sm:text-lg">
-            <p class="border-l-2 border-red-600 pl-4 py-1 bg-white/[0.02] rounded-r-xl">
+            <p class="border-l-4 border-red-600 pl-4 py-1.5 bg-zinc-900/40 rounded-r-2xl">
               En <strong class="text-white font-bold">CODEVS</strong> desarrollamos soluciones tecnológicas de alto nivel para empresas decididas a destacar. Creamos productos digitales eficientes, modernos e interactivos a la medida de tus necesidades.
             </p>
             <p class="text-zinc-400 text-base leading-relaxed">
@@ -40,45 +37,35 @@
             </p>
           </div>
 
-          <!-- Tabla Comparativa de Calidad de Autor: "El Estándar CODEVS" -->
-          <div class="p-6 rounded-2xl bg-[#0b0b0e] border border-white/10 space-y-4">
-            <div class="text-xs font-mono uppercase tracking-widest text-zinc-400 font-bold flex items-center justify-between border-b border-white/10 pb-3">
-              <span>El Estándar de Nuestro Estudio</span>
-              <span class="text-red-500">[ vs. Métodos Comunes ]</span>
+          <!-- Tarjetas de Pilares de Valor (Estilo Agencia Creativa) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-5 rounded-2xl bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300">
+              <div class="text-3xl font-display font-black text-white mb-1">100%</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Código Limpio</div>
+              <div class="text-[11px] text-zinc-500 mt-1">Cero plantillas genéricas ni atajos</div>
             </div>
-
-            <div class="space-y-3 text-xs font-mono">
-              <div class="flex items-start justify-between gap-4 pb-2 border-b border-zinc-900">
-                <span class="text-zinc-500 line-through">Plantillas de CMS Infladas</span>
-                <span class="text-white font-semibold text-right text-emerald-400 flex items-center gap-1.5">
-                  <i class="bi bi-check2 text-red-500 font-bold"></i> Código Limpio & Modular
-                </span>
-              </div>
-              <div class="flex items-start justify-between gap-4 pb-2 border-b border-zinc-900">
-                <span class="text-zinc-500 line-through">Sitios Pesados (3s - 6s carga)</span>
-                <span class="text-white font-semibold text-right text-emerald-400 flex items-center gap-1.5">
-                  <i class="bi bi-check2 text-red-500 font-bold"></i> Velocidad Extrema (Sub-segundo)
-                </span>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <span class="text-zinc-500 line-through">Sin Estrategia de Búsqueda</span>
-                <span class="text-white font-semibold text-right text-emerald-400 flex items-center gap-1.5">
-                  <i class="bi bi-check2 text-red-500 font-bold"></i> Posicionamiento #1 en Google
-                </span>
-              </div>
+            <div class="p-5 rounded-2xl bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300">
+              <div class="text-3xl font-display font-black text-red-500 mb-1">#1 SEO</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">En Google</div>
+              <div class="text-[11px] text-zinc-500 mt-1">Posicionamiento orgánico real</div>
+            </div>
+            <div class="p-5 rounded-2xl bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300">
+              <div class="text-3xl font-display font-black text-white mb-1">UX/UI</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">De Vanguardia</div>
+              <div class="text-[11px] text-zinc-500 mt-1">Experiencias centradas en el usuario</div>
             </div>
           </div>
 
           <!-- Muestra de Equipo Multidisciplinario Real -->
-          <div class="flex items-center gap-4 pt-2">
+          <div class="flex items-center gap-4 pt-4 border-t border-zinc-850">
             <div class="flex -space-x-3">
-              <img src="/img/team/team-1.jpg" alt="Ingeniero en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#060608] object-cover filter grayscale contrast-125" />
-              <img src="/img/team/team-2.jpg" alt="Diseñadora UI en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#060608] object-cover filter grayscale contrast-125" />
-              <img src="/img/team/team-3.jpg" alt="Especialista Full-stack en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#060608] object-cover filter grayscale contrast-125" />
+              <img src="/img/team/team-1.jpg" alt="Ingeniero en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#08080b] object-cover filter grayscale contrast-125" />
+              <img src="/img/team/team-2.jpg" alt="Diseñadora UI en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#08080b] object-cover filter grayscale contrast-125" />
+              <img src="/img/team/team-3.jpg" alt="Especialista Full-stack en CODEVS" class="w-12 h-12 rounded-full border-2 border-[#08080b] object-cover filter grayscale contrast-125" />
             </div>
             <div>
-              <div class="text-xs font-mono text-white font-bold">Talento Senior en San Juan de Pasto</div>
-              <div class="text-[11px] font-mono text-zinc-500">Diseñadores UI/UX, Ingenieros Cloud & Estrategas SEO</div>
+              <div class="text-sm font-bold text-white">Equipo Senior en San Juan de Pasto</div>
+              <div class="text-xs text-zinc-500">Diseño UI/UX, Desarrollo Full-stack & Estrategas SEO</div>
             </div>
           </div>
 
@@ -92,28 +79,25 @@
             ref="visionCard" 
             @mousemove="handleCardTilt($event, visionCard)" 
             @mouseleave="resetCardTilt(visionCard)"
-            class="group relative bg-[#0c0c10] border border-white/10 hover:border-red-500/50 p-6 sm:p-7 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
+            class="group relative bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/50 p-7 sm:p-8 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
           >
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
-            <div class="flex items-center justify-between pb-4 border-b border-white/5 mb-4">
-              <span class="text-[10px] font-mono text-red-500 font-bold tracking-widest uppercase">[ 01 // VISIÓN ]</span>
-              <span class="text-[10px] font-mono text-zinc-500 uppercase">HORIZONTE 2030</span>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 relative z-10">
-              <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-white/10 relative group/img bg-black">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 relative z-10">
+              <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-zinc-800 relative group/img bg-black">
                 <img 
                   src="/img/working-2.jpg" 
                   alt="Equipo diseñando experiencias digitales en CODEVS" 
                   class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <span class="absolute bottom-1.5 left-2 text-[9px] font-mono text-zinc-300 uppercase">LAB UI</span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl font-display font-bold text-white tracking-wide">Visión de Liderazgo</h3>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-2xl font-display font-bold text-white tracking-wide">Visión de Liderazgo</h3>
+                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Futuro</span>
+                </div>
                 <p class="text-zinc-300 text-sm leading-relaxed text-justify">
                   Posicionarnos como el referente tecnológico principal en el sur de Colombia, entregando plataformas web modernas y aplicaciones móviles de clase mundial listas para triunfar en internet.
                 </p>
@@ -126,28 +110,25 @@
             ref="misionCard" 
             @mousemove="handleCardTilt($event, misionCard)" 
             @mouseleave="resetCardTilt(misionCard)"
-            class="group relative bg-[#0c0c10] border border-white/10 hover:border-red-500/50 p-6 sm:p-7 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
+            class="group relative bg-[#0e0e13] border border-zinc-800/80 hover:border-red-500/50 p-7 sm:p-8 rounded-3xl shadow-xl transition-all duration-300 backdrop-blur-2xl overflow-hidden"
           >
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
-            <div class="flex items-center justify-between pb-4 border-b border-white/5 mb-4">
-              <span class="text-[10px] font-mono text-red-500 font-bold tracking-widest uppercase">[ 02 // MISIÓN ]</span>
-              <span class="text-[10px] font-mono text-zinc-500 uppercase">PROPÓSITO & IMPACTO</span>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 relative z-10">
-              <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-white/10 relative group/img bg-black">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 relative z-10">
+              <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-zinc-800 relative group/img bg-black">
                 <img 
                   src="/img/working-4.jpg" 
                   alt="Desarrollo de ingeniería de software a medida en CODEVS" 
                   class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <span class="absolute bottom-1.5 left-2 text-[9px] font-mono text-zinc-300 uppercase">DEV CORE</span>
               </div>
 
               <div class="space-y-2">
-                <h3 class="text-xl font-display font-bold text-white tracking-wide">Misión & Compromiso</h3>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-2xl font-display font-bold text-white tracking-wide">Misión & Propósito</h3>
+                  <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-400 border border-red-500/30">Impacto</span>
+                </div>
                 <p class="text-zinc-300 text-sm leading-relaxed text-justify">
                   Empoderar a las empresas de Pasto y Nariño mediante software robusto, páginas web veloces y asesorías en SEO que multipliquen su visibilidad y facturación online.
                 </p>
@@ -160,8 +141,8 @@
       </div>
 
       <!-- Banner de Cita Inspiradora con Estilo Estudio Creativo -->
-      <div class="mt-16 sm:mt-20 gsap-quote">
-        <div class="relative bg-gradient-to-r from-zinc-950 via-[#0a0a0e] to-zinc-950 border border-white/10 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
+      <div class="mt-20 gsap-quote">
+        <div class="relative bg-gradient-to-r from-zinc-950 via-[#0e0e13] to-zinc-950 border border-zinc-800/80 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
           
           <div class="absolute -top-6 left-8 text-7xl font-serif text-red-600/10 pointer-events-none select-none">“</div>
           <div class="absolute -bottom-12 right-8 text-7xl font-serif text-red-600/10 pointer-events-none select-none">”</div>
@@ -171,9 +152,9 @@
           </p>
 
           <div class="mt-6 flex items-center justify-center gap-3">
-            <span class="w-8 h-[1px] bg-red-600"></span>
-            <span class="text-xs font-mono font-bold tracking-widest text-red-500 uppercase">Filosofía CODEVS // San Juan de Pasto</span>
-            <span class="w-8 h-[1px] bg-red-600"></span>
+            <span class="w-8 h-[2px] bg-red-600"></span>
+            <span class="text-xs font-bold tracking-widest text-red-500 uppercase">Filosofía CODEVS // San Juan de Pasto</span>
+            <span class="w-8 h-[2px] bg-red-600"></span>
           </div>
         </div>
       </div>
