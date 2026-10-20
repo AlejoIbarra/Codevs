@@ -33,10 +33,10 @@
               </div>
             </div>
 
-            <!-- Imagen representativa con marco nítido -->
+            <!-- Imagen representativa con marco nítido y zoom cinemático -->
             <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 border border-zinc-200/80 bg-zinc-100">
               <img :src="service.image" :alt="service.title"
-                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]" />
             </div>
 
             <!-- Título y Descripción -->
@@ -66,23 +66,23 @@
       </div>
 
       <!-- Métricas de Impacto & Credenciales (Estilo Monos Expertos) -->
-      <div class="mt-20 pt-12 border-t border-zinc-200 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div class="space-y-1">
+      <div class="mt-20 pt-12 border-t border-zinc-200 grid grid-cols-2 md:grid-cols-4 gap-8 text-center services-metrics-bar">
+        <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">+45</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Proyectos Entregados</div>
           <div class="text-xs text-zinc-500">Plataformas, web y apps</div>
         </div>
-        <div class="space-y-1">
+        <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-red-600 tracking-tight">100%</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Código a la Medida</div>
           <div class="text-xs text-zinc-500">Cero plantillas prefabricadas</div>
         </div>
-        <div class="space-y-1">
+        <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">#1 SEO</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Ranking en Google</div>
           <div class="text-xs text-zinc-500">En Pasto, Colombia y LATAM</div>
         </div>
-        <div class="space-y-1">
+        <div class="space-y-1 services-metric">
           <div class="text-4xl sm:text-5xl font-black text-zinc-950 tracking-tight">60 FPS</div>
           <div class="text-xs font-bold uppercase tracking-wider text-zinc-800 mt-2">Velocidad Extrema</div>
           <div class="text-xs text-zinc-500">100% Core Web Vitals</div>
@@ -106,17 +106,43 @@ onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     ctx = gsap.context(() => {
+      gsap.from('.services-header', {
+        scrollTrigger: {
+          trigger: servicesSection.value,
+          start: 'top 88%',
+          once: true
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.75,
+        ease: 'power3.out'
+      });
+
       gsap.from('.service-item', {
         scrollTrigger: {
           trigger: servicesSection.value,
-          start: 'top 92%',
+          start: 'top 80%',
           once: true
         },
-        y: 24,
+        y: 40,
         opacity: 0,
-        duration: 0.55,
+        duration: 0.75,
+        stagger: 0.1,
+        ease: 'power3.out',
+        clearProps: 'all'
+      });
+
+      gsap.from('.services-metric', {
+        scrollTrigger: {
+          trigger: '.services-metrics-bar',
+          start: 'top 90%',
+          once: true
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.65,
         stagger: 0.08,
-        ease: 'power2.out',
+        ease: 'power3.out',
         clearProps: 'all'
       });
     });

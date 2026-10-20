@@ -29,7 +29,7 @@
               <img
                 :src="item.image"
                 :alt="item.title"
-                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition duration-700"
+                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               />
               
               <!-- Category Badge -->
@@ -65,7 +65,7 @@
                 >
                   <span>Explorar Detalles</span>
                   <div class="w-7 h-7 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
-                    <i class="bi bi-arrow-up-right text-xs text-zinc-900 group-hover/btn:text-white transition-colors"></i>
+                    <i class="bi bi-arrow-up-right text-xs text-zinc-900 group-hover/btn:text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300"></i>
                   </div>
                 </NuxtLink>
 
@@ -104,17 +104,29 @@ onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     ctx = gsap.context(() => {
+      gsap.from('.portfolio-header', {
+        scrollTrigger: {
+          trigger: portfolioSection.value,
+          start: 'top 88%',
+          once: true
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.75,
+        ease: 'power3.out'
+      });
+
       gsap.from('.portfolio-item', {
         scrollTrigger: {
           trigger: portfolioSection.value,
-          start: 'top 92%',
+          start: 'top 80%',
           once: true
         },
-        y: 28,
+        y: 40,
         opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: 'power2.out',
+        duration: 0.75,
+        stagger: 0.12,
+        ease: 'power3.out',
         clearProps: 'all'
       });
     });

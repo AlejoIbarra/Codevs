@@ -33,6 +33,18 @@
             </span>
           </h1>
 
+          <!-- Kinetic Rotating Title Estilo Huge Inc -->
+          <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
+            <span>Creamos tecnología que impulsa a</span>
+            <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[130px] sm:min-w-[160px] text-left">
+              <Transition name="huge-slide" mode="out-in">
+                <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
+                  {{ currentRotatingWord }}
+                </span>
+              </Transition>
+            </span>
+          </div>
+
           <!-- Párrafo Descriptivo con Alta Legibilidad y SEO -->
           <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-normal leading-relaxed text-center">
             Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y desarrollamos <strong class="text-white font-semibold">páginas web en Pasto</strong>, aplicaciones móviles y <strong class="text-white font-semibold">software a la medida</strong> con arquitectura de alto nivel para posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
@@ -102,7 +114,7 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue';
+import { onMounted, onBeforeUnmount, ref, computed } from 'vue';
 import gsap from 'gsap';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -111,6 +123,12 @@ import 'swiper/css/pagination';
 
 const glowBg = ref(null);
 let mouseMoveHandler = null;
+let rotateInterval = null;
+
+// Kinetic Rotating Words Estilo Huge Inc
+const rotatingWords = ['empresas.', 'marcas.', 'startups.', 'negocios.', 'el futuro.'];
+const currentWordIndex = ref(0);
+const currentRotatingWord = computed(() => rotatingWords[currentWordIndex.value]);
 
 const breakpoints = {
   320: {
@@ -159,6 +177,11 @@ const logos = [
 ];
 
 onMounted(() => {
+  // Rotación cinética de palabras cada 2.4 segundos estilo Huge Inc
+  rotateInterval = setInterval(() => {
+    currentWordIndex.value = (currentWordIndex.value + 1) % rotatingWords.length;
+  }, 2400);
+
   // Seguidor suave del cursor para enriquecer el mesh gradient
   mouseMoveHandler = (e) => {
     const { clientX, clientY } = e;
@@ -174,6 +197,9 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
+  if (rotateInterval) {
+    clearInterval(rotateInterval);
+  }
   if (mouseMoveHandler) {
     window.removeEventListener('mousemove', mouseMoveHandler);
   }
@@ -261,5 +287,21 @@ onBeforeUnmount(() => {
   width: 22px;
   border-radius: 9999px;
   box-shadow: 0 0 10px #E7000B;
+}
+
+/* Transición Cinética de Texto Estilo Huge Inc */
+.huge-slide-enter-active,
+.huge-slide-leave-active {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.huge-slide-enter-from {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.huge-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
 }
 </style>

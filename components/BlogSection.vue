@@ -35,12 +35,12 @@
           class="blog-item group bg-zinc-50/70 hover:bg-white rounded-[28px] overflow-hidden border border-zinc-200/90 hover:border-zinc-950/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
         >
           <div>
-            <!-- Image Frame -->
+            <!-- Image Frame con Zoom Cinemático -->
             <div class="relative h-56 overflow-hidden border-b border-zinc-200 bg-zinc-100">
               <img
                 :src="post.image"
                 :alt="post.title"
-                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition-transform duration-700"
+                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               />
               
               <!-- Category Badge -->
@@ -108,17 +108,29 @@ onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     ctx = gsap.context(() => {
+      gsap.from('.blog-header', {
+        scrollTrigger: {
+          trigger: blogSection.value,
+          start: 'top 88%',
+          once: true
+        },
+        y: 35,
+        opacity: 0,
+        duration: 0.75,
+        ease: 'power3.out'
+      });
+
       gsap.from('.blog-item', {
         scrollTrigger: {
           trigger: blogSection.value,
-          start: 'top 92%',
+          start: 'top 80%',
           once: true
         },
-        y: 24,
+        y: 40,
         opacity: 0,
-        duration: 0.55,
+        duration: 0.75,
         stagger: 0.1,
-        ease: 'power2.out',
+        ease: 'power3.out',
         clearProps: 'all'
       });
     });
