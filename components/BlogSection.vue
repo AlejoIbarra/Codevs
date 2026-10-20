@@ -1,21 +1,17 @@
 <template>
-  <section id="blog" ref="blogSection" class="blog-section relative bg-[#07070a] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
-    <!-- Esferas Mesh Gradient Rojas Suaves -->
-    <div class="absolute top-1/4 right-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-10 left-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
-
+  <section id="blog" ref="blogSection" class="blog-section relative bg-white text-zinc-900 overflow-hidden py-24 lg:py-32 border-t border-zinc-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- Section Header -->
+      <!-- Section Header con Estilo Editorial Huge Inc -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 blog-header">
         <div class="max-w-2xl">
-          <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
+          <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
             Blog de <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+            <span class="text-red-600">
               Tecnología & SEO.
             </span>
           </h2>
-          <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed">
+          <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
             Estrategias de desarrollo de software, posicionamiento en Google y arquitectura cloud desde Pasto para el mundo.
           </p>
         </div>
@@ -23,58 +19,57 @@
         <div>
           <NuxtLink
             to="/blog"
-            class="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm transition-all duration-300 backdrop-blur-md shadow-lg group hover:scale-105"
+            class="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-zinc-950 hover:bg-red-600 text-white font-bold text-sm transition-all duration-300 shadow-md group hover:scale-105"
           >
             <span>Ver Todos los Artículos</span>
-            <i class="bi bi-arrow-right text-red-400 group-hover:translate-x-1 transition-transform"></i>
+            <i class="bi bi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
           </NuxtLink>
         </div>
       </div>
 
-      <!-- Articles Grid (3 Columns) -->
+      <!-- Articles Grid (3 Columns) con Tarjetas Editoriales Limpias -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 blog-grid">
         <article
           v-for="(post, index) in featuredPosts"
           :key="index"
-          class="blog-item group mesh-glass-card rounded-[32px] overflow-hidden hover:border-red-500/50 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between"
+          class="blog-item group bg-zinc-50/70 hover:bg-white rounded-[28px] overflow-hidden border border-zinc-200/90 hover:border-zinc-950/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
         >
           <div>
             <!-- Image Frame -->
-            <div class="relative h-56 overflow-hidden border-b border-zinc-800/80 bg-black">
+            <div class="relative h-56 overflow-hidden border-b border-zinc-200 bg-zinc-100">
               <img
                 :src="post.image"
                 :alt="post.title"
                 class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition-transform duration-700"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-black/20 to-transparent"></div>
               
               <!-- Category Badge -->
-              <span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40">
+              <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                 {{ post.category }}
               </span>
 
               <!-- Read Time Badge -->
-              <span class="absolute bottom-3 right-4 bg-black/80 border border-zinc-700/80 text-zinc-300 text-xs font-medium px-3 py-1 rounded-full backdrop-blur-md flex items-center gap-1.5">
-                <i class="bi bi-clock text-red-400 text-xs"></i>
+              <span class="absolute bottom-3 right-4 bg-white/90 border border-zinc-200 text-zinc-700 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md flex items-center gap-1.5 shadow-sm">
+                <i class="bi bi-clock text-red-600 text-xs"></i>
                 {{ post.readTime }}
               </span>
             </div>
 
             <!-- Content -->
             <div class="p-8 space-y-4">
-              <div class="flex items-center gap-3 text-xs text-zinc-500 font-medium">
-                <span><i class="bi bi-calendar3 mr-1 text-red-500"></i>{{ post.date }}</span>
+              <div class="flex items-center gap-3 text-xs text-zinc-500 font-semibold">
+                <span><i class="bi bi-calendar3 mr-1 text-red-600"></i>{{ post.date }}</span>
                 <span>•</span>
-                <span><i class="bi bi-person mr-1 text-red-500"></i>{{ post.author }}</span>
+                <span><i class="bi bi-person mr-1 text-red-600"></i>{{ post.author }}</span>
               </div>
 
-              <h3 class="text-xl font-display font-bold text-white group-hover:text-red-400 transition-colors duration-300 leading-snug">
+              <h3 class="text-xl font-black text-zinc-950 group-hover:text-red-600 transition-colors duration-300 leading-snug">
                 <NuxtLink :to="`/blog/${post.slug}`">
                   {{ post.title }}
                 </NuxtLink>
               </h3>
 
-              <p class="text-zinc-400 text-sm leading-relaxed line-clamp-3 text-justify">
+              <p class="text-zinc-600 text-sm leading-relaxed line-clamp-3 text-justify">
                 {{ post.excerpt }}
               </p>
             </div>
@@ -82,15 +77,15 @@
 
           <!-- Card Footer -->
           <div class="p-8 pt-0">
-            <div class="pt-5 border-t border-zinc-800/80 flex items-center justify-between">
+            <div class="pt-5 border-t border-zinc-200 flex items-center justify-between">
               <NuxtLink
                 :to="`/blog/${post.slug}`"
-                class="inline-flex items-center gap-2 text-sm font-bold text-red-500 hover:text-red-400 transition-colors group/link"
+                class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors group/link"
               >
                 <span>Leer Artículo</span>
                 <i class="bi bi-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
               </NuxtLink>
-              <span class="text-xs text-zinc-600 font-semibold uppercase tracking-wider">CODEVS</span>
+              <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider">CODEVS</span>
             </div>
           </div>
         </article>

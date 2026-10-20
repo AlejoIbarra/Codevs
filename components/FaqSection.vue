@@ -1,42 +1,38 @@
 <template>
-  <section id="faq" class="relative bg-[#07070a] text-white py-24 lg:py-32 overflow-hidden border-t border-zinc-900">
-    <!-- Esferas Mesh Gradient Suaves -->
-    <div class="absolute top-1/3 left-[-8%] w-[600px] h-[600px] bg-red-600/12 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-[-8%] w-[550px] h-[550px] bg-red-700/10 rounded-full blur-[150px] pointer-events-none"></div>
-
+  <section id="faq" class="relative bg-[#FAFAFC] text-zinc-900 py-24 lg:py-32 overflow-hidden border-t border-zinc-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- Encabezado de la Sección FAQ -->
+      <!-- Encabezado de la Sección FAQ con Estilo Huge Inc -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.1]">
+        <h2 class="text-3xl sm:text-5xl font-black text-zinc-950 tracking-tight leading-[1.1]">
           Preguntas Frecuentes sobre <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+          <span class="text-red-600">
             Software y Páginas Web
           </span>
         </h2>
-        <p class="text-zinc-400 text-base sm:text-lg mt-4 leading-relaxed">
+        <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
           Resolvemos tus dudas sobre desarrollo web, software a la medida y estrategias SEO en Pasto, Nariño, Colombia y Latinoamérica.
         </p>
       </div>
 
-      <!-- Acordeón Interactivo de Preguntas -->
+      <!-- Acordeón Interactivo de Preguntas Limpio y Minimalista -->
       <div class="space-y-4">
         <div 
           v-for="(faq, index) in faqs" 
           :key="index"
-          class="mesh-glass-card rounded-[24px] sm:rounded-[28px] overflow-hidden transition-all duration-300 hover:border-red-500/40"
+          class="bg-white rounded-[20px] sm:rounded-[24px] border border-zinc-200/90 overflow-hidden transition-all duration-300 hover:border-zinc-950/60 shadow-sm"
         >
           <button 
             @click="toggle(index)"
-            class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-4 focus:outline-none"
+            class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer"
             :aria-expanded="openIndex === index"
           >
-            <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-red-400 transition-colors">
+            <h3 class="text-base sm:text-lg font-black text-zinc-950 group-hover:text-red-600 transition-colors">
               {{ faq.question }}
             </h3>
             <span 
-              class="w-9 h-9 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shrink-0 text-red-500 transition-transform duration-300"
-              :class="{ 'rotate-180 bg-red-600 text-white': openIndex === index }"
+              class="w-9 h-9 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center shrink-0 text-zinc-800 transition-all duration-300"
+              :class="{ 'rotate-180 bg-zinc-950 text-white border-zinc-950': openIndex === index }"
             >
               <i class="bi bi-chevron-down text-sm"></i>
             </span>
@@ -44,7 +40,7 @@
           
           <div 
             v-show="openIndex === index"
-            class="px-6 pb-6 sm:px-7 sm:pb-7 text-zinc-300 text-sm sm:text-base leading-relaxed border-t border-white/5 pt-4 text-justify"
+            class="px-6 pb-6 sm:px-7 sm:pb-7 text-zinc-600 text-sm sm:text-base leading-relaxed border-t border-zinc-100 pt-4 text-justify"
           >
             <p>{{ faq.answer }}</p>
           </div>
@@ -53,9 +49,9 @@
 
       <!-- Banner de Contacto si no encuentran su duda -->
       <div class="mt-14 text-center">
-        <p class="text-zinc-400 text-sm">
+        <p class="text-zinc-600 text-sm">
           ¿Tienes una pregunta específica sobre tu proyecto? 
-          <a href="#contact" class="text-red-400 font-semibold hover:underline decoration-red-500 ml-1">
+          <a href="#contact" class="text-red-600 font-bold hover:underline decoration-red-600 ml-1">
             Habla directamente con nuestro equipo de ingeniería →
           </a>
         </p>

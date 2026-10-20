@@ -1,79 +1,71 @@
 <template>
-  <section id="portfolio" ref="portfolioSection" class="portfolio-section relative bg-[#07070a] overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
+  <section id="portfolio" ref="portfolioSection" class="portfolio-section relative bg-[#FAFAFC] overflow-hidden py-24 lg:py-32 border-t border-zinc-200">
     
-    <!-- Esferas Mesh Gradient Rojas Suaves -->
-    <div class="absolute top-1/4 left-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-0 right-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
-
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
       
-      <!-- Section Header -->
+      <!-- Section Header con Estilo Editorial Huge Inc -->
       <div class="max-w-3xl mb-16 portfolio-header">
-        <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
+        <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
           Proyectos <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+          <span class="text-red-600">
             Destacados.
           </span>
         </h2>
-        <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed">
+        <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
           Descubre algunos de nuestros desarrollos de software y plataformas interactivas recientes. Cada proyecto es una solución a la medida concebida para generar impacto real.
         </p>
       </div>
 
-      <!-- Projects Grid (2 Columns, 4 Cards) -->
+      <!-- Projects Grid (2 Columns, 4 Cards) con Estilo Huge Inc -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 portfolio-grid">
         <div
           v-for="(item, i) in items"
           :key="i"
-          class="portfolio-item group relative mesh-glass-card rounded-[32px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-red-500/50 flex flex-col justify-between"
+          class="portfolio-item group relative bg-white rounded-[28px] overflow-hidden border border-zinc-200/90 hover:border-zinc-950/80 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between"
         >
-          <!-- Hover glow overlay -->
-          <div class="absolute inset-0 bg-gradient-to-t from-red-600/15 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10"></div>
-
           <div>
-            <!-- Image Area -->
-            <div class="relative h-64 sm:h-72 overflow-hidden border-b border-zinc-800/80 bg-black">
+            <!-- Image Area con Acabado Nítido -->
+            <div class="relative h-64 sm:h-72 overflow-hidden border-b border-zinc-200 bg-zinc-100">
               <img
                 :src="item.image"
                 :alt="item.title"
                 class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition duration-700"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e13] via-black/20 to-transparent"></div>
               
               <!-- Category Badge -->
-              <span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40">
+              <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                 {{ item.category }}
               </span>
 
               <!-- Status Badge -->
-              <div class="absolute bottom-3 left-4 flex items-center gap-2 px-3 py-1 rounded-full bg-black/80 border border-zinc-700/80 backdrop-blur-md">
+              <div class="absolute bottom-3 left-4 flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 border border-zinc-200 backdrop-blur-md shadow-sm">
                 <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span class="text-[11px] text-zinc-300 font-medium">Proyecto Activo</span>
+                <span class="text-[11px] text-zinc-700 font-semibold">Proyecto Activo</span>
               </div>
             </div>
 
             <!-- Content Area -->
-            <div class="p-8 space-y-3 relative z-20">
-              <h3 class="text-2xl font-display font-bold text-white group-hover:text-red-400 transition-colors duration-300">
+            <div class="p-8 space-y-3">
+              <h3 class="text-2xl font-black text-zinc-950 group-hover:text-red-600 transition-colors duration-300">
                 {{ item.title }}
               </h3>
-              <p class="text-zinc-400 text-sm leading-relaxed text-justify">
+              <p class="text-zinc-600 text-sm leading-relaxed text-justify">
                 {{ item.description }}
               </p>
             </div>
           </div>
 
-          <!-- Card Footer Link -->
-          <div class="p-8 pt-0 relative z-20">
-            <div class="pt-5 border-t border-zinc-800/80 flex flex-wrap justify-between items-center gap-4">
+          <!-- Card Footer Links -->
+          <div class="p-8 pt-0">
+            <div class="pt-5 border-t border-zinc-200 flex flex-wrap justify-between items-center gap-4">
               <div class="flex items-center gap-4">
                 <NuxtLink
                   :to="item.detailsLink"
-                  class="inline-flex items-center gap-2 text-sm font-bold text-red-500 hover:text-red-400 transition-colors group/btn"
+                  class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 group-hover:text-red-600 transition-colors group/btn"
                 >
                   <span>Explorar Detalles</span>
-                  <div class="w-7 h-7 rounded-full bg-red-600/20 border border-red-500/30 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
-                    <i class="bi bi-arrow-up-right text-xs text-red-500 group-hover/btn:text-white transition-colors"></i>
+                  <div class="w-7 h-7 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
+                    <i class="bi bi-arrow-up-right text-xs text-zinc-900 group-hover/btn:text-white transition-colors"></i>
                   </div>
                 </NuxtLink>
 
@@ -82,14 +74,14 @@
                   :href="item.liveUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 text-xs font-semibold text-zinc-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-red-500/40"
+                  class="inline-flex items-center gap-2 text-xs font-bold text-zinc-700 hover:text-zinc-950 transition-colors px-3 py-1.5 rounded-lg bg-zinc-100 border border-zinc-200 hover:border-zinc-400"
                   title="Visitar sitio web oficial"
                 >
-                  <i class="bi bi-box-arrow-up-right text-red-400 text-xs"></i>
+                  <i class="bi bi-box-arrow-up-right text-red-600 text-xs"></i>
                   <span>Sitio En Vivo</span>
                 </a>
               </div>
-              <span class="text-xs text-zinc-500 font-semibold uppercase tracking-wider">CODEVS</span>
+              <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider">CODEVS</span>
             </div>
           </div>
         </div>
