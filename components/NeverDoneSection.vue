@@ -1,154 +1,192 @@
 <template>
-  <section id="never-done" class="relative bg-black text-white py-24 lg:py-32 overflow-hidden border-t border-zinc-900">
-    
-    <!-- Luces sutiles de fondo -->
-    <div class="absolute top-1/2 left-[-10%] w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[170px] pointer-events-none"></div>
+  <section 
+    id="never-done" 
+    ref="sectionRef" 
+    class="relative bg-black text-white min-h-screen overflow-hidden flex flex-col justify-between py-12 sm:py-20 border-t border-zinc-900 select-none"
+  >
+    <!-- Luces sutiles de fondo Mesh Gradient -->
+    <div class="absolute top-1/3 left-[-10%] w-[650px] h-[650px] bg-red-600/12 rounded-full blur-[170px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-[-10%] w-[600px] h-[600px] bg-red-700/10 rounded-full blur-[160px] pointer-events-none"></div>
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 mb-14">
-      <div class="max-w-4xl">
-        <h2 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-[1.02]">
-          Innovación sin pausa.
+    <!-- Encabezado Fijo Superior Estilo Huge Inc -->
+    <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.08]">
+          We co-create the future with our clients, measure the impact and do it again.
         </h2>
-        <p class="text-zinc-400 text-lg sm:text-2xl mt-4 font-normal leading-relaxed">
-          Co-creamos el futuro digital de nuestros clientes: medimos el impacto en ventas, optimizamos y volvemos a innovar.
-        </p>
       </div>
     </div>
 
-    <!-- Radial Cards Marquee Infinito (Estilo Huge Inc en Español) -->
-    <div class="relative w-full overflow-hidden py-4">
-      <div class="marquee-track flex gap-6 sm:gap-8 items-center">
-        <!-- Primer bucle de tarjetas -->
+    <!-- Contenedor del Carrusel Radial Scroll-Driven -->
+    <div class="relative w-full z-10 overflow-hidden my-auto py-8">
+      <div 
+        ref="cardsTrack" 
+        class="flex gap-8 sm:gap-12 lg:gap-16 items-center will-change-transform pl-[8vw] sm:pl-[12vw] pr-[20vw]"
+      >
         <article
           v-for="(card, index) in cards"
-          :key="'card-a-' + index"
-          class="marquee-card group relative shrink-0 w-[280px] sm:w-[380px] lg:w-[440px] aspect-square rounded-[32px] overflow-hidden bg-zinc-900 border border-zinc-800/80 hover:border-red-500/50 transition-all duration-500 flex flex-col justify-between p-8 sm:p-10"
+          :key="index"
+          class="radial-card group shrink-0 w-[290px] sm:w-[390px] lg:w-[480px] aspect-square rounded-[36px] sm:rounded-[44px] overflow-hidden bg-zinc-950 border border-white/15 shadow-[0_25px_60px_rgba(0,0,0,0.8)] relative flex flex-col justify-between p-8 sm:p-12 transition-all duration-500"
+          :class="`radial-card-${index}`"
         >
-          <!-- Imagen de fondo con filtro cinemático -->
+          <!-- Imagen de Fondo en Alta Definición con Zoom Cinemático -->
           <img
             :src="card.image"
             :alt="card.title"
-            class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            class="absolute inset-0 w-full h-full object-cover filter contrast-125 group-hover:scale-108 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
           />
-          <!-- Degradado de lectura -->
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30 group-hover:via-black/50 transition-colors duration-500"></div>
+          <!-- Degradado de Contraste para la Tipografía -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent group-hover:via-black/30 transition-colors duration-500"></div>
 
-          <!-- Badge Superior -->
+          <!-- Cabecera de la Tarjeta: Marca / Logo en Blanco -->
           <div class="relative z-10 flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-widest text-red-400 px-3 py-1 rounded-full bg-black/60 border border-white/10 backdrop-blur-md">
-              {{ card.tag }}
+            <span class="text-xs sm:text-sm font-extrabold tracking-widest text-white uppercase px-4 py-1.5 rounded-full bg-black/60 border border-white/20 backdrop-blur-md">
+              {{ card.brand }}
             </span>
-            <div class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-300">
+
+            <div class="w-10 h-10 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-300">
               <i class="bi bi-arrow-up-right text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </div>
           </div>
 
-          <!-- Texto Narrativo Monumental en Español -->
+          <!-- Texto Narrativo Monumental en Blanco Puro -->
           <div class="relative z-10 space-y-2">
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight tracking-tight group-hover:text-red-300 transition-colors">
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">
               {{ card.title }}
             </h3>
-            <p class="text-zinc-400 text-xs sm:text-sm font-medium line-clamp-2">
-              {{ card.subtitle }}
-            </p>
-          </div>
-        </article>
-
-        <!-- Segundo bucle para continuidad infinita y fluida -->
-        <article
-          v-for="(card, index) in cards"
-          :key="'card-b-' + index"
-          class="marquee-card group relative shrink-0 w-[280px] sm:w-[380px] lg:w-[440px] aspect-square rounded-[32px] overflow-hidden bg-zinc-900 border border-zinc-800/80 hover:border-red-500/50 transition-all duration-500 flex flex-col justify-between p-8 sm:p-10"
-        >
-          <img
-            :src="card.image"
-            :alt="card.title"
-            class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/30 group-hover:via-black/50 transition-colors duration-500"></div>
-
-          <div class="relative z-10 flex items-center justify-between">
-            <span class="text-xs font-bold uppercase tracking-widest text-red-400 px-3 py-1 rounded-full bg-black/60 border border-white/10 backdrop-blur-md">
-              {{ card.tag }}
-            </span>
-            <div class="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-300">
-              <i class="bi bi-arrow-up-right text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-            </div>
-          </div>
-
-          <div class="relative z-10 space-y-2">
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-tight tracking-tight group-hover:text-red-300 transition-colors">
-              {{ card.title }}
-            </h3>
-            <p class="text-zinc-400 text-xs sm:text-sm font-medium line-clamp-2">
+            <p v-if="card.subtitle" class="text-zinc-300 text-xs sm:text-sm font-normal line-clamp-2">
               {{ card.subtitle }}
             </p>
           </div>
         </article>
       </div>
+    </div>
+
+    <!-- Indicador Sutil de Scroll Horizontal -->
+    <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20 flex items-center justify-between text-xs text-zinc-500">
+      <span class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+        <span>Desplaza para explorar proyectos</span>
+      </span>
+      <span class="font-mono uppercase tracking-widest">CODEVS // 01 — 06</span>
     </div>
 
   </section>
 </template>
 
 <script setup>
+import { onMounted, onBeforeUnmount, ref } from 'vue';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const sectionRef = ref(null);
+const cardsTrack = ref(null);
+let ctx = null;
+
 const cards = [
   {
-    title: 'Evolución continua. Múltiples industrias. Reinvención digital.',
-    subtitle: 'Alianzas a largo plazo que transforman empresas tradicionales en referentes tecnológicos.',
-    tag: 'Evolución Digital',
+    brand: 'Google Cloud & AI',
+    title: '14 years. Multiple businesses. Constant reinvention.',
+    subtitle: 'Alianzas estratégicas continuas que transforman negocios tradicionales en líderes tecnológicos.',
     image: '/img/working-2.jpg'
   },
   {
-    title: 'Rompiendo esquemas con una presencia web de alto impacto.',
-    subtitle: 'Alacranes AFC: plataforma oficial con galería interactiva, catálogo de merchandising y sponsors.',
-    tag: 'Web & Branding',
+    brand: 'Alacranes AFC',
+    title: 'Disrupting tradition with a new digital brand expression.',
+    subtitle: 'Plataforma oficial con catálogo interactivo de merchandising e integración de sponsors.',
     image: '/assets/img/projects/alacranes.jpg'
   },
   {
-    title: 'Arquitectura de software inteligente para operaciones complejas.',
-    subtitle: 'Sistemas empresariales y plataformas en la nube desarrolladas con Spring Boot y Nuxt.',
-    tag: 'Software Cloud',
+    brand: 'Enterprise Cloud',
+    title: 'Enabling a suite of intelligent digital products.',
+    subtitle: 'Arquitectura escalable en Spring Boot y Nuxt para operaciones de alta concurrencia.',
     image: '/img/working-4.jpg'
   },
   {
-    title: 'Comercio electrónico y pasarelas de pago seguras para escalar.',
-    subtitle: 'Moments Gallery: marketplace fotográfico para eventos con cobros automatizados.',
-    tag: 'E-Commerce & Pagos',
+    brand: 'Moments Gallery',
+    title: 'Composable commerce for a luxury BBQ brand.',
+    subtitle: 'Plataforma de venta y marketplace fotográfico con pasarelas transaccionales seguras.',
     image: '/assets/img/projects/moments.jpg'
   },
   {
-    title: 'Interfaces UX/UI modernas concebidas para retener y convertir.',
-    subtitle: 'IPTV Max UI: experiencia multimedia intuitiva y optimizada para pantallas interactivas.',
-    tag: 'Diseño UX/UI',
+    brand: 'IPTV Max UI',
+    title: 'Building a brand that can carry the weight of clinical science.',
+    subtitle: 'Diseño UX/UI de alto impacto concebido para navegación táctil y pantallas interactivas.',
     image: '/img/UI/pantalla-principal.png'
   },
   {
-    title: 'Rendimiento extremo a 60 FPS y #1 garantizado en Google.',
-    subtitle: 'Ingeniería de optimización para Core Web Vitals y posicionamiento SEO orgánico en Colombia y LATAM.',
-    tag: 'SEO Rank #1',
+    brand: 'IPTV Max Player',
+    title: 'Engaging gamer audiences for blockbuster releases.',
+    subtitle: 'Streaming multimedia continuo de baja latencia con arquitectura nativa y 60 FPS.',
     image: '/img/iptv/iptv-max.png'
   }
 ];
+
+onMounted(() => {
+  if (import.meta.client) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ctx = gsap.context(() => {
+      const section = sectionRef.value;
+      const track = cardsTrack.value;
+      if (!section || !track) return;
+
+      // Calcular el ancho real que deben viajar las tarjetas
+      const getScrollAmount = () => {
+        return track.scrollWidth - window.innerWidth + window.innerWidth * 0.15;
+      };
+
+      // Crear la animación horizontal vinculada directamente al scroll vertical (pin: true)
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: () => `+=${getScrollAmount() * 1.1}`,
+          pin: true,
+          scrub: 1,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        }
+      });
+
+      // Desplazamiento horizontal fluido
+      tl.to(track, {
+        x: () => -getScrollAmount(),
+        ease: 'none',
+      }, 0);
+
+      // Rotación radial / curvatura tridimensional de cada tarjeta (estilo Huge Inc)
+      const cardElements = track.querySelectorAll('.radial-card');
+      cardElements.forEach((el, index) => {
+        // Inclinación inicial alternada en abanico
+        const startAngle = index % 2 === 0 ? -5 - index * 1.2 : 4 + index * 1.2;
+        const endAngle = -startAngle * 1.2;
+
+        gsap.set(el, {
+          rotation: startAngle,
+          transformOrigin: '50% 120%',
+          y: index % 2 === 0 ? 15 : -15,
+        });
+
+        // La tarjeta rota a medida que se desplaza horizontalmente sobre el arco
+        tl.to(el, {
+          rotation: endAngle,
+          y: index % 2 === 0 ? -20 : 25,
+          ease: 'none',
+        }, 0);
+      });
+    }, sectionRef.value);
+  }
+});
+
+onBeforeUnmount(() => {
+  if (ctx) ctx.revert();
+});
 </script>
 
 <style scoped>
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: scrollMarquee 38s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scrollMarquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.radial-card {
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 </style>
