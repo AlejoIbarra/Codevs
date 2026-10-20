@@ -50,15 +50,15 @@
         </ul>
       </div>
 
-      <!-- Servicios Destacados -->
+      <!-- Servicios Destacados con Enlaces Directos de Autoridad SEO -->
       <div>
         <h4 class="text-base font-bold text-white mb-6 border-l-2 border-red-600 pl-3">Servicios en Pasto</h4>
         <ul class="space-y-3 text-sm text-gray-400">
-          <li><a href="#services" class="hover:text-red-500 transition">Desarrollo de Software a Medida</a></li>
-          <li><a href="#services" class="hover:text-red-500 transition">Páginas Web Profesionales</a></li>
-          <li><a href="#services" class="hover:text-red-500 transition">Posicionamiento SEO Local Google #1</a></li>
-          <li><a href="#services" class="hover:text-red-500 transition">Aplicaciones Móviles iOS & Android</a></li>
-          <li><a href="#services" class="hover:text-red-500 transition">Integración de Pasarelas & APIs</a></li>
+          <li><NuxtLink to="/servicios/desarrollo-software" class="hover:text-red-500 transition">Desarrollo de Software a Medida</NuxtLink></li>
+          <li><NuxtLink to="/servicios/desarrollo-web" class="hover:text-red-500 transition">Páginas Web Profesionales</NuxtLink></li>
+          <li><NuxtLink to="/servicios/seo-avanzado" class="hover:text-red-500 transition">Posicionamiento SEO Local Google #1</NuxtLink></li>
+          <li><NuxtLink to="/servicios/apps-moviles" class="hover:text-red-500 transition">Aplicaciones Móviles iOS & Android</NuxtLink></li>
+          <li><NuxtLink to="/servicios/integraciones-apis" class="hover:text-red-500 transition">Integración de Pasarelas & APIs</NuxtLink></li>
         </ul>
       </div>
 

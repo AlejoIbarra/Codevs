@@ -1,6 +1,66 @@
+# ==============================================================================
+# CODEVS - Robots.txt
+# Sitio Oficial: https://www.codevs.dev
+# Desarrollado con Nuxt 4 para Máximo Rendimiento SEO & AI Generative Search
+# ==============================================================================
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /admin/
+Crawl-delay: 1
 
-# Host & Sitemap
+# ------------------------------------------------------------------------------
+# Google Search & Google AI (Gemini / Google SGE)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /assets/
+
+User-agent: Google-Extended
+Allow: /
+
+# ------------------------------------------------------------------------------
+# OpenAI (ChatGPT Search & GPTBot)
+# ------------------------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Anthropic Claude
+# ------------------------------------------------------------------------------
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Perplexity AI
+# ------------------------------------------------------------------------------
+User-agent: PerplexityBot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Microsoft Bing & Copilot
+# ------------------------------------------------------------------------------
+User-agent: Bingbot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# Applebot
+# ------------------------------------------------------------------------------
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap & Host Declarations
 Host: https://www.codevs.dev
 Sitemap: https://www.codevs.dev/sitemap.xml

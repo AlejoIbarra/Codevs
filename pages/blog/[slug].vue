@@ -948,9 +948,49 @@ if (!post) {
 }
 
 useHead({
-  title: `${post.title} | Blog CODEVS - Pasto, Nariño`,
+  title: `${post.title} | Blog CODEVS Pasto`,
   meta: [
-    { name: 'description', content: post.summary || post.sections[0]?.paragraphs[0] }
+    { name: 'description', content: post.summary || post.sections[0]?.paragraphs[0] },
+    { name: 'keywords', content: `${post.category.toLowerCase()}, desarrollo de software pasto, paginas web pasto, ingenieria de software colombia, codevs` },
+    { property: 'og:title', content: `${post.title} | CODEVS` },
+    { property: 'og:description', content: post.summary },
+    { property: 'og:image', content: `https://www.codevs.dev${post.image}` },
+    { property: 'og:url', content: `https://www.codevs.dev/blog/${slug}` },
+    { property: 'og:type', content: 'article' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${post.title} | CODEVS` },
+    { name: 'twitter:description', content: post.summary },
+    { name: 'twitter:image', content: `https://www.codevs.dev${post.image}` }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://www.codevs.dev/blog/${slug}` }
   ]
 });
+
+useJsonld(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  'headline': post.title,
+  'description': post.summary,
+  'image': `https://www.codevs.dev${post.image}`,
+  'datePublished': post.date,
+  'dateModified': '2026-10-20',
+  'author': {
+    '@type': 'Organization',
+    'name': 'Equipo de Ingeniería CODEVS',
+    'url': 'https://www.codevs.dev'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'CODEVS',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://www.codevs.dev/img/codevs.png'
+    }
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': `https://www.codevs.dev/blog/${slug}`
+  }
+}));
 </script>

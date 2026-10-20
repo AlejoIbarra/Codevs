@@ -238,11 +238,63 @@ if (!service) {
 }
 
 useHead({
-  title: `${service.title} | CODEVS - Pasto, Nariño`,
+  title: `${service.title} en Pasto y Colombia | CODEVS #1`,
   meta: [
-    { name: 'description', content: service.description }
+    { name: 'description', content: `${service.description} Especialistas en ${service.title} en San Juan de Pasto, Nariño, Colombia y Latinoamérica.` },
+    { name: 'keywords', content: `${service.title.toLowerCase()}, ${service.title.toLowerCase()} en pasto, desarrollo de software en pasto, paginas web en pasto, empresa de software pasto, programadores en pasto, software a la medida colombia, codevs` },
+    { property: 'og:title', content: `${service.title} en Pasto | CODEVS` },
+    { property: 'og:description', content: service.description },
+    { property: 'og:image', content: `https://www.codevs.dev${service.image}` },
+    { property: 'og:url', content: `https://www.codevs.dev/servicios/${slug}` },
+    { property: 'og:type', content: 'article' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${service.title} en Pasto | CODEVS` },
+    { name: 'twitter:description', content: service.description },
+    { name: 'twitter:image', content: `https://www.codevs.dev${service.image}` }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://www.codevs.dev/servicios/${slug}` }
   ]
 });
+
+useJsonld(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  'name': `${service.title} en Pasto`,
+  'serviceType': service.title,
+  'description': service.description,
+  'provider': {
+    '@type': 'LocalBusiness',
+    'name': 'CODEVS',
+    'url': 'https://www.codevs.dev',
+    'telephone': '+57 3138066800',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Cl. 8b #15-125',
+      'addressLocality': 'San Juan de Pasto',
+      'addressRegion': 'Nariño',
+      'postalCode': '520002',
+      'addressCountry': 'CO'
+    }
+  },
+  'areaServed': [
+    { '@type': 'City', 'name': 'San Juan de Pasto' },
+    { '@type': 'AdministrativeArea', 'name': 'Nariño' },
+    { '@type': 'Country', 'name': 'Colombia' }
+  ],
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': service.title,
+    'itemListElement': service.features.map(f => ({
+      '@type': 'Offer',
+      'itemOffered': {
+        '@type': 'Service',
+        'name': f.title,
+        'description': f.text
+      }
+    }))
+  }
+}));
 </script>
 
 <style scoped>

@@ -25,7 +25,7 @@
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
             Desarrollo de <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-              Páginas Web
+              Páginas Web en Pasto
             </span>
             <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/70 tracking-normal mt-2">
               & Software a la Medida
@@ -34,7 +34,7 @@
 
           <!-- Párrafo Descriptivo con Alta Legibilidad y SEO -->
           <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-normal leading-relaxed text-center">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y construimos plataformas digitales de alto impacto, desarrollo de páginas web modernas y arquitectura de software optimizada para conquistar el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Pasto, Colombia y el mundo.
+            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y desarrollamos <strong class="text-white font-semibold">páginas web en Pasto</strong>, aplicaciones móviles y <strong class="text-white font-semibold">software a la medida</strong> con arquitectura de alto nivel para posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
           </p>
 
           <!-- Botones de Acción Frosted Glass Pill -->

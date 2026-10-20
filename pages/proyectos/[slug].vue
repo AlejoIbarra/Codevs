@@ -341,11 +341,37 @@ if (!project) {
 }
 
 useHead({
-  title: `${project.title} | CODEVS Portfolio - Pasto, Nariño`,
+  title: `${project.title} | Portafolio CODEVS Pasto`,
   meta: [
-    { name: 'description', content: project.fullDescription }
+    { name: 'description', content: project.fullDescription || project.description },
+    { name: 'keywords', content: `${project.title.toLowerCase()}, proyectos desarrollo web pasto, portafolio software pasto, casos de exito codevs colombia` },
+    { property: 'og:title', content: `${project.title} | CODEVS` },
+    { property: 'og:description', content: project.description },
+    { property: 'og:image', content: `https://www.codevs.dev${project.image}` },
+    { property: 'og:url', content: `https://www.codevs.dev/proyectos/${slug}` },
+    { property: 'og:type', content: 'article' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${project.title} | CODEVS` },
+    { name: 'twitter:description', content: project.description },
+    { name: 'twitter:image', content: `https://www.codevs.dev${project.image}` }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://www.codevs.dev/proyectos/${slug}` }
   ]
 });
+
+useJsonld(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  'name': project.title,
+  'description': project.fullDescription || project.description,
+  'image': `https://www.codevs.dev${project.image}`,
+  'author': {
+    '@type': 'Organization',
+    'name': 'CODEVS',
+    'url': 'https://www.codevs.dev'
+  }
+}));
 </script>
 
 <style scoped>
