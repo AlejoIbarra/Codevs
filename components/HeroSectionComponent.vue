@@ -22,21 +22,29 @@
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
           
+          <!-- Badge de Autoridad en Ingeniería -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl shadow-lg">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-zinc-200">
+              Arquitectura de Software • Cloud • Inteligencia Artificial
+            </span>
+          </div>
+
           <!-- Titular Monumental en Blanco Puro -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
-            Desarrollo de <br />
+            Ingeniería de <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-              Páginas Web
+              Software a la Medida
             </span>
             <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/70 tracking-normal mt-2">
-              & Software a la Medida
+              & Plataformas Cloud de Alto Rendimiento
             </span>
           </h1>
 
           <!-- Kinetic Rotating Title Estilo Huge Inc -->
           <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
             <span>Creamos tecnología que impulsa a</span>
-            <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[130px] sm:min-w-[160px] text-left">
+            <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[140px] sm:min-w-[180px] text-left">
               <Transition name="huge-slide" mode="out-in">
                 <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
                   {{ currentRotatingWord }}
@@ -46,26 +54,26 @@
           </div>
 
           <!-- Párrafo Descriptivo con Alta Legibilidad y SEO -->
-          <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-normal leading-relaxed text-center">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y desarrollamos <strong class="text-white font-semibold">páginas web</strong>, aplicaciones móviles y <strong class="text-white font-semibold">software a la medida</strong> con arquitectura de alto nivel para posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
+          <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-normal leading-relaxed text-center">
+            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y construimos <strong class="text-white font-semibold">software a la medida</strong> de misión crítica, plataformas web de alta concurrencia, aplicaciones móviles y <strong class="text-white font-semibold">sistemas inteligentes</strong> con arquitectura limpia para escalar operaciones complejas y dominar el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
           </p>
 
           <!-- Botones de Acción Frosted Glass Pill -->
           <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
             <a href="#contact" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 border border-white/30 text-white font-semibold text-sm backdrop-blur-xl shadow-xl hover:scale-105 transition-all duration-300">
-              <span>Iniciar Mi Proyecto</span>
+              <span>Construir Mi Software</span>
               <i class="bi bi-arrow-up-right text-xs"></i>
+            </a>
+
+            <a href="#services" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
+              <i class="bi bi-cpu text-red-400"></i>
+              <span>Explorar Soluciones</span>
             </a>
 
             <a href="#portfolio" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
               <i class="bi bi-collection text-red-400"></i>
-              <span>Ver Casos de Éxito</span>
+              <span>Casos de Éxito</span>
             </a>
-
-            <NuxtLink to="/blog" class="inline-flex items-center gap-2 px-6 py-3.5 text-white/70 hover:text-white transition-colors text-sm font-medium">
-              <i class="bi bi-journal-code text-red-400"></i>
-              <span class="underline decoration-white/30 underline-offset-4 hover:decoration-white">Blog de Tecnología</span>
-            </NuxtLink>
           </div>
 
         </div>
@@ -126,7 +134,7 @@ let mouseMoveHandler = null;
 let rotateInterval = null;
 
 // Kinetic Rotating Words Estilo Huge Inc
-const rotatingWords = ['empresas.', 'marcas.', 'startups.', 'negocios.', 'el futuro.'];
+const rotatingWords = ['empresas líderes.', 'startups de alto impacto.', 'operaciones complejas.', 'ecosistemas cloud.', 'el futuro digital.'];
 const currentWordIndex = ref(0);
 const currentRotatingWord = computed(() => rotatingWords[currentWordIndex.value]);
 

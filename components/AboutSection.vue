@@ -15,19 +15,19 @@
           
           <!-- Título Principal -->
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
-            Nos Apasiona <br />
+            Ingeniería que <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-              La Tecnología.
+              Transforma Negocios.
             </span>
           </h2>
 
           <!-- Párrafos descriptivos principales (SEO & Valor del Estudio) -->
           <div class="space-y-4 text-zinc-300 font-normal leading-relaxed text-justify text-base sm:text-lg">
             <p class="border-l-4 border-red-600 pl-4 py-2 bg-white/[0.03] backdrop-blur-md rounded-r-2xl border-y border-r border-white/10">
-              En <strong class="text-white font-bold">CODEVS</strong> desarrollamos soluciones tecnológicas de alto nivel para empresas decididas a destacar. Creamos productos digitales eficientes, modernos e interactivos a la medida de tus necesidades.
+              En <strong class="text-white font-bold">CODEVS</strong> concebimos el desarrollo de software como una disciplina de alta precisión: arquitectura limpia, microservicios resilientes, baja latencia y cero deuda técnica.
             </p>
             <p class="text-zinc-400 text-base leading-relaxed">
-              Nuestro equipo de programadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en Colombia y Latinoamérica.
+              Nuestro equipo de ingenieros de software senior y arquitectos cloud construye plataformas empresariales diseñadas para procesar millones de transacciones, automatizar operaciones complejas y dominar la cima de Google con estándares que compiten de igual a igual a nivel internacional.
             </p>
           </div>
 
@@ -35,18 +35,18 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
             <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
               <div class="text-3xl font-black text-white mb-1">100%</div>
-              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Código Limpio</div>
-              <div class="text-[11px] text-zinc-400 mt-1">Cero plantillas genéricas ni atajos</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Código a Medida</div>
+              <div class="text-[11px] text-zinc-400 mt-1">Cero plantillas ni atajos técnicos</div>
             </div>
             <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
-              <div class="text-3xl font-black text-red-500 mb-1">#1 SEO</div>
-              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">En Google</div>
-              <div class="text-[11px] text-zinc-400 mt-1">Posicionamiento orgánico real</div>
+              <div class="text-3xl font-black text-red-500 mb-1">Cloud & API</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Alta Escala</div>
+              <div class="text-[11px] text-zinc-400 mt-1">Microservicios y concurrencia</div>
             </div>
             <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
-              <div class="text-3xl font-black text-white mb-1">UX/UI</div>
-              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">De Vanguardia</div>
-              <div class="text-[11px] text-zinc-400 mt-1">Experiencias de alto impacto</div>
+              <div class="text-3xl font-black text-white mb-1">60 FPS</div>
+              <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Velocidad Extrema</div>
+              <div class="text-[11px] text-zinc-400 mt-1">Sub-segundo y SEO #1</div>
             </div>
           </div>
 

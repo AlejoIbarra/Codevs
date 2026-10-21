@@ -150,9 +150,9 @@ const solutions = [
   {
     number: '01',
     title: 'Desarrollo de Software a la Medida.',
-    subtitle: 'Plataformas empresariales y arquitectura cloud.',
-    description: 'Ingeniería de software de alta calidad. Diseñamos plataformas web seguras, escalables y optimizadas para automatizar las operaciones complejas de tu negocio con Spring Boot, Java y PostgreSQL.',
-    tag: 'Arquitectura Cloud',
+    subtitle: 'Arquitectura de microservicios, cloud nativa y alta concurrencia.',
+    description: 'Ingeniería de software corporativo de máximo nivel. Diseñamos y construimos plataformas backend y frontend escalables, con tolerancia a fallos, procesamiento concurrente y bases de datos relacionales de alto rendimiento (Spring Boot, Java 21, PostgreSQL, Redis y Docker).',
+    tag: 'Arquitectura Cloud & Core',
     link: '/servicios/desarrollo-software'
   },
   {

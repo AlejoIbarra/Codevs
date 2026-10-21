@@ -520,10 +520,6 @@ useJsonld(() => ({
     'telephone': '+57 3138066800',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Cl. 8b #15-125',
-      'addressLocality': 'San Juan de Pasto',
-      'addressRegion': 'Nariño',
-      'postalCode': '520002',
       'addressCountry': 'CO'
     }
   },
