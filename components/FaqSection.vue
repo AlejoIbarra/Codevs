@@ -11,7 +11,7 @@
           </span>
         </h2>
         <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
-          Resolvemos tus dudas sobre desarrollo web, software a la medida y estrategias SEO en Pasto, Nariño, Colombia y Latinoamérica.
+          Resolvemos tus dudas sobre desarrollo web, software a la medida, automatizaciones y estrategias SEO en Colombia, Latinoamérica y Estados Unidos.
         </p>
       </div>
 
@@ -72,8 +72,8 @@ const toggle = (idx) => {
 
 const faqs = [
   {
-    question: '¿Por qué CODEVS es la mejor opción en desarrollo de páginas web en Pasto y Nariño?',
-    answer: 'En CODEVS no utilizamos plantillas lentas ni constructores genéricos como Wix o WordPress básicos. Construimos portales a la medida con Nuxt, Vue y Tailwind CSS, lo que garantiza tiempos de carga ultrarrápidos (menos de 1.5 segundos), 100% en Core Web Vitals y una estructura semántica diseñada específicamente para que tu negocio aparezca en el lugar #1 de Google en Pasto y toda Colombia.'
+    question: '¿Por qué CODEVS es la mejor opción en desarrollo de páginas web y software a la medida?',
+    answer: 'En CODEVS no utilizamos plantillas lentas ni constructores genéricos como Wix o WordPress básicos. Construimos portales y plataformas a la medida con Nuxt, Vue y Tailwind CSS, lo que garantiza tiempos de carga ultrarrápidos (menos de 1.5 segundos), 100% en Core Web Vitals y una estructura semántica diseñada específicamente para que tu negocio aparezca en el lugar #1 de Google en Colombia y mercados internacionales.'
   },
   {
     question: '¿Qué tipo de desarrollo de software a la medida realizan?',
@@ -81,11 +81,11 @@ const faqs = [
   },
   {
     question: '¿Cómo garantizan que mi empresa aparezca en los primeros lugares de Google (SEO)?',
-    answer: 'Aplicamos una metodología de SEO técnico y SEO local integral: marcado de datos estructurados con Schema.org, optimización de velocidad de carga a 60 FPS, palabras clave de alta intención transaccional en Pasto y Colombia, perfil de Google Business optimizado y enlazado semántico de autoridad. Esto le permite a los algoritmos de Google y a motores de IA indexar tu sitio con la más alta relevancia.'
+    answer: 'Aplicamos una metodología de SEO técnico y arquitectura web integral: marcado de datos estructurados con Schema.org, optimización de velocidad de carga a 60 FPS, palabras clave de alta intención transaccional en Colombia y el exterior, perfil de Google Business optimizado y enlazado semántico de autoridad. Esto le permite a los algoritmos de Google y a motores de IA indexar tu sitio con la más alta relevancia.'
   },
   {
-    question: '¿Trabajan con empresas fuera de Pasto y en otros países de Latinoamérica?',
-    answer: 'Sí. Aunque nuestra sede principal de ingeniería está en San Juan de Pasto, Nariño, desarrollamos plataformas web y software para empresas en Bogotá, Medellín, Cali y países de toda América Latina (México, Chile, Perú, Ecuador) y Estados Unidos, con metodologías ágiles y comunicación continua por videollamada y WhatsApp.'
+    question: '¿Trabajan con empresas a nivel nacional e internacional?',
+    answer: 'Sí. Desarrollamos plataformas web, aplicaciones y software para empresas en Bogotá, Medellín, Cali, todo el territorio colombiano y países de toda América Latina (México, Chile, Perú, Ecuador) y Estados Unidos, con metodologías ágiles, huso horario sincronizado y comunicación continua por videollamada y canales dedicados.'
   },
   {
     question: '¿Cuánto tiempo tarda el desarrollo de una página web o software en CODEVS?',

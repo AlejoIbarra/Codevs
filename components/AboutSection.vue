@@ -27,7 +27,7 @@
               En <strong class="text-white font-bold">CODEVS</strong> desarrollamos soluciones tecnológicas de alto nivel para empresas decididas a destacar. Creamos productos digitales eficientes, modernos e interactivos a la medida de tus necesidades.
             </p>
             <p class="text-zinc-400 text-base leading-relaxed">
-              Nuestro equipo de programadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en San Juan de Pasto y el departamento de Nariño.
+              Nuestro equipo de programadores combina diseño UX/UI de vanguardia y metodologías ágiles para construir portales rápidos y optimizados para Google (SEO) en Colombia y Latinoamérica.
             </p>
           </div>
 
@@ -58,8 +58,8 @@
               <img src="/img/team/team-3.jpg" alt="Especialista Full-stack en CODEVS" class="w-12 h-12 rounded-full border-2 border-white/20 object-cover filter grayscale contrast-125" />
             </div>
             <div>
-              <div class="text-sm font-bold text-white">Equipo Senior en San Juan de Pasto</div>
-              <div class="text-xs text-zinc-400">Diseño UI/UX, Desarrollo Full-stack & Estrategas SEO</div>
+              <div class="text-sm font-bold text-white">Equipo de Ingeniería Senior</div>
+              <div class="text-xs text-zinc-400">Diseño UI/UX, Desarrollo Full-stack & Estrategas Cloud</div>
             </div>
           </div>
 
@@ -124,7 +124,7 @@
                   <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-300 border border-red-500/30">Impacto</span>
                 </div>
                 <p class="text-zinc-300 text-sm leading-relaxed text-justify">
-                  Empoderar a las empresas de Pasto y Nariño mediante software robusto, páginas web veloces y asesorías en SEO que multipliquen su visibilidad y facturación online.
+                  Empoderar a empresas en Colombia y el mercado internacional mediante software robusto, páginas web veloces y arquitecturas cloud que multipliquen su visibilidad y facturación online.
                 </p>
               </div>
             </div>
@@ -147,7 +147,7 @@
 
           <div class="mt-6 flex items-center justify-center gap-3">
             <span class="w-8 h-[2px] bg-red-600"></span>
-            <span class="text-xs font-semibold tracking-widest text-red-400 uppercase">Filosofía CODEVS // San Juan de Pasto</span>
+            <span class="text-xs font-semibold tracking-widest text-red-400 uppercase">Filosofía CODEVS // Ingeniería de Software</span>
             <span class="w-8 h-[2px] bg-red-600"></span>
           </div>
         </div>

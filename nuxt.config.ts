@@ -53,32 +53,29 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'es'
       },
-      title: 'Desarrollo de Páginas Web en Pasto | Software a la Medida Colombia & LATAM | CODEVS #1',
+      title: 'Desarrollo de Páginas Web & Software a la Medida | Colombia & LATAM | CODEVS #1',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Líderes en desarrollo de páginas web en Pasto, ingeniería de software a la medida y aplicaciones móviles en Colombia y Latinoamérica. Posicionamiento #1 en Google garantizado.' 
+          content: 'Líderes en desarrollo de páginas web, ingeniería de software a la medida, aplicaciones móviles y automatizaciones en Colombia y Latinoamérica. Posicionamiento #1 en Google garantizado.' 
         },
         { 
           name: 'keywords', 
-          content: 'paginas web en pasto, desarrollo de software en pasto, desarrollo de paginas web pasto, empresa de software pasto, diseño web pasto nariño, programadores en pasto, software a la medida pasto, crear pagina web pasto, paginas web pasto nariño, desarrollo web colombia, desarrollo de software colombia, empresa de software latinoamerica, agencia web pasto, codevs' 
+          content: 'desarrollo de software colombia, paginas web colombia, software a la medida, aplicaciones moviles colombia, empresa de software colombia, desarrollo web profesional, automatizaciones crm, desarrollo mvp startups, codevs' 
         },
         { name: 'author', content: 'CODEVS' },
         { name: 'publisher', content: 'CODEVS' },
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
-        // Geo Tags para Posicionamiento Local en San Juan de Pasto y Nariño
-        { name: 'geo.region', content: 'CO-NAR' },
-        { name: 'geo.placename', content: 'San Juan de Pasto, Nariño, Colombia' },
-        { name: 'geo.position', content: '1.2136;-77.2811' },
-        { name: 'ICBM', content: '1.2136, -77.2811' },
+        { name: 'geo.region', content: 'CO' },
+        { name: 'geo.placename', content: 'Colombia' },
         // Open Graph / Facebook / WhatsApp
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'CODEVS - Desarrollo de Páginas Web & Software' },
         { property: 'og:locale', content: 'es_CO' },
-        { property: 'og:title', content: 'Desarrollo de Páginas Web en Pasto & Software a la Medida | CODEVS' },
-        { property: 'og:description', content: 'Posiciona tu empresa en el #1 de Google. Creamos páginas web ultra-rápidas y software a la medida en Pasto, Colombia y Latinoamérica.' },
+        { property: 'og:title', content: 'Desarrollo de Páginas Web & Software a la Medida | CODEVS' },
+        { property: 'og:description', content: 'Posiciona tu empresa en el #1 de Google. Creamos páginas web ultra-rápidas y software a la medida en Colombia y Latinoamérica.' },
         { property: 'og:url', content: 'https://www.codevs.dev/' },
         { property: 'og:image', content: 'https://www.codevs.dev/img/codevs.png' },
         { property: 'og:image:width', content: '1200' },

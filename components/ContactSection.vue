@@ -31,9 +31,9 @@
                 <i class="bi bi-geo-alt text-2xl"></i>
               </div>
               <div class="space-y-1">
-                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Sede Física</span>
-                <h3 class="text-xl font-display font-bold text-white">San Juan de Pasto, Nariño</h3>
-                <p class="text-zinc-400 text-sm">Cl. 8b #15-125, Colombia</p>
+                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Sede Central</span>
+                <h3 class="text-xl font-display font-bold text-white">Colombia • Cobertura Global</h3>
+                <p class="text-zinc-400 text-sm">Atención a nivel nacional e internacional</p>
               </div>
             </div>
           </div>

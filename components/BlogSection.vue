@@ -12,7 +12,7 @@
             </span>
           </h2>
           <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
-            Estrategias de desarrollo de software, posicionamiento en Google y arquitectura cloud desde Pasto para el mundo.
+            Estrategias de desarrollo de software, posicionamiento en Google y arquitectura cloud para Colombia y el mundo.
           </p>
         </div>
 

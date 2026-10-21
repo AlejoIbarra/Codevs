@@ -8,8 +8,7 @@
           <span class="text-red-600">CODEVS</span>
         </a>
         <div class="space-y-2 text-sm text-gray-400">
-          <p>Cl. 8b #15-125,</p>
-          <p>San Juan de Pasto, Nariño</p>
+          <p>Colombia • Cobertura Global</p>
           <p class="pt-3"><strong class="text-white">Celular / WA:</strong> <span>+57 313 806 6800</span></p>
           <p><strong class="text-white">Email:</strong> <span>comercial@codevs.dev</span></p>
         </div>
@@ -85,7 +84,7 @@
 
     <!-- Copyright & Enlaces Legales para Google Trust & E-E-A-T -->
     <div class="mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-      <p>© <span>{{ currentYear }}</span> <a href="https://www.codevs.dev/" class="text-gray-400 hover:text-white font-semibold">CODEVS</a>. San Juan de Pasto, Nariño, Colombia. Todos los derechos reservados.</p>
+      <p>© <span>{{ currentYear }}</span> <a href="https://www.codevs.dev/" class="text-gray-400 hover:text-white font-semibold">CODEVS</a>. Colombia. Cobertura en toda América y Estados Unidos. Todos los derechos reservados.</p>
       
       <div class="flex flex-wrap items-center gap-4 text-gray-400">
         <NuxtLink to="/en" class="text-zinc-300 hover:text-red-500 font-bold transition-colors">
