@@ -664,11 +664,27 @@ const solutions = [
     description: 'Autonomous event-driven workflows and unified messaging consoles. Connect WhatsApp Cloud API, CRMs, and AI chatbots to scale customer support and sales 24/7 without friction.',
     tag: 'Automation & AI',
     link: '#contact'
+  },
+  {
+    number: '08',
+    title: 'MVP Development for Tech Startups.',
+    subtitle: 'From idea to market-ready product in 4 to 8 weeks.',
+    description: 'We turn startup concepts into scalable Minimum Viable Products (MVPs) engineered to raise capital and validate market demand. Complete product discovery, interactive Figma prototyping, full-stack engineering, and monetization pipelines—proven by our own incubated startups like Moments Gallery.',
+    tag: 'Startups & MVPs',
+    link: '#contact'
   }
 ];
 
 // Portfolio items
 const portfolioItems = [
+  {
+    title: 'Moments Gallery — Tech Startup & Marketplace',
+    category: 'Tech Startup • Marketplace',
+    image: '/assets/img/projects/moments.jpg',
+    description: 'Digital startup and photo marketplace conceived and built by CODEVS: automated instant checkout, dynamic watermarks, and high-concurrency cloud architecture with Spring Boot + Nuxt.',
+    tags: ['Startup', 'Spring Boot', 'Vue/Nuxt', 'Stripe'],
+    link: '/proyectos/moments-gallery'
+  },
   {
     title: 'Alacranes AFC Official Platform',
     category: 'Web Platform & Sports Branding',
@@ -676,14 +692,6 @@ const portfolioItems = [
     description: 'Interactive sports club web ecosystem featuring merchandising catalog, dynamic rosters, and high-performance sponsor showcase.',
     tags: ['Nuxt 3', 'TailwindCSS', 'SEO #1'],
     link: '/proyectos/alacranes-afc'
-  },
-  {
-    title: 'Moments Gallery Marketplace',
-    category: 'E-Commerce & Digital Media',
-    image: '/assets/img/projects/moments.jpg',
-    description: 'High-speed photographic media marketplace with automated checkout, digital downloads, and instant secure payment gateway integrations.',
-    tags: ['Spring Boot', 'Vue.js', 'Stripe/PSE'],
-    link: '/proyectos/moments-gallery'
   },
   {
     title: 'IPTV Max Dashboard & UI',

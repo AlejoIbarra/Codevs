@@ -243,6 +243,21 @@ const servicesData = {
       { icon: 'bi bi-arrow-repeat', title: 'Automatización de Tareas Repetitivas', text: 'Orquestación de flujos de trabajo avanzados con n8n, Python, webhooks y microservicios que reducen hasta un 80% la carga operativa manual.' }
     ],
     technologies: ['WhatsApp Cloud API', 'Meta Graph API', 'Webhooks', 'n8n', 'Python', 'Node.js', 'PostgreSQL', 'Redis', 'CRM Integrations']
+  },
+  'desarrollo-mvp-startups': {
+    title: 'Desarrollo de MVPs para Startups & Validación de Ideas',
+    description: 'Transformamos ideas de negocio en Productos Mínimos Viables (MVPs) funcionales y listos para validar mercado o levantar rondas de inversión en 4 a 8 semanas. Acompañamos a fundadores de startups en prototipado UX/UI, ingeniería full-stack, pasarelas de pago y arquitectura cloud, con casos de éxito propios de startups incubadas como Moments Gallery.',
+    icon: 'bi bi-rocket-takeoff',
+    image: '/assets/img/projects/moments.jpg',
+    features: [
+      { icon: 'bi bi-speedometer2', title: 'De la Idea al Mercado en Semanas', text: 'Sprints ágiles de 4 a 8 semanas para construir tu MVP con la funcionalidad crítica que tus primeros usuarios e inversionistas necesitan ver.' },
+      { icon: 'bi bi-shield-check', title: 'Arquitectura Lista para Inversionistas', text: 'Código limpio, modular y documentado (Nuxt, Spring Boot, PostgreSQL) que supera con honores cualquier due diligence técnico de fondos VC o ángeles.' },
+      { icon: 'bi bi-palette', title: 'Diseño UX/UI & Prototipos Interactivos', text: 'Wireframes y prototipos interactivos en Figma para validar la experiencia de usuario y presentar a comités de inversión antes del despliegue.' },
+      { icon: 'bi bi-credit-card', title: 'Monetización & Pasarelas de Pago', text: 'Integración inmediata de cobros con Stripe, Wompi, PSE o MercadoPago con modelos de suscripción, comisiones de marketplace o compras puntuales.' },
+      { icon: 'bi bi-trophy', title: 'Validación con Startups Reales (Moments)', text: 'No solo asesoramos: creamos y operamos startups reales como Moments Gallery, probando nuestra capacidad de resolver desafíos de negocio y producto.' },
+      { icon: 'bi bi-graph-up-arrow', title: 'Métricas de Tracción & Product Analytics', text: 'Configuración de eventos de telemetría, embudos de conversión, retención y métricas clave (CAC, LTV, Churn) para optimizar el crecimiento.' }
+    ],
+    technologies: ['Nuxt 3', 'Vue.js', 'Spring Boot', 'Python', 'PostgreSQL', 'Stripe', 'Wompi', 'Figma', 'Docker', 'AWS']
   }
 };
 

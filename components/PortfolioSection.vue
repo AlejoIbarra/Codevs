@@ -32,10 +32,16 @@
                 class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               />
               
-              <!-- Category Badge -->
-              <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
-                {{ item.category }}
-              </span>
+              <!-- Category Badge & Startup Highlight -->
+              <div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+                <span class="bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
+                  {{ item.category }}
+                </span>
+                <span v-if="item.isStartup" class="bg-red-600 text-white text-[10px] font-black tracking-wider px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40 flex items-center gap-1.5">
+                  <i class="bi bi-rocket-takeoff-fill text-xs"></i>
+                  <span>Startup CODEVS</span>
+                </span>
+              </div>
             </div>
 
             <!-- Content Area -->
@@ -133,6 +139,15 @@ onBeforeUnmount(() => {
 
 const items = [
   {
+    image: '/assets/img/projects/moments.jpg',
+    title: 'Moments Gallery — Startup & Marketplace',
+    description: 'Startup tecnológica concebida y desarrollada por CODEVS: marketplace y red social para fotografía de eventos con cobros automatizados, entrega inmediata de activos digitales y arquitectura cloud Spring Boot + Nuxt.',
+    category: 'Startup • Marketplace',
+    isStartup: true,
+    detailsLink: '/proyectos/moments-gallery',
+    liveUrl: 'https://www.moments-gallery.com/'
+  },
+  {
     image: '/assets/img/projects/alacranes.jpg',
     title: 'Alacranes AFC - Plataforma Web',
     description: 'Plataforma web oficial del equipo de fútbol americano de Pasto, Nariño con galería épica, catálogo merch e integración de sponsors.',
@@ -153,14 +168,6 @@ const items = [
     description: 'Motor de reproducción optimizado para streaming de vídeo continuo sin cortes, con arquitectura nativa y baja latencia.',
     category: 'App Móvil',
     detailsLink: '/proyectos/iptv-max-player'
-  },
-  {
-    image: '/assets/img/projects/moments.jpg',
-    title: 'Moments Gallery - Red Social & Marketplace',
-    description: 'Plataforma web tipo red social y marketplace de fotografía para eventos con autenticación, pasarela de pagos y arquitectura Spring Boot + Nuxt.',
-    category: 'Plataforma Web & Pagos',
-    detailsLink: '/proyectos/moments-gallery',
-    liveUrl: 'https://www.moments-gallery.com/'
   }
 ];
 </script>

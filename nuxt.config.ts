@@ -40,6 +40,7 @@ export default defineNuxtConfig({
         '/servicios/diseno-ux-ui',
         '/servicios/integraciones-apis',
         '/servicios/automatizaciones-omnicanalidad',
+        '/servicios/desarrollo-mvp-startups',
         '/proyectos/alacranes-afc',
         '/proyectos/moments-gallery',
         '/proyectos/iptv-max-ui',

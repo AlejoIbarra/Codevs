@@ -202,6 +202,14 @@ const solutions = [
     description: 'Expertos en automatización de flujos y plataformas omnicanal: centralizamos WhatsApp Business API, Instagram, web chats y CRM en una sola interfaz con bots inteligentes para escalar tus ventas y soporte 24/7 sin fricción.',
     tag: 'Automatización & CRM',
     link: '/servicios/automatizaciones-omnicanalidad'
+  },
+  {
+    number: '08',
+    title: 'Desarrollo de MVPs para Startups.',
+    subtitle: 'De la idea al mercado en semanas con tracción e inversión.',
+    description: 'Convertimos ideas de negocio en Productos Mínimos Viables (MVPs) funcionales y escalables. Acompañamos a fundadores en prototipado UX/UI, arquitectura cloud, pasarelas de pago y métricas de tracción listas para rondas de inversión, como demostramos con nuestra startup Moments Gallery.',
+    tag: 'Startups & Venture',
+    link: '/servicios/desarrollo-mvp-startups'
   }
 ];
 </script>

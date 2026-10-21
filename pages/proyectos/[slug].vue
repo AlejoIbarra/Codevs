@@ -312,10 +312,10 @@ const projectsData = {
     technologies: ['Flutter', 'Dart', 'FFmpeg', 'ExoPlayer', 'Firebase', 'Kotlin', 'Swift']
   },
   'moments-gallery': {
-    title: 'Moments Gallery - Red Social & Marketplace de Fotografía',
-    category: 'Plataforma Web & Pagos',
-    description: 'Plataforma web tipo red social y marketplace de fotografía para eventos con autenticación de usuarios y pasarela de pagos.',
-    fullDescription: 'Moments Gallery es un desarrollo exclusivo de CODEVS diseñado como una plataforma integral tipo red social y marketplace fotográfico para eventos sociales y corporativos (bodas, fiestas, cumpleaños y conferencias). La solución integra autenticación segura con JWT y gestión de perfiles/roles (fotógrafos, anfitriones y compradores), feeds interactivos de fotos con likes y comentarios, procesamiento backend en Spring Boot para marcas de agua dinámicas y protección de derechos de autor, pasarela de pagos integrada para venta directa de fotografías digitales en alta definición, base de datos relacional MySQL optimizada y arquitectura frontend en Nuxt.js con Server-Side Rendering (SSR) para máximo rendimiento y posicionamiento SEO en Google.',
+    title: 'Moments Gallery - Startup Tecnológica & Marketplace de Fotografía',
+    category: 'Startup Tech • Marketplace',
+    description: 'Startup tecnológica y marketplace de fotografía para eventos con venta automatizada de recuerdos digitales, pagos en línea y arquitectura Spring Boot + Nuxt.',
+    fullDescription: 'Moments Gallery es una startup tecnológica concebida, diseñada y desarrollada por CODEVS como una plataforma marketplace y red social para eventos sociales y corporativos (bodas, fiestas, festivales y conferencias). La solución demuestra nuestra capacidad para crear productos digitales completos desde cero: autenticación JWT, gestión de roles (fotógrafos, anfitriones y asistentes), procesamiento backend en Spring Boot con marcas de agua dinámicas para protección de propiedad intelectual, pasarela de pagos integrada para monetización inmediata de recuerdos en alta resolución y frontend en Nuxt.js (SSR) optimizado para SEO y velocidad extrema.',
     image: '/assets/img/projects/moments.jpg',
     liveUrl: 'https://www.moments-gallery.com/',
     details: [

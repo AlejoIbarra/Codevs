@@ -103,9 +103,9 @@ const cards = [
     image: '/img/working-4.jpg'
   },
   {
-    brand: 'Moments Gallery',
-    title: 'Comercio electrónico avanzado con pasarelas de pago seguras.',
-    subtitle: 'Plataforma transaccional y marketplace fotográfico automatizado sin fricción.',
+    brand: 'Moments (Startup Tech)',
+    title: 'Creando startups desde cero: marketplace de fotografía para eventos.',
+    subtitle: 'Plataforma transaccional con monetización inmediata, pagos automatizados y entrega instantánea.',
     image: '/assets/img/projects/moments.jpg'
   },
   {
