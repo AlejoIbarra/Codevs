@@ -22,6 +22,20 @@
 
           <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
             
+            <!-- Featured Case Study Badge (#1 Priority) -->
+            <div class="flex justify-center mb-2">
+              <NuxtLink
+                to="/proyectos/sin-huellas"
+                class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/50 hover:bg-red-900/60 border border-red-500/40 backdrop-blur-xl shadow-lg transition-all duration-300 hover:scale-105 group"
+              >
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
+                  Enterprise Case Study: Sin Huellas Law Firm • +70% Operational Time Saved
+                </span>
+                <i class="bi bi-arrow-right text-xs text-red-400 group-hover:translate-x-1 transition-transform"></i>
+              </NuxtLink>
+            </div>
+
             <!-- Monumental Headline -->
             <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
               Nearshore <br />
@@ -57,9 +71,9 @@
                 <i class="bi bi-arrow-up-right text-xs"></i>
               </a>
 
-              <a href="#portfolio" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
+              <a href="#clients" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
+                <i class="bi bi-star-fill text-red-400 text-xs"></i>
                 <span>View Case Studies</span>
-                <i class="bi bi-arrow-down text-xs"></i>
               </a>
             </div>
 
@@ -88,6 +102,227 @@
               </div>
             </div>
           </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 1.5 Clients & Enterprise Case Studies (Sin Huellas Nuevas Oportunidades Priority #1) -->
+    <section id="clients" class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900">
+      <div class="absolute top-1/4 -left-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute bottom-1/4 -right-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-16 sm:mb-20">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/40 border border-red-500/30 backdrop-blur-xl mb-6">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-red-300">
+              Enterprise Trust • Proven ROI
+            </span>
+          </div>
+
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
+            Our Clients & <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-500">
+              Engineering Case Studies.
+            </span>
+          </h2>
+
+          <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed text-justify">
+            We partner with law firms, scale-ups, and international businesses to eliminate operational drag through clean software architecture, autonomous AI agents, and custom enterprise ERP/CRM ecosystems.
+          </p>
+        </div>
+
+        <!-- Featured Case Study: Sin Huellas Nuevas Oportunidades -->
+        <div class="relative rounded-[32px] sm:rounded-[40px] bg-gradient-to-b from-white/[0.07] to-white/[0.02] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 backdrop-blur-2xl overflow-hidden hover:border-red-500/40 transition-all duration-500 shadow-2xl">
+          
+          <div class="absolute -top-24 -right-24 w-80 h-80 bg-red-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Left Column: Story & Metrics -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="px-3.5 py-1 rounded-full text-xs font-black tracking-wider uppercase bg-red-600 text-white shadow-md shadow-red-600/30">
+                  Featured Case Study
+                </span>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
+                  Law Firm • LegalTech AI
+                </span>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  +70% Operational Time Saved
+                </span>
+              </div>
+
+              <!-- Official Client Logo -->
+              <div class="pt-1">
+                <a href="https://www.sinhuellas.co/" target="_blank" rel="noopener noreferrer" class="group/brand inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/95 hover:bg-white border border-white/30 shadow-lg transition-transform hover:scale-105" title="Visit official site">
+                  <img src="/assets/img/clients/sin-huellas-logo.png" alt="Sin Huellas Nuevas Oportunidades Logo" class="h-7 w-auto object-contain" />
+                  <span class="text-xs font-bold text-zinc-800 border-l border-zinc-300 pl-3 group-hover/brand:text-red-600 transition-colors flex items-center gap-1">
+                    <span>www.sinhuellas.co</span>
+                    <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                  </span>
+                </a>
+              </div>
+
+              <div>
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+                  Sin Huellas Nuevas Oportunidades
+                </h3>
+                <p class="text-red-400 text-base sm:text-lg font-semibold mt-1">
+                  Premier Law Firm: AI Omnichannel Suite + Custom Legal ERP/CRM
+                </p>
+              </div>
+
+              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed text-justify">
+                At <strong class="text-white font-bold">CODEVS</strong>, we conducted an in-depth operational study of the internal legal workflows at <strong class="text-white font-semibold">Sin Huellas Nuevas Oportunidades</strong>, a top legal firm specializing in credit rehabilitation, insolvency regimes, and financial defense. Faced with hundreds of daily client inquiries and manual administrative bottlenecks, we built a custom LegalTech ecosystem: a 24/7 <strong class="text-white">AI Legal Assistant on WhatsApp Cloud API</strong>, an <strong class="text-white">intelligent Legal CRM</strong> with predictive case scoring (96%), and an <strong class="text-white">enterprise ERP</strong> that automates installment fee collection and court term alerts.
+              </p>
+
+              <!-- Metrics Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+                  <div class="text-2xl sm:text-3xl font-black text-red-500">+70%</div>
+                  <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Time Saved</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5">In daily case management</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+                  <div class="text-2xl sm:text-3xl font-black text-white">25+ hrs</div>
+                  <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Weekly Savings</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5">Per lawyer & legal squad</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md col-span-2 sm:col-span-1">
+                  <div class="text-2xl sm:text-3xl font-black text-white">&lt; 3 sec</div>
+                  <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">AI Response</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5">24/7 WhatsApp Cloud AI</div>
+                </div>
+              </div>
+
+              <!-- CTAs -->
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <NuxtLink
+                  to="/proyectos/sin-huellas"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white font-bold text-sm shadow-lg shadow-red-600/30 hover:scale-105 transition-all duration-300"
+                >
+                  <span>Explore Full Case Study</span>
+                  <i class="bi bi-arrow-right text-xs"></i>
+                </NuxtLink>
+                <a
+                  href="https://www.sinhuellas.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-white font-medium text-sm transition-all duration-300"
+                >
+                  <span>Visit Client Website</span>
+                  <i class="bi bi-box-arrow-up-right text-xs"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Interactive Image Preview -->
+            <div class="lg:col-span-5">
+              <NuxtLink to="/proyectos/sin-huellas" class="group block relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/20 shadow-2xl bg-zinc-900">
+                <img
+                  src="/assets/img/projects/sin-huellas.jpg"
+                  alt="Sin Huellas ERP CRM Omnichannel AI - CODEVS"
+                  class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                  <div class="flex items-center justify-between w-full">
+                    <div>
+                      <span class="text-xs uppercase tracking-wider text-red-400 font-bold block">Enterprise SaaS Architecture</span>
+                      <span class="text-white font-bold text-lg">Legal ERP & AI Omnichannel</span>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white group-hover:bg-red-600 transition-colors">
+                      <i class="bi bi-arrow-up-right text-sm"></i>
+                    </div>
+                  </div>
+                </div>
+              </NuxtLink>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Other Strategic Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <NuxtLink
+            to="/proyectos/moments-gallery"
+            class="group rounded-3xl bg-white/[0.03] border border-white/10 p-6 sm:p-8 hover:border-red-500/40 hover:bg-white/[0.05] transition-all duration-300 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-white/10 text-zinc-300 border border-white/10">
+                  Tech Startup
+                </span>
+                <i class="bi bi-arrow-up-right text-zinc-400 group-hover:text-red-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"></i>
+              </div>
+              <h4 class="text-2xl font-black text-white group-hover:text-red-400 transition-colors">
+                Moments Gallery
+              </h4>
+              <p class="text-zinc-400 text-sm leading-relaxed text-justify">
+                Conceived and engineered by CODEVS: high-concurrency photo marketplace with automated instant checkout, real-time watermarks, and Spring Boot + Nuxt architecture.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between">
+              <span class="text-xs font-semibold text-zinc-400">Marketplace & Payments</span>
+              <span class="text-xs font-bold text-white group-hover:text-red-400 transition-colors">View Details →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/proyectos/alacranes-afc"
+            class="group rounded-3xl bg-white/[0.03] border border-white/10 p-6 sm:p-8 hover:border-red-500/40 hover:bg-white/[0.05] transition-all duration-300 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-white/10 text-zinc-300 border border-white/10">
+                  Sports Franchise
+                </span>
+                <i class="bi bi-arrow-up-right text-zinc-400 group-hover:text-red-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"></i>
+              </div>
+              <h4 class="text-2xl font-black text-white group-hover:text-red-400 transition-colors">
+                Alacranes AFC
+              </h4>
+              <p class="text-zinc-400 text-sm leading-relaxed text-justify">
+                High-performance sports club platform with Bento Grid visual showcase, official merchandising digital shop, and search ranking #1.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between">
+              <span class="text-xs font-semibold text-zinc-400">Web Platform & Branding</span>
+              <span class="text-xs font-bold text-white group-hover:text-red-400 transition-colors">View Details →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/proyectos/iptv-max-ui"
+            class="group rounded-3xl bg-white/[0.03] border border-white/10 p-6 sm:p-8 hover:border-red-500/40 hover:bg-white/[0.05] transition-all duration-300 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-white/10 text-zinc-300 border border-white/10">
+                  Streaming UI/UX
+                </span>
+                <i class="bi bi-arrow-up-right text-zinc-400 group-hover:text-red-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"></i>
+              </div>
+              <h4 class="text-2xl font-black text-white group-hover:text-red-400 transition-colors">
+                IPTV Max
+              </h4>
+              <p class="text-zinc-400 text-sm leading-relaxed text-justify">
+                Interactive streaming software and UI designed for Smart TVs and touchscreens with 60 FPS fluidity and low-latency micro-interactions.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between">
+              <span class="text-xs font-semibold text-zinc-400">UI/UX Design & Media</span>
+              <span class="text-xs font-bold text-white group-hover:text-red-400 transition-colors">View Details →</span>
+            </div>
+          </NuxtLink>
 
         </div>
 

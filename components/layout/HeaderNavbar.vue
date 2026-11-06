@@ -89,9 +89,10 @@ const spanishOptions = [
 
 const englishOptions = [
   { title: "Overview", url: "/en", highlight: false },
-  { title: "Nearshore", url: "/en#advantage", highlight: false },
+  { title: "Clients", url: "/en#clients", highlight: false },
+  { title: "Nearshore", url: "/en#about", highlight: false },
+  { title: "Case Studies", url: "/en#portfolio", highlight: false },
   { title: "Engagement Models", url: "/en#models", highlight: false },
-  { title: "Engineering Work", url: "/en#work", highlight: false },
   { title: "Instant Quote", url: "/en#quote-form", highlight: false }
 ];
 
