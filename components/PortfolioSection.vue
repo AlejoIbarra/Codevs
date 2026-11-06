@@ -144,9 +144,9 @@ onBeforeUnmount(() => {
 const items = [
   {
     image: '/assets/img/projects/sin-huellas.jpg',
-    title: 'Sin Huellas — ERP, CRM & Omnicanalidad con IA',
-    description: 'Caso de éxito empresarial: reingeniería de procesos e implementación de software integral a la medida (ERP + CRM + Omnicanalidad con IA). Ahorro de más de 25 horas semanales por departamento y 70% de reducción en tiempos de gestión operativa.',
-    category: 'Enterprise • ERP & CRM con IA',
+    title: 'Sin Huellas Nuevas Oportunidades — LegalTech, ERP & Omnicanalidad con IA',
+    description: 'Caso de éxito en firma de abogados: estudio de reingeniería de procesos e implementación de software integral a la medida (ERP + CRM Jurídico + Agentes de IA en WhatsApp). Ahorro de más de 25 horas semanales por abogado y 70% de reducción en tiempos de gestión operativa.',
+    category: 'LegalTech • Firma de Abogados',
     isCaseStudy: true,
     detailsLink: '/proyectos/sin-huellas'
   },

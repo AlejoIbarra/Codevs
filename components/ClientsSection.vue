@@ -42,7 +42,7 @@
                 Caso de Éxito Destacado
               </span>
               <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
-                Cliente Corporativo
+                Firma de Abogados • LegalTech
               </span>
               <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 +70% Tiempo Ahorrado
@@ -51,15 +51,15 @@
 
             <div>
               <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-                Sin Huellas
+                Sin Huellas Nuevas Oportunidades
               </h3>
               <p class="text-red-400 text-base sm:text-lg font-semibold mt-1">
-                Sistema de Omnicanalidad con IA + ERP y CRM Inteligente
+                Firma de Abogados: Suite de Omnicanalidad con IA + ERP y CRM Jurídico
               </p>
             </div>
 
             <p class="text-zinc-300 text-sm sm:text-base leading-relaxed text-justify">
-              En <strong class="text-white font-bold">CODEVS</strong> realizamos un <strong>estudio profundo y diagnóstico exhaustivo</strong> de los procesos operativos y gestiones internas de <strong>Sin Huellas</strong>. Identificamos cuellos de botella en la atención a clientes, control de inventario y seguimiento comercial. Diseñamos e implementamos una solución integral a la medida: un <strong>sistema de omnicanalidad potenciado con Inteligencia Artificial</strong> y un <strong>ERP/CRM centralizado</strong> que transformó por completo su eficiencia empresarial.
+              En <strong class="text-white font-bold">CODEVS</strong> realizamos un <strong>estudio profundo y diagnóstico exhaustivo</strong> de los procesos operativos y la gestión de expedientes de la firma de abogados <strong>Sin Huellas Nuevas Oportunidades</strong>, especialistas en saneamiento financiero, eliminación de reportes negativos ante centrales de riesgo e insolvencia. Identificamos cuellos de botella en la atención de cientos de consultas diarias por WhatsApp, seguimiento de términos procesales y cobranza de honorarios. Diseñamos e implementamos un ecosistema a medida: un <strong>agente legal de IA en WhatsApp Cloud API</strong> y un <strong>ERP/CRM jurídico centralizado</strong> que ahorra más de 25 horas semanales por abogado y redujo un 70% los tiempos operativos.
             </p>
 
             <!-- Metrics Grid -->

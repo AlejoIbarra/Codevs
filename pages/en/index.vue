@@ -678,11 +678,11 @@ const solutions = [
 // Portfolio items
 const portfolioItems = [
   {
-    title: 'Sin Huellas — AI Omnichannel & Intelligent ERP/CRM',
-    category: 'Enterprise Success Story • AI Operations',
+    title: 'Sin Huellas Nuevas Oportunidades — LegalTech & AI Operations',
+    category: 'Law Firm Case Study • AI ERP & CRM',
     image: '/assets/img/projects/sin-huellas.jpg',
-    description: 'Complete operational reengineering following an in-depth internal process study: an enterprise AI-driven Omnichannel hub and centralized ERP/CRM ecosystem saving +25 weekly hours per department and cutting operational processing time by 70%.',
-    tags: ['AI ERP/CRM', 'Omnichannel IA', '+70% Time Saved', 'WhatsApp Cloud API'],
+    description: 'Complete operational reengineering for top law firm Sin Huellas Nuevas Oportunidades: automated WhatsApp Legal AI agents, case scoring, and centralized ERP/CRM saving +25 weekly hours per lawyer and cutting case management overhead by 70%.',
+    tags: ['LegalTech AI', 'Law Firm ERP/CRM', '+70% Time Saved', 'WhatsApp Cloud API'],
     link: '/proyectos/sin-huellas'
   },
   {
