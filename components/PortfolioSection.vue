@@ -148,7 +148,8 @@ const items = [
     description: 'Caso de éxito en firma de abogados: estudio de reingeniería de procesos e implementación de software integral a la medida (ERP + CRM Jurídico + Agentes de IA en WhatsApp). Ahorro de más de 25 horas semanales por abogado y 70% de reducción en tiempos de gestión operativa.',
     category: 'LegalTech • Firma de Abogados',
     isCaseStudy: true,
-    detailsLink: '/proyectos/sin-huellas'
+    detailsLink: '/proyectos/sin-huellas',
+    liveUrl: 'https://www.sinhuellas.co/'
   },
   {
     image: '/assets/img/projects/moments.jpg',

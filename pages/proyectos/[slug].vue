@@ -31,6 +31,17 @@
               </span>
             </div>
 
+            <!-- Official Client Logo -->
+            <div v-if="project.clientLogo" class="pt-1">
+              <a :href="project.liveUrl || 'https://www.sinhuellas.co/'" target="_blank" rel="noopener noreferrer" class="group/logo inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/95 hover:bg-white border border-white/40 shadow-xl transition-all duration-300 hover:scale-105" title="Visitar sitio oficial">
+                <img :src="project.clientLogo" :alt="project.clientName" class="h-8 w-auto object-contain" />
+                <span class="text-xs font-bold text-zinc-800 border-l border-zinc-300 pl-3 group-hover/logo:text-red-600 transition-colors flex items-center gap-1">
+                  <span>sinhuellas.co</span>
+                  <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                </span>
+              </a>
+            </div>
+
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
               <span class="bg-gradient-to-r from-white via-zinc-100 to-red-500 bg-clip-text text-transparent">
                 {{ project.title }}
@@ -557,6 +568,9 @@ const projectsData = {
     title: 'Sin Huellas Nuevas Oportunidades — LegalTech, ERP, CRM & Suite de Omnicanalidad con IA',
     clientName: 'Sin Huellas Nuevas Oportunidades',
     clientType: 'Firma de Abogados & Soluciones Jurídicas Financieras',
+    clientLogo: '/assets/img/clients/sin-huellas-logo.png',
+    clientLogoWhite: '/assets/img/clients/sin-huellas-logo-white.png',
+    liveUrl: 'https://www.sinhuellas.co/',
     category: 'Caso de Éxito • LegalTech & Software con IA',
     description: 'Estudio de reingeniería de procesos e implementación integral de ERP, CRM Jurídico y Suite de Omnicanalidad con Inteligencia Artificial para la firma de abogados Sin Huellas Nuevas Oportunidades: ahorro del 70% en tiempos operativos y +25 horas semanales optimizadas por abogado.',
     fullDescription: 'En CODEVS desarrollamos una solución tecnológica integral a la medida para la firma de abogados Sin Huellas Nuevas Oportunidades, líderes en saneamiento crediticio, eliminación de reportes negativos ante centrales de riesgo (TransUnion, Datacrédito), insolvencia económica de persona natural no comerciante y defensa jurídica de deudores. Tras un diagnóstico y estudio profundo de sus operaciones y gestiones internas, identificamos graves cuellos de botella: abogados atendiendo manualmente cientos de WhatsApps repetitivos al día, expedientes desconectados en hojas de cálculo y demoras en el cobro de honorarios fraccionados. CODEVS diseñó e implementó un ecosistema unificado: un Agente de IA Legal conectado a WhatsApp Cloud API que califica prospectos 24/7, un CRM Jurídico con pipeline procesal y redacción asistida de minutas legales, y un ERP financiero para control de cobros. El resultado comprobado: reducción superior al 70% en tiempos de gestión operativa y más de 25 horas semanales ahorradas por cada abogado.',

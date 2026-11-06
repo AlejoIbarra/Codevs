@@ -365,10 +365,22 @@
                   {{ tag }}
                 </span>
               </div>
-              <NuxtLink :to="item.link" class="text-sm font-bold text-zinc-950 hover:text-red-600 flex items-center gap-1 transition-colors">
-                <span>View Details</span>
-                <i class="bi bi-arrow-right text-xs"></i>
-              </NuxtLink>
+              <div class="flex items-center gap-3">
+                <a
+                  v-if="item.liveUrl"
+                  :href="item.liveUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs font-semibold text-zinc-500 hover:text-red-600 flex items-center gap-1 transition-colors"
+                >
+                  <span>Live Site</span>
+                  <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                </a>
+                <NuxtLink :to="item.link" class="text-sm font-bold text-zinc-950 hover:text-red-600 flex items-center gap-1 transition-colors">
+                  <span>View Details</span>
+                  <i class="bi bi-arrow-right text-xs"></i>
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </div>
@@ -683,7 +695,8 @@ const portfolioItems = [
     image: '/assets/img/projects/sin-huellas.jpg',
     description: 'Complete operational reengineering for top law firm Sin Huellas Nuevas Oportunidades: automated WhatsApp Legal AI agents, case scoring, and centralized ERP/CRM saving +25 weekly hours per lawyer and cutting case management overhead by 70%.',
     tags: ['LegalTech AI', 'Law Firm ERP/CRM', '+70% Time Saved', 'WhatsApp Cloud API'],
-    link: '/proyectos/sin-huellas'
+    link: '/proyectos/sin-huellas',
+    liveUrl: 'https://www.sinhuellas.co/'
   },
   {
     title: 'Moments Gallery — Tech Startup & Marketplace',

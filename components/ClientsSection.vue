@@ -49,6 +49,17 @@
               </span>
             </div>
 
+            <!-- Official Client Logo -->
+            <div class="pt-1">
+              <a href="https://www.sinhuellas.co/" target="_blank" rel="noopener noreferrer" class="group/brand inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/95 hover:bg-white border border-white/30 shadow-lg transition-transform hover:scale-105" title="Visitar sinhuellas.co">
+                <img src="/assets/img/clients/sin-huellas-logo.png" alt="Logo Sin Huellas Nuevas Oportunidades" class="h-7 w-auto object-contain" />
+                <span class="text-xs font-bold text-zinc-800 border-l border-zinc-300 pl-3 group-hover/brand:text-red-600 transition-colors flex items-center gap-1">
+                  <span>www.sinhuellas.co</span>
+                  <i class="bi bi-box-arrow-up-right text-[10px]"></i>
+                </span>
+              </a>
+            </div>
+
             <div>
               <h3 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
                 Sin Huellas Nuevas Oportunidades
