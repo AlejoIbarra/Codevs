@@ -249,6 +249,50 @@
 
         </div>
 
+        <!-- Marquee Ribbon: Verified US Nearshore Trust & Metrics (frontend-identidad & ui-ux-pro-max) -->
+        <div class="relative w-full overflow-hidden py-6 mb-16 border-y border-white/10 bg-white/[0.02]">
+          <div class="marquee-track flex items-center gap-8 whitespace-nowrap will-change-transform">
+            <div v-for="loop in 2" :key="loop" class="flex items-center gap-8 shrink-0">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                <span>Sin Huellas Law Firm</span>
+                <span class="text-zinc-400 font-normal">• LegalTech AI</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>+70% Operational Time Saved</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                <span>Moments Gallery</span>
+                <span class="text-zinc-400 font-normal">• Marketplace Startup</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>24/7 WhatsApp Cloud AI Engine</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                <span>Alacranes AFC</span>
+                <span class="text-zinc-400 font-normal">• #1 Google Organic</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>100% US IP Ownership & NDAs</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                <span>IPTV Max</span>
+                <span class="text-zinc-400 font-normal">• 60 FPS Media Streaming</span>
+              </div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>EST / CST Real-time Overlap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Other Strategic Projects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
@@ -556,19 +600,62 @@
     <section id="portfolio" class="relative bg-[#FAFAFC] overflow-hidden py-24 lg:py-32 border-t border-zinc-200">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         
-        <div class="max-w-3xl mb-16">
-          <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
-            Featured <br />
-            <span class="text-red-600">Case Studies.</span>
-          </h2>
-          <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
-            Explore recent software architectures, interactive platforms, and mobile apps built to deliver tangible business ROI.
-          </p>
+        <!-- Section Header with Metrics Counter Pill -->
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4">
+              <i class="bi bi-code-slash text-xs"></i>
+              <span>Production-Grade Engineering</span>
+            </div>
+            <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
+              Featured <br />
+              <span class="text-red-600">Case Studies.</span>
+            </h2>
+            <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
+              Explore recent software architectures, interactive platforms, and mobile apps built to deliver tangible business ROI and high-throughput velocity.
+            </p>
+          </div>
+
+          <!-- Metric counter pill -->
+          <div class="hidden sm:flex items-center gap-4 px-5 py-3 rounded-2xl bg-white border border-zinc-200/80 shadow-sm">
+            <div>
+              <div class="text-2xl font-black text-zinc-950 leading-none">100%</div>
+              <div class="text-[11px] font-bold text-zinc-500 uppercase tracking-wider mt-1">IP Ownership</div>
+            </div>
+            <div class="w-px h-8 bg-zinc-200"></div>
+            <div>
+              <div class="text-2xl font-black text-red-600 leading-none">&lt; 1s</div>
+              <div class="text-[11px] font-bold text-zinc-500 uppercase tracking-wider mt-1">Sub-second Speed</div>
+            </div>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Category Filter Tabs (frontend-identidad & ui-ux-pro-max) -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-12 scrollbar-none">
+          <button
+            v-for="cat in portfolioCategories"
+            :key="cat.id"
+            @click="activePortfolioCategory = cat.id"
+            class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all duration-300 border"
+            :class="[
+              activePortfolioCategory === cat.id
+                ? 'bg-zinc-950 text-white border-zinc-950 shadow-md shadow-zinc-950/20'
+                : 'bg-white text-zinc-600 border-zinc-200 hover:border-zinc-400 hover:text-zinc-950'
+            ]"
+          >
+            <span>{{ cat.label }}</span>
+            <span
+              class="text-[10px] font-black px-1.5 py-0.5 rounded-full"
+              :class="activePortfolioCategory === cat.id ? 'bg-red-600 text-white' : 'bg-zinc-100 text-zinc-500'"
+            >
+              {{ cat.count }}
+            </span>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           <div
-            v-for="(item, i) in portfolioItems"
+            v-for="(item, i) in filteredPortfolioItems"
             :key="i"
             class="group relative bg-white rounded-[28px] overflow-hidden border border-zinc-200/90 hover:border-zinc-950/80 hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 flex flex-col justify-between"
           >
@@ -582,6 +669,10 @@
                 <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                   {{ item.category }}
                 </span>
+                <span v-if="item.isCaseStudy" class="absolute top-4 right-4 bg-red-600 text-white text-[10px] font-black tracking-wider px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40 flex items-center gap-1.5">
+                  <i class="bi bi-star-fill text-xs"></i>
+                  <span>Case Study</span>
+                </span>
               </div>
 
               <div class="p-8 space-y-3">
@@ -591,30 +682,47 @@
                 <p class="text-zinc-600 text-sm leading-relaxed text-justify">
                   {{ item.description }}
                 </p>
+
+                <!-- Tech Tags Pill Cloud -->
+                <div class="flex flex-wrap items-center gap-2 pt-2">
+                  <span
+                    v-for="(tag, tIdx) in item.tags"
+                    :key="tIdx"
+                    class="text-[11px] font-semibold text-zinc-600 px-2.5 py-1 rounded-lg bg-zinc-100 border border-zinc-200/80"
+                  >
+                    {{ tag }}
+                  </span>
+                </div>
               </div>
             </div>
 
-            <div class="p-8 pt-0 flex items-center justify-between border-t border-zinc-100 mt-4">
-              <div class="flex flex-wrap gap-2">
-                <span v-for="(tag, idx) in item.tags" :key="idx" class="text-xs font-semibold px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-700">
-                  {{ tag }}
-                </span>
-              </div>
-              <div class="flex items-center gap-3">
-                <a
-                  v-if="item.liveUrl"
-                  :href="item.liveUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-xs font-semibold text-zinc-500 hover:text-red-600 flex items-center gap-1 transition-colors"
-                >
-                  <span>Live Site</span>
-                  <i class="bi bi-box-arrow-up-right text-[10px]"></i>
-                </a>
-                <NuxtLink :to="item.link" class="text-sm font-bold text-zinc-950 hover:text-red-600 flex items-center gap-1 transition-colors">
-                  <span>View Details</span>
-                  <i class="bi bi-arrow-right text-xs"></i>
-                </NuxtLink>
+            <!-- Card Footer -->
+            <div class="p-8 pt-0">
+              <div class="pt-5 border-t border-zinc-200 flex flex-wrap justify-between items-center gap-4">
+                <div class="flex items-center gap-4">
+                  <NuxtLink
+                    :to="item.link"
+                    class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 group-hover:text-red-600 transition-colors group/btn"
+                  >
+                    <span>Explore Details</span>
+                    <div class="w-7 h-7 rounded-full bg-zinc-100 border border-zinc-200 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:border-red-600 transition-all duration-300">
+                      <i class="bi bi-arrow-up-right text-xs text-zinc-900 group-hover/btn:text-white group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-300"></i>
+                    </div>
+                  </NuxtLink>
+
+                  <a
+                    v-if="item.liveUrl"
+                    :href="item.liveUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-xs font-bold text-zinc-700 hover:text-zinc-950 transition-colors px-3 py-1.5 rounded-lg bg-zinc-100 border border-zinc-200 hover:border-zinc-400"
+                    title="Visit official site"
+                  >
+                    <i class="bi bi-box-arrow-up-right text-red-600 text-xs"></i>
+                    <span>Live Site</span>
+                  </a>
+                </div>
+                <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider">CODEVS</span>
               </div>
             </div>
           </div>
@@ -748,19 +856,26 @@
           <!-- Right Column: Interactive Proposal Form -->
           <div class="lg:col-span-7">
             <div class="bg-white/[0.04] border border-white/15 p-8 sm:p-12 rounded-[32px] shadow-2xl backdrop-blur-2xl">
+              
+              <!-- SLA Guarantee Pill -->
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>SLA Guarantee: &lt; 24h Response by Lead Solutions Architect</span>
+              </div>
+
               <form @submit.prevent="submitContact" class="space-y-6">
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Your Full Name *</label>
                     <input v-model="form.name" type="text" required placeholder="Sarah Connor"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 transition-colors text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
 
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Work Email *</label>
                     <input v-model="form.email" type="email" required placeholder="sarah@company.com"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 transition-colors text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
                 </div>
 
@@ -768,13 +883,13 @@
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Company / Organization</label>
                     <input v-model="form.company" type="text" placeholder="Acme Technologies"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 transition-colors text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
 
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Estimated Budget (USD) *</label>
                     <select v-model="form.budget" required
-                      class="w-full px-4 py-3.5 rounded-2xl bg-[#141419] border border-white/15 text-white focus:outline-none focus:border-red-500 transition-colors text-sm cursor-pointer">
+                      class="w-full px-4 py-3.5 rounded-2xl bg-[#141419] border border-white/15 text-white focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm cursor-pointer">
                       <option value="" disabled selected>Select budget range</option>
                       <option value="$5k - $15k">$5,000 - $15,000 (Sprint / MVP)</option>
                       <option value="$15k - $30k">$15,000 - $30,000 (Full Platform)</option>
@@ -787,7 +902,7 @@
                 <div class="space-y-2">
                   <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Project Overview & Objectives *</label>
                   <textarea v-model="form.message" rows="4" required placeholder="Tell us about your requirements, technical stack, or developer hiring goals..."
-                    class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 transition-colors text-sm resize-none"></textarea>
+                    class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm resize-none"></textarea>
                 </div>
 
                 <div v-if="submitted" class="p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-sm text-center">
@@ -926,46 +1041,70 @@ const solutions = [
 const portfolioItems = [
   {
     title: 'Sin Huellas Nuevas Oportunidades — LegalTech & AI Operations',
-    category: 'Law Firm Case Study • AI ERP & CRM',
+    category: 'Law Firm • AI ERP & CRM',
+    type: 'casos',
+    isCaseStudy: true,
     image: '/assets/img/projects/sin-huellas.jpg',
     description: 'Complete operational reengineering for top law firm Sin Huellas Nuevas Oportunidades: automated WhatsApp Legal AI agents, case scoring, and centralized ERP/CRM saving +25 weekly hours per lawyer and cutting case management overhead by 70%.',
-    tags: ['LegalTech AI', 'Law Firm ERP/CRM', '+70% Time Saved', 'WhatsApp Cloud API'],
+    tags: ['WhatsApp Cloud API', 'Legal ERP/CRM', '+70% Time Saved', 'Meta AI', 'Python'],
     link: '/proyectos/sin-huellas',
     liveUrl: 'https://www.sinhuellas.co/'
   },
   {
     title: 'Moments Gallery — Tech Startup & Marketplace',
     category: 'Tech Startup • Marketplace',
+    type: 'startups',
+    isStartup: true,
     image: '/assets/img/projects/moments.jpg',
     description: 'Digital startup and photo marketplace conceived and built by CODEVS: automated instant checkout, dynamic watermarks, and high-concurrency cloud architecture with Spring Boot + Nuxt.',
-    tags: ['Startup', 'Spring Boot', 'Vue/Nuxt', 'Stripe'],
-    link: '/proyectos/moments-gallery'
+    tags: ['Spring Boot', 'Nuxt 3', 'Stripe', 'AWS S3', 'PostgreSQL'],
+    link: '/proyectos/moments-gallery',
+    liveUrl: 'https://www.moments-gallery.com/'
   },
   {
-    title: 'Alacranes AFC Official Platform',
+    title: 'Alacranes AFC Official Platform & Sports Branding',
     category: 'Web Platform & Sports Branding',
+    type: 'web',
     image: '/assets/img/projects/alacranes.jpg',
     description: 'Interactive sports club web ecosystem featuring merchandising catalog, dynamic rosters, and high-performance sponsor showcase.',
-    tags: ['Nuxt 3', 'TailwindCSS', 'SEO #1'],
-    link: '/proyectos/alacranes-afc'
+    tags: ['Nuxt 3', 'TailwindCSS', 'Bento Grid', 'SEO #1 Google', 'GSAP'],
+    link: '/proyectos/alacranes-afc',
+    liveUrl: 'https://alacranes-afc.vercel.app/'
   },
   {
     title: 'IPTV Max Dashboard & UI',
     category: 'UX/UI & Media Software',
+    type: 'ui',
     image: '/img/iptv/iptv-max.png',
     description: 'Next-generation multimedia streaming interface engineered for touch devices and interactive smart screens with 60 FPS fluidity.',
-    tags: ['Figma', 'Design System', 'Micro-interactions'],
+    tags: ['Figma Design System', '60 FPS', 'Micro-interactions', 'Android TV'],
     link: '/proyectos/iptv-max-ui'
   },
   {
-    title: 'Enterprise Workflow Engine',
+    title: 'Enterprise Workflow Engine & Omnichannel AI',
     category: 'Cloud Automations & CRM',
+    type: 'casos',
     image: '/assets/img/services/omnichannel-dashboard.jpg',
     description: 'Unified omnichannel communication system with WhatsApp Cloud API, Instagram Direct, and CRM integration for 24/7 autonomous support.',
-    tags: ['Meta Cloud API', 'Python', 'n8n'],
+    tags: ['Meta Cloud API', 'Python', 'n8n', 'PostgreSQL'],
     link: '/servicios/automatizaciones-omnicanalidad'
   }
 ];
+
+const activePortfolioCategory = ref('all');
+
+const portfolioCategories = computed(() => [
+  { id: 'all', label: 'All Projects', count: portfolioItems.length },
+  { id: 'casos', label: 'Case Studies & AI', count: portfolioItems.filter(i => i.type === 'casos').length },
+  { id: 'startups', label: 'Startups & MVPs', count: portfolioItems.filter(i => i.type === 'startups').length },
+  { id: 'web', label: 'Web & Cloud', count: portfolioItems.filter(i => i.type === 'web').length },
+  { id: 'ui', label: 'UX/UI Design & TV', count: portfolioItems.filter(i => i.type === 'ui').length }
+]);
+
+const filteredPortfolioItems = computed(() => {
+  if (activePortfolioCategory.value === 'all') return portfolioItems;
+  return portfolioItems.filter(item => item.type === activePortfolioCategory.value);
+});
 
 // FAQ Accordion
 const openFaqIndex = ref(0);
@@ -1155,5 +1294,25 @@ useJsonld(() => ({
 
 .sticky-stack-card:hover {
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+/* Marquee Scroll */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 </style>

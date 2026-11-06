@@ -76,6 +76,12 @@
         <!-- Columna Derecha: Formulario Interactivo -->
         <div class="lg:col-span-7 bg-white/[0.04] border border-white/15 p-8 sm:p-10 rounded-[32px] shadow-2xl backdrop-blur-2xl">
           
+          <!-- SLA Guarantee Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Garantía SLA: Respuesta en &lt; 24h por Ingeniero Senior</span>
+          </div>
+
           <!-- Selector Rápido de Tipo de Proyecto -->
           <div class="mb-6 space-y-3">
             <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider">
@@ -104,25 +110,25 @@
               <div>
                 <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Nombre Completo *</label>
                 <input type="text" name="name" placeholder="Ej. Juan Pérez" required
-                  class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm transition-colors" />
+                  class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all" />
               </div>
               <div>
                 <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Correo Electrónico *</label>
                 <input type="email" name="email" placeholder="Ej. correo@empresa.com" required
-                  class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm transition-colors" />
+                  class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all" />
               </div>
             </div>
 
             <div>
               <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Asunto o Tipo de Proyecto *</label>
               <input type="text" name="subject" v-model="subjectField" placeholder="Ej. Desarrollo de Plataforma Web / Software a la Medida" required
-                class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm transition-colors" />
+                class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all" />
             </div>
 
             <div>
               <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Descripción del Proyecto *</label>
               <textarea name="message" rows="5" placeholder="Cuéntanos más sobre tus objetivos, funciones deseadas o especificaciones técnicas..." required
-                class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-sm transition-colors"></textarea>
+                class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all"></textarea>
             </div>
 
             <div class="pt-2">

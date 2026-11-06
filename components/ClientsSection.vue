@@ -137,6 +137,50 @@
 
       </div>
 
+      <!-- Marquee Ribbon: Verified Trust & Metrics (Frontend-Identidad & UI-UX Pro Max) -->
+      <div class="relative w-full overflow-hidden py-6 mb-16 border-y border-white/10 bg-white/[0.02]">
+        <div class="marquee-track flex items-center gap-8 whitespace-nowrap will-change-transform">
+          <div v-for="loop in 2" :key="loop" class="flex items-center gap-8 shrink-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+              <span>Sin Huellas Nuevas Oportunidades</span>
+              <span class="text-zinc-400 font-normal">• Firma Legal</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>+70% Tiempo Operativo Ahorrado</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+              <span>Moments Gallery</span>
+              <span class="text-zinc-400 font-normal">• Startup Marketplace</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>24/7 Agentes de IA en WhatsApp</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+              <span>Club Alacranes AFC</span>
+              <span class="text-zinc-400 font-normal">• #1 Google SEO</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>100% Código Propietario & Sin Plantillas</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+              <span>IPTV Max</span>
+              <span class="text-zinc-400 font-normal">• Streaming 60 FPS</span>
+            </div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>99.9% Uptime Cloud Garantizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Other Clients & Strategic Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
         
@@ -224,3 +268,24 @@
 <script setup>
 // Componente de Sección Clientes & Casos de Éxito CODEVS
 </script>
+
+<style scoped>
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+</style>
