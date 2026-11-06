@@ -22,6 +22,20 @@
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
           
+          <!-- Badge de Caso de Éxito Destacado (Prioridad #1) -->
+          <div class="flex justify-center">
+            <NuxtLink
+              to="/proyectos/sin-huellas"
+              class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/50 hover:bg-red-900/60 border border-red-500/40 backdrop-blur-xl shadow-lg transition-all duration-300 hover:scale-105 group"
+            >
+              <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
+                Caso de Éxito: Sin Huellas Nuevas Oportunidades • +70% Tiempo Ahorrado
+              </span>
+              <i class="bi bi-arrow-right text-xs text-red-400 group-hover:translate-x-1 transition-transform"></i>
+            </NuxtLink>
+          </div>
+
           <!-- Titular Monumental en Blanco Puro -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
             Ingeniería de <br />
@@ -62,8 +76,8 @@
               <span>Explorar Soluciones</span>
             </a>
 
-            <a href="#portfolio" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
-              <i class="bi bi-collection text-red-400"></i>
+            <a href="#clientes" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
+              <i class="bi bi-star-fill text-red-400 text-xs"></i>
               <span>Casos de Éxito</span>
             </a>
           </div>

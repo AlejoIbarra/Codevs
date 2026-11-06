@@ -67,12 +67,12 @@
     <priority>0.95</priority>
   </url>
 
-  <!-- Proyectos & Casos de Estudio -->
+  <!-- Proyectos & Casos de Estudio (Prioridad Máxima #1) -->
   <url>
     <loc>https://www.codevs.dev/proyectos/sin-huellas</loc>
     <lastmod>2026-11-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.codevs.dev/proyectos/alacranes-afc</loc>

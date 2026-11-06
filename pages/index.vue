@@ -3,11 +3,11 @@
     <!-- Hero con estilo Mesh Gradient, Tecnologías Integradas y Degradado Continuo -->
     <HeroSectionComponent />
 
+    <!-- Sección de Clientes & Casos de Éxito Empresariales (Prioridad #1) -->
+    <ClientsSection />
+
     <!-- Sección Sobre Nosotros con Rocket Scroll Animation Preservada -->
     <AboutSection />
-
-    <!-- Sección de Clientes & Casos de Éxito Empresariales -->
-    <ClientsSection />
 
     <!-- Sección Huge Inc: Never one and done -->
     <NeverDoneSection />
