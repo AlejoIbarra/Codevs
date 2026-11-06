@@ -6,6 +6,9 @@
     <!-- Sección Sobre Nosotros con Rocket Scroll Animation Preservada -->
     <AboutSection />
 
+    <!-- Sección de Clientes & Casos de Éxito Empresariales -->
+    <ClientsSection />
+
     <!-- Sección Huge Inc: Never one and done -->
     <NeverDoneSection />
 
@@ -29,6 +32,7 @@
 <script setup>
 import HeroSectionComponent from '~/components/HeroSectionComponent.vue';
 import AboutSection from '~/components/AboutSection.vue';
+import ClientsSection from '~/components/ClientsSection.vue';
 import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';

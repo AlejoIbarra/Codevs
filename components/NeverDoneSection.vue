@@ -85,6 +85,12 @@ let ctx = null;
 
 const cards = [
   {
+    brand: 'Sin Huellas (Caso de Éxito)',
+    title: 'ERP, CRM y Omnicanalidad con IA para transformar operaciones.',
+    subtitle: 'Estudio de reingeniería de procesos que ahorra +25 horas semanales y reduce un 70% los tiempos de gestión.',
+    image: '/assets/img/projects/sin-huellas.jpg'
+  },
+  {
     brand: 'Ingeniería & Cloud',
     title: 'Evolución continua. Múltiples industrias. Reinvención constante.',
     subtitle: 'Alianzas estratégicas que transforman empresas tradicionales en referentes tecnológicos.',

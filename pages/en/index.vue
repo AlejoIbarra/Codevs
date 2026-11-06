@@ -678,6 +678,14 @@ const solutions = [
 // Portfolio items
 const portfolioItems = [
   {
+    title: 'Sin Huellas — AI Omnichannel & Intelligent ERP/CRM',
+    category: 'Enterprise Success Story • AI Operations',
+    image: '/assets/img/projects/sin-huellas.jpg',
+    description: 'Complete operational reengineering following an in-depth internal process study: an enterprise AI-driven Omnichannel hub and centralized ERP/CRM ecosystem saving +25 weekly hours per department and cutting operational processing time by 70%.',
+    tags: ['AI ERP/CRM', 'Omnichannel IA', '+70% Time Saved', 'WhatsApp Cloud API'],
+    link: '/proyectos/sin-huellas'
+  },
+  {
     title: 'Moments Gallery — Tech Startup & Marketplace',
     category: 'Tech Startup • Marketplace',
     image: '/assets/img/projects/moments.jpg',

@@ -41,6 +41,7 @@ export default defineNuxtConfig({
         '/servicios/integraciones-apis',
         '/servicios/automatizaciones-omnicanalidad',
         '/servicios/desarrollo-mvp-startups',
+        '/proyectos/sin-huellas',
         '/proyectos/alacranes-afc',
         '/proyectos/moments-gallery',
         '/proyectos/iptv-max-ui',
@@ -80,11 +81,11 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://www.codevs.dev/img/codevs.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'CODEVS - Desarrollo de Software y Páginas Web en Pasto' },
+        { property: 'og:image:alt', content: 'CODEVS - Desarrollo de Software y Páginas Web' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Desarrollo de Páginas Web en Pasto & Software a la Medida | CODEVS' },
-        { name: 'twitter:description', content: 'Ingeniería de software y páginas web de alta velocidad para posicionar #1 en Google en Pasto y Colombia.' },
+        { name: 'twitter:title', content: 'Desarrollo de Páginas Web & Software a la Medida | CODEVS' },
+        { name: 'twitter:description', content: 'Ingeniería de software y páginas web de alta velocidad para posicionar #1 en Google en Colombia y Latinoamérica.' },
         { name: 'twitter:image', content: 'https://www.codevs.dev/img/codevs.png' }
       ],
       link: [

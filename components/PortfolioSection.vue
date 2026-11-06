@@ -32,10 +32,14 @@
                 class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
               />
               
-              <!-- Category Badge & Startup Highlight -->
+              <!-- Category Badge & Highlights -->
               <div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
                 <span class="bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                   {{ item.category }}
+                </span>
+                <span v-if="item.isCaseStudy" class="bg-red-600 text-white text-[10px] font-black tracking-wider px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40 flex items-center gap-1.5">
+                  <i class="bi bi-star-fill text-xs"></i>
+                  <span>Caso de Éxito</span>
                 </span>
                 <span v-if="item.isStartup" class="bg-red-600 text-white text-[10px] font-black tracking-wider px-3 py-1.5 rounded-full uppercase shadow-lg shadow-red-950/40 flex items-center gap-1.5">
                   <i class="bi bi-rocket-takeoff-fill text-xs"></i>
@@ -139,6 +143,14 @@ onBeforeUnmount(() => {
 
 const items = [
   {
+    image: '/assets/img/projects/sin-huellas.jpg',
+    title: 'Sin Huellas — ERP, CRM & Omnicanalidad con IA',
+    description: 'Caso de éxito empresarial: reingeniería de procesos e implementación de software integral a la medida (ERP + CRM + Omnicanalidad con IA). Ahorro de más de 25 horas semanales por departamento y 70% de reducción en tiempos de gestión operativa.',
+    category: 'Enterprise • ERP & CRM con IA',
+    isCaseStudy: true,
+    detailsLink: '/proyectos/sin-huellas'
+  },
+  {
     image: '/assets/img/projects/moments.jpg',
     title: 'Moments Gallery — Startup & Marketplace',
     description: 'Startup tecnológica concebida y desarrollada por CODEVS: marketplace y red social para fotografía de eventos con cobros automatizados, entrega inmediata de activos digitales y arquitectura cloud Spring Boot + Nuxt.',
@@ -150,7 +162,7 @@ const items = [
   {
     image: '/assets/img/projects/alacranes.jpg',
     title: 'Alacranes AFC - Plataforma Web',
-    description: 'Plataforma web oficial del equipo de fútbol americano de Pasto, Nariño con galería épica, catálogo merch e integración de sponsors.',
+    description: 'Plataforma web oficial del equipo insignia de fútbol americano con galería épica Bento Grid, catálogo interactivo de merchandising e integración de sponsors.',
     category: 'Desarrollo Web & Branding',
     detailsLink: '/proyectos/alacranes-afc',
     liveUrl: 'https://alacranes-afc.vercel.app/'

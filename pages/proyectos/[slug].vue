@@ -327,6 +327,22 @@ const projectsData = {
       { icon: 'bi bi-images', title: 'Galerías & Álbumes en Alta Resolución', text: 'Visor multimedia inmersivo a pantalla completa con compresión inteligente y distribución CDN de ultra baja latencia.' }
     ],
     technologies: ['Spring Boot (Java)', 'Nuxt.js / Vue.js (SSR)', 'MySQL', 'Spring Security & JWT', 'Pasarela de Pagos', 'TailwindCSS', 'REST APIs', 'Cloud Storage / CDN', 'SEO Avanzado']
+  },
+  'sin-huellas': {
+    title: 'Sin Huellas — ERP, CRM & Suite de Omnicanalidad con IA',
+    category: 'Caso de Éxito • ERP & CRM con IA',
+    description: 'Estudio de reingeniería de procesos e implementación integral de ERP, CRM inteligente y Suite de Omnicanalidad con Inteligencia Artificial que ahorra más de 25 horas semanales por departamento.',
+    fullDescription: 'En CODEVS desarrollamos una solución tecnológica empresarial a la medida para Sin Huellas tras realizar un exhaustivo diagnóstico y estudio operativo de sus procesos internos, flujos de ventas y canales de atención. Detectamos pérdidas de tiempo por procesos manuales desconectados, duplicidad en tareas administrativas y demoras en la respuesta a prospectos. Diseñamos e implementamos un ecosistema unificado compuesto por un ERP y CRM alimentado con Inteligencia Artificial junto a una plataforma de omnicanalidad que centraliza WhatsApp Business API, Instagram y canales web. El resultado: un ahorro superior al 70% en tiempos operativos, más de 25 horas semanales optimizadas por equipo de trabajo, trazabilidad total de inventarios y clientes, y atención automatizada 24/7 sin pérdida de prospectos.',
+    image: '/assets/img/projects/sin-huellas.jpg',
+    details: [
+      { icon: 'bi bi-clock-history', title: '+70% Tiempo Ahorrado en Procesos', text: 'Automatización de flujos repetitivos, generación de documentos y conciliación de pedidos que ahorran más de 25 horas semanales a cada área de la empresa.' },
+      { icon: 'bi bi-chat-dots-fill', title: 'Omnicanalidad con Agentes de IA', text: 'Centralización de WhatsApp Business API, Instagram Direct y chat web en una sola bandeja con bots inteligentes entrenados para responder y calificar prospectos 24/7.' },
+      { icon: 'bi bi-cpu-fill', title: 'CRM Potenciado con IA', text: 'Historial unificado de clientes, seguimiento automatizado de cotizaciones, scoring predictivo de leads y alertas inteligentes de recompra.' },
+      { icon: 'bi bi-diagram-3-fill', title: 'ERP a la Medida sin Fricción', text: 'Módulo integral de compras, inventario, control operativo y facturación conectado en tiempo real para evitar silos de información.' },
+      { icon: 'bi bi-search', title: 'Diagnóstico & Reingeniería Inicial', text: 'Estudio técnico previo de los cuellos de botella de la organización, optimizando los procesos antes de escribir código para garantizar un ROI inmediato.' },
+      { icon: 'bi bi-graph-up-arrow', title: 'Telemetría & Métricas en Vivo', text: 'Tableros de control ejecutivos con indicadores de rendimiento (KPIs), tiempos de primera respuesta y satisfacción de clientes en tiempo real.' }
+    ],
+    technologies: ['Nuxt 3', 'Spring Boot 3', 'PostgreSQL', 'Meta Cloud API', 'OpenAI / LLMs', 'Redis', 'n8n & Webhooks', 'Docker', 'TailwindCSS']
   }
 };
 
@@ -337,10 +353,10 @@ if (!project) {
 }
 
 useHead({
-  title: `${project.title} | Portafolio CODEVS Pasto`,
+  title: `${project.title} | Casos de Éxito CODEVS`,
   meta: [
     { name: 'description', content: project.fullDescription || project.description },
-    { name: 'keywords', content: `${project.title.toLowerCase()}, proyectos desarrollo web pasto, portafolio software pasto, casos de exito codevs colombia` },
+    { name: 'keywords', content: `${project.title.toLowerCase()}, casos de exito codevs, erp a la medida, crm con ia, omnicanalidad whatsapp api, software empresarial colombia` },
     { property: 'og:title', content: `${project.title} | CODEVS` },
     { property: 'og:description', content: project.description },
     { property: 'og:image', content: `https://www.codevs.dev${project.image}` },

@@ -81,6 +81,7 @@ const spanishOptions = [
   { title: "Inicio", url: "/#hero", highlight: false },
   { title: "Nosotros", url: "/#about", highlight: false },
   { title: "Servicios", url: "/#services", highlight: false },
+  { title: "Clientes", url: "/#clientes", highlight: false },
   { title: "Proyectos", url: "/#portfolio", highlight: false },
   { title: "Blog", url: "/blog", highlight: false },
   { title: "Contacto", url: "/#contact", highlight: false }
