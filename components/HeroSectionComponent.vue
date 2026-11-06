@@ -22,14 +22,6 @@
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
           
-          <!-- Badge de Autoridad en Ingeniería -->
-          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-xl shadow-lg">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span class="text-xs font-bold uppercase tracking-widest text-zinc-200">
-              Arquitectura de Software • Cloud • Inteligencia Artificial
-            </span>
-          </div>
-
           <!-- Titular Monumental en Blanco Puro -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
             Ingeniería de <br />
