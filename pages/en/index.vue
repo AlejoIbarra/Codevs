@@ -22,20 +22,6 @@
 
           <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
             
-            <!-- Featured Case Study Badge (#1 Priority) -->
-            <div class="flex justify-center mb-2">
-              <NuxtLink
-                to="/proyectos/sin-huellas"
-                class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/50 hover:bg-red-900/60 border border-red-500/40 backdrop-blur-xl shadow-lg transition-all duration-300 hover:scale-105 group"
-              >
-                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                <span class="text-xs font-bold uppercase tracking-wider text-red-200 group-hover:text-white transition-colors">
-                  Enterprise Case Study: Sin Huellas Law Firm • +70% Operational Time Saved
-                </span>
-                <i class="bi bi-arrow-right text-xs text-red-400 group-hover:translate-x-1 transition-transform"></i>
-              </NuxtLink>
-            </div>
-
             <!-- Monumental Headline -->
             <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
               Nearshore <br />
@@ -117,13 +103,6 @@
 
         <!-- Section Header -->
         <div class="max-w-3xl mb-16 sm:mb-20">
-          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/40 border border-red-500/30 backdrop-blur-xl mb-6">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span class="text-xs font-bold uppercase tracking-widest text-red-300">
-              Enterprise Trust • Proven ROI
-            </span>
-          </div>
-
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
             Our Clients & <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-500">
