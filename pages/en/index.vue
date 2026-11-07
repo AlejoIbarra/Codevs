@@ -50,16 +50,26 @@
               We are <strong class="text-white font-semibold">CODEVS</strong>. We build mission-critical <strong class="text-white font-semibold">web applications</strong>, cloud software, and <strong class="text-white font-semibold">AI workflow automations</strong> with Silicon Valley standards, EST/CST alignment, and zero technical debt for scaling US companies.
             </p>
 
-            <!-- Frosted Glass Action Buttons -->
+            <!-- MindMarket Bounce Action Buttons (.mm-btn) -->
             <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-              <a href="#contact" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 border border-white/30 text-white font-semibold text-sm backdrop-blur-xl shadow-xl hover:scale-105 transition-all duration-300">
-                <span>Hire a Senior Squad</span>
-                <i class="bi bi-arrow-up-right text-xs"></i>
+              <a href="#contact" class="mm-btn">
+                <span class="mm-btn-icon -hover">
+                  <i class="bi bi-arrow-up-right text-xs"></i>
+                </span>
+                <span class="mm-btn-label">Hire a Senior Squad</span>
+                <span class="mm-btn-icon -default">
+                  <i class="bi bi-arrow-up-right text-xs"></i>
+                </span>
               </a>
 
-              <a href="#clients" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
-                <i class="bi bi-star-fill text-red-400 text-xs"></i>
-                <span>View Case Studies</span>
+              <a href="#clients" class="mm-btn -white">
+                <span class="mm-btn-icon -hover">
+                  <i class="bi bi-star-fill text-xs"></i>
+                </span>
+                <span class="mm-btn-label">View Case Studies</span>
+                <span class="mm-btn-icon -default">
+                  <i class="bi bi-star-fill text-xs"></i>
+                </span>
               </a>
             </div>
 
@@ -93,6 +103,9 @@
 
       </div>
     </section>
+
+    <!-- 1.2 MindMarket Experience: The Thread SVG Timeline, 4 Bounce Story Tiles, Sticky Numbers Stack & Deluxe Callout -->
+    <MindMarketTimelineSection />
 
     <!-- 1.5 Clients & Enterprise Case Studies (Sin Huellas Nuevas Oportunidades Priority #1) -->
     <section id="clients" class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900">
@@ -352,130 +365,7 @@
       </div>
     </section>
 
-    <!-- 2. About Section (Rocket Scroll Experience, 3D Tilt Cards, Team Squad) -->
-    <section id="about" ref="aboutSection" class="about-section relative bg-[#07070a] text-white overflow-hidden py-28 lg:py-36 border-t border-zinc-900">
-      
-      <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-red-600/15 rounded-full blur-[160px] pointer-events-none"></div>
-      <div class="absolute bottom-10 right-10 w-[550px] h-[550px] bg-red-700/10 rounded-full blur-[150px] pointer-events-none"></div>
-
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
-          <!-- Left Column -->
-          <div class="lg:col-span-6 space-y-8">
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
-              Driven by <br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-                Engineering Rigor.
-              </span>
-            </h2>
-
-            <div class="space-y-4 text-zinc-300 font-normal leading-relaxed text-justify text-base sm:text-lg">
-              <p class="border-l-4 border-red-600 pl-4 py-2 bg-white/[0.03] backdrop-blur-md rounded-r-2xl border-y border-r border-white/10">
-                At <strong class="text-white font-bold">CODEVS</strong>, we bridge the gap between world-class engineering quality and nearshore agility. We eliminate the 12-hour timezone delays of traditional offshore vendors and provide transparent sprint-based execution.
-              </p>
-              <p class="text-zinc-400 text-base leading-relaxed">
-                Our senior full-stack developers and architects build ultra-fast, scalable digital products with microsecond response times, automated CI/CD pipelines, and bulletproof code for North American businesses.
-              </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-              <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
-                <div class="text-3xl font-black text-white mb-1">100%</div>
-                <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Clean Code</div>
-                <div class="text-[11px] text-zinc-400 mt-1">Zero bloated templates</div>
-              </div>
-              <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
-                <div class="text-3xl font-black text-red-500 mb-1">EST/CST</div>
-                <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Timezone</div>
-                <div class="text-[11px] text-zinc-400 mt-1">Real-time daily sync</div>
-              </div>
-              <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/15 backdrop-blur-xl hover:border-red-500/50 hover:bg-white/[0.07] transition-all duration-300 shadow-lg">
-                <div class="text-3xl font-black text-white mb-1">Top 3%</div>
-                <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider">Senior Talent</div>
-                <div class="text-[11px] text-zinc-400 mt-1">Vetted full-stack squads</div>
-              </div>
-            </div>
-
-            <!-- Team Avatars -->
-            <div class="flex items-center gap-4 pt-4 border-t border-white/10">
-              <div class="flex -space-x-3">
-                <img src="/img/team/team-1.jpg" alt="Senior Engineer" class="w-12 h-12 rounded-full border-2 border-white/20 object-cover filter grayscale contrast-125" />
-                <img src="/img/team/team-2.jpg" alt="UI/UX Specialist" class="w-12 h-12 rounded-full border-2 border-white/20 object-cover filter grayscale contrast-125" />
-                <img src="/img/team/team-3.jpg" alt="Cloud Architect" class="w-12 h-12 rounded-full border-2 border-white/20 object-cover filter grayscale contrast-125" />
-              </div>
-              <div>
-                <div class="text-sm font-bold text-white">Dedicated Engineering Squads</div>
-                <div class="text-xs text-zinc-400">Full-Stack Engineers, UX Designers & DevOps Leads</div>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right Column: 3D Tilt Vision & Mission Cards -->
-          <div class="lg:col-span-6 space-y-6 w-full">
-            
-            <div class="group relative bg-white/[0.04] border border-white/15 hover:border-red-500/50 p-7 sm:p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden">
-              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 relative z-10">
-                <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-white/15 bg-black shadow-inner">
-                  <img src="/img/working-2.jpg" alt="Collaborative Engineering Sprint" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" />
-                </div>
-                <div class="space-y-2">
-                  <div class="flex items-center gap-2">
-                    <h3 class="text-2xl font-bold text-white tracking-wide">Technical Leadership</h3>
-                    <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-300 border border-red-500/30">Nearshore</span>
-                  </div>
-                  <p class="text-zinc-300 text-sm leading-relaxed text-justify">
-                    We act as your trusted technical co-creators. We don't just take tickets; we optimize system architectures, improve database performance, and ensure your product scales without bottlenecks.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="group relative bg-white/[0.04] border border-white/15 hover:border-red-500/50 p-7 sm:p-8 rounded-3xl shadow-2xl transition-all duration-300 backdrop-blur-2xl overflow-hidden">
-              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 relative z-10">
-                <div class="w-full sm:w-32 h-32 shrink-0 rounded-2xl overflow-hidden border border-white/15 bg-black shadow-inner">
-                  <img src="/img/working-4.jpg" alt="Production-Grade Software Deployment" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" />
-                </div>
-                <div class="space-y-2">
-                  <div class="flex items-center gap-2">
-                    <h3 class="text-2xl font-bold text-white tracking-wide">Velocity & Scalability</h3>
-                    <span class="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-red-600/20 text-red-300 border border-red-500/30">Delivery</span>
-                  </div>
-                  <p class="text-zinc-300 text-sm leading-relaxed text-justify">
-                    Deliver your product roadmap 2x faster with senior engineers who understand modern CI/CD, microservices, and reactive frontends. Seamless integration into your Jira, Slack, and GitHub workflows.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Quote Banner -->
-        <div class="mt-20">
-          <div class="relative bg-white/[0.03] border border-white/15 p-8 sm:p-12 rounded-[32px] shadow-2xl backdrop-blur-2xl overflow-hidden text-center group hover:border-red-500/40 transition-colors duration-500">
-            <div class="max-w-3xl mx-auto space-y-4 relative z-10">
-              <i class="bi bi-quote text-4xl text-red-500 inline-block mb-1"></i>
-              <blockquote class="text-lg sm:text-2xl font-medium text-white tracking-tight leading-snug">
-                "Great software isn't just about syntax—it's about building scalable, secure, and revenue-driving digital engines that give businesses an unfair market advantage."
-              </blockquote>
-              <div class="text-sm font-semibold text-zinc-400 uppercase tracking-widest pt-2">
-                — CODEVS Engineering Core
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Animated Rocket Scroll -->
-        <RocketScroll />
-
-      </div>
-    </section>
-
-    <!-- 3. Never Done Section (Huge Inc Style 3D Radial Scroll-Driven Cards) -->
+    <!-- 3. Never Done Section (Horizontal Co-Creation Showcase) -->
     <NeverDoneSection />
 
     <!-- 4. Solutions Section (Stacking Cards 01 to 07 with Clean White Theme) -->
@@ -907,8 +797,8 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, onBeforeUnmount } from 'vue';
-import RocketScroll from '~/components/ui/RocketScroll.vue';
+import { ref, reactive, computed, onMounted, onBeforeUnmount } from 'vue';
+import MindMarketTimelineSection from '~/components/MindMarketTimelineSection.vue';
 import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import BlogSection from '~/components/BlogSection.vue';
 

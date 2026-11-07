@@ -1,37 +1,37 @@
 <template>
   <div>
-    <!-- Hero con estilo Mesh Gradient, Tecnologías Integradas y Degradado Continuo -->
+    <!-- 1. Hero con estilo Mesh Gradient, Tecnologías Integradas y Botones Bounce MindMarket -->
     <HeroSectionComponent />
 
-    <!-- Sección de Clientes & Casos de Éxito Empresariales (Prioridad #1) -->
+    <!-- 2. Experiencia MindMarket: The Thread SVG Timeline, 4 Bounce Story Tiles, Sticky Numbers Stack & Deluxe Callout -->
+    <MindMarketTimelineSection />
+
+    <!-- 3. Sección de Clientes & Casos de Éxito Empresariales (Sin Huellas Prioridad #1) -->
     <ClientsSection />
 
-    <!-- Sección Sobre Nosotros con Rocket Scroll Animation Preservada -->
-    <AboutSection />
-
-    <!-- Sección Huge Inc: Never one and done -->
+    <!-- 4. Showcase Horizontal de Co-Creación -->
     <NeverDoneSection />
 
-    <!-- Sección Huge Inc: Solutions con Stacking Cards 01 a 06 -->
+    <!-- 5. Soluciones con Stacking Cards 01 a 08 -->
     <ServicesSection />
 
-    <!-- Sección Portafolio de Proyectos y Casos de Éxito -->
+    <!-- 6. Portafolio de Proyectos y Casos de Éxito con Filtros Interactivos -->
     <PortfolioSection />
 
-    <!-- Sección de Blog & Tendencias Tecnológicas -->
+    <!-- 7. Sección de Blog & Tendencias Tecnológicas -->
     <BlogSection />
 
-    <!-- Sección FAQ para Dominar el Algoritmo de Google y Búsquedas por IA -->
+    <!-- 8. Sección FAQ para Dominar el Algoritmo de Google y Búsquedas por IA -->
     <FaqSection />
 
-    <!-- Sección de Contacto -->
+    <!-- 9. Sección de Contacto -->
     <ContactSection />
   </div>
 </template>
 
 <script setup>
 import HeroSectionComponent from '~/components/HeroSectionComponent.vue';
-import AboutSection from '~/components/AboutSection.vue';
+import MindMarketTimelineSection from '~/components/MindMarketTimelineSection.vue';
 import ClientsSection from '~/components/ClientsSection.vue';
 import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import ServicesSection from '~/components/ServicesSection.vue';

@@ -50,20 +50,30 @@
             Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y construimos <strong class="text-white font-semibold">software a la medida</strong> de misión crítica, plataformas web de alta concurrencia, aplicaciones móviles y <strong class="text-white font-semibold">sistemas inteligentes</strong> con arquitectura limpia para escalar operaciones complejas y dominar el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
           </p>
 
-          <!-- Botones de Acción Frosted Glass Pill -->
+          <!-- Botones de Acción con Física de Rebote MindMarket (.mm-btn) -->
           <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-            <a href="#contact" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 border border-white/30 text-white font-semibold text-sm backdrop-blur-xl shadow-xl hover:scale-105 transition-all duration-300">
-              <span>Construir Mi Software</span>
-              <i class="bi bi-arrow-up-right text-xs"></i>
+            <a href="#contact" class="mm-btn">
+              <span class="mm-btn-icon -hover">
+                <i class="bi bi-arrow-up-right text-xs"></i>
+              </span>
+              <span class="mm-btn-label">Construir Mi Software</span>
+              <span class="mm-btn-icon -default">
+                <i class="bi bi-arrow-up-right text-xs"></i>
+              </span>
             </a>
 
-            <a href="#services" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
-              <i class="bi bi-cpu text-red-400"></i>
-              <span>Explorar Soluciones</span>
+            <a href="#services" class="mm-btn -white">
+              <span class="mm-btn-icon -hover">
+                <i class="bi bi-cpu text-xs"></i>
+              </span>
+              <span class="mm-btn-label">Explorar Soluciones</span>
+              <span class="mm-btn-icon -default">
+                <i class="bi bi-cpu text-xs"></i>
+              </span>
             </a>
 
             <a href="#clientes" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
-              <i class="bi bi-star-fill text-red-400 text-xs"></i>
+              <i class="bi bi-star-fill text-[#F5E211] text-xs"></i>
               <span>Casos de Éxito</span>
             </a>
           </div>
