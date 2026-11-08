@@ -6,11 +6,15 @@
 
       <!-- Encabezado Monumental en Español -->
       <div class="max-w-3xl mb-16 lg:mb-24 services-header">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950 text-white text-xs font-bold uppercase tracking-wider mb-5">
+          <span class="w-2 h-2 rounded-full bg-red-600"></span>
+          <span>Ingeniería de Software • Bases de Datos • Inteligencia Artificial</span>
+        </div>
         <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
           Soluciones.
         </h2>
         <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
-          Ingeniería de software a la medida, velocidad extrema y arquitectura limpia. Las capacidades tecnológicas que transforman tus ideas en negocios de alto impacto.
+          Desarrollo de software a la medida, arquitectura de bases de datos y automatización con IA. Diseñadas por <strong class="text-zinc-950 font-bold">ingenieros senior y profesores de programación y bases de datos</strong> para multiplicar la rentabilidad de tu empresa.
         </p>
       </div>
 
@@ -21,7 +25,7 @@
           :key="index"
           class="sticky-stack-card group rounded-[32px] sm:rounded-[44px] bg-white border border-zinc-200/90 shadow-[0_20px_50px_rgba(0,0,0,0.08)] p-8 sm:p-12 lg:p-16 flex flex-col justify-between transition-all duration-300"
           :style="{
-            top: `calc(5.5rem + ${index * 1.5}rem)`,
+            top: `calc(5.5rem + ${index * 1.35}rem)`,
             zIndex: index + 1
           }"
         >
@@ -56,18 +60,27 @@
             </p>
           </div>
 
-          <!-- Fila Inferior: Detalles de Ingeniería CODEVS -->
+          <!-- Fila Inferior: Detalles de Ingeniería CODEVS + Doble CTA Conversión -->
           <div class="pt-6 border-t border-zinc-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <p class="text-xs sm:text-sm text-zinc-500 font-normal max-w-2xl text-justify">
               {{ item.description }}
             </p>
-            <NuxtLink
-              :to="item.link"
-              class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors shrink-0"
-            >
-              <span>Conocer Más</span>
-              <i class="bi bi-arrow-right text-xs"></i>
-            </NuxtLink>
+            <div class="flex items-center gap-4 shrink-0">
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-red-600 hover:bg-zinc-950 text-white text-xs sm:text-sm font-bold transition-colors shadow-sm"
+              >
+                <span>Cotizar ahora</span>
+                <i class="bi bi-lightning-charge-fill text-xs"></i>
+              </a>
+              <NuxtLink
+                :to="item.link"
+                class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors"
+              >
+                <span>Ver detalle</span>
+                <i class="bi bi-arrow-right text-xs"></i>
+              </NuxtLink>
+            </div>
           </div>
         </article>
       </div>
@@ -210,6 +223,14 @@ const solutions = [
     description: 'Convertimos ideas de negocio en Productos Mínimos Viables (MVPs) funcionales y escalables. Acompañamos a fundadores en prototipado UX/UI, arquitectura cloud, pasarelas de pago y métricas de tracción listas para rondas de inversión, como demostramos con nuestra startup Moments Gallery.',
     tag: 'Startups & Venture',
     link: '/servicios/desarrollo-mvp-startups'
+  },
+  {
+    number: '09',
+    title: 'Arquitectura de Bases de Datos & Formación.',
+    subtitle: 'Diseño SQL/NoSQL de alto rendimiento y mentoría por profesores expertos.',
+    description: 'Contamos con profesores universitarios y especialistas que enseñan programación, estructuras de datos y bases de datos (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). Diseñamos modelos relacionales blindados, optimizamos consultas lentas, migramos datos críticos sin caídas y entrenamos a equipos o estudiantes en ingeniería de software real.',
+    tag: 'Bases de Datos & Academia',
+    link: '#contact'
   }
 ];
 </script>

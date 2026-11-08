@@ -3,11 +3,8 @@
     id="never-done" 
     ref="sectionRef" 
     class="relative bg-[#07070a] text-white min-h-screen overflow-hidden flex flex-col justify-between py-12 sm:py-16 border-t border-zinc-900 select-none"
+    style="background-image: radial-gradient(circle at 10% 30%, rgba(220,38,38,0.09), transparent 45%), radial-gradient(circle at 90% 80%, rgba(185,28,28,0.09), transparent 45%);"
   >
-    <!-- Luces sutiles de fondo Mesh Gradient Rojas -->
-    <div class="absolute top-1/4 left-[-8%] w-[550px] h-[550px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
-    <div class="absolute bottom-10 right-[-8%] w-[550px] h-[550px] bg-red-700/10 rounded-full blur-[160px] pointer-events-none"></div>
-
     <!-- Encabezado Superior (Bilingüe Español / Inglés) -->
     <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20">
       <div class="max-w-3xl space-y-3">
@@ -34,24 +31,26 @@
           v-for="(card, index) in currentCards"
           :key="index"
           :to="card.link"
-          class="showcase-card group shrink-0 w-[300px] sm:w-[400px] lg:w-[460px] h-[440px] sm:h-[500px] rounded-[32px] overflow-hidden bg-zinc-950 border border-white/15 hover:border-red-500/60 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative flex flex-col justify-between p-7 sm:p-10 transition-all duration-300 hover:-translate-y-1 block"
+          class="showcase-card group shrink-0 w-[300px] sm:w-[400px] lg:w-[460px] h-[440px] sm:h-[500px] rounded-[32px] overflow-hidden bg-zinc-950 border border-white/15 hover:border-red-500/60 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative flex flex-col justify-between p-7 sm:p-10 transition-transform duration-300 hover:-translate-y-1 block"
         >
           <!-- Imagen de Fondo en Alta Definición -->
           <img
             :src="card.image"
             :alt="card.title"
-            class="absolute inset-0 w-full h-full object-cover filter contrast-125 group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            loading="lazy"
+            decoding="async"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
           />
           <!-- Degradado Uniforme para Legibilidad Impecable -->
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/30 group-hover:via-black/40 transition-colors duration-500"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/30 group-hover:via-black/40 transition-colors duration-300"></div>
 
           <!-- Cabecera de la Tarjeta: Marca / Categoría y Botón -->
           <div class="relative z-10 flex items-center justify-between gap-3">
-            <span class="text-xs font-bold tracking-wider text-white uppercase px-3.5 py-1.5 rounded-full bg-black/70 border border-white/20 backdrop-blur-md">
+            <span class="text-xs font-bold tracking-wider text-white uppercase px-3.5 py-1.5 rounded-full bg-black/80 border border-white/20">
               {{ card.brand }}
             </span>
 
-            <div class="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 transition-all duration-300 shrink-0">
+            <div class="w-10 h-10 rounded-full bg-black/60 border border-white/25 flex items-center justify-center text-white group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 transition-all duration-300 shrink-0">
               <i class="bi bi-arrow-up-right text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
             </div>
           </div>
@@ -253,7 +252,7 @@ onMounted(() => {
           start: 'top top',
           end: () => `+=${getScrollAmount() * 1.05}`,
           pin: true,
-          scrub: 1,
+          scrub: 0.4,
           anticipatePin: 1,
           invalidateOnRefresh: true,
         }

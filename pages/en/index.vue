@@ -1,41 +1,32 @@
 <template>
   <div class="selection:bg-red-600 selection:text-white">
 
-    <!-- 1. Hero Section (Mesh Gradient, Kinetic Rotating Title, Frosted Glass Card, Integrated Tech Stack) -->
+    <!-- 1. Hero Section (High-Speed GPU Mesh Gradient, Kinetic Rotating Title, Conversion Triggers) -->
     <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#07070a] text-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-zinc-900 mesh-gradient-container">
       
-      <!-- Red Mesh Gradient Glow Orbs -->
-      <div class="mesh-orb mesh-orb-1"></div>
-      <div class="mesh-orb mesh-orb-2"></div>
-      <div class="mesh-orb mesh-orb-3"></div>
-      <div class="mesh-orb mesh-orb-4"></div>
-      <div class="mesh-orb mesh-orb-5"></div>
-
-      <!-- Interactive Mouse Light -->
-      <div class="glow-bg absolute inset-0 z-0 pointer-events-none" ref="glowBg"></div>
+      <!-- Single-Layer GPU Mesh Background (Zero Blur Lag) -->
+      <div class="mesh-static-bg pointer-events-none" aria-hidden="true"></div>
 
       <div class="container mx-auto max-w-7xl relative z-10 w-full">
         
-        <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center transition-all duration-500">
+        <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-7 sm:p-12 lg:p-16 relative overflow-hidden text-center">
           
-          <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-3/4 h-48 bg-gradient-to-b from-white/20 to-transparent blur-2xl pointer-events-none"></div>
-
-          <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
+          <div class="max-w-4xl mx-auto space-y-6 sm:space-y-7 my-2">
             
             <!-- Monumental Headline -->
-            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
-              Nearshore <br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-                Software Engineering
+            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.03]">
+              Nearshore Software <br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-500">
+                & Database Engineering
               </span>
-              <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/70 tracking-normal mt-2">
-                & Dedicated Tech Squads
+              <span class="block text-xl sm:text-3xl lg:text-4xl font-semibold text-white/80 tracking-tight mt-3">
+                Custom Platforms, AI Agents & High-Concurrency Databases
               </span>
             </h1>
 
             <!-- Kinetic Rotating Title Style Huge Inc -->
             <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
-              <span>We engineer technology that accelerates</span>
+              <span>We build custom technology that scales</span>
               <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[140px] sm:min-w-[170px] text-left">
                 <Transition name="huge-slide" mode="out-in">
                   <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
@@ -45,20 +36,35 @@
               </span>
             </div>
 
-            <!-- Value Narrative -->
-            <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-normal leading-relaxed text-center">
-              We are <strong class="text-white font-semibold">CODEVS</strong>. We build mission-critical <strong class="text-white font-semibold">web applications</strong>, cloud software, and <strong class="text-white font-semibold">AI workflow automations</strong> with Silicon Valley standards, EST/CST alignment, and zero technical debt for scaling US companies.
+            <!-- Value Narrative + Academic & Engineering Authority -->
+            <p class="text-base sm:text-lg md:text-xl text-white/85 max-w-3xl mx-auto font-normal leading-relaxed text-center">
+              We are <strong class="text-white font-bold">CODEVS</strong>: the #1 partner in <strong class="text-white font-semibold">custom software development, relational/NoSQL database architecture, and 24/7 WhatsApp AI automation</strong>. Your platform is engineered by <strong class="text-white font-semibold underline decoration-red-500/60 underline-offset-4">senior software architects and university professors who teach programming &amp; databases</strong>—guaranteeing clean code, sub-second speed, and measurable ROI.
             </p>
 
             <!-- MindMarket Bounce Action Buttons (.mm-btn) -->
-            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4 pt-2">
               <a href="#contact" class="mm-btn">
                 <span class="mm-btn-icon -hover">
                   <i class="bi bi-arrow-up-right text-xs"></i>
                 </span>
-                <span class="mm-btn-label">Hire a Senior Squad</span>
+                <span class="mm-btn-label">Quote My Software Now</span>
                 <span class="mm-btn-icon -default">
                   <i class="bi bi-arrow-up-right text-xs"></i>
+                </span>
+              </a>
+
+              <a
+                href="https://wa.me/573008051304?text=Hello%20CODEVS!%20I%20want%20to%20quote%20a%20custom%20software%20/%20database%20project%20with%20your%20senior%20engineering%20team."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mm-btn -green"
+              >
+                <span class="mm-btn-icon -hover">
+                  <i class="bi bi-whatsapp text-xs"></i>
+                </span>
+                <span class="mm-btn-label">Talk to an Engineer (WhatsApp)</span>
+                <span class="mm-btn-icon -default">
+                  <i class="bi bi-whatsapp text-xs"></i>
                 </span>
               </a>
 
@@ -66,34 +72,60 @@
                 <span class="mm-btn-icon -hover">
                   <i class="bi bi-star-fill text-xs"></i>
                 </span>
-                <span class="mm-btn-label">View Case Studies</span>
+                <span class="mm-btn-label">View Proven Case Studies</span>
                 <span class="mm-btn-icon -default">
                   <i class="bi bi-star-fill text-xs"></i>
                 </span>
               </a>
             </div>
 
-            <!-- US Nearshore Trust Badges -->
-            <div class="flex flex-wrap items-center justify-center gap-6 pt-4 text-xs font-semibold text-zinc-400">
-              <span class="flex items-center gap-1.5"><i class="bi bi-clock-fill text-red-500"></i> EST & CST Overlap</span>
-              <span class="flex items-center gap-1.5"><i class="bi bi-shield-lock-fill text-red-500"></i> 100% IP Assignment & NDAs</span>
-              <span class="flex items-center gap-1.5"><i class="bi bi-credit-card-2-front-fill text-red-500"></i> ACH & Wire Invoicing in USD</span>
+            <!-- High-Conversion Risk-Reversal Strip -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto pt-3 text-left">
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
+                <div class="w-9 h-9 rounded-xl bg-red-600/20 border border-red-500/30 text-red-400 flex items-center justify-center shrink-0">
+                  <i class="bi bi-mortarboard-fill text-base"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-white">Senior Devs &amp; CS Professors</div>
+                  <div class="text-[11px] text-zinc-400">Programming &amp; Database Masters</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
+                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i class="bi bi-lightning-charge-fill text-base"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-white">7-Day Interactive Prototype</div>
+                  <div class="text-[11px] text-zinc-400">Validate UX &amp; DB before scaling</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
+                <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/30 text-amber-300 flex items-center justify-center shrink-0">
+                  <i class="bi bi-shield-check text-base"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-white">100% IP &amp; Contract Warranty</div>
+                  <div class="text-[11px] text-zinc-400">EST/CST overlap • USD invoicing</div>
+                </div>
+              </div>
             </div>
 
           </div>
 
           <!-- Integrated Technology Logos Row (White Monochrome with Hover Glow) -->
-          <div class="mt-12 pt-8 border-t border-white/10 flex flex-col items-center">
-            <span class="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mb-6">
-              Our Core Production Stack
+          <div class="mt-10 pt-7 border-t border-white/10 flex flex-col items-center">
+            <span class="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mb-5">
+              Enterprise Stack: Spring Boot • Nuxt 3 • PostgreSQL • SQL • AWS • Flutter • Meta AI
             </span>
 
             <div class="w-full overflow-hidden relative">
               <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:gap-16">
                 <div v-for="(tech, idx) in techLogos" :key="idx"
-                  class="flex items-center justify-center opacity-70 hover:opacity-100 transition-all duration-300 transform hover:scale-110">
-                  <img :src="tech.icon" :alt="tech.name"
-                    class="h-7 sm:h-9 w-auto object-contain brightness-0 invert drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]" />
+                  class="flex items-center justify-center opacity-75 hover:opacity-100 transition-opacity duration-200">
+                  <img :src="tech.icon" :alt="tech.name" width="110" height="36" loading="eager" decoding="async"
+                    class="h-7 sm:h-9 w-auto object-contain brightness-0 invert" />
                 </div>
               </div>
             </div>
@@ -108,10 +140,11 @@
     <MindMarketTimelineSection />
 
     <!-- 1.5 Clients & Enterprise Case Studies (Sin Huellas Nuevas Oportunidades Priority #1) -->
-    <section id="clients" class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900">
-      <div class="absolute top-1/4 -left-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-      <div class="absolute bottom-1/4 -right-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-
+    <section
+      id="clients"
+      class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900"
+      style="background-image: radial-gradient(circle at 0% 25%, rgba(220,38,38,0.08), transparent 45%), radial-gradient(circle at 100% 75%, rgba(220,38,38,0.08), transparent 45%);"
+    >
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
 
         <!-- Section Header -->
@@ -124,15 +157,15 @@
           </h2>
 
           <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed text-justify">
-            We partner with law firms, scale-ups, and international businesses to eliminate operational drag through clean software architecture, autonomous AI agents, and custom enterprise ERP/CRM ecosystems.
+            We partner with law firms, scale-ups, and international businesses to eliminate operational drag through clean software architecture, high-concurrency databases, and autonomous AI agents.
           </p>
         </div>
 
         <!-- Featured Case Study: Sin Huellas Nuevas Oportunidades -->
-        <div class="relative rounded-[32px] sm:rounded-[40px] bg-gradient-to-b from-white/[0.07] to-white/[0.02] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 backdrop-blur-2xl overflow-hidden hover:border-red-500/40 transition-all duration-500 shadow-2xl">
-          
-          <div class="absolute -top-24 -right-24 w-80 h-80 bg-red-600/15 rounded-full blur-3xl pointer-events-none"></div>
-
+        <div
+          class="relative rounded-[32px] sm:rounded-[40px] bg-[#0e0e13] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 overflow-hidden hover:border-red-500/40 transition-colors duration-300 shadow-2xl"
+          style="background-image: radial-gradient(circle at 95% 5%, rgba(220,38,38,0.14), transparent 45%);"
+        >
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <!-- Left Column: Story & Metrics -->
@@ -153,7 +186,7 @@
               <!-- Official Client Logo -->
               <div class="pt-1">
                 <a href="https://www.sinhuellas.co/" target="_blank" rel="noopener noreferrer" class="group/brand inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/95 hover:bg-white border border-white/30 shadow-lg transition-transform hover:scale-105" title="Visit official site">
-                  <img src="/assets/img/clients/sin-huellas-logo.png" alt="Sin Huellas Nuevas Oportunidades Logo" class="h-7 w-auto object-contain" />
+                  <img src="/assets/img/clients/sin-huellas-logo.png" alt="Sin Huellas Nuevas Oportunidades Logo" loading="lazy" decoding="async" class="h-7 w-auto object-contain" />
                   <span class="text-xs font-bold text-zinc-800 border-l border-zinc-300 pl-3 group-hover/brand:text-red-600 transition-colors flex items-center gap-1">
                     <span>www.sinhuellas.co</span>
                     <i class="bi bi-box-arrow-up-right text-[10px]"></i>
@@ -176,17 +209,17 @@
 
               <!-- Metrics Grid -->
               <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+                <div class="p-4 rounded-2xl bg-black/50 border border-white/10">
                   <div class="text-2xl sm:text-3xl font-black text-red-500">+70%</div>
                   <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Time Saved</div>
                   <div class="text-[11px] text-zinc-400 mt-0.5">In daily case management</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+                <div class="p-4 rounded-2xl bg-black/50 border border-white/10">
                   <div class="text-2xl sm:text-3xl font-black text-white">25+ hrs</div>
                   <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Weekly Savings</div>
                   <div class="text-[11px] text-zinc-400 mt-0.5">Per lawyer & legal squad</div>
                 </div>
-                <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md col-span-2 sm:col-span-1">
+                <div class="p-4 rounded-2xl bg-black/50 border border-white/10 col-span-2 sm:col-span-1">
                   <div class="text-2xl sm:text-3xl font-black text-white">&lt; 3 sec</div>
                   <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">AI Response</div>
                   <div class="text-[11px] text-zinc-400 mt-0.5">24/7 WhatsApp Cloud AI</div>
@@ -203,13 +236,11 @@
                   <i class="bi bi-arrow-right text-xs"></i>
                 </NuxtLink>
                 <a
-                  href="https://www.sinhuellas.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-white font-medium text-sm transition-all duration-300"
+                  href="#contact"
+                  class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-white font-semibold text-sm transition-all duration-300"
                 >
-                  <span>Visit Client Website</span>
-                  <i class="bi bi-box-arrow-up-right text-xs"></i>
+                  <span>Quote a Similar System</span>
+                  <i class="bi bi-lightning-charge-fill text-red-400 text-xs"></i>
                 </a>
               </div>
 
@@ -221,7 +252,9 @@
                 <img
                   src="/assets/img/projects/sin-huellas.jpg"
                   alt="Sin Huellas ERP CRM Omnichannel AI - CODEVS"
-                  class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
                   <div class="flex items-center justify-between w-full">
@@ -229,7 +262,7 @@
                       <span class="text-xs uppercase tracking-wider text-red-400 font-bold block">Enterprise SaaS Architecture</span>
                       <span class="text-white font-bold text-lg">Legal ERP & AI Omnichannel</span>
                     </div>
-                    <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white group-hover:bg-red-600 transition-colors">
+                    <div class="w-10 h-10 rounded-full bg-black/70 border border-white/30 flex items-center justify-center text-white group-hover:bg-red-600 transition-colors">
                       <i class="bi bi-arrow-up-right text-sm"></i>
                     </div>
                   </div>
@@ -368,17 +401,21 @@
     <!-- 3. Never Done Section (Horizontal Co-Creation Showcase) -->
     <NeverDoneSection />
 
-    <!-- 4. Solutions Section (Stacking Cards 01 to 07 with Clean White Theme) -->
+    <!-- 4. Solutions Section (Stacking Cards 01 to 09 with Clean White Theme) -->
     <section id="services" class="relative bg-white text-zinc-900 py-24 lg:py-36 border-t border-zinc-200">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Monumental Section Header -->
         <div class="max-w-3xl mb-16 lg:mb-24">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950 text-white text-xs font-bold uppercase tracking-wider mb-5">
+            <span class="w-2 h-2 rounded-full bg-red-600"></span>
+            <span>Software Engineering • Databases • Artificial Intelligence</span>
+          </div>
           <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
             Solutions.
           </h2>
           <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
-            Enterprise software engineering, extreme velocity, and clean architecture. The technical capabilities that turn complex ideas into high-impact products.
+            Custom software development, high-concurrency database architectures, and AI automations. Engineered by <strong class="text-zinc-950 font-bold">senior architects and university professors of programming &amp; databases</strong> to multiply your ROI.
           </p>
         </div>
 
@@ -389,7 +426,7 @@
             :key="index"
             class="sticky-stack-card group rounded-[32px] sm:rounded-[44px] bg-white border border-zinc-200/90 shadow-[0_20px_50px_rgba(0,0,0,0.08)] p-8 sm:p-12 lg:p-16 flex flex-col justify-between transition-all duration-300"
             :style="{
-              top: `calc(5.5rem + ${index * 1.5}rem)`,
+              top: `calc(5.5rem + ${index * 1.35}rem)`,
               zIndex: index + 1
             }"
           >
@@ -427,13 +464,22 @@
               <p class="text-xs sm:text-sm text-zinc-500 font-normal max-w-2xl text-justify">
                 {{ item.description }}
               </p>
-              <a
-                href="#contact"
-                class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors shrink-0"
-              >
-                <span>Request Scope</span>
-                <i class="bi bi-arrow-right text-xs"></i>
-              </a>
+              <div class="flex items-center gap-4 shrink-0">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-red-600 hover:bg-zinc-950 text-white text-xs sm:text-sm font-bold transition-colors shadow-sm"
+                >
+                  <span>Get a Quote</span>
+                  <i class="bi bi-lightning-charge-fill text-xs"></i>
+                </a>
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors"
+                >
+                  <span>Request Scope</span>
+                  <i class="bi bi-arrow-right text-xs"></i>
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -533,7 +579,9 @@
                 <img
                   :src="item.image"
                   :alt="item.title"
-                  class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition-transform duration-500 ease-out"
                 />
                 <span class="absolute top-4 left-4 bg-zinc-950 text-white text-xs font-bold tracking-wider px-3.5 py-1.5 rounded-full uppercase shadow-md">
                   {{ item.category }}
@@ -609,11 +657,11 @@
         
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-3xl sm:text-5xl font-black text-zinc-950 tracking-tight leading-[1.1]">
-            Frequently Asked Questions for <br />
-            <span class="text-red-600">US Companies & Agencies</span>
+            Frequently Asked Questions on <br />
+            <span class="text-red-600">Software, Databases &amp; Nearshore Squads</span>
           </h2>
           <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
-            Everything you need to know about working with CODEVS as your nearshore software engineering partner.
+            Everything you need to know about working with CODEVS’s senior software architects and programming/database professors.
           </p>
         </div>
 
@@ -651,22 +699,27 @@
       </div>
     </section>
 
-    <!-- 8. Contact & Discovery Form Section (Dark Mesh Glass Card) -->
-    <section id="contact" class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden">
-      <div class="absolute top-10 left-[-8%] w-[650px] h-[650px] bg-red-600/15 rounded-full blur-[170px] pointer-events-none"></div>
-      <div class="absolute bottom-10 right-[-8%] w-[600px] h-[600px] bg-red-700/12 rounded-full blur-[160px] pointer-events-none"></div>
-
+    <!-- 8. Contact & Discovery Form Section (Fast Dark Card) -->
+    <section
+      id="contact"
+      class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden"
+      style="background-image: radial-gradient(circle at 0% 15%, rgba(220,38,38,0.11), transparent 45%), radial-gradient(circle at 100% 85%, rgba(185,28,28,0.10), transparent 45%);"
+    >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         
         <div class="max-w-3xl mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Free 15-Minute Architecture Diagnosis • Zero Risk</span>
+          </div>
           <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
-            Let's Build Your Next <br />
+            Quote Your Custom <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
-              Breakthrough Project.
+              Software or Database Today.
             </span>
           </h2>
           <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed">
-            Tell us about your technical roadmap or hiring needs. A Senior Technical Director will reply with an estimate and architecture breakdown within 24 business hours.
+            Tell us about your technical roadmap, database bottleneck, or hiring needs. A <strong class="text-white">Senior Software Architect &amp; Database Professor</strong> will reply with a clear proposal within 24 hours.
           </p>
         </div>
 
@@ -675,61 +728,63 @@
           <!-- Left Column: Coordinates & Direct US Communication -->
           <div class="lg:col-span-5 space-y-6">
             
-            <div class="bg-white/[0.04] border border-white/15 p-8 rounded-[28px] shadow-xl backdrop-blur-xl">
+            <div class="bg-[#0e0e13] border border-white/15 p-8 rounded-[28px] shadow-xl">
               <div class="flex items-start gap-4">
                 <div class="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0">
-                  <i class="bi bi-clock-history text-2xl"></i>
+                  <i class="bi bi-mortarboard-fill text-2xl"></i>
                 </div>
                 <div class="space-y-1">
-                  <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Timezone & Availability</span>
-                  <h3 class="text-xl font-bold text-white">GMT-5 (EST / CST Alignment)</h3>
-                  <p class="text-zinc-400 text-sm">Real-time collaboration during regular US business hours.</p>
+                  <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Engineering &amp; Academic Authority</span>
+                  <h3 class="text-xl font-bold text-white">Senior Devs &amp; CS/DB Professors</h3>
+                  <p class="text-zinc-400 text-sm">Real-time EST/CST alignment, SQL/NoSQL mastery, and corporate mentorship.</p>
                 </div>
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <a :href="whatsappUSUrl" target="_blank" rel="noopener noreferrer" 
-                 class="bg-white/[0.04] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block backdrop-blur-xl">
+                 class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-emerald-500/40 transition-colors block">
                 <div class="w-12 h-12 rounded-2xl bg-emerald-600/15 border border-emerald-500/30 flex items-center justify-center text-emerald-500 mb-4">
                   <i class="bi bi-whatsapp text-2xl"></i>
                 </div>
-                <span class="text-xs font-bold uppercase text-zinc-400 tracking-wider">Instant Chat</span>
-                <div class="text-base font-bold text-white mt-1 group-hover:text-red-400 transition-colors">+57 313 806 6800</div>
-                <p class="text-zinc-500 text-xs mt-1">Direct to Technical Director</p>
+                <span class="text-xs font-bold uppercase text-zinc-400 tracking-wider">Direct WhatsApp</span>
+                <div class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">+57 300 805 1304</div>
+                <p class="text-emerald-400/90 text-xs mt-1 font-semibold">Reply in &lt; 5 minutes</p>
               </a>
 
               <a href="mailto:comercial@codevs.dev" 
-                 class="bg-white/[0.04] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block backdrop-blur-xl">
+                 class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block">
                 <div class="w-12 h-12 rounded-2xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 mb-4">
                   <i class="bi bi-envelope-at text-2xl"></i>
                 </div>
                 <span class="text-xs font-bold uppercase text-zinc-400 tracking-wider">Direct Email</span>
                 <div class="text-base font-bold text-white mt-1 group-hover:text-red-400 transition-colors">comercial@codevs.dev</div>
-                <p class="text-zinc-500 text-xs mt-1">Confidential RFPs & Inquiries</p>
+                <p class="text-zinc-500 text-xs mt-1">Confidential RFPs &amp; Quotes</p>
               </a>
             </div>
 
-            <div class="p-6 rounded-2xl bg-gradient-to-r from-red-950/40 via-black to-black border border-red-500/30 text-xs text-zinc-300 space-y-2">
-              <div class="flex items-center gap-2 font-bold text-red-400">
+            <div class="p-6 rounded-2xl bg-[#0e0e13] border border-white/15 text-xs text-zinc-300 space-y-2">
+              <div class="flex items-center gap-2 font-bold text-emerald-400">
                 <i class="bi bi-shield-check text-base"></i>
-                <span>Strict US Confidentiality Standards</span>
+                <span>Why Hire CODEVS Today?</span>
               </div>
-              <p class="text-zinc-400">
-                All client proposals, codebases, and conversations are protected under binding Mutual NDAs. We never share your proprietary data or ideas.
-              </p>
+              <ul class="space-y-1.5 text-zinc-300">
+                <li>✓ Interactive prototype &amp; DB model delivered in the first 7 days.</li>
+                <li>✓ Safe milestone-based payments &amp; contract-backed SLA.</li>
+                <li>✓ 100% Intellectual Property (IP) ownership under Mutual NDAs.</li>
+              </ul>
             </div>
 
           </div>
 
           <!-- Right Column: Interactive Proposal Form -->
           <div class="lg:col-span-7">
-            <div class="bg-white/[0.04] border border-white/15 p-8 sm:p-12 rounded-[32px] shadow-2xl backdrop-blur-2xl">
+            <div class="bg-[#0e0e13] border border-white/15 p-8 sm:p-12 rounded-[32px] shadow-2xl">
               
               <!-- SLA Guarantee Pill -->
               <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>SLA Guarantee: &lt; 24h Response by Lead Solutions Architect</span>
+                <span>SLA Guarantee: &lt; 24h Formal Quote by Lead Solutions Architect</span>
               </div>
 
               <form @submit.prevent="submitContact" class="space-y-6">
@@ -738,13 +793,13 @@
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Your Full Name *</label>
                     <input v-model="form.name" type="text" required placeholder="Sarah Connor"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
 
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Work Email *</label>
                     <input v-model="form.email" type="email" required placeholder="sarah@company.com"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
                 </div>
 
@@ -752,7 +807,7 @@
                   <div class="space-y-2">
                     <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Company / Organization</label>
                     <input v-model="form.company" type="text" placeholder="Acme Technologies"
-                      class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
+                      class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm" />
                   </div>
 
                   <div class="space-y-2">
@@ -760,29 +815,41 @@
                     <select v-model="form.budget" required
                       class="w-full px-4 py-3.5 rounded-2xl bg-[#141419] border border-white/15 text-white focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm cursor-pointer">
                       <option value="" disabled selected>Select budget range</option>
-                      <option value="$5k - $15k">$5,000 - $15,000 (Sprint / MVP)</option>
-                      <option value="$15k - $30k">$15,000 - $30,000 (Full Platform)</option>
-                      <option value="$30k - $60k">$30,000 - $60,000 (Enterprise Solution)</option>
-                      <option value="$60k+">$60,000+ (Dedicated Long-Term Squad)</option>
+                      <option value="$2k - $5k">$2,000 - $5,000 (DB Audit / Fast Web / Mentorship)</option>
+                      <option value="$5k - $15k">$5,000 - $15,000 (Sprint / Custom MVP)</option>
+                      <option value="$15k - $30k">$15,000 - $30,000 (Full Platform / ERP)</option>
+                      <option value="$30k+">$30,000+ (Enterprise Solution / Squad)</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="space-y-2">
-                  <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Project Overview & Objectives *</label>
-                  <textarea v-model="form.message" rows="4" required placeholder="Tell us about your requirements, technical stack, or developer hiring goals..."
-                    class="w-full px-4 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm resize-none"></textarea>
+                  <label class="text-xs font-bold uppercase tracking-wider text-zinc-300">Project Overview &amp; Objectives *</label>
+                  <textarea v-model="form.message" rows="4" required placeholder="Tell us about your custom software, database optimization, AI workflow, or training goals..."
+                    class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm resize-none"></textarea>
                 </div>
 
                 <div v-if="submitted" class="p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-sm text-center">
                   Thank you! Your inquiry has been forwarded to our Lead Solutions Architect. We'll be in touch within 24 hours.
                 </div>
 
-                <button type="submit"
-                  class="w-full py-4 rounded-2xl bg-[#E7000B] hover:bg-red-700 text-white font-bold text-base transition-all duration-300 shadow-xl shadow-red-950/50 hover:scale-[1.01] flex items-center justify-center gap-2">
-                  <span>Send Proposal Request</span>
-                  <i class="bi bi-arrow-up-right text-xs"></i>
-                </button>
+                <div class="flex flex-wrap items-center gap-3">
+                  <button type="submit"
+                    class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#E7000B] hover:bg-red-700 text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-red-950/50 flex items-center justify-center gap-2 cursor-pointer">
+                    <span>Request Proposal &amp; 7-Day Prototype</span>
+                    <i class="bi bi-arrow-up-right text-xs"></i>
+                  </button>
+
+                  <a
+                    :href="whatsappUSUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 font-bold text-sm flex items-center justify-center gap-2 transition-colors"
+                  >
+                    <i class="bi bi-whatsapp text-emerald-400"></i>
+                    <span>Chat on WhatsApp Now</span>
+                  </a>
+                </div>
 
               </form>
             </div>
@@ -802,15 +869,15 @@ import MindMarketTimelineSection from '~/components/MindMarketTimelineSection.vu
 import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import BlogSection from '~/components/BlogSection.vue';
 
-const whatsappUSUrl = 'https://wa.me/573138066800?text=Hello%20CODEVS%2C%20I%20am%20reaching%20out%20from%20the%20US%20regarding%20a%20software%20engineering%20project.';
+const whatsappUSUrl = 'https://wa.me/573008051304?text=Hello%20CODEVS%2C%20I%20would%20like%20to%20quote%20a%20custom%20software%20or%20database%20engineering%20project.';
 
 // Kinetic rotating word
 const rotatingWords = [
   'startups.',
   'enterprises.',
+  'databases.',
+  'law firms.',
   'scaleups.',
-  'agencies.',
-  'disruptors.',
   'products.'
 ];
 const currentWordIndex = ref(0);
@@ -838,13 +905,13 @@ const techLogos = [
   { name: 'PHP / Backend', icon: '/img/technologies/php.png' }
 ];
 
-// Solutions (Stacking cards 01 to 07)
+// Solutions (Stacking cards 01 to 09)
 const solutions = [
   {
     number: '01',
     title: 'Custom Software & Cloud Platforms.',
     subtitle: 'Enterprise architectures engineered for high concurrency.',
-    description: 'High-performance cloud platforms and microservices designed for zero downtime and extreme throughput using Java, Spring Boot, PostgreSQL, and AWS.',
+    description: 'High-performance cloud platforms, ERPs, and microservices designed for zero downtime and extreme throughput using Java, Spring Boot, PostgreSQL, and AWS.',
     tag: 'Cloud Architecture',
     link: '#contact'
   },
@@ -902,6 +969,14 @@ const solutions = [
     subtitle: 'From idea to market-ready product in 4 to 8 weeks.',
     description: 'We turn startup concepts into scalable Minimum Viable Products (MVPs) engineered to raise capital and validate market demand. Complete product discovery, interactive Figma prototyping, full-stack engineering, and monetization pipelines—proven by our own incubated startups like Moments Gallery.',
     tag: 'Startups & MVPs',
+    link: '#contact'
+  },
+  {
+    number: '09',
+    title: 'Database Architecture & Programming Academy.',
+    subtitle: 'High-concurrency SQL/NoSQL design & mentorship by CS professors.',
+    description: 'Our team includes university professors who teach programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). We design bulletproof data models, optimize slow enterprise queries, execute zero-downtime migrations, and train engineering squads.',
+    tag: 'Databases & Mentorship',
     link: '#contact'
   }
 ];
@@ -983,24 +1058,24 @@ const toggleFaq = (index) => {
 
 const usFaqs = [
   {
+    question: 'Why does CODEVS’s team of Senior Engineers & Programming/Database Professors deliver superior results?',
+    answer: 'Unlike generic agencies that rely on junior freelancers or slow templates, CODEVS is led by senior software architects and university professors who teach programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis). This guarantees rock-solid data models, millisecond query execution, and zero technical debt.'
+  },
+  {
+    question: 'Do you offer database architecture, SQL optimization, and corporate programming training?',
+    answer: 'Yes. Beyond building full-scale custom software and AI agents, we audit, redesign, and optimize slow databases for scaling companies, and our professors provide specialized corporate training and technical mentorship in software engineering and database architecture.'
+  },
+  {
+    question: 'How does the 7-day interactive prototype and risk-free guarantee work?',
+    answer: 'We eliminate risk from day one: 1) Free 15-minute technical diagnosis with a Senior Architect. 2) Within the first 7 days, we deliver an interactive Figma prototype and database schema so you validate the exact product before full-scale coding. 3) Milestone-based payments and 100% IP ownership.'
+  },
+  {
     question: 'How does time zone alignment and daily communication work?',
-    answer: 'We operate in Colombia (GMT-5), which precisely matches Eastern Standard Time (EST) for half of the year and Central Time (CST) for the other half. We join daily standups via Zoom or Google Meet, collaborate continuously in Slack or Discord, and run sprint boards directly in Jira, Linear, or GitHub.'
+    answer: 'We operate in Colombia (GMT-5), which matches Eastern Standard Time (EST) and Central Time (CST). We join daily standups via Zoom or Google Meet, collaborate continuously in Slack or WhatsApp, and run sprint boards directly in Jira, Linear, or GitHub.'
   },
   {
-    question: 'Who owns the intellectual property and code repository?',
-    answer: 'You do—100%. Every single contract includes strict Intellectual Property (IP) assignment clauses. Every commit, branch, design asset, and cloud resource created during the engagement is exclusively owned by your company upon milestone invoice settlement.'
-  },
-  {
-    question: 'How do invoicing and payments work for US companies?',
-    answer: 'Cross-border collaboration is frictionless. US companies can pay via standard ACH bank transfer, international Fedwire, or corporate credit cards through Stripe in USD. We sign W-8BEN-E tax documentation and provide clean corporate invoices.'
-  },
-  {
-    question: 'Can we start with a small pilot project or discovery sprint?',
-    answer: 'Absolutely. Many of our long-term US partners begin with a focused 2-week Discovery or MVP Sprint ($5,000 - $10,000 USD). This allows your team to experience our code velocity, communication quality, and technical rigor before committing to a larger dedicated squad.'
-  },
-  {
-    question: 'Do you offer white-label partnerships for US digital agencies?',
-    answer: 'Yes. We act as the silent, reliable engineering arm for US digital and creative agencies. We handle complex backend architectures, APIs, and high-performance frontends under strict non-disclosure while your agency manages the client relationship.'
+    question: 'How do invoicing and IP assignment work for US and international companies?',
+    answer: 'Every contract includes strict 100% Intellectual Property (IP) assignment and Mutual NDAs. US and international clients can pay via ACH bank transfer, international wire, or corporate credit card in USD with W-8BEN-E compliance.'
   }
 ];
 
@@ -1022,24 +1097,24 @@ const submitContact = () => {
 
 // SEO Head
 useHead({
-  title: 'Nearshore Software Development & Dedicated Tech Squads | CODEVS',
+  title: 'CODEVS | Custom Software Development, Database Architecture & AI Squads #1',
   meta: [
     { 
       name: 'description', 
-      content: 'Silicon Valley caliber engineering with real-time EST/CST alignment. CODEVS builds custom web platforms, cloud software, and AI automations for scaling US companies and digital agencies.' 
+      content: 'CODEVS: #1 in custom software development, SQL/PostgreSQL database architecture, 24/7 WhatsApp AI agents, and web platforms. Led by senior engineers and programming/database professors with EST/CST alignment.' 
     },
     { 
       name: 'keywords', 
-      content: 'nearshore software development, hire dedicated developers colombia, nearshore engineering squad, custom software development us, nuxt vue developers for hire, spring boot nearshore development, white label dev agency' 
+      content: 'codevs, custom software development, database architecture postgresql sql, programming and database professors, nearshore software development, hire dedicated developers colombia, whatsapp ai agents, custom erp crm development' 
     },
-    { property: 'og:title', content: 'Nearshore Software Development & Dedicated Tech Squads | CODEVS' },
-    { property: 'og:description', content: 'High-performance dedicated software engineering squads in your time zone. Full IP ownership and seamless US collaboration.' },
+    { property: 'og:title', content: 'CODEVS | Custom Software Development, Database Architecture & AI Squads #1' },
+    { property: 'og:description', content: 'Senior software engineers and programming/database professors building custom platforms, high-concurrency databases, and AI automations.' },
     { property: 'og:image', content: 'https://www.codevs.dev/assets/img/services/omnichannel-dashboard.jpg' },
     { property: 'og:url', content: 'https://www.codevs.dev/en' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Nearshore Software Development & Dedicated Tech Squads | CODEVS' },
-    { name: 'twitter:description', content: 'High-performance dedicated software engineering squads in your time zone. Full IP ownership and seamless US collaboration.' },
+    { name: 'twitter:title', content: 'CODEVS | Custom Software Development, Database Architecture & AI Squads #1' },
+    { name: 'twitter:description', content: 'Senior software engineers and programming/database professors building custom platforms, high-concurrency databases, and AI automations.' },
     { name: 'twitter:image', content: 'https://www.codevs.dev/assets/img/services/omnichannel-dashboard.jpg' }
   ],
   link: [
@@ -1052,12 +1127,13 @@ useHead({
 useJsonld(() => ({
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  'name': 'CODEVS Nearshore Software Engineering',
+  'name': 'CODEVS Custom Software & Database Engineering',
+  'alternateName': ['CODEVS', 'CODEVS Software Engineering'],
   'url': 'https://www.codevs.dev/en',
   'image': 'https://www.codevs.dev/img/codevs.png',
-  'description': 'Senior Nearshore Software Development and Dedicated Tech Squads for US Companies and Funded Startups.',
+  'description': 'Custom Software Development, Database Architecture (SQL/PostgreSQL/NoSQL), and AI Automation led by Senior Engineers and Programming Professors.',
   'priceRange': '$$$',
-  'telephone': '+57 3138066800',
+  'telephone': '+57 3008051304',
   'areaServed': [
     { '@type': 'Country', 'name': 'United States' },
     { '@type': 'Country', 'name': 'Canada' },
@@ -1067,76 +1143,28 @@ useJsonld(() => ({
 </script>
 
 <style scoped>
-/* Mesh Gradient Orbs Animation */
 .mesh-gradient-container {
   background-color: #07070a;
 }
 
-.mesh-orb {
+.mesh-static-bg {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(140px);
-  pointer-events: none;
-  opacity: 0.6;
-  animation: floatOrb 22s ease-in-out infinite alternate;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(220, 38, 38, 0.28) 0%, transparent 45%),
+    radial-gradient(circle at 88% 82%, rgba(239, 68, 68, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 50% 45%, rgba(185, 28, 28, 0.14) 0%, transparent 55%);
 }
 
-.mesh-orb-1 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(220, 38, 38, 0.45) 0%, rgba(185, 28, 28, 0.1) 70%, transparent 100%);
-  top: -100px;
-  left: -100px;
-}
-
-.mesh-orb-2 {
-  width: 550px;
-  height: 550px;
-  background: radial-gradient(circle, rgba(239, 68, 68, 0.35) 0%, rgba(153, 27, 27, 0.1) 70%, transparent 100%);
-  bottom: -50px;
-  right: -50px;
-  animation-duration: 26s;
-}
-
-.mesh-orb-3 {
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, rgba(136, 19, 55, 0.08) 70%, transparent 100%);
-  top: 40%;
-  left: 30%;
-  animation-duration: 18s;
-}
-
-.mesh-orb-4 {
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(circle, rgba(185, 28, 28, 0.3) 0%, transparent 70%);
-  top: 15%;
-  right: 15%;
-  animation-duration: 20s;
-}
-
-.mesh-orb-5 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(127, 29, 29, 0.35) 0%, transparent 70%);
-  bottom: 10%;
-  left: 10%;
-  animation-duration: 24s;
-}
-
-@keyframes floatOrb {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(40px, -30px) scale(1.08); }
-  100% { transform: translate(-30px, 40px) scale(0.95); }
-}
-
-/* Glass Card */
+/* Glass Card (Optimized GPU Layer) */
 .mesh-glass-card {
-  background: rgba(18, 18, 24, 0.45);
+  background: rgba(18, 18, 24, 0.68);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(36px);
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.65);
+  transform: translateZ(0);
 }
 
 /* Huge Inc Transition */

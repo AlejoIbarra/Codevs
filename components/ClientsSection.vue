@@ -1,9 +1,9 @@
 <template>
-  <section id="clientes" class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900">
-    <!-- Ambient Red Mesh Glows -->
-    <div class="absolute top-1/4 -left-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute bottom-1/4 -right-48 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none"></div>
-
+  <section
+    id="clientes"
+    class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900"
+    style="background-image: radial-gradient(circle at 0% 25%, rgba(220,38,38,0.08), transparent 45%), radial-gradient(circle at 100% 75%, rgba(220,38,38,0.08), transparent 45%);"
+  >
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
 
       <!-- Section Header -->
@@ -16,15 +16,15 @@
         </h2>
 
         <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed text-justify">
-          Acompañamos a marcas, empresas e iniciativas de alto impacto a transformar radicalmente sus procesos internos mediante arquitectura de software robusta, inteligencia artificial y automatización omnicanal.
+          Acompañamos a marcas, firmas legales, empresas e iniciativas de alto impacto a transformar radicalmente sus procesos internos mediante desarrollo de software a la medida, bases de datos de alto rendimiento e inteligencia artificial.
         </p>
       </div>
 
       <!-- Featured Case Study: Sin Huellas -->
-      <div class="relative rounded-[32px] sm:rounded-[40px] bg-gradient-to-b from-white/[0.07] to-white/[0.02] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 backdrop-blur-2xl overflow-hidden hover:border-red-500/40 transition-all duration-500 shadow-2xl">
-        
-        <div class="absolute -top-24 -right-24 w-80 h-80 bg-red-600/15 rounded-full blur-3xl pointer-events-none"></div>
-
+      <div
+        class="relative rounded-[32px] sm:rounded-[40px] bg-[#0e0e13] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 overflow-hidden hover:border-red-500/40 transition-colors duration-300 shadow-2xl"
+        style="background-image: radial-gradient(circle at 95% 5%, rgba(220,38,38,0.14), transparent 45%);"
+      >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           <!-- Left Column: Story & Metrics -->
@@ -45,7 +45,7 @@
             <!-- Official Client Logo -->
             <div class="pt-1">
               <a href="https://www.sinhuellas.co/" target="_blank" rel="noopener noreferrer" class="group/brand inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/95 hover:bg-white border border-white/30 shadow-lg transition-transform hover:scale-105" title="Visitar sinhuellas.co">
-                <img src="/assets/img/clients/sin-huellas-logo.png" alt="Logo Sin Huellas Nuevas Oportunidades" class="h-7 w-auto object-contain" />
+                <img src="/assets/img/clients/sin-huellas-logo.png" alt="Logo Sin Huellas Nuevas Oportunidades" loading="lazy" decoding="async" class="h-7 w-auto object-contain" />
                 <span class="text-xs font-bold text-zinc-800 border-l border-zinc-300 pl-3 group-hover/brand:text-red-600 transition-colors flex items-center gap-1">
                   <span>www.sinhuellas.co</span>
                   <i class="bi bi-box-arrow-up-right text-[10px]"></i>
@@ -68,17 +68,17 @@
 
             <!-- Metrics Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-              <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+              <div class="p-4 rounded-2xl bg-black/50 border border-white/10">
                 <div class="text-2xl sm:text-3xl font-black text-red-500">+70%</div>
                 <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Tiempo Ahorrado</div>
                 <div class="text-[11px] text-zinc-400 mt-0.5">En gestión operativa diaria</div>
               </div>
-              <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md">
+              <div class="p-4 rounded-2xl bg-black/50 border border-white/10">
                 <div class="text-2xl sm:text-3xl font-black text-white">25+ hrs</div>
                 <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Ahorro Semanal</div>
                 <div class="text-[11px] text-zinc-400 mt-0.5">Por equipo de trabajo</div>
               </div>
-              <div class="p-4 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-md col-span-2 sm:col-span-1">
+              <div class="p-4 rounded-2xl bg-black/50 border border-white/10 col-span-2 sm:col-span-1">
                 <div class="text-2xl sm:text-3xl font-black text-white">24/7</div>
                 <div class="text-xs font-bold text-zinc-300 uppercase tracking-wider mt-1">Omnicanal IA</div>
                 <div class="text-[11px] text-zinc-400 mt-0.5">WhatsApp, web & CRM</div>
@@ -94,12 +94,13 @@
                 <span>Ver Caso de Éxito Completo</span>
                 <i class="bi bi-arrow-right text-xs"></i>
               </NuxtLink>
-              <NuxtLink
-                to="/servicios/automatizaciones-omnicanalidad"
-                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-white font-medium text-sm transition-all duration-300"
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-white font-semibold text-sm transition-all duration-300"
               >
-                <span>Conocer Servicio de Omnicanalidad</span>
-              </NuxtLink>
+                <span>Cotizar un Sistema Similar</span>
+                <i class="bi bi-lightning-charge-fill text-red-400 text-xs"></i>
+              </a>
             </div>
 
           </div>
@@ -110,7 +111,9 @@
               <img
                 src="/assets/img/projects/sin-huellas.jpg"
                 alt="Sin Huellas ERP CRM Omnicanalidad IA - CODEVS"
-                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-72 sm:h-96 object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
                 <div class="flex items-center justify-between w-full">
@@ -118,7 +121,7 @@
                     <span class="text-xs uppercase tracking-wider text-red-400 font-bold block">Plataforma Cloud</span>
                     <span class="text-white font-bold text-lg">ERP & Omnicanalidad IA</span>
                   </div>
-                  <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center text-white group-hover:bg-red-600 transition-colors">
+                  <div class="w-10 h-10 rounded-full bg-black/70 border border-white/30 flex items-center justify-center text-white group-hover:bg-red-600 transition-colors">
                     <i class="bi bi-arrow-up-right text-sm"></i>
                   </div>
                 </div>

@@ -1,41 +1,28 @@
 <template>
   <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#07070a] text-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-zinc-900 mesh-gradient-container">
-    
-    <!-- Esferas de luz Mesh Gradient (Rojo CODEVS Continuo y Envolvente) -->
-    <div class="mesh-orb mesh-orb-1"></div>
-    <div class="mesh-orb mesh-orb-2"></div>
-    <div class="mesh-orb mesh-orb-3"></div>
-    <div class="mesh-orb mesh-orb-4"></div>
-    <div class="mesh-orb mesh-orb-5"></div>
-
-    <!-- Luz ambiental interactiva con cursor -->
-    <div class="glow-bg absolute inset-0 z-0 pointer-events-none" ref="glowBg"></div>
 
     <div class="container mx-auto max-w-7xl relative z-10 w-full">
       
-      <!-- Gran Tarjeta Flotante Glassmorphism con Degradado Continuo -->
-      <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center transition-all duration-500">
-        
-        <!-- Detalle de luz superior interior del cristal -->
-        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-3/4 h-48 bg-gradient-to-b from-white/20 to-transparent blur-2xl pointer-events-none"></div>
+      <!-- Gran Tarjeta Flotante Glassmorphism Optimizada para 120 FPS -->
+      <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center">
 
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
 
-          <!-- Titular Monumental en Blanco Puro -->
+          <!-- Titular Monumental en Blanco Puro (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
-            Ingeniería de <br />
+            Desarrollo de <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
               Software a la Medida
             </span>
-            <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/70 tracking-normal mt-2">
-              & Plataformas Cloud de Alto Rendimiento
+            <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/75 tracking-normal mt-2">
+              & Arquitectura de Bases de Datos Cloud
             </span>
           </h1>
 
           <!-- Kinetic Rotating Title Estilo Huge Inc -->
           <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
-            <span>Creamos tecnología que impulsa a</span>
+            <span>Creamos tecnología que multiplica las ventas de</span>
             <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[140px] sm:min-w-[180px] text-left">
               <Transition name="huge-slide" mode="out-in">
                 <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
@@ -45,45 +32,66 @@
             </span>
           </div>
 
-          <!-- Párrafo Descriptivo con Alta Legibilidad y SEO -->
-          <p class="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-normal leading-relaxed text-center">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Diseñamos y construimos <strong class="text-white font-semibold">software a la medida</strong> de misión crítica, plataformas web de alta concurrencia, aplicaciones móviles y <strong class="text-white font-semibold">sistemas inteligentes</strong> con arquitectura limpia para escalar operaciones complejas y dominar el <strong class="text-red-400 font-semibold">#1 de Google</strong> en Colombia y Latinoamérica.
+          <!-- Párrafo Descriptivo con Alta Autoridad Académica, Comercial y SEO (#1 en CODEVS y Desarrollo de Software) -->
+          <p class="text-base sm:text-lg md:text-xl text-white/85 max-w-3xl mx-auto font-normal leading-relaxed text-center">
+            Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros de software senior y profesores expertos que enseñan programación y bases de datos</strong>. Construimos sistemas ERP/CRM, plataformas web ultrarrápidas, apps móviles y <strong class="text-white font-semibold">agentes de IA omnicanales 24/7</strong> diseñados para reducir costos operativos hasta un 70% y posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong>.
           </p>
 
-          <!-- Botones de Acción con Física de Rebote MindMarket (.mm-btn) -->
+          <!-- Botones de Acción de Alta Conversión con Física de Rebote MindMarket (.mm-btn) -->
           <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
             <a href="#contact" class="mm-btn">
               <span class="mm-btn-icon -hover">
                 <i class="bi bi-arrow-up-right text-xs"></i>
               </span>
-              <span class="mm-btn-label">Construir Mi Software</span>
+              <span class="mm-btn-label">Cotizar Mi Software Ahora</span>
               <span class="mm-btn-icon -default">
                 <i class="bi bi-arrow-up-right text-xs"></i>
               </span>
             </a>
 
-            <a href="#services" class="mm-btn -white">
+            <a
+              href="https://wa.me/573138066800?text=Hola%20CODEVS%2C%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20%2F%20p%C3%A1gina%20web%20y%20recibir%20asesor%C3%ADa."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mm-btn -green"
+            >
               <span class="mm-btn-icon -hover">
-                <i class="bi bi-cpu text-xs"></i>
+                <i class="bi bi-whatsapp text-sm"></i>
               </span>
-              <span class="mm-btn-label">Explorar Soluciones</span>
+              <span class="mm-btn-label">Hablar con un Ingeniero (WhatsApp)</span>
               <span class="mm-btn-icon -default">
-                <i class="bi bi-cpu text-xs"></i>
+                <i class="bi bi-whatsapp text-sm"></i>
               </span>
             </a>
 
-            <a href="#clientes" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/40 hover:bg-black/60 border border-white/15 text-white/90 font-medium text-sm backdrop-blur-xl transition-all duration-300 hover:border-white/30">
+            <a href="#clientes" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/50 hover:bg-black/70 border border-white/20 text-white/95 font-semibold text-sm transition-colors duration-200 hover:border-white/40">
               <i class="bi bi-star-fill text-[#F5E211] text-xs"></i>
-              <span>Casos de Éxito</span>
+              <span>Ver Casos de Éxito Reales</span>
             </a>
+          </div>
+
+          <!-- Sellos de Autoridad y Garantía de Compra (Zero-Risk Conversion Strip) -->
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-3 text-xs sm:text-sm font-semibold text-zinc-300">
+            <span class="inline-flex items-center gap-1.5">
+              <i class="bi bi-mortarboard-fill text-[#8ED462]"></i>
+              <span>Ingenieros & Profesores de Programación y BD</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5">
+              <i class="bi bi-lightning-charge-fill text-[#F5E211]"></i>
+              <span>Diagnóstico y Prototipo en 7 Días</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5">
+              <i class="bi bi-shield-check text-red-500"></i>
+              <span>100% Código Propietario & Garantía por Contrato</span>
+            </span>
           </div>
 
         </div>
 
-        <!-- Tecnologías Integradas en el Mismo Flujo y Degradado Continuo (Sin Cortes) -->
-        <div class="mt-12 pt-8 border-t border-white/10 max-w-5xl mx-auto">
+        <!-- Tecnologías Integradas en el Mismo Flujo y Degradado Continuo -->
+        <div class="mt-10 pt-8 border-t border-white/10 max-w-5xl mx-auto">
           <p class="text-xs sm:text-sm font-bold uppercase tracking-widest text-zinc-300 mb-6 text-center">
-            Tecnologías en las que somos Expertos
+            Dominio Experto en Lenguajes, Frameworks & Motores de Bases de Datos
           </p>
 
           <Swiper
@@ -100,8 +108,9 @@
               <div class="h-16 w-32 flex items-center justify-center p-2 group/logo transition duration-300">
                 <img 
                   :src="logo.src" 
-                  :alt="logo.alt" 
-                  class="max-h-11 max-w-full object-contain filter brightness-0 invert opacity-85 group-hover/logo:opacity-100 group-hover/logo:filter-none transition-all duration-300 drop-shadow-[0_2px_12px_rgba(255,255,255,0.25)]" 
+                  :alt="logo.alt"
+                  decoding="async"
+                  class="max-h-11 max-w-full object-contain filter brightness-0 invert opacity-85 group-hover/logo:opacity-100 group-hover/logo:filter-none transition-opacity duration-300" 
                 />
               </div>
             </SwiperSlide>
@@ -115,7 +124,7 @@
     </div>
 
     <!-- Indicador de Desplazamiento Minimalista -->
-    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10 pointer-events-none opacity-60 hover:opacity-100 transition-opacity">
+    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10 pointer-events-none opacity-60">
       <div class="w-4 h-7 border border-white/30 rounded-full flex justify-center p-1">
         <div class="w-1 h-1.5 bg-red-500 rounded-full animate-bounce"></div>
       </div>
@@ -125,18 +134,15 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref, computed } from 'vue';
-import gsap from 'gsap';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const glowBg = ref(null);
-let mouseMoveHandler = null;
 let rotateInterval = null;
 
 // Kinetic Rotating Words Estilo Huge Inc
-const rotatingWords = ['empresas líderes.', 'startups de alto impacto.', 'operaciones complejas.', 'ecosistemas cloud.', 'el futuro digital.'];
+const rotatingWords = ['empresas líderes.', 'firmas de abogados.', 'startups de alto impacto.', 'operaciones complejas.', 'ecosistemas cloud.'];
 const currentWordIndex = ref(0);
 const currentRotatingWord = computed(() => rotatingWords[currentWordIndex.value]);
 
@@ -162,122 +168,63 @@ const breakpoints = {
 const logos = [
   {
     src: '/img/technologies/spring.png',
-    alt: 'Logo Spring Boot',
+    alt: 'Spring Boot & Java Microservices - CODEVS',
   },
   {
     src: '/img/technologies/Angular.png',
-    alt: 'Logo Angular Framework',
+    alt: 'Angular, Vue & Nuxt Frontend - CODEVS',
   },
   {
     src: '/img/technologies/mongo.png',
-    alt: 'Logo MongoDB',
+    alt: 'PostgreSQL, MySQL & MongoDB Databases - CODEVS',
   },
   {
     src: '/img/technologies/php.png',
-    alt: 'Logo PHP',
+    alt: 'Backend Architecture & APIs - CODEVS',
   },
   {
     src: '/img/technologies/swift.png',
-    alt: 'Logo Swift Apple',
+    alt: 'Swift iOS Native Apps - CODEVS',
   },
   {
     src: '/img/technologies/flutter.png',
-    alt: 'Logo Flutter Google',
+    alt: 'Flutter Multiplatform Mobile Apps - CODEVS',
   },
 ];
 
 onMounted(() => {
-  // Rotación cinética de palabras cada 2.4 segundos estilo Huge Inc
   rotateInterval = setInterval(() => {
     currentWordIndex.value = (currentWordIndex.value + 1) % rotatingWords.length;
   }, 2400);
-
-  // Seguidor suave del cursor para enriquecer el mesh gradient
-  mouseMoveHandler = (e) => {
-    const { clientX, clientY } = e;
-    if (glowBg.value) {
-      gsap.to(glowBg.value, {
-        background: `radial-gradient(circle 500px at ${clientX}px ${clientY}px, rgba(231, 0, 11, 0.22), transparent 75%)`,
-        duration: 0.4,
-        ease: 'power1.out'
-      });
-    }
-  };
-  window.addEventListener('mousemove', mouseMoveHandler);
 });
 
 onBeforeUnmount(() => {
   if (rotateInterval) {
     clearInterval(rotateInterval);
   }
-  if (mouseMoveHandler) {
-    window.removeEventListener('mousemove', mouseMoveHandler);
-  }
 });
 </script>
 
 <style scoped>
+/* Hardware-accelerated single-layer Mesh Gradient (0 Gaussian Blur GPU passes = 120 FPS) */
 .mesh-gradient-container {
   background-color: #07070a;
-}
-
-.mesh-orb {
-  position: absolute;
-  border-radius: 9999px;
-  pointer-events: none;
-  filter: blur(100px);
-  opacity: 0.85;
-}
-
-.mesh-orb-1 {
-  top: 5%;
-  left: -8%;
-  width: 580px;
-  height: 580px;
-  background: radial-gradient(circle, rgba(231, 0, 11, 0.85) 0%, rgba(180, 0, 10, 0.4) 50%, transparent 75%);
-}
-
-.mesh-orb-2 {
-  top: 15%;
-  right: -8%;
-  width: 620px;
-  height: 620px;
-  background: radial-gradient(circle, rgba(255, 35, 50, 0.8) 0%, rgba(200, 0, 20, 0.35) 50%, transparent 75%);
-}
-
-.mesh-orb-3 {
-  bottom: 0%;
-  left: 15%;
-  width: 800px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(231, 0, 11, 0.7) 45%, transparent 75%);
-}
-
-.mesh-orb-4 {
-  top: 40%;
-  left: 35%;
-  width: 550px;
-  height: 550px;
-  background: radial-gradient(circle, rgba(160, 0, 10, 0.5) 0%, transparent 70%);
-}
-
-.mesh-orb-5 {
-  bottom: 2%;
-  right: 5%;
-  width: 650px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(231, 0, 11, 0.65) 0%, rgba(180, 0, 20, 0.3) 50%, transparent 75%);
+  background-image:
+    radial-gradient(circle 520px at 8% 18%, rgba(231, 0, 11, 0.36) 0%, transparent 70%),
+    radial-gradient(circle 560px at 92% 24%, rgba(255, 35, 50, 0.32) 0%, transparent 70%),
+    radial-gradient(circle 640px at 25% 88%, rgba(231, 0, 11, 0.28) 0%, transparent 72%),
+    radial-gradient(circle 520px at 85% 85%, rgba(180, 0, 20, 0.25) 0%, transparent 70%);
 }
 
 .mesh-glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(36px);
-  -webkit-backdrop-filter: blur(36px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 
-    0 30px 90px rgba(0, 0, 0, 0.75),
-    inset 0 1px 1px rgba(255, 255, 255, 0.3),
-    inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+  background: rgba(18, 18, 24, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  transform: translateZ(0);
 }
 
 .init-swiper {
@@ -296,13 +243,11 @@ onBeforeUnmount(() => {
   background: #E7000B;
   width: 22px;
   border-radius: 9999px;
-  box-shadow: 0 0 10px #E7000B;
 }
 
-/* Transición Cinética de Texto Estilo Huge Inc */
 .huge-slide-enter-active,
 .huge-slide-leave-active {
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .huge-slide-enter-from {

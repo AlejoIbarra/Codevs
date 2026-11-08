@@ -2,18 +2,18 @@ import Lenis from 'lenis'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(() => {
   if (import.meta.client) {
     gsap.registerPlugin(ScrollTrigger)
 
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.14,
       smoothWheel: true,
+      wheelMultiplier: 1.05,
       touchMultiplier: 1.5,
     })
 
-    // Sincronizar Lenis con GSAP ScrollTrigger
+    // Sincronizar Lenis con GSAP ScrollTrigger sin lag
     lenis.on('scroll', ScrollTrigger.update)
 
     gsap.ticker.add((time) => {
@@ -22,18 +22,18 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     gsap.ticker.lagSmoothing(0)
 
-    // Handle anchor links for smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', (e) => {
-        const href = anchor.getAttribute('href')
-        if (href && href.startsWith('#') && href.length > 1) {
-          const target = document.querySelector(href)
-          if (target) {
-            e.preventDefault()
-            lenis.scrollTo(target as HTMLElement, { offset: -80 })
-          }
+    // Event delegation ligero para enlaces de ancla (#)
+    document.addEventListener('click', (e) => {
+      const targetEl = (e.target as HTMLElement)?.closest?.('a[href^="#"]')
+      if (!targetEl) return
+      const href = targetEl.getAttribute('href')
+      if (href && href.startsWith('#') && href.length > 1) {
+        const dest = document.querySelector(href)
+        if (dest) {
+          e.preventDefault()
+          lenis.scrollTo(dest as HTMLElement, { offset: -80 })
         }
-      })
+      }
     })
 
     return {

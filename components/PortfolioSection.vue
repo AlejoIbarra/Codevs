@@ -71,7 +71,9 @@
               <img
                 :src="item.image"
                 :alt="item.title"
-                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-108 transform transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transform transition-transform duration-500 ease-out"
               />
               
               <!-- Category Badge & Highlights -->
