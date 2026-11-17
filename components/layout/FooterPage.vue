@@ -13,11 +13,11 @@
           <p><strong class="text-white">Email:</strong> <span>comercial@codevs.dev</span></p>
         </div>
 
-        <!-- Botón de Contacto Rápido por WhatsApp -->
+        <!-- Botón de Contacto Rápido por WhatsApp (Paleta Blanco, Negro y Rojo) -->
         <div class="pt-1">
           <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-emerald-950/40 hover:-translate-y-0.5 group">
-            <i class="bi bi-whatsapp text-lg"></i>
+            class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white hover:bg-[#E7000B] text-zinc-950 hover:text-white text-sm font-bold transition-all duration-300 shadow-lg hover:-translate-y-0.5 group">
+            <i class="bi bi-whatsapp text-lg text-[#E7000B] group-hover:text-white transition-colors"></i>
             <span>Contactar por WhatsApp</span>
           </a>
         </div>
@@ -106,12 +106,12 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Action -->
+  <!-- Floating WhatsApp Action (Strict Black, White & Red Palette) -->
   <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer"
-    class="fixed left-6 bottom-6 flex items-center gap-2.5 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full shadow-2xl shadow-emerald-950/60 z-50 transition duration-300 hover:scale-105 group"
+    class="fixed left-6 bottom-6 flex items-center gap-2.5 px-4 py-2.5 bg-[#0A0A0E] hover:bg-[#E7000B] text-white border border-white/20 rounded-full shadow-2xl z-50 transition duration-300 hover:scale-105 group"
     aria-label="Contactar por WhatsApp">
-    <i class="bi bi-whatsapp text-lg"></i>
-    <span class="text-xs font-semibold hidden sm:inline">Chatear por WhatsApp</span>
+    <i class="bi bi-whatsapp text-lg text-[#E7000B] group-hover:text-white transition-colors"></i>
+    <span class="text-xs font-bold hidden sm:inline">Chatear por WhatsApp</span>
   </a>
 
   <!-- Scroll Top Button -->

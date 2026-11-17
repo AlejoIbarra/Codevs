@@ -32,7 +32,7 @@
           <span :class="isEnglish ? 'text-red-500 font-extrabold' : 'text-zinc-500 hover:text-white'">EN</span>
         </NuxtLink>
 
-        <a :href="isEnglish ? '/en#quote-form' : '/#contact'" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#E7000B] hover:bg-red-700 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-red-950/40">
+        <a :href="isEnglish ? '/en#contact' : '/#contact'" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#E7000B] hover:bg-red-700 text-white text-sm font-semibold transition-all duration-300 shadow-lg shadow-red-950/40">
           <span>{{ isEnglish ? 'Hire Engineers' : 'Iniciar Proyecto' }}</span>
           <i class="bi bi-arrow-up-right text-xs"></i>
         </a>
@@ -51,7 +51,7 @@
             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-zinc-800 bg-zinc-900 text-xs font-bold text-white">
             <span>{{ isEnglish ? 'Cambiar a Español 🇨🇴' : 'Switch to English (US) 🇺🇸' }}</span>
           </NuxtLink>
-          <a :href="isEnglish ? '/en#quote-form' : '/#contact'" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white text-sm font-semibold">
+          <a :href="isEnglish ? '/en#contact' : '/#contact'" @click="isMenuOpen = false" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#E7000B] text-white text-sm font-semibold">
             <span>{{ isEnglish ? 'Hire Engineers' : 'Iniciar Proyecto' }}</span>
             <i class="bi bi-arrow-up-right text-xs"></i>
           </a>
@@ -79,8 +79,8 @@ const currentRoute = ref('#hero');
 
 const spanishOptions = [
   { title: "Inicio", url: "/#hero", highlight: false },
-  { title: "Clientes", url: "/#clientes", highlight: false },
   { title: "Nosotros", url: "/#about", highlight: false },
+  { title: "Clientes", url: "/#clientes", highlight: false },
   { title: "Servicios", url: "/#services", highlight: false },
   { title: "Proyectos", url: "/#portfolio", highlight: false },
   { title: "Blog", url: "/blog", highlight: false },
@@ -88,12 +88,13 @@ const spanishOptions = [
 ];
 
 const englishOptions = [
-  { title: "Overview", url: "/en", highlight: false },
+  { title: "Overview", url: "/en#hero", highlight: false },
+  { title: "Why CODEVS", url: "/en#about", highlight: false },
   { title: "Clients", url: "/en#clients", highlight: false },
-  { title: "Nearshore", url: "/en#about", highlight: false },
+  { title: "Solutions", url: "/en#services", highlight: false },
   { title: "Case Studies", url: "/en#portfolio", highlight: false },
-  { title: "Engagement Models", url: "/en#models", highlight: false },
-  { title: "Instant Quote", url: "/en#quote-form", highlight: false }
+  { title: "Blog", url: "/blog", highlight: false },
+  { title: "Contact", url: "/en#contact", highlight: false }
 ];
 
 const options = computed(() => isEnglish.value ? englishOptions : spanishOptions);

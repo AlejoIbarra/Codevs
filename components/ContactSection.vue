@@ -10,7 +10,7 @@
       <!-- Encabezado de la Sección -->
       <div class="max-w-3xl mb-16 contact-header">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
           <span>Diagnóstico Técnico Gratuito • Sin Compromiso</span>
         </div>
         <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
@@ -36,8 +36,8 @@
                 <i class="bi bi-mortarboard-fill text-2xl"></i>
               </div>
               <div class="space-y-1">
-                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Autoridad Técnica & Académica</span>
-                <h3 class="text-xl font-display font-bold text-white">Ingenieros & Profesores de BD</h3>
+                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Autoridad Técnica &amp; Académica</span>
+                <h3 class="text-xl font-display font-bold text-white">Ingenieros &amp; Profesores de BD</h3>
                 <p class="text-zinc-400 text-sm">Desarrollo a medida, arquitectura SQL/NoSQL y formación especializada en programación.</p>
               </div>
             </div>
@@ -45,14 +45,14 @@
           
           <!-- Canales Directos -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <a href="https://wa.me/573008051304?text=Hola%20CODEVS,%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20/%20bases%20de%20datos." target="_blank" rel="noopener noreferrer" 
-               class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-emerald-500/50 transition-colors block">
-              <div class="w-12 h-12 rounded-2xl bg-emerald-600/15 border border-emerald-500/30 flex items-center justify-center text-emerald-500 mb-4">
+            <a href="https://wa.me/573138066800?text=Hola%20CODEVS,%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20/%20bases%20de%20datos." target="_blank" rel="noopener noreferrer" 
+               class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/50 transition-colors block">
+              <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:bg-[#E7000B] group-hover:border-[#E7000B] transition-colors mb-4">
                 <i class="bi bi-whatsapp text-2xl"></i>
               </div>
               <span class="text-xs font-bold uppercase text-zinc-400 tracking-wider">WhatsApp Directo</span>
-              <div class="text-base font-display font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">+57 300 805 1304</div>
-              <p class="text-emerald-400/90 text-xs mt-1 font-semibold">Respuesta en &lt; 5 minutos</p>
+              <div class="text-base font-display font-bold text-white mt-1 group-hover:text-red-400 transition-colors">+57 313 806 6800</div>
+              <p class="text-red-400 text-xs mt-1 font-semibold">Respuesta en &lt; 5 minutos</p>
             </a>
 
             <a href="mailto:comercial@codevs.dev"
@@ -70,15 +70,15 @@
           <div class="p-6 rounded-[28px] bg-[#0e0e13] border border-white/15 space-y-3">
             <div class="flex items-center gap-3">
               <span class="relative flex h-3 w-3 shrink-0">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
               </span>
               <span class="text-xs font-bold text-white uppercase tracking-wider">¿Por qué contratar a CODEVS hoy?</span>
             </div>
             <ul class="space-y-2 text-xs text-zinc-300">
-              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-emerald-400"></i> Prototipo interactivo y diseño de BD en los primeros 7 días.</li>
-              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-emerald-400"></i> Pagos seguros por hitos entregados y garantía por contrato.</li>
-              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-emerald-400"></i> 100% propiedad intelectual del código fuente para tu empresa.</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-red-500"></i> Prototipo interactivo y diseño de BD en los primeros 7 días.</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-red-500"></i> Pagos seguros por hitos entregados y garantía por contrato.</li>
+              <li class="flex items-center gap-2"><i class="bi bi-check-circle-fill text-red-500"></i> 100% propiedad intelectual del código fuente para tu empresa.</li>
             </ul>
           </div>
         </div>
@@ -88,7 +88,7 @@
           
           <!-- SLA Guarantee Pill -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/50 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
             <span>Garantía SLA: Cotización Formal en &lt; 24h por Ingeniero Senior</span>
           </div>
 
@@ -147,7 +147,7 @@
                 <span>Enviando solicitud a ingeniería...</span>
               </div>
               <div v-if="error" class="text-sm text-red-500 mb-3 p-3 rounded-lg bg-red-950/30 border border-red-500/40">{{ error }}</div>
-              <div v-if="success" class="text-sm text-emerald-400 mb-3 p-3 rounded-lg bg-emerald-950/30 border border-emerald-500/40 font-semibold">
+              <div v-if="success" class="text-sm text-white mb-3 p-3 rounded-lg bg-white/10 border border-white/30 font-semibold">
                 ✓ ¡Solicitud recibida! Un Ingeniero Senior te contactará muy pronto.
               </div>
 
@@ -159,12 +159,12 @@
                 </button>
 
                 <a
-                  href="https://wa.me/573008051304?text=Hola%20CODEVS,%20quiero%20cotizar%20un%20proyecto%20directamente%20por%20WhatsApp."
+                  href="https://wa.me/573138066800?text=Hola%20CODEVS,%20quiero%20cotizar%20un%20proyecto%20directamente%20por%20WhatsApp."
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 font-bold px-6 py-4 rounded-xl transition duration-200 text-sm"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-zinc-200 text-zinc-950 font-bold px-6 py-4 rounded-xl transition duration-200 text-sm shadow-md"
                 >
-                  <i class="bi bi-whatsapp text-base text-emerald-400"></i>
+                  <i class="bi bi-whatsapp text-base text-[#E7000B]"></i>
                   <span>Prefiero cotizar por WhatsApp</span>
                 </a>
               </div>

@@ -2659,20 +2659,17 @@
   }
 
   /*--------------------------------------------------------------
-  # MindMarket x CODEVS Awwwards Design System & Bounce Physics
+  # MindMarket x CODEVS Awwwards Design System (Strict Red, White & Black Palette)
   --------------------------------------------------------------*/
   :root {
     --mm-ease-bounce: cubic-bezier(0.17, 0.67, 0.3, 1.33);
     --mm-ease-smooth: cubic-bezier(0.38, 0.005, 0.215, 1);
     --mm-ease-inOut: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     --mm-red: #E7000B;
-    --mm-red-vivid: #FF3B30;
-    --mm-yellow: #F5E211;
-    --mm-green: #8ED462;
-    --mm-blue: #2BA0FF;
-    --mm-pink: #EBC1FF;
-    --mm-beige: #F5F1E4;
-    --mm-charcoal: #0B0B0F;
+    --mm-red-vivid: #FF1F29;
+    --mm-white: #FFFFFF;
+    --mm-offwhite: #F7F7F9;
+    --mm-charcoal: #0A0A0E;
   }
 
   html.lenis, html.lenis body {
@@ -2688,12 +2685,13 @@
     overflow: clip;
   }
 
-  /* Signature MindMarket Bounce Button (.mm-btn) */
+  /* Signature MindMarket Bounce Button (.mm-btn) — Red, White & Black Only */
   .mm-btn {
     --btn-bg: #E7000B;
     --btn-text: #ffffff;
     --btn-icon-bg: #ffffff;
     --btn-icon-color: #09090b;
+    --btn-border: transparent;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -2715,14 +2713,15 @@
     position: absolute;
     inset: 0;
     background-color: var(--btn-bg);
+    border: 1.5px solid var(--btn-border);
     border-radius: 9999px;
-    transition: transform 0.45s var(--mm-ease-bounce), box-shadow 0.35s ease;
+    transition: transform 0.45s var(--mm-ease-bounce), box-shadow 0.35s ease, border-color 0.3s ease;
     z-index: -1;
   }
 
   .mm-btn:hover::before {
     transform: scale(1.04);
-    box-shadow: 0 14px 34px -8px rgba(231, 0, 11, 0.45);
+    box-shadow: 0 14px 34px -8px rgba(231, 0, 11, 0.4);
   }
 
   .mm-btn-label {
@@ -2771,36 +2770,27 @@
     transform: translateY(-50%) scale(1);
   }
 
-  /* Variants */
+  /* Strict Red, White & Black Variants */
   .mm-btn.-white {
     --btn-bg: #ffffff;
     --btn-text: #09090b;
     --btn-icon-bg: #E7000B;
     --btn-icon-color: #ffffff;
+    --btn-border: rgba(9, 9, 11, 0.12);
   }
   .mm-btn.-dark {
-    --btn-bg: #141419;
+    --btn-bg: #0f0f14;
     --btn-text: #ffffff;
     --btn-icon-bg: #E7000B;
     --btn-icon-color: #ffffff;
+    --btn-border: rgba(255, 255, 255, 0.2);
   }
-  .mm-btn.-yellow {
-    --btn-bg: #F5E211;
+  .mm-btn.-outline-dark {
+    --btn-bg: #ffffff;
     --btn-text: #09090b;
     --btn-icon-bg: #09090b;
     --btn-icon-color: #ffffff;
-  }
-  .mm-btn.-green {
-    --btn-bg: #8ED462;
-    --btn-text: #09090b;
-    --btn-icon-bg: #09090b;
-    --btn-icon-color: #ffffff;
-  }
-  .mm-btn.-blue {
-    --btn-bg: #2BA0FF;
-    --btn-text: #ffffff;
-    --btn-icon-bg: #ffffff;
-    --btn-icon-color: #09090b;
+    --btn-border: #09090b;
   }
 
   /* Animated Wave Underline (MindMarket Signature) */

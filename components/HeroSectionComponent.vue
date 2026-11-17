@@ -37,7 +37,7 @@
             Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros de software senior y profesores expertos que enseñan programación y bases de datos</strong>. Construimos sistemas ERP/CRM, plataformas web ultrarrápidas, apps móviles y <strong class="text-white font-semibold">agentes de IA omnicanales 24/7</strong> diseñados para reducir costos operativos hasta un 70% y posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong>.
           </p>
 
-          <!-- Botones de Acción de Alta Conversión con Física de Rebote MindMarket (.mm-btn) -->
+          <!-- Botones de Acción de Alta Conversión con Física de Rebote MindMarket (.mm-btn) — Rojo, Blanco y Negro -->
           <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
             <a href="#contact" class="mm-btn">
               <span class="mm-btn-icon -hover">
@@ -50,10 +50,10 @@
             </a>
 
             <a
-              href="https://wa.me/573138066800?text=Hola%20CODEVS%2C%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20%2F%20p%C3%A1gina%20web%20y%20recibir%20asesor%C3%ADa."
+              href="https://wa.me/573138066800?text=Hola%20CODEVS%2C%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20%2F%20bases%20de%20datos%20y%20recibir%20asesor%C3%ADa."
               target="_blank"
               rel="noopener noreferrer"
-              class="mm-btn -green"
+              class="mm-btn -white"
             >
               <span class="mm-btn-icon -hover">
                 <i class="bi bi-whatsapp text-sm"></i>
@@ -64,26 +64,48 @@
               </span>
             </a>
 
-            <a href="#clientes" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black/50 hover:bg-black/70 border border-white/20 text-white/95 font-semibold text-sm transition-colors duration-200 hover:border-white/40">
-              <i class="bi bi-star-fill text-[#F5E211] text-xs"></i>
-              <span>Ver Casos de Éxito Reales</span>
+            <a href="#clientes" class="mm-btn -dark">
+              <span class="mm-btn-icon -hover">
+                <i class="bi bi-star-fill text-xs"></i>
+              </span>
+              <span class="mm-btn-label">Ver Casos de Éxito Reales</span>
+              <span class="mm-btn-icon -default">
+                <i class="bi bi-star-fill text-xs"></i>
+              </span>
             </a>
           </div>
 
-          <!-- Sellos de Autoridad y Garantía de Compra (Zero-Risk Conversion Strip) -->
-          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-3 text-xs sm:text-sm font-semibold text-zinc-300">
-            <span class="inline-flex items-center gap-1.5">
-              <i class="bi bi-mortarboard-fill text-[#8ED462]"></i>
-              <span>Ingenieros & Profesores de Programación y BD</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5">
-              <i class="bi bi-lightning-charge-fill text-[#F5E211]"></i>
-              <span>Diagnóstico y Prototipo en 7 Días</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5">
-              <i class="bi bi-shield-check text-red-500"></i>
-              <span>100% Código Propietario & Garantía por Contrato</span>
-            </span>
+          <!-- Sellos de Autoridad y Garantía de Compra (Zero-Risk Conversion Strip en Rojo, Blanco y Negro) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto pt-3 text-left">
+            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+              <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
+                <i class="bi bi-mortarboard-fill text-sm"></i>
+              </div>
+              <div>
+                <div class="text-xs font-extrabold text-white">Ingenieros &amp; Profesores</div>
+                <div class="text-[11px] text-zinc-400">Programación y Bases de Datos</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+              <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm">
+                <i class="bi bi-lightning-charge-fill text-sm text-[#E7000B]"></i>
+              </div>
+              <div>
+                <div class="text-xs font-extrabold text-white">Prototipo en 7 Días</div>
+                <div class="text-[11px] text-zinc-400">Valida UX y BD antes de escalar</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+              <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
+                <i class="bi bi-shield-check text-sm"></i>
+              </div>
+              <div>
+                <div class="text-xs font-extrabold text-white">100% Código Propietario</div>
+                <div class="text-[11px] text-zinc-400">Garantía por contrato y SLA</div>
+              </div>
+            </div>
           </div>
 
         </div>

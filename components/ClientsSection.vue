@@ -37,7 +37,7 @@
               <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
                 Firma de Abogados • LegalTech
               </span>
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-zinc-950 border border-white/20">
                 +70% Tiempo Ahorrado
               </span>
             </div>
@@ -143,7 +143,7 @@
               <span class="text-zinc-400 font-normal">• Firma Legal</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
               <span>+70% Tiempo Operativo Ahorrado</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
@@ -152,7 +152,7 @@
               <span class="text-zinc-400 font-normal">• Startup Marketplace</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
               <span>24/7 Agentes de IA en WhatsApp</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
@@ -161,8 +161,8 @@
               <span class="text-zinc-400 font-normal">• #1 Google SEO</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>100% Código Propietario & Sin Plantillas</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+              <span>100% Código Propietario &amp; Sin Plantillas</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
               <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
@@ -170,7 +170,7 @@
               <span class="text-zinc-400 font-normal">• Streaming 60 FPS</span>
             </div>
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
               <span>99.9% Uptime Cloud Garantizado</span>
             </div>
           </div>

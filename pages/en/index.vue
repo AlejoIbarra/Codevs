@@ -41,7 +41,7 @@
               We are <strong class="text-white font-bold">CODEVS</strong>: the #1 partner in <strong class="text-white font-semibold">custom software development, relational/NoSQL database architecture, and 24/7 WhatsApp AI automation</strong>. Your platform is engineered by <strong class="text-white font-semibold underline decoration-red-500/60 underline-offset-4">senior software architects and university professors who teach programming &amp; databases</strong>—guaranteeing clean code, sub-second speed, and measurable ROI.
             </p>
 
-            <!-- MindMarket Bounce Action Buttons (.mm-btn) -->
+            <!-- MindMarket Bounce Action Buttons (.mm-btn) — Red, White & Black -->
             <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4 pt-2">
               <a href="#contact" class="mm-btn">
                 <span class="mm-btn-icon -hover">
@@ -54,10 +54,10 @@
               </a>
 
               <a
-                href="https://wa.me/573008051304?text=Hello%20CODEVS!%20I%20want%20to%20quote%20a%20custom%20software%20/%20database%20project%20with%20your%20senior%20engineering%20team."
+                href="https://wa.me/573138066800?text=Hello%20CODEVS!%20I%20want%20to%20quote%20a%20custom%20software%20/%20database%20project%20with%20your%20senior%20engineering%20team."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mm-btn -green"
+                class="mm-btn -white"
               >
                 <span class="mm-btn-icon -hover">
                   <i class="bi bi-whatsapp text-xs"></i>
@@ -68,7 +68,7 @@
                 </span>
               </a>
 
-              <a href="#clients" class="mm-btn -white">
+              <a href="#clients" class="mm-btn -dark">
                 <span class="mm-btn-icon -hover">
                   <i class="bi bi-star-fill text-xs"></i>
                 </span>
@@ -79,10 +79,10 @@
               </a>
             </div>
 
-            <!-- High-Conversion Risk-Reversal Strip -->
+            <!-- High-Conversion Risk-Reversal Strip (Red, White & Black) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto pt-3 text-left">
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
-                <div class="w-9 h-9 rounded-xl bg-red-600/20 border border-red-500/30 text-red-400 flex items-center justify-center shrink-0">
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+                <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
                   <i class="bi bi-mortarboard-fill text-base"></i>
                 </div>
                 <div>
@@ -91,9 +91,9 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
-                <div class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0">
-                  <i class="bi bi-lightning-charge-fill text-base"></i>
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+                <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm">
+                  <i class="bi bi-lightning-charge-fill text-base text-[#E7000B]"></i>
                 </div>
                 <div>
                   <div class="text-xs font-extrabold text-white">7-Day Interactive Prototype</div>
@@ -101,8 +101,8 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/[0.05] border border-white/10">
-                <div class="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/30 text-amber-300 flex items-center justify-center shrink-0">
+              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
+                <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
                   <i class="bi bi-shield-check text-base"></i>
                 </div>
                 <div>
@@ -178,7 +178,7 @@
                 <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
                   Law Firm • LegalTech AI
                 </span>
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-zinc-950 border border-white/20">
                   +70% Operational Time Saved
                 </span>
               </div>
@@ -284,7 +284,7 @@
                 <span class="text-zinc-400 font-normal">• LegalTech AI</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
                 <span>+70% Operational Time Saved</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
@@ -293,7 +293,7 @@
                 <span class="text-zinc-400 font-normal">• Marketplace Startup</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
                 <span>24/7 WhatsApp Cloud AI Engine</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
@@ -302,8 +302,8 @@
                 <span class="text-zinc-400 font-normal">• #1 Google Organic</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                <span>100% US IP Ownership & NDAs</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+                <span>100% US IP Ownership &amp; NDAs</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
@@ -311,7 +311,7 @@
                 <span class="text-zinc-400 font-normal">• 60 FPS Media Streaming</span>
               </div>
               <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
                 <span>EST / CST Real-time Overlap</span>
               </div>
             </div>
@@ -709,7 +709,7 @@
         
         <div class="max-w-3xl mb-16">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
             <span>Free 15-Minute Architecture Diagnosis • Zero Risk</span>
           </div>
           <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
@@ -743,13 +743,13 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <a :href="whatsappUSUrl" target="_blank" rel="noopener noreferrer" 
-                 class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-emerald-500/40 transition-colors block">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-600/15 border border-emerald-500/30 flex items-center justify-center text-emerald-500 mb-4">
+                 class="bg-[#0e0e13] border border-white/15 p-7 rounded-[28px] shadow-xl group hover:border-red-500/40 transition-colors block">
+                <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white group-hover:bg-[#E7000B] group-hover:border-[#E7000B] transition-colors mb-4">
                   <i class="bi bi-whatsapp text-2xl"></i>
                 </div>
                 <span class="text-xs font-bold uppercase text-zinc-400 tracking-wider">Direct WhatsApp</span>
-                <div class="text-base font-bold text-white mt-1 group-hover:text-emerald-400 transition-colors">+57 300 805 1304</div>
-                <p class="text-emerald-400/90 text-xs mt-1 font-semibold">Reply in &lt; 5 minutes</p>
+                <div class="text-base font-bold text-white mt-1 group-hover:text-red-400 transition-colors">+57 313 806 6800</div>
+                <p class="text-red-400 text-xs mt-1 font-semibold">Reply in &lt; 5 minutes</p>
               </a>
 
               <a href="mailto:comercial@codevs.dev" 
@@ -764,7 +764,7 @@
             </div>
 
             <div class="p-6 rounded-2xl bg-[#0e0e13] border border-white/15 text-xs text-zinc-300 space-y-2">
-              <div class="flex items-center gap-2 font-bold text-emerald-400">
+              <div class="flex items-center gap-2 font-bold text-red-500">
                 <i class="bi bi-shield-check text-base"></i>
                 <span>Why Hire CODEVS Today?</span>
               </div>
@@ -783,7 +783,7 @@
               
               <!-- SLA Guarantee Pill -->
               <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
                 <span>SLA Guarantee: &lt; 24h Formal Quote by Lead Solutions Architect</span>
               </div>
 
@@ -829,8 +829,8 @@
                     class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm resize-none"></textarea>
                 </div>
 
-                <div v-if="submitted" class="p-4 rounded-2xl bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-sm text-center">
-                  Thank you! Your inquiry has been forwarded to our Lead Solutions Architect. We'll be in touch within 24 hours.
+                <div v-if="submitted" class="p-4 rounded-2xl bg-white/10 border border-white/30 text-white text-sm text-center font-semibold">
+                  ✓ Thank you! Your inquiry has been forwarded to our Lead Solutions Architect. We'll be in touch within 24 hours.
                 </div>
 
                 <div class="flex flex-wrap items-center gap-3">
@@ -844,9 +844,9 @@
                     :href="whatsappUSUrl"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 font-bold text-sm flex items-center justify-center gap-2 transition-colors"
+                    class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-sm flex items-center justify-center gap-2 transition-colors shadow-md"
                   >
-                    <i class="bi bi-whatsapp text-emerald-400"></i>
+                    <i class="bi bi-whatsapp text-[#E7000B]"></i>
                     <span>Chat on WhatsApp Now</span>
                   </a>
                 </div>
