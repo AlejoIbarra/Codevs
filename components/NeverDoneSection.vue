@@ -3,7 +3,6 @@
     id="never-done" 
     ref="sectionRef" 
     class="relative bg-[#07070a] text-white min-h-screen overflow-hidden flex flex-col justify-between py-12 sm:py-16 border-t border-zinc-900 select-none"
-    style="background-image: radial-gradient(circle at 10% 30%, rgba(220,38,38,0.09), transparent 45%), radial-gradient(circle at 90% 80%, rgba(185,28,28,0.09), transparent 45%);"
   >
     <!-- Encabezado Superior (Bilingüe Español / Inglés) -->
     <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20">
@@ -77,7 +76,7 @@
       <div class="w-full h-1 bg-white/10 rounded-full overflow-hidden">
         <div 
           ref="progressBar" 
-          class="h-full bg-gradient-to-r from-red-600 to-red-400 rounded-full origin-left will-change-transform"
+          class="h-full bg-[#E7000B] rounded-full origin-left will-change-transform"
           style="transform: scaleX(0);"
         ></div>
       </div>

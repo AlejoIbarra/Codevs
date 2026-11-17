@@ -3,7 +3,6 @@
     id="contact"
     ref="contactSection"
     class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden"
-    style="background-image: radial-gradient(circle at 0% 15%, rgba(220,38,38,0.11), transparent 45%), radial-gradient(circle at 100% 85%, rgba(185,28,28,0.10), transparent 45%);"
   >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
       
@@ -15,7 +14,7 @@
         </div>
         <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Cotiza hoy tu <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+          <span class="text-[#E7000B]">
             Software o Base de Datos.
           </span>
         </h2>
@@ -119,12 +118,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
                 <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Nombre Completo *</label>
-                <input type="text" name="name" placeholder="Ej. Juan Pérez" required
+                <input type="text" name="name" v-model="nameField" placeholder="Ej. Juan Pérez" required
                   class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all" />
               </div>
               <div>
                 <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Correo o WhatsApp *</label>
-                <input type="email" name="email" placeholder="Ej. gerencia@empresa.com" required
+                <input type="text" name="email" v-model="emailField" placeholder="Ej. gerencia@empresa.com o +57 300..." required
                   class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all" />
               </div>
             </div>
@@ -137,18 +136,18 @@
 
             <div>
               <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Cuéntanos brevemente tu necesidad *</label>
-              <textarea name="message" rows="4" placeholder="¿Qué proceso deseas automatizar, qué sistema quieres crear o qué base de datos/entrenamiento necesitas?" required
+              <textarea name="message" v-model="messageField" rows="4" placeholder="¿Qué proceso deseas automatizar, qué sistema quieres crear o qué base de datos/entrenamiento necesitas?" required
                 class="w-full px-4 py-3.5 bg-black/60 border border-zinc-800 text-white placeholder-zinc-600 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 text-sm transition-all"></textarea>
             </div>
 
             <div class="pt-2">
               <div v-if="loading" class="text-sm text-zinc-400 mb-3 flex items-center gap-2">
                 <i class="bi bi-arrow-repeat animate-spin text-red-500"></i>
-                <span>Enviando solicitud a ingeniería...</span>
+                <span>Enviando solicitud internamente a nuestro equipo...</span>
               </div>
               <div v-if="error" class="text-sm text-red-500 mb-3 p-3 rounded-lg bg-red-950/30 border border-red-500/40">{{ error }}</div>
-              <div v-if="success" class="text-sm text-white mb-3 p-3 rounded-lg bg-white/10 border border-white/30 font-semibold">
-                ✓ ¡Solicitud recibida! Un Ingeniero Senior te contactará muy pronto.
+              <div v-if="success" class="text-sm text-white mb-3 p-3.5 rounded-xl bg-white/10 border border-white/30 font-semibold">
+                ✓ ¡Solicitud enviada con éxito! Hemos recibido la notificación en nuestro correo y un Ingeniero Senior te contactará muy pronto.
               </div>
 
               <div class="flex flex-wrap items-center gap-3">
@@ -197,7 +196,10 @@ const projectTypes = [
 ];
 
 const selectedType = ref('Software a la Medida / ERP');
+const nameField = ref('');
+const emailField = ref('');
 const subjectField = ref('Software a la Medida / ERP - Proyecto CODEVS');
+const messageField = ref('');
 
 const selectProjectType = (type) => {
   selectedType.value = type;
@@ -213,15 +215,68 @@ const sendEmail = async () => {
   success.value = false
   error.value = ''
 
-  try {
-    await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.value, USER_ID)
-    success.value = true
-    form.value.reset()
-    subjectField.value = 'Desarrollo de Plataforma Web Corporativa'
-  } catch (err) {
-    error.value = 'Error al enviar el mensaje. Intenta nuevamente o contáctanos directamente por WhatsApp.'
-  } finally {
-    loading.value = false
+  const payload = {
+    name: nameField.value,
+    email: emailField.value,
+    subject: subjectField.value,
+    message: messageField.value,
+    lang: 'es'
   }
+
+  let delivered = false
+
+  // 1. Envío interno directo por SMTP del servidor Nuxt (/api/contact -> alejandroibarrab0532@gmail.com)
+  try {
+    const res = await $fetch('/api/contact', {
+      method: 'POST',
+      body: payload
+    })
+    if (res && res.ok) {
+      delivered = true
+    }
+  } catch (apiErr) {
+    // Continúa al respaldo automático si está en hosting estático
+  }
+
+  // 2. Respaldo / Doble confirmación interna vía EmailJS REST API
+  if (!delivered) {
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: payload.name,
+          from_name: payload.name,
+          email: payload.email,
+          reply_to: payload.email,
+          subject: payload.subject,
+          message: payload.message,
+          to_email: 'alejandroibarrab0532@gmail.com'
+        },
+        USER_ID
+      )
+      delivered = true
+    } catch (ejsErr) {
+      // Fallback final con sendForm
+      try {
+        if (form.value) {
+          await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.value, USER_ID)
+          delivered = true
+        }
+      } catch (_) {}
+    }
+  }
+
+  if (delivered) {
+    success.value = true
+    nameField.value = ''
+    emailField.value = ''
+    messageField.value = ''
+    subjectField.value = `${selectedType.value} - Proyecto CODEVS`
+  } else {
+    error.value = 'No se pudo conectar con el servidor de correo. Por favor escríbenos con 1 clic por WhatsApp.'
+  }
+
+  loading.value = false
 }
 </script>

@@ -1,11 +1,8 @@
 <template>
   <div class="selection:bg-red-600 selection:text-white">
 
-    <!-- 1. Hero Section (High-Speed GPU Mesh Gradient, Kinetic Rotating Title, Conversion Triggers) -->
+    <!-- 1. Hero Section (Flat Solid Dark Canvas, Kinetic Rotating Title, Conversion Triggers) -->
     <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#07070a] text-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-zinc-900 mesh-gradient-container">
-      
-      <!-- Single-Layer GPU Mesh Background (Zero Blur Lag) -->
-      <div class="mesh-static-bg pointer-events-none" aria-hidden="true"></div>
 
       <div class="container mx-auto max-w-7xl relative z-10 w-full">
         
@@ -16,11 +13,11 @@
             <!-- Monumental Headline -->
             <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.03]">
               Nearshore Software <br />
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-500">
-                & Database Engineering
+              <span class="text-[#E7000B]">
+                &amp; Database Engineering
               </span>
               <span class="block text-xl sm:text-3xl lg:text-4xl font-semibold text-white/80 tracking-tight mt-3">
-                Custom Platforms, AI Agents & High-Concurrency Databases
+                Custom Platforms, AI Agents &amp; High-Concurrency Databases
               </span>
             </h1>
 
@@ -143,15 +140,14 @@
     <section
       id="clients"
       class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900"
-      style="background-image: radial-gradient(circle at 0% 25%, rgba(220,38,38,0.08), transparent 45%), radial-gradient(circle at 100% 75%, rgba(220,38,38,0.08), transparent 45%);"
     >
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
 
         <!-- Section Header -->
         <div class="max-w-3xl mb-16 sm:mb-20">
           <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
-            Our Clients & <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-500">
+            Our Clients &amp; <br />
+            <span class="text-[#E7000B]">
               Engineering Case Studies.
             </span>
           </h2>
@@ -164,7 +160,6 @@
         <!-- Featured Case Study: Sin Huellas Nuevas Oportunidades -->
         <div
           class="relative rounded-[32px] sm:rounded-[40px] bg-[#0e0e13] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 overflow-hidden hover:border-red-500/40 transition-colors duration-300 shadow-2xl"
-          style="background-image: radial-gradient(circle at 95% 5%, rgba(220,38,38,0.14), transparent 45%);"
         >
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
@@ -699,11 +694,10 @@
       </div>
     </section>
 
-    <!-- 8. Contact & Discovery Form Section (Fast Dark Card) -->
+    <!-- 8. Contact & Discovery Form Section (Flat Solid Dark Card) -->
     <section
       id="contact"
       class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden"
-      style="background-image: radial-gradient(circle at 0% 15%, rgba(220,38,38,0.11), transparent 45%), radial-gradient(circle at 100% 85%, rgba(185,28,28,0.10), transparent 45%);"
     >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         
@@ -714,7 +708,7 @@
           </div>
           <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
             Quote Your Custom <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+            <span class="text-[#E7000B]">
               Software or Database Today.
             </span>
           </h2>
@@ -829,13 +823,20 @@
                     class="w-full px-4 py-3.5 rounded-2xl bg-black/60 border border-white/15 text-white placeholder-zinc-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/30 transition-all text-sm resize-none"></textarea>
                 </div>
 
+                <div v-if="submitting" class="text-sm text-zinc-400 flex items-center gap-2">
+                  <i class="bi bi-arrow-repeat animate-spin text-red-500"></i>
+                  <span>Sending your request internally to our engineering team...</span>
+                </div>
+                <div v-if="submitError" class="p-3 rounded-xl bg-red-950/30 border border-red-500/40 text-red-400 text-sm">
+                  {{ submitError }}
+                </div>
                 <div v-if="submitted" class="p-4 rounded-2xl bg-white/10 border border-white/30 text-white text-sm text-center font-semibold">
-                  ✓ Thank you! Your inquiry has been forwarded to our Lead Solutions Architect. We'll be in touch within 24 hours.
+                  ✓ Thank you! Your inquiry has been sent directly to our Lead Solutions Architect. We'll be in touch within 24 hours.
                 </div>
 
                 <div class="flex flex-wrap items-center gap-3">
-                  <button type="submit"
-                    class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#E7000B] hover:bg-red-700 text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-red-950/50 flex items-center justify-center gap-2 cursor-pointer">
+                  <button type="submit" :disabled="submitting"
+                    class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#E7000B] hover:bg-red-700 disabled:opacity-50 text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-red-950/50 flex items-center justify-center gap-2 cursor-pointer">
                     <span>Request Proposal &amp; 7-Day Prototype</span>
                     <i class="bi bi-arrow-up-right text-xs"></i>
                   </button>
@@ -1079,7 +1080,9 @@ const usFaqs = [
   }
 ];
 
-// Form handling
+// Form handling (Internal Direct Delivery to alejandroibarrab0532@gmail.com)
+import emailjs from 'emailjs-com';
+
 const form = reactive({
   name: '',
   email: '',
@@ -1087,12 +1090,72 @@ const form = reactive({
   budget: '',
   message: ''
 });
+const submitting = ref(false);
 const submitted = ref(false);
+const submitError = ref('');
 
-const submitContact = () => {
-  const mailto = `mailto:comercial@codevs.dev?subject=US Discovery Inquiry: ${form.company || form.name} (${form.budget})&body=Name: ${encodeURIComponent(form.name)}%0AEmail: ${encodeURIComponent(form.email)}%0ACompany: ${encodeURIComponent(form.company)}%0ABudget: ${encodeURIComponent(form.budget)}%0A%0AProject Details:%0A${encodeURIComponent(form.message)}`;
-  window.location.href = mailto;
-  submitted.value = true;
+const SERVICE_ID = 'service_hr46a0m';
+const TEMPLATE_ID = 'template_ukb8rwn';
+const USER_ID = 'acYcG-H_ve6kHe1tn';
+
+const submitContact = async () => {
+  submitting.value = true;
+  submitted.value = false;
+  submitError.value = '';
+
+  const subjectLine = `US Inquiry: ${form.company || form.name} (${form.budget || 'Custom Scope'})`;
+  let delivered = false;
+
+  try {
+    const res = await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.name,
+        email: form.email,
+        company: form.company,
+        budget: form.budget,
+        subject: subjectLine,
+        message: form.message,
+        lang: 'en'
+      }
+    });
+    if (res && res.ok) {
+      delivered = true;
+    }
+  } catch (_) {}
+
+  if (!delivered) {
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: form.name,
+          from_name: form.name,
+          email: form.email,
+          reply_to: form.email,
+          subject: subjectLine,
+          message: `Company: ${form.company || 'N/A'}\nBudget: ${form.budget || 'N/A'}\n\n${form.message}`,
+          to_email: 'alejandroibarrab0532@gmail.com'
+        },
+        USER_ID
+      );
+      delivered = true;
+    } catch (_) {}
+  }
+
+  if (delivered) {
+    submitted.value = true;
+    form.name = '';
+    form.email = '';
+    form.company = '';
+    form.budget = '';
+    form.message = '';
+  } else {
+    submitError.value = 'Could not reach the mail server. Please message us directly on WhatsApp.';
+  }
+
+  submitting.value = false;
 };
 
 // SEO Head
@@ -1147,24 +1210,11 @@ useJsonld(() => ({
   background-color: #07070a;
 }
 
-.mesh-static-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(220, 38, 38, 0.28) 0%, transparent 45%),
-    radial-gradient(circle at 88% 82%, rgba(239, 68, 68, 0.22) 0%, transparent 45%),
-    radial-gradient(circle at 50% 45%, rgba(185, 28, 28, 0.14) 0%, transparent 55%);
-}
-
-/* Glass Card (Optimized GPU Layer) */
+/* Solid Flat Dark Card (Zero Decorative Gradients) */
 .mesh-glass-card {
-  background: rgba(18, 18, 24, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background-color: #0e0e13;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 28px 64px rgba(0, 0, 0, 0.65);
-  transform: translateZ(0);
 }
 
 /* Huge Inc Transition */

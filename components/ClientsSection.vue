@@ -2,7 +2,6 @@
   <section
     id="clientes"
     class="relative bg-[#07070a] text-white py-24 sm:py-32 overflow-hidden border-t border-zinc-900"
-    style="background-image: radial-gradient(circle at 0% 25%, rgba(220,38,38,0.08), transparent 45%), radial-gradient(circle at 100% 75%, rgba(220,38,38,0.08), transparent 45%);"
   >
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
 
@@ -10,8 +9,8 @@
       <div class="max-w-3xl mb-16 sm:mb-20">
         <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Nuestros Clientes <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-500">
-            & Socios Estratégicos.
+          <span class="text-[#E7000B]">
+            &amp; Socios Estratégicos.
           </span>
         </h2>
 
@@ -23,7 +22,6 @@
       <!-- Featured Case Study: Sin Huellas -->
       <div
         class="relative rounded-[32px] sm:rounded-[40px] bg-[#0e0e13] border border-white/15 p-6 sm:p-10 lg:p-12 mb-16 overflow-hidden hover:border-red-500/40 transition-colors duration-300 shadow-2xl"
-        style="background-image: radial-gradient(circle at 95% 5%, rgba(220,38,38,0.14), transparent 45%);"
       >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           

@@ -9,14 +9,14 @@
         <!-- Contenido Central Monumental -->
         <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
 
-          <!-- Titular Monumental en Blanco Puro (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
+          <!-- Titular Monumental en Blanco Puro y Rojo Sólido (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
             Desarrollo de <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-100 to-red-400">
+            <span class="text-[#E7000B]">
               Software a la Medida
             </span>
             <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/75 tracking-normal mt-2">
-              & Arquitectura de Bases de Datos Cloud
+              &amp; Arquitectura de Bases de Datos Cloud
             </span>
           </h1>
 
@@ -228,25 +228,15 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-/* Hardware-accelerated single-layer Mesh Gradient (0 Gaussian Blur GPU passes = 120 FPS) */
+/* Solid Flat Dark Canvas (Zero Decorative Gradients) */
 .mesh-gradient-container {
   background-color: #07070a;
-  background-image:
-    radial-gradient(circle 520px at 8% 18%, rgba(231, 0, 11, 0.36) 0%, transparent 70%),
-    radial-gradient(circle 560px at 92% 24%, rgba(255, 35, 50, 0.32) 0%, transparent 70%),
-    radial-gradient(circle 640px at 25% 88%, rgba(231, 0, 11, 0.28) 0%, transparent 72%),
-    radial-gradient(circle 520px at 85% 85%, rgba(180, 0, 20, 0.25) 0%, transparent 70%);
 }
 
 .mesh-glass-card {
-  background: rgba(18, 18, 24, 0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow:
-    0 24px 70px rgba(0, 0, 0, 0.7),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22);
-  transform: translateZ(0);
+  background-color: #0e0e13;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.7);
 }
 
 .init-swiper {

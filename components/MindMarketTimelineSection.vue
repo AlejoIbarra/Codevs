@@ -89,12 +89,11 @@
             </div>
           </div>
 
-          <!-- Right Column: Playful Interactive Vector Hub (Zero-Blur High-Speed GPU Card in Black, White & Red) -->
+          <!-- Right Column: Playful Interactive Vector Hub (Zero-Blur High-Speed Solid Card in Black, White & Red) -->
           <div class="lg:col-span-6 relative">
             <div
               ref="introVisualRef"
               class="relative mx-auto max-w-lg lg:max-w-none rounded-[36px] bg-[#0A0A0E] p-6 sm:p-8 shadow-[0_28px_70px_rgba(10,10,14,0.28)] border-4 border-[#0A0A0E] overflow-hidden group"
-              style="background-image: radial-gradient(circle at 90% 10%, rgba(231,0,11,0.24), transparent 48%), radial-gradient(circle at 10% 90%, rgba(255,255,255,0.06), transparent 50%);"
             >
               <!-- Top Window Bar -->
               <div class="relative z-10 flex items-center justify-between pb-4 border-b border-white/10">
