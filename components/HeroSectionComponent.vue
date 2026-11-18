@@ -1,21 +1,56 @@
 <template>
   <section id="hero" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#07070a] text-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-zinc-900 mesh-gradient-container">
 
+    <!-- Fotografía Humana de Fondo en toda la Sección de Inicio -->
+    <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
+      <img
+        src="/img/working-4.jpg"
+        alt="Equipo humano de ingeniería de software en CODEVS"
+        decoding="async"
+        class="w-full h-full object-cover object-center opacity-25 filter contrast-110"
+      />
+      <div class="absolute inset-0 bg-[#07070a]/80"></div>
+    </div>
+
     <div class="container mx-auto max-w-7xl relative z-10 w-full">
       
-      <!-- Gran Tarjeta Flotante Glassmorphism Optimizada para 120 FPS -->
+      <!-- Gran Contenedor Principal ("donde está todo") con Fotografía Humana de Colaboración en el Fondo -->
       <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center">
 
+        <!-- Imagen Humana en el Fondo del Contenedor Principal -->
+        <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
+          <img
+            src="/img/working-3.jpg"
+            alt="Colaboración humana con clientes e ingenieros en CODEVS"
+            fetchpriority="high"
+            decoding="async"
+            class="w-full h-full object-cover object-center opacity-30 filter contrast-110"
+          />
+          <div class="absolute inset-0 bg-[#08080c]/75"></div>
+        </div>
+
         <!-- Contenido Central Monumental -->
-        <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8 my-4">
+        <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-7 my-2">
+
+          <!-- Píldora de Humanización: Equipo Real de Ingenieros y Profesores -->
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/80 border border-white/20 shadow-lg">
+            <div class="flex -space-x-2.5">
+              <img src="/img/team/team-1.jpg" alt="Ingeniero Senior CODEVS" class="w-8 h-8 rounded-full border-2 border-[#E7000B] object-cover" />
+              <img src="/img/team/team-2.jpg" alt="Arquitecto de Software CODEVS" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
+              <img src="/img/team/team-3.jpg" alt="Especialista Cloud CODEVS" class="w-8 h-8 rounded-full border-2 border-[#0A0A0E] object-cover" />
+            </div>
+            <span class="text-xs sm:text-sm font-semibold text-white pr-1">
+              Trato humano directo • <strong class="text-[#E7000B] font-bold">Ingenieros Senior &amp; Profesores</strong>
+            </span>
+          </div>
 
           <!-- Titular Monumental en Blanco Puro y Rojo Sólido (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
-          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
+          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05]">
             Desarrollo de <br />
             <span class="text-[#E7000B]">
               Software a la Medida
             </span>
-            <span class="block text-2xl sm:text-4xl lg:text-5xl font-light text-white/75 tracking-normal mt-2">
+            <span class="block text-2xl sm:text-4xl lg:text-5xl font-medium text-white/85 tracking-tight mt-2">
               &amp; Arquitectura de Bases de Datos Cloud
             </span>
           </h1>
@@ -110,8 +145,8 @@
 
         </div>
 
-        <!-- Tecnologías Integradas en el Mismo Flujo y Degradado Continuo -->
-        <div class="mt-10 pt-8 border-t border-white/10 max-w-5xl mx-auto">
+        <!-- Tecnologías Integradas en el Mismo Flujo -->
+        <div class="relative z-10 mt-10 pt-8 border-t border-white/15 max-w-5xl mx-auto">
           <p class="text-xs sm:text-sm font-bold uppercase tracking-widest text-zinc-300 mb-6 text-center">
             Dominio Experto en Lenguajes, Frameworks & Motores de Bases de Datos
           </p>

@@ -25,7 +25,7 @@
               <span>{{ isEn ? 'Senior Engineers & Programming / DB Professors' : 'Ingenieros Senior & Profesores de Programación y BD' }}</span>
             </div>
 
-            <h2 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-bold text-[#0A0A0E] tracking-[-0.045em] leading-[1.06] text-balance">
+            <h2 class="text-3xl sm:text-5xl lg:text-[3.15rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.1] text-balance">
               {{ isEn
                 ? 'CODEVS builds custom software, database architectures & AI agents led by senior engineers and programming professors.'
                 : 'CODEVS desarrolla software a la medida, bases de datos de alto rendimiento e IA con ingenieros senior y profesores de programación.'
@@ -270,8 +270,8 @@
                   <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
                 </div>
 
-                <!-- Monumental Tile Title (Tight MindMarket Tracking) -->
-                <h3 class="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-[#0A0A0E] tracking-[-0.05em] leading-[1.08]">
+                <!-- Monumental Tile Title (Clean Outfit Tracking) -->
+                <h3 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.12]">
                   {{ tile.title }}
                 </h3>
 
@@ -319,6 +319,9 @@
         </div>
 
       </div>
+
+      <!-- Componente Interactivo de Animación de Cohete Original (PRESERVADO INTACTO) -->
+      <RocketScroll />
     </section>
 
     <!-- =========================================================================
@@ -338,12 +341,12 @@
               <span>{{ isEn ? 'Verified Engineering Metrics' : 'Métricas Reales de Ingeniería' }}</span>
             </div>
 
-            <h2 class="text-4xl sm:text-6xl lg:text-[4.25rem] font-bold text-[#0A0A0E] tracking-[-0.055em] leading-[1.02]">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0A0A0E] tracking-tight leading-[1.08]">
               <template v-if="isEn">
                 A few numbers behind the <strong class="mm-wave-word font-black text-[#E7000B]">impact</strong> we deliver.
               </template>
               <template v-else>
-                Algunas cifras detrás del <strong class="mm-wave-word font-black text-[#E7000B]">impacto</strong> que entregamos.
+                Algunas cifras detrás del <strong class="mm-wave-word font-black text-[#E7000B]">impact</strong> que entregamos.
               </template>
             </h2>
 
@@ -410,7 +413,7 @@
                 <!-- Monumental Stat Number -->
                 <div class="my-auto py-4">
                   <div
-                    class="text-6xl sm:text-8xl lg:text-[6.5rem] font-bold tracking-[-0.06em] leading-[0.92]"
+                    class="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none"
                     :style="{ color: stat.numberColor || stat.textColor }"
                   >
                     {{ stat.number }}
@@ -418,7 +421,7 @@
                 </div>
 
                 <!-- Stat Description -->
-                <p class="text-base sm:text-xl font-semibold leading-snug tracking-[-0.02em] opacity-90">
+                <p class="text-base sm:text-xl font-medium leading-relaxed opacity-90">
                   {{ stat.description }}
                 </p>
               </div>
@@ -444,7 +447,7 @@
             <span>{{ isEn ? 'Zero-Risk Software & Database Engineering' : 'Contratación Simple, Rápida y Garantizada por Contrato' }}</span>
           </div>
 
-          <h2 class="text-5xl sm:text-7xl lg:text-[6.2rem] font-black text-white tracking-[-0.055em] leading-[0.95]">
+          <h2 class="text-5xl sm:text-7xl lg:text-[5.5rem] font-extrabold text-white tracking-tight leading-[1.02]">
             {{ isEn ? 'Ready when' : '¡Listos cuando' }}<br />
             <span class="text-[#0A0A0E] bg-white px-5 py-1 rounded-3xl inline-block mt-2 shadow-lg">{{ isEn ? 'you are!' : 'tú lo estés!' }}</span>
           </h2>
@@ -564,6 +567,7 @@ import { ref, computed, onMounted, onBeforeUnmount, resolveComponent } from 'vue
 import { useRoute } from 'vue-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import RocketScroll from '~/components/ui/RocketScroll.vue';
 
 const NuxtLinkComponent = resolveComponent('NuxtLink');
 const route = useRoute();
@@ -720,7 +724,7 @@ const numberCards = computed(() => {
         textColor: '#ffffff',
         iconBg: '#0A0A0E',
         iconColor: '#ffffff',
-        icon: 'bi bi-database-fill-check'
+        icon: 'bi bi-rocket-takeoff-fill'
       },
       {
         tag: 'Performance & Intellectual Property',
@@ -768,7 +772,7 @@ const numberCards = computed(() => {
       textColor: '#ffffff',
       iconBg: '#0A0A0E',
       iconColor: '#ffffff',
-      icon: 'bi bi-database-fill-check'
+      icon: 'bi bi-rocket-takeoff-fill'
     },
     {
       tag: 'Rendimiento & Propiedad Intelectual',
