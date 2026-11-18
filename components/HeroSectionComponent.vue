@@ -15,7 +15,7 @@
     <div class="container mx-auto max-w-7xl relative z-10 w-full">
       
       <!-- Gran Contenedor Principal ("donde está todo") con Fotografía Humana de Colaboración en el Fondo -->
-      <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center">
+      <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-6 sm:p-10 lg:p-14 relative overflow-hidden">
 
         <!-- Imagen Humana en el Fondo del Contenedor Principal -->
         <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
@@ -26,108 +26,155 @@
             decoding="async"
             class="w-full h-full object-cover object-center opacity-30 filter contrast-110"
           />
-          <div class="absolute inset-0 bg-[#08080c]/75"></div>
+          <div class="absolute inset-0 bg-[#08080c]/80"></div>
         </div>
 
-        <!-- Contenido Central Monumental -->
-        <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-7 my-2">
+        <!-- Disposición Reorganizada: Grid de Alta Conversión (Contenido Izquierda + Consola de Autoridad Derecha) -->
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center text-left my-2">
 
-          <!-- Titular Monumental en Blanco Puro y Rojo Sólido (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
-          <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05]">
-            Desarrollo de <br />
-            <span class="text-[#E7000B]">
-              Software a la Medida
-            </span>
-            <span class="block text-2xl sm:text-4xl lg:text-5xl font-medium text-white/85 tracking-tight mt-2">
-              &amp; Arquitectura de Bases de Datos Cloud
-            </span>
-          </h1>
+          <!-- Columna Principal de Contenido (Izquierda - 7 columnas) -->
+          <div class="lg:col-span-7 space-y-5 sm:space-y-6">
 
-          <!-- Kinetic Rotating Title Estilo Huge Inc -->
-          <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
-            <span>Creamos tecnología que multiplica las ventas de</span>
-            <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[140px] sm:min-w-[180px] text-left">
-              <Transition name="huge-slide" mode="out-in">
-                <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
-                  {{ currentRotatingWord }}
+            <!-- Tag de Ecosistema & Disponibilidad -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/80 border border-white/20 text-xs font-semibold text-zinc-300 shadow-md">
+              <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
+              <span class="tracking-wide">CODEVS // Software &amp; Bases de Datos</span>
+            </div>
+
+            <!-- Titular Monumental con Saltos Armónicos y Énfasis Cromático -->
+            <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
+              Desarrollo de <br />
+              <span class="text-[#E7000B]">Software a la Medida</span>
+              <span class="block text-lg sm:text-2xl lg:text-2xl font-light text-zinc-300 tracking-normal mt-2">
+                &amp; Arquitectura de Bases de Datos Cloud
+              </span>
+            </h1>
+
+            <!-- Kinetic Rotating Title Estilo Huge Inc -->
+            <div class="flex items-center flex-wrap gap-2 text-base sm:text-xl font-bold text-white/90">
+              <span>Creamos tecnología que multiplica las ventas de</span>
+              <span class="relative inline-block text-[#E7000B] overflow-hidden h-[1.3em] min-w-[130px] sm:min-w-[160px] text-left">
+                <Transition name="huge-slide" mode="out-in">
+                  <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
+                    {{ currentRotatingWord }}
+                  </span>
+                </Transition>
+              </span>
+            </div>
+
+            <!-- Párrafo Descriptivo con Alta Autoridad Académica y de Negocio -->
+            <p class="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed max-w-xl">
+              Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros senior y profesores que enseñan programación y bases de datos</strong>. Creamos sistemas ERP/CRM, plataformas web y agentes de IA omnicanales 24/7 con código 100% propietario y alto rendimiento.
+            </p>
+
+            <!-- Botones de Acción de Alta Conversión con Física de Rebote (.mm-btn) -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-1">
+              <a href="#contact" class="mm-btn">
+                <span class="mm-btn-icon -hover">
+                  <i class="bi bi-arrow-up-right text-xs"></i>
                 </span>
-              </Transition>
-            </span>
-          </div>
+                <span class="mm-btn-label">Cotizar Mi Software Ahora</span>
+                <span class="mm-btn-icon -default">
+                  <i class="bi bi-arrow-up-right text-xs"></i>
+                </span>
+              </a>
 
-          <!-- Párrafo Descriptivo con Alta Autoridad Académica, Comercial y SEO (#1 en CODEVS y Desarrollo de Software) -->
-          <p class="text-base sm:text-lg md:text-xl text-white/85 max-w-3xl mx-auto font-normal leading-relaxed text-center">
-            Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros de software senior y profesores expertos que enseñan programación y bases de datos</strong>. Construimos sistemas ERP/CRM, plataformas web ultrarrápidas, apps móviles y <strong class="text-white font-semibold">agentes de IA omnicanales 24/7</strong> diseñados para reducir costos operativos hasta un 70% y posicionar tu empresa en el <strong class="text-red-400 font-semibold">#1 de Google</strong>.
-          </p>
-
-          <!-- Botones de Acción de Alta Conversión con Física de Rebote MindMarket (.mm-btn) — Rojo, Blanco y Negro -->
-          <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
-            <a href="#contact" class="mm-btn">
-              <span class="mm-btn-icon -hover">
-                <i class="bi bi-arrow-up-right text-xs"></i>
-              </span>
-              <span class="mm-btn-label">Cotizar Mi Software Ahora</span>
-              <span class="mm-btn-icon -default">
-                <i class="bi bi-arrow-up-right text-xs"></i>
-              </span>
-            </a>
-
-            <a
-              href="https://wa.me/573138066800?text=Hola%20CODEVS%2C%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20%2F%20bases%20de%20datos%20y%20recibir%20asesor%C3%ADa."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mm-btn -white"
-            >
-              <span class="mm-btn-icon -hover">
-                <i class="bi bi-whatsapp text-sm"></i>
-              </span>
-              <span class="mm-btn-label">Hablar con un Ingeniero (WhatsApp)</span>
-              <span class="mm-btn-icon -default">
-                <i class="bi bi-whatsapp text-sm"></i>
-              </span>
-            </a>
-
-            <a href="#clientes" class="mm-btn -dark">
-              <span class="mm-btn-icon -hover">
-                <i class="bi bi-star-fill text-xs"></i>
-              </span>
-              <span class="mm-btn-label">Ver Casos de Éxito Reales</span>
-              <span class="mm-btn-icon -default">
-                <i class="bi bi-star-fill text-xs"></i>
-              </span>
-            </a>
-          </div>
-
-          <!-- Sellos de Autoridad y Garantía de Compra (Zero-Risk Conversion Strip en Rojo, Blanco y Negro) -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto pt-3 text-left">
-            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-              <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
-                <i class="bi bi-mortarboard-fill text-sm"></i>
-              </div>
-              <div>
-                <div class="text-xs font-extrabold text-white">Ingenieros &amp; Profesores</div>
-                <div class="text-[11px] text-zinc-400">Programación y Bases de Datos</div>
-              </div>
+              <a
+                href="https://wa.me/573138066800?text=Hola%20CODEVS%2C%20quiero%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software%20%2F%20bases%20de%20datos%20y%20recibir%20asesor%C3%ADa."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mm-btn -white"
+              >
+                <span class="mm-btn-icon -hover">
+                  <i class="bi bi-whatsapp text-sm"></i>
+                </span>
+                <span class="mm-btn-label">Hablar con un Ingeniero (WhatsApp)</span>
+                <span class="mm-btn-icon -default">
+                  <i class="bi bi-whatsapp text-sm"></i>
+                </span>
+              </a>
             </div>
 
-            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-              <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm">
-                <i class="bi bi-lightning-charge-fill text-sm text-[#E7000B]"></i>
-              </div>
-              <div>
-                <div class="text-xs font-extrabold text-white">Prototipo en 7 Días</div>
-                <div class="text-[11px] text-zinc-400">Valida UX y BD antes de escalar</div>
-              </div>
+            <!-- Enlace Secundario a Casos de Éxito Reales -->
+            <div class="pt-1">
+              <a href="#clientes" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white transition-colors group">
+                <i class="bi bi-star-fill text-[#E7000B] text-xs"></i>
+                <span class="underline decoration-white/20 underline-offset-4 group-hover:decoration-white">Ver Casos de Éxito y Clientes que Confían en CODEVS</span>
+                <i class="bi bi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </a>
             </div>
 
-            <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-              <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
-                <i class="bi bi-shield-check text-sm"></i>
+          </div>
+
+          <!-- Columna Lateral: Consola de Autoridad, Garantías y Métricas (Derecha - 5 columnas) -->
+          <div class="lg:col-span-5">
+            <div class="bg-black/85 border border-white/20 rounded-[28px] p-6 sm:p-7 shadow-2xl backdrop-blur-md relative overflow-hidden space-y-4">
+              
+              <!-- Barra Superior de Consola Técnica -->
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#E7000B]"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-white/40"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                  <span class="text-[11px] font-mono text-zinc-400 ml-1.5">codevs.kernel // 2026</span>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E7000B]/15 text-[#E7000B] text-[11px] font-bold border border-[#E7000B]/30">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#E7000B] animate-ping"></span>
+                  SLA &lt;24h Activo
+                </span>
               </div>
-              <div>
-                <div class="text-xs font-extrabold text-white">100% Código Propietario</div>
-                <div class="text-[11px] text-zinc-400">Garantía por contrato y SLA</div>
+
+              <!-- Bloques de Garantía & Autoridad Técnica -->
+              <div class="space-y-3">
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                  <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                    <i class="bi bi-mortarboard-fill text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-white">Ingenieros Senior &amp; Profesores de BD</div>
+                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Desarrollo a medida, optimización SQL/NoSQL y 0% deuda técnica.</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                  <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                    <i class="bi bi-lightning-charge-fill text-sm text-[#E7000B]"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-white">Prototipo Interactivo en 7 Días</div>
+                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Valida flujos de usuario y arquitectura de datos antes de escalar.</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                  <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                    <i class="bi bi-shield-check text-sm"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-white">100% Código Propietario &amp; Garantía</div>
+                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Propiedad intelectual legalmente transferida y garantía por contrato.</div>
+                  </div>
+                </div>
               </div>
+
+              <!-- Pie de Métricas de Confianza -->
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-zinc-400">
+                <div class="flex items-center gap-1.5 text-white font-bold">
+                  <i class="bi bi-check-circle-fill text-[#E7000B]"></i>
+                  <span>+45 Sistemas Desplegados</span>
+                </div>
+                <div class="flex items-center gap-1 text-[#E7000B] font-semibold text-[11px]">
+                  <span>5.0</span>
+                  <div class="flex text-amber-400 text-[10px]">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 

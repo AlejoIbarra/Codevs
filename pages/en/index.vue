@@ -17,7 +17,7 @@
 
       <div class="container mx-auto max-w-7xl relative z-10 w-full">
         
-        <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-7 sm:p-12 lg:p-16 relative overflow-hidden text-center">
+        <div class="mesh-glass-card rounded-[32px] sm:rounded-[44px] p-6 sm:p-10 lg:p-14 relative overflow-hidden">
 
           <!-- Humanizing Collaboration Photo in the Background of the Main Hero Card -->
           <div class="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
@@ -28,107 +28,155 @@
               decoding="async"
               class="w-full h-full object-cover object-center opacity-30 filter contrast-110"
             />
-            <div class="absolute inset-0 bg-[#08080c]/75"></div>
+            <div class="absolute inset-0 bg-[#08080c]/80"></div>
           </div>
           
-          <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-7 my-2">
+          <!-- Reorganized High-Conversion Split Layout: Left Content + Right Tech Console -->
+          <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center text-left my-2">
 
-            <!-- Monumental Headline -->
-            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05]">
-              Nearshore Software <br />
-              <span class="text-[#E7000B]">
-                &amp; Database Engineering
-              </span>
-              <span class="block text-xl sm:text-3xl lg:text-4xl font-medium text-white/85 tracking-tight mt-3">
-                Custom Platforms, AI Agents &amp; High-Concurrency Databases
-              </span>
-            </h1>
+            <!-- Primary Content Column (Left - 7 cols) -->
+            <div class="lg:col-span-7 space-y-5 sm:space-y-6">
 
-            <!-- Kinetic Rotating Title Style Huge Inc -->
-            <div class="flex items-center justify-center flex-wrap gap-2 text-lg sm:text-2xl md:text-3xl font-bold text-white/90">
-              <span>We build custom technology that scales</span>
-              <span class="relative inline-block text-red-500 overflow-hidden h-[1.3em] min-w-[140px] sm:min-w-[170px] text-left">
-                <Transition name="huge-slide" mode="out-in">
-                  <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
-                    {{ currentRotatingWord }}
+              <!-- Ecosystem Tag & Status -->
+              <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/80 border border-white/20 text-xs font-semibold text-zinc-300 shadow-md">
+                <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
+                <span class="tracking-wide">CODEVS // Nearshore Software &amp; Cloud DBs</span>
+              </div>
+
+              <!-- Monumental Headline -->
+              <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
+                Nearshore Software <br />
+                <span class="text-[#E7000B]">&amp; Database Engineering</span>
+                <span class="block text-lg sm:text-2xl lg:text-2xl font-light text-zinc-300 tracking-normal mt-2">
+                  Custom Platforms, AI Agents &amp; High-Concurrency Databases
+                </span>
+              </h1>
+
+              <!-- Kinetic Rotating Title Style Huge Inc -->
+              <div class="flex items-center flex-wrap gap-2 text-base sm:text-xl font-bold text-white/90">
+                <span>We build custom technology that scales</span>
+                <span class="relative inline-block text-[#E7000B] overflow-hidden h-[1.3em] min-w-[130px] sm:min-w-[160px] text-left">
+                  <Transition name="huge-slide" mode="out-in">
+                    <span :key="currentRotatingWord" class="inline-block font-black underline decoration-red-600/50 decoration-2 underline-offset-4">
+                      {{ currentRotatingWord }}
+                    </span>
+                  </Transition>
+                </span>
+              </div>
+
+              <!-- Value Narrative + Academic & Engineering Authority -->
+              <p class="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed max-w-xl">
+                We are <strong class="text-white font-semibold">CODEVS</strong>: the elite partner in custom software development, relational/NoSQL database architecture, and 24/7 AI automation. Engineered by <strong class="text-white font-semibold">senior software architects and university professors</strong> who teach computer science and databases.
+              </p>
+
+              <!-- MindMarket Bounce Action Buttons (.mm-btn) — Red, White & Black -->
+              <div class="flex flex-wrap items-center gap-3.5 pt-1">
+                <a href="#contact" class="mm-btn">
+                  <span class="mm-btn-icon -hover">
+                    <i class="bi bi-arrow-up-right text-xs"></i>
                   </span>
-                </Transition>
-              </span>
-            </div>
+                  <span class="mm-btn-label">Quote My Software Now</span>
+                  <span class="mm-btn-icon -default">
+                    <i class="bi bi-arrow-up-right text-xs"></i>
+                  </span>
+                </a>
 
-            <!-- Value Narrative + Academic & Engineering Authority -->
-            <p class="text-base sm:text-lg md:text-xl text-white/85 max-w-3xl mx-auto font-normal leading-relaxed text-center">
-              We are <strong class="text-white font-bold">CODEVS</strong>: the #1 partner in <strong class="text-white font-semibold">custom software development, relational/NoSQL database architecture, and 24/7 WhatsApp AI automation</strong>. Your platform is engineered by <strong class="text-white font-semibold underline decoration-red-500/60 underline-offset-4">senior software architects and university professors who teach programming &amp; databases</strong>—guaranteeing clean code, sub-second speed, and measurable ROI.
-            </p>
-
-            <!-- MindMarket Bounce Action Buttons (.mm-btn) — Red, White & Black -->
-            <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4 pt-2">
-              <a href="#contact" class="mm-btn">
-                <span class="mm-btn-icon -hover">
-                  <i class="bi bi-arrow-up-right text-xs"></i>
-                </span>
-                <span class="mm-btn-label">Quote My Software Now</span>
-                <span class="mm-btn-icon -default">
-                  <i class="bi bi-arrow-up-right text-xs"></i>
-                </span>
-              </a>
-
-              <a
-                href="https://wa.me/573138066800?text=Hello%20CODEVS!%20I%20want%20to%20quote%20a%20custom%20software%20/%20database%20project%20with%20your%20senior%20engineering%20team."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mm-btn -white"
-              >
-                <span class="mm-btn-icon -hover">
-                  <i class="bi bi-whatsapp text-xs"></i>
-                </span>
-                <span class="mm-btn-label">Talk to an Engineer (WhatsApp)</span>
-                <span class="mm-btn-icon -default">
-                  <i class="bi bi-whatsapp text-xs"></i>
-                </span>
-              </a>
-
-              <a href="#clients" class="mm-btn -dark">
-                <span class="mm-btn-icon -hover">
-                  <i class="bi bi-star-fill text-xs"></i>
-                </span>
-                <span class="mm-btn-label">View Proven Case Studies</span>
-                <span class="mm-btn-icon -default">
-                  <i class="bi bi-star-fill text-xs"></i>
-                </span>
-              </a>
-            </div>
-
-            <!-- High-Conversion Risk-Reversal Strip (Red, White & Black) -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto pt-3 text-left">
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-                <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <i class="bi bi-mortarboard-fill text-base"></i>
-                </div>
-                <div>
-                  <div class="text-xs font-extrabold text-white">Senior Devs &amp; CS Professors</div>
-                  <div class="text-[11px] text-zinc-400">Programming &amp; Database Masters</div>
-                </div>
+                <a
+                  href="https://wa.me/573138066800?text=Hello%20CODEVS!%20I%20want%20to%20quote%20a%20custom%20software%20/%20database%20project%20with%20your%20senior%20engineering%20team."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mm-btn -white"
+                >
+                  <span class="mm-btn-icon -hover">
+                    <i class="bi bi-whatsapp text-sm"></i>
+                  </span>
+                  <span class="mm-btn-label">Talk to an Engineer (WhatsApp)</span>
+                  <span class="mm-btn-icon -default">
+                    <i class="bi bi-whatsapp text-sm"></i>
+                  </span>
+                </a>
               </div>
 
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-                <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm">
-                  <i class="bi bi-lightning-charge-fill text-base text-[#E7000B]"></i>
-                </div>
-                <div>
-                  <div class="text-xs font-extrabold text-white">7-Day Interactive Prototype</div>
-                  <div class="text-[11px] text-zinc-400">Validate UX &amp; DB before scaling</div>
-                </div>
+              <!-- Secondary Link to Case Studies -->
+              <div class="pt-1">
+                <a href="#clients" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-zinc-400 hover:text-white transition-colors group">
+                  <i class="bi bi-star-fill text-[#E7000B] text-xs"></i>
+                  <span class="underline decoration-white/20 underline-offset-4 group-hover:decoration-white">Explore Proven Case Studies &amp; Client Success Stories</span>
+                  <i class="bi bi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                </a>
               </div>
 
-              <div class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-black/60 border border-white/15 hover:border-[#E7000B]/50 transition-colors">
-                <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <i class="bi bi-shield-check text-base"></i>
+            </div>
+
+            <!-- Lateral Column: Authority, Warranty & Live Engineering Console (Right - 5 cols) -->
+            <div class="lg:col-span-5">
+              <div class="bg-black/85 border border-white/20 rounded-[28px] p-6 sm:p-7 shadow-2xl backdrop-blur-md relative overflow-hidden space-y-4">
+                
+                <!-- Terminal Header Bar -->
+                <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#E7000B]"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-white/40"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                    <span class="text-[11px] font-mono text-zinc-400 ml-1.5">codevs.kernel // 2026</span>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E7000B]/15 text-[#E7000B] text-[11px] font-bold border border-[#E7000B]/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#E7000B] animate-ping"></span>
+                    SLA &lt;24h Active
+                  </span>
                 </div>
-                <div>
-                  <div class="text-xs font-extrabold text-white">100% IP &amp; Contract Warranty</div>
-                  <div class="text-[11px] text-zinc-400">EST/CST overlap • USD invoicing</div>
+
+                <!-- Engineering & Authority Feature Blocks -->
+                <div class="space-y-3">
+                  <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                    <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                      <i class="bi bi-mortarboard-fill text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-extrabold text-white">Senior Devs &amp; CS Professors</div>
+                      <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Custom architecture, database optimization and 0% technical debt.</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                    <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                      <i class="bi bi-lightning-charge-fill text-sm text-[#E7000B]"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-extrabold text-white">7-Day Interactive Prototype</div>
+                      <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Validate UX flows and database design before full-scale investment.</div>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
+                    <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                      <i class="bi bi-shield-check text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-extrabold text-white">100% IP &amp; Contract Warranty</div>
+                      <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Legal code transfer, EST/CST timezone overlap, and USD invoicing.</div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- Trust Metrics Footer -->
+                <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-zinc-400">
+                  <div class="flex items-center gap-1.5 text-white font-bold">
+                    <i class="bi bi-check-circle-fill text-[#E7000B]"></i>
+                    <span>+45 Systems Deployed</span>
+                  </div>
+                  <div class="flex items-center gap-1 text-[#E7000B] font-semibold text-[11px]">
+                    <span>5.0</span>
+                    <div class="flex text-amber-400 text-[10px]">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
