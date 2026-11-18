@@ -32,18 +32,6 @@
         <!-- Contenido Central Monumental -->
         <div class="relative z-10 max-w-4xl mx-auto space-y-6 sm:space-y-7 my-2">
 
-          <!-- Píldora de Humanización: Equipo Real de Ingenieros y Profesores -->
-          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/80 border border-white/20 shadow-lg">
-            <div class="flex -space-x-2.5">
-              <img src="/img/team/team-1.jpg" alt="Ingeniero Senior CODEVS" class="w-8 h-8 rounded-full border-2 border-[#E7000B] object-cover" />
-              <img src="/img/team/team-2.jpg" alt="Arquitecto de Software CODEVS" class="w-8 h-8 rounded-full border-2 border-white object-cover" />
-              <img src="/img/team/team-3.jpg" alt="Especialista Cloud CODEVS" class="w-8 h-8 rounded-full border-2 border-[#0A0A0E] object-cover" />
-            </div>
-            <span class="text-xs sm:text-sm font-semibold text-white pr-1">
-              Trato humano directo • <strong class="text-[#E7000B] font-bold">Ingenieros Senior &amp; Profesores</strong>
-            </span>
-          </div>
-
           <!-- Titular Monumental en Blanco Puro y Rojo Sólido (SEO #1: CODEVS + Desarrollo de Software a la Medida) -->
           <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05]">
             Desarrollo de <br />
