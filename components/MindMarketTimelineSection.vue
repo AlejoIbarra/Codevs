@@ -248,71 +248,60 @@
               :class="idx % 2 === 0 ? 'md:justify-end' : 'md:justify-start'"
             >
               <div
-                class="mm-tile group relative w-full md:w-[58%] lg:w-[50%] rounded-[28px] sm:rounded-[34px] p-1.5 transition-transform duration-500"
+                class="mm-tile group relative w-full md:w-[58%] lg:w-[50%] bg-white text-[#0A0A0E] rounded-[24px] sm:rounded-[32px] p-7 sm:p-11 lg:p-12 border-0 shadow-[0_20px_50px_rgba(10,10,14,0.08)] flex flex-col gap-6 transition-transform duration-500"
                 :style="{ '--tile-accent': tile.accentColor }"
               >
-                <!-- Outer Colored Offset Frame (Alternating Crimson Red #E7000B and Carbon Black #0A0A0E) -->
-                <div
-                  class="mm-tile-bg-colored absolute inset-0 rounded-[28px] sm:rounded-[34px] border-0 shadow-[0_22px_50px_rgba(10,10,14,0.12)]"
-                  :style="{ backgroundColor: tile.accentColor }"
-                ></div>
+                <!-- Top Pill Tag + Number -->
+                <div class="flex items-center justify-between gap-3">
+                  <span
+                    class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider border-0 shadow-sm"
+                    :style="{ backgroundColor: tile.accentColor, color: tile.badgeTextColor }"
+                  >
+                    <span>{{ tile.badge }}</span>
+                  </span>
+                  <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
+                </div>
 
-                <!-- Inner White Editorial Card -->
-                <div class="mm-tile-bg-white relative bg-white text-[#0A0A0E] rounded-[24px] sm:rounded-[30px] p-7 sm:p-11 lg:p-12 border-0 shadow-xl flex flex-col gap-6">
-                  
-                  <!-- Top Pill Tag + Number -->
-                  <div class="flex items-center justify-between gap-3">
-                    <span
-                      class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider border-0 shadow-sm"
-                      :style="{ backgroundColor: tile.accentColor, color: tile.badgeTextColor }"
-                    >
-                      <span>{{ tile.badge }}</span>
+                <!-- Monumental Tile Title (Clean Outfit Tracking) -->
+                <h3 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.12]">
+                  {{ tile.title }}
+                </h3>
+
+                <!-- Tile Description -->
+                <p class="text-base sm:text-lg text-zinc-600 font-medium leading-relaxed text-balance">
+                  {{ tile.description }}
+                </p>
+
+                <!-- Highlight Metric Chip inside Tile -->
+                <div class="flex flex-wrap items-center gap-2 pt-1">
+                  <span
+                    v-for="(chip, cIdx) in tile.chips"
+                    :key="cIdx"
+                    class="text-xs font-bold px-3 py-1 rounded-lg bg-zinc-100 text-[#0A0A0E] border border-zinc-200"
+                  >
+                    {{ chip }}
+                  </span>
+                </div>
+
+                <!-- MindMarket Bounce Button CTA -->
+                <div class="pt-2">
+                  <component
+                    :is="tile.isInternal ? NuxtLinkComponent : 'a'"
+                    :to="tile.isInternal ? tile.ctaLink : undefined"
+                    :href="!tile.isInternal ? tile.ctaLink : undefined"
+                    class="mm-btn"
+                    :class="tile.btnVariant"
+                  >
+                    <span class="mm-btn-icon -hover">
+                      <i class="bi bi-arrow-right text-sm"></i>
                     </span>
-                    <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
-                  </div>
-
-                  <!-- Monumental Tile Title (Clean Outfit Tracking) -->
-                  <h3 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.12]">
-                    {{ tile.title }}
-                  </h3>
-
-                  <!-- Tile Description -->
-                  <p class="text-base sm:text-lg text-zinc-600 font-medium leading-relaxed text-balance">
-                    {{ tile.description }}
-                  </p>
-
-                  <!-- Highlight Metric Chip inside Tile -->
-                  <div class="flex flex-wrap items-center gap-2 pt-1">
-                    <span
-                      v-for="(chip, cIdx) in tile.chips"
-                      :key="cIdx"
-                      class="text-xs font-bold px-3 py-1 rounded-lg bg-zinc-100 text-[#0A0A0E] border border-zinc-200"
-                    >
-                      {{ chip }}
+                    <span class="mm-btn-label">
+                      {{ tile.ctaLabel }}
                     </span>
-                  </div>
-
-                  <!-- MindMarket Bounce Button CTA -->
-                  <div class="pt-2">
-                    <component
-                      :is="tile.isInternal ? NuxtLinkComponent : 'a'"
-                      :to="tile.isInternal ? tile.ctaLink : undefined"
-                      :href="!tile.isInternal ? tile.ctaLink : undefined"
-                      class="mm-btn"
-                      :class="tile.btnVariant"
-                    >
-                      <span class="mm-btn-icon -hover">
-                        <i class="bi bi-arrow-right text-sm"></i>
-                      </span>
-                      <span class="mm-btn-label">
-                        {{ tile.ctaLabel }}
-                      </span>
-                      <span class="mm-btn-icon -default">
-                        <i class="bi bi-arrow-right text-sm"></i>
-                      </span>
-                    </component>
-                  </div>
-
+                    <span class="mm-btn-icon -default">
+                      <i class="bi bi-arrow-right text-sm"></i>
+                    </span>
+                  </component>
                 </div>
               </div>
             </div>
