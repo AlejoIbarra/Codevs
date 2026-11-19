@@ -106,73 +106,61 @@
 
           </div>
 
-          <!-- Columna Lateral: Consola de Autoridad, Garantías y Métricas (Derecha - 5 columnas) -->
+          <!-- Columna Lateral: Imagen de Confianza y Equipo de Ingeniería (Derecha - 5 columnas) -->
           <div class="lg:col-span-5">
-            <div class="bg-black/85 border border-white/20 rounded-[28px] p-6 sm:p-7 shadow-2xl backdrop-blur-md relative overflow-hidden space-y-4">
+            <div class="relative group rounded-[28px] sm:rounded-[32px] p-2 bg-gradient-to-b from-white/15 to-white/5 border border-white/20 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-[#E7000B]/50 hover:shadow-[0_20px_50px_rgba(231,0,11,0.2)]">
               
-              <!-- Barra Superior de Consola Técnica -->
-              <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                <div class="flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-[#E7000B]"></span>
-                  <span class="w-2.5 h-2.5 rounded-full bg-white/40"></span>
-                  <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
-                  <span class="text-[11px] font-mono text-zinc-400 ml-1.5">codevs.kernel // 2026</span>
-                </div>
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E7000B]/15 text-[#E7000B] text-[11px] font-bold border border-[#E7000B]/30">
-                  <span class="w-1.5 h-1.5 rounded-full bg-[#E7000B] animate-ping"></span>
-                  SLA &lt;24h Activo
-                </span>
-              </div>
+              <!-- Contenedor de la Imagen con Relación de Aspecto y Bordes Curvos -->
+              <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60">
+                <img
+                  src="/img/hero-trust.jpg"
+                  alt="Equipo de ingenieros senior y profesores de arquitectura de software en CODEVS"
+                  fetchpriority="high"
+                  loading="eager"
+                  decoding="async"
+                  class="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                
+                <!-- Gradientes sutiles para legibilidad de insignias -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none"></div>
 
-              <!-- Bloques de Garantía & Autoridad Técnica -->
-              <div class="space-y-3">
-                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
-                  <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                    <i class="bi bi-mortarboard-fill text-sm"></i>
-                  </div>
-                  <div>
-                    <div class="text-xs font-extrabold text-white">Ingenieros Senior &amp; Profesores de BD</div>
-                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Desarrollo a medida, optimización SQL/NoSQL y 0% deuda técnica.</div>
-                  </div>
+                <!-- Insignia Superior Izquierda: Garantía y Propiedad Intelectual -->
+                <div class="absolute top-3.5 left-3.5 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-bold text-white">
+                  <i class="bi bi-shield-check text-[#E7000B] text-xs"></i>
+                  <span>100% Garantía &amp; Código Propio</span>
                 </div>
 
-                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
-                  <div class="w-9 h-9 rounded-xl bg-white text-zinc-950 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                    <i class="bi bi-lightning-charge-fill text-sm text-[#E7000B]"></i>
+                <!-- Insignia Superior Derecha: SLA Activo en Vivo -->
+                <div class="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-semibold text-white">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>SLA &lt;24h Activo</span>
+                </div>
+
+                <!-- Tarjeta Flotante Inferior: Autoridad, Profesores y Métricas Reales -->
+                <div class="absolute bottom-3 inset-x-3 z-10 p-3 sm:p-3.5 rounded-2xl bg-black/85 backdrop-blur-xl border border-white/20 shadow-2xl flex items-center justify-between gap-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center font-black text-sm shrink-0 shadow-md">
+                      <i class="bi bi-mortarboard-fill text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs sm:text-sm font-extrabold text-white leading-tight">Ingenieros Senior &amp; Profesores BD</div>
+                      <div class="text-[11px] text-zinc-300 flex items-center gap-1.5 mt-0.5">
+                        <span class="text-amber-400 font-bold flex items-center gap-1">
+                          <i class="bi bi-star-fill text-[10px]"></i> 5.0
+                        </span>
+                        <span class="text-zinc-500">•</span>
+                        <span>+45 sistemas en producción</span>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div class="text-xs font-extrabold text-white">Prototipo Interactivo en 7 Días</div>
-                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Valida flujos de usuario y arquitectura de datos antes de escalar.</div>
+                  
+                  <div class="hidden sm:flex items-center -space-x-1.5 shrink-0" title="Proyectos reales en producción">
+                    <div class="w-7 h-7 rounded-full bg-zinc-800 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">SH</div>
+                    <div class="w-7 h-7 rounded-full bg-[#E7000B] border-2 border-black flex items-center justify-center text-[9px] font-black text-white">MO</div>
+                    <div class="w-7 h-7 rounded-full bg-zinc-700 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">AL</div>
                   </div>
                 </div>
 
-                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-[#E7000B]/40 transition-colors">
-                  <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                    <i class="bi bi-shield-check text-sm"></i>
-                  </div>
-                  <div>
-                    <div class="text-xs font-extrabold text-white">100% Código Propietario &amp; Garantía</div>
-                    <div class="text-[11px] text-zinc-400 leading-snug mt-0.5">Propiedad intelectual legalmente transferida y garantía por contrato.</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Pie de Métricas de Confianza -->
-              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-zinc-400">
-                <div class="flex items-center gap-1.5 text-white font-bold">
-                  <i class="bi bi-check-circle-fill text-[#E7000B]"></i>
-                  <span>+45 Sistemas Desplegados</span>
-                </div>
-                <div class="flex items-center gap-1 text-[#E7000B] font-semibold text-[11px]">
-                  <span>5.0</span>
-                  <div class="flex text-amber-400 text-[10px]">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                </div>
               </div>
 
             </div>
