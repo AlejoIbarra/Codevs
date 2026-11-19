@@ -33,28 +33,28 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">01</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">01</span>
             <h3 class="text-base font-bold text-white">Resume & Portfolio Review</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               We inspect your background, GitHub repos, or shipped products. We reply within 48 business hours.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">02</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">02</span>
             <h3 class="text-base font-bold text-white">Technical Deep-Dive (25 min)</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               An informal, high-level conversation with an Architecture Lead about systems design, values, and engineering culture.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">03</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">03</span>
             <h3 class="text-base font-bold text-white">Real-World Practical Case</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Zero synthetic whiteboard quizzes. A real-world architectural or implementation challenge reflecting actual client work.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">04</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">04</span>
             <h3 class="text-base font-bold text-white">Offer & Onboarding</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Clear compensation terms, agreement sign-off, and rapid integration into your dedicated engineering squad.

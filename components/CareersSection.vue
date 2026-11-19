@@ -45,7 +45,7 @@
           <div class="w-12 h-12 rounded-2xl bg-[#E7000B]/15 border border-[#E7000B]/30 flex items-center justify-center text-[#E7000B] text-xl mb-5 group-hover:bg-[#E7000B] group-hover:text-white transition-colors duration-300">
             <i :class="pillar.icon"></i>
           </div>
-          <div class="text-xs font-mono font-bold text-zinc-500 uppercase tracking-widest mb-1.5">{{ pillar.tag }}</div>
+          <div class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-1.5">{{ pillar.tag }}</div>
           <h3 class="text-lg font-bold text-white mb-2">{{ pillar.title }}</h3>
           <p class="text-zinc-400 text-sm leading-relaxed">{{ pillar.desc }}</p>
         </div>
@@ -57,7 +57,7 @@
         <!-- Left: Open Positions / Talent Pods -->
         <div class="lg:col-span-5 space-y-4">
           <div class="mb-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-[#E7000B] font-mono">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#E7000B]">
               {{ isEn ? 'CURRENT OPENINGS' : 'VACANTES DISPONIBLES' }}
             </span>
             <h3 class="text-2xl font-black text-white mt-1">
@@ -80,10 +80,10 @@
             <div class="flex items-start justify-between gap-3">
               <div>
                 <div class="flex items-center gap-2 mb-1.5">
-                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-white/10 text-zinc-300">
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 tracking-wider">
                     {{ job.type }}
                   </span>
-                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-[#E7000B]/15 text-[#E7000B] border border-[#E7000B]/25">
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#E7000B]/15 text-[#E7000B] border border-[#E7000B]/25 tracking-wider">
                     {{ job.location }}
                   </span>
                 </div>
@@ -123,7 +123,7 @@
 
             <div class="mb-8">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-mono font-bold text-[#E7000B] tracking-wider uppercase">
+                <span class="text-xs font-bold text-[#E7000B] tracking-wider uppercase">
                   {{ isEn ? 'JOB APPLICATION FORM' : 'FORMULARIO DE POSTULACIÓN' }}
                 </span>
                 <span class="text-xs text-zinc-400 font-medium">

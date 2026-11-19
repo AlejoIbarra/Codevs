@@ -101,7 +101,7 @@
                   <span class="w-3 h-3 rounded-full bg-[#E7000B]"></span>
                   <span class="w-3 h-3 rounded-full bg-white"></span>
                   <span class="w-3 h-3 rounded-full bg-zinc-600"></span>
-                  <span class="ml-2 text-xs font-mono text-zinc-400">codevs-engine://architecture-db-ai</span>
+                  <span class="ml-2 text-xs font-semibold text-zinc-400">codevs-engine://architecture-db-ai</span>
                 </div>
                 <span class="px-2.5 py-0.5 rounded-full bg-[#E7000B] text-white text-[10px] font-black uppercase tracking-wider">
                   {{ isEn ? 'Sub-Second SLA' : 'Ultra Rápido' }}
@@ -116,7 +116,7 @@
                     <span class="w-8 h-8 rounded-xl bg-[#E7000B] text-white flex items-center justify-center font-bold text-sm">
                       <i class="bi bi-cpu-fill"></i>
                     </span>
-                    <span class="text-[11px] font-mono text-white font-bold">CLEAN CODE</span>
+                    <span class="text-[11px] text-white font-bold tracking-wider">CLEAN CODE</span>
                   </div>
                   <div class="text-white font-bold text-sm">{{ isEn ? 'Custom Software & AI' : 'Software a Medida & IA' }}</div>
                   <div class="text-zinc-400 text-xs mt-0.5">{{ isEn ? 'Web, Mobile, SaaS & WhatsApp AI' : 'Web, Apps, ERP y Agentes WhatsApp 24/7' }}</div>
@@ -128,7 +128,7 @@
                     <span class="w-8 h-8 rounded-xl bg-white text-[#0A0A0E] flex items-center justify-center font-bold text-sm">
                       <i class="bi bi-database-fill-gear"></i>
                     </span>
-                    <span class="text-[11px] font-mono text-[#E7000B] font-bold">SQL / NoSQL</span>
+                    <span class="text-[11px] text-[#E7000B] font-bold tracking-wider">SQL / NoSQL</span>
                   </div>
                   <div class="text-white font-bold text-sm">{{ isEn ? 'Database Architecture' : 'Arquitectura de Bases de Datos' }}</div>
                   <div class="text-zinc-400 text-xs mt-0.5">{{ isEn ? 'Designed by Senior DB Architects' : 'Por arquitectos senior de software y BD' }}</div>
@@ -262,7 +262,7 @@
                   >
                     <span>{{ tile.badge }}</span>
                   </span>
-                  <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
+                  <span class="text-xs font-black text-zinc-400 tracking-wider">0{{ idx + 1 }} / 04</span>
                 </div>
 
                 <!-- Monumental Tile Title (Clean Outfit Tracking) -->
@@ -394,7 +394,7 @@
               >
                 <!-- Top Right Circular Icon Badge -->
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-mono uppercase tracking-widest font-bold opacity-80">
+                  <span class="text-xs uppercase tracking-widest font-extrabold opacity-80">
                     {{ stat.tag }}
                   </span>
                   <div
@@ -461,7 +461,7 @@
           <!-- 3-Step Fast-Track Buying Roadmap (Black & White Cards on Crimson Red) -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left max-w-4xl mx-auto pt-2">
             <div class="p-6 rounded-2xl bg-[#0A0A0E] border-0 shadow-2xl">
-              <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
+              <div class="text-xs font-black text-[#E7000B] uppercase tracking-wider">
                 {{ isEn ? 'STEP 01 • TODAY (FREE)' : 'PASO 01 • HOY (GRATIS)' }}
               </div>
               <div class="text-lg font-extrabold text-white mt-1">
@@ -476,7 +476,7 @@
             </div>
 
             <div class="p-6 rounded-2xl bg-white text-[#0A0A0E] border-0 shadow-2xl">
-              <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
+              <div class="text-xs font-black text-[#E7000B] uppercase tracking-wider">
                 {{ isEn ? 'STEP 02 • IN 7 DAYS' : 'PASO 02 • EN 7 DÍAS' }}
               </div>
               <div class="text-lg font-extrabold text-[#0A0A0E] mt-1">
@@ -491,7 +491,7 @@
             </div>
 
             <div class="p-6 rounded-2xl bg-[#0A0A0E] border-0 shadow-2xl">
-              <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
+              <div class="text-xs font-black text-[#E7000B] uppercase tracking-wider">
                 {{ isEn ? 'STEP 03 • TURN-KEY DELIVERY' : 'PASO 03 • ENTREGA LLAVE EN MANO' }}
               </div>
               <div class="text-lg font-extrabold text-white mt-1">

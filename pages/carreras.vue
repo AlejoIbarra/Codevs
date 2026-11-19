@@ -33,28 +33,28 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">01</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">01</span>
             <h3 class="text-base font-bold text-white">Revisión de CV & Portafolio</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Revisamos tu experiencia, repositorios de GitHub o proyectos reales. Respondemos en menos de 48 horas hábiles.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">02</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">02</span>
             <h3 class="text-base font-bold text-white">Diálogo Técnico (25 min)</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Conversación técnica informal con un Líder de Arquitectura para conocer tu visión de software y afinidad con el equipo.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">03</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">03</span>
             <h3 class="text-base font-bold text-white">Prueba Práctica Real</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Nada de preguntas capciosas de pizarrón. Un caso práctico real de arquitectura o código según tu stack tecnológico.
             </p>
           </div>
           <div class="p-6 rounded-2xl bg-[#0e0e14] border border-white/10 space-y-3 hover:border-red-500/40 transition">
-            <span class="text-3xl font-black text-red-500 font-mono">04</span>
+            <span class="text-3xl font-black text-red-500 tracking-tighter">04</span>
             <h3 class="text-base font-bold text-white">Oferta & Onboarding</h3>
             <p class="text-xs text-zinc-400 leading-relaxed">
               Propuesta económica formal clara, firma de contrato y bienvenida a tu squad de ingeniería.

@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
         display: ['"Outfit"', '"Inter"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        mono: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       colors: {
         brand: {
