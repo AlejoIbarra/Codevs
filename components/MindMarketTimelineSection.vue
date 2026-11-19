@@ -311,8 +311,12 @@
 
       </div>
 
-      <!-- Componente Interactivo de Animación de Cohete Original (PRESERVADO INTACTO) -->
-      <RocketScroll />
+      <!-- Componente Interactivo de Cohete: Vuela desde el inicio hasta el centro de la espiral y la sigue -->
+      <RocketScroll
+        :section-el="timelineSectionRef"
+        :canvas-el="threadCanvasRef"
+        :path-el="mainPathRef"
+      />
     </section>
 
     <!-- =========================================================================
