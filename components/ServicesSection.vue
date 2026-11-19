@@ -14,7 +14,7 @@
           Soluciones.
         </h2>
         <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
-          Desarrollo de software a la medida, arquitectura de bases de datos y automatización con IA. Diseñadas por <strong class="text-zinc-950 font-bold">ingenieros senior y profesores de programación y bases de datos</strong> para multiplicar la rentabilidad de tu empresa.
+          Desarrollo de software a la medida, arquitectura de bases de datos y automatización con IA. Diseñadas por <strong class="text-zinc-950 font-bold">ingenieros senior y arquitectos especialistas en software y bases de datos</strong> para multiplicar la rentabilidad de tu empresa.
         </p>
       </div>
 
@@ -227,16 +227,16 @@ const solutions = [
   {
     number: '09',
     title: 'Arquitectura de Bases de Datos & Formación.',
-    subtitle: 'Diseño SQL/NoSQL de alto rendimiento y mentoría por profesores expertos.',
-    description: 'Contamos con profesores universitarios y especialistas que enseñan programación, estructuras de datos y bases de datos (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). Diseñamos modelos relacionales blindados, optimizamos consultas lentas, migramos datos críticos sin caídas y entrenamos a equipos o estudiantes en ingeniería de software real.',
-    tag: 'Bases de Datos & Academia',
+    subtitle: 'Diseño SQL/NoSQL de alto rendimiento y mentoría técnica especializada.',
+    description: 'Contamos con ingenieros y arquitectos especialistas en desarrollo, estructuras de datos y bases de datos (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). Diseñamos modelos relacionales blindados, optimizamos consultas lentas, migramos datos críticos sin caídas y capacitamos a equipos en ingeniería de software real.',
+    tag: 'Bases de Datos & Formación',
     link: '#contact'
   },
   {
     number: '10',
     title: 'Consultoría de Software & Consultora TI.',
     subtitle: 'Auditoría de código, optimización de bases de datos y vCTO estratégico.',
-    description: 'Asesoría técnica de alto nivel para directores y gerencias: auditoría de arquitecturas críticas, rescate de proyectos fallidos, optimización de consultas SQL y dirección como CTO fraccional por profesores de ingeniería de software.',
+    description: 'Asesoría técnica de alto nivel para directores y gerencias: auditoría de arquitecturas críticas, rescate de proyectos fallidos, optimización de consultas SQL y dirección como CTO fraccional por arquitectos senior de ingeniería de software.',
     tag: 'Consultora & Auditoría',
     link: '/servicios/consultoria-software'
   }

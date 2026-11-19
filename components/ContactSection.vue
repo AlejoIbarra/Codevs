@@ -19,7 +19,7 @@
           </span>
         </h2>
         <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed">
-          Cuéntanos qué deseas construir o mejorar. Un <strong class="text-white">Ingeniero de Software Senior y Profesor de Bases de Datos</strong> analizará tu requerimiento y te entregará una propuesta clara en menos de 24 horas.
+          Cuéntanos qué deseas construir o mejorar. Un <strong class="text-white">Ingeniero de Software Senior y Arquitecto de Bases de Datos</strong> analizará tu requerimiento y te entregará una propuesta clara en menos de 24 horas.
         </p>
       </div>
 
@@ -35,9 +35,9 @@
                 <i class="bi bi-mortarboard-fill text-2xl"></i>
               </div>
               <div class="space-y-1">
-                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Autoridad Técnica &amp; Académica</span>
-                <h3 class="text-xl font-display font-bold text-white">Ingenieros &amp; Profesores de BD</h3>
-                <p class="text-zinc-400 text-sm">Desarrollo a medida, arquitectura SQL/NoSQL y formación especializada en programación.</p>
+                <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Autoridad Técnica &amp; Consultoría Senior</span>
+                <h3 class="text-xl font-display font-bold text-white">Ingenieros Senior &amp; Arquitectos de BD</h3>
+                <p class="text-zinc-400 text-sm">Desarrollo a medida, arquitectura SQL/NoSQL y mentoría técnica especializada.</p>
               </div>
             </div>
           </div>

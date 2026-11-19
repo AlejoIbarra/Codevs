@@ -39,14 +39,14 @@
             </h1>
 
             <p class="text-zinc-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
-              Diseñamos e implementamos sistemas ERP, CRMs inteligentes, plataformas cloud y arquitecturas de bases de datos de alto rendimiento. Desarrollado por <strong class="text-white font-semibold">ingenieros senior y profesores de programación y bases de datos</strong>. Código 100% de tu propiedad, sin licencias mensuales abusivas y con prototipo funcional en solo 7 días.
+              Diseñamos e implementamos sistemas ERP, CRMs inteligentes, plataformas cloud y arquitecturas de bases de datos de alto rendimiento. Desarrollado por <strong class="text-white font-semibold">ingenieros senior y arquitectos especialistas en bases de datos</strong>. Código 100% de tu propiedad, sin licencias mensuales abusivas y con prototipo funcional en solo 7 días.
             </p>
 
             <!-- Puntos Clave de Autoridad y Confianza -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-sm text-zinc-300">
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-mortarboard-fill text-red-500 text-base"></i>
-                <span>Creado por profesores de programación &amp; BD</span>
+                <span>Creado por arquitectos senior de software &amp; BD</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-lightning-charge-fill text-red-500 text-base"></i>
@@ -293,7 +293,7 @@
               <tr>
                 <td class="py-4 px-6 font-medium text-white">Rigor en Bases de Datos</td>
                 <td class="py-4 px-6 text-emerald-400 font-bold bg-red-950/10 border-x border-zinc-800">
-                  <i class="bi bi-check-circle-fill mr-1.5"></i> Diseñado por profesores de BD
+                  <i class="bi bi-check-circle-fill mr-1.5"></i> Diseñado por arquitectos senior de BD
                 </td>
                 <td class="py-4 px-6 text-zinc-400">
                   Caja negra sin acceso directo a SQL
@@ -887,7 +887,7 @@ const techStack = [
 const faqs = [
   {
     q: '¿Por qué CODEVS es la mejor opción en Pasto y Nariño para desarrollo de software?',
-    a: 'Porque no somos una agencia de reventa ni freelancers inexpertos. Nuestro equipo fundador está integrado por profesores universitarios de programación y bases de datos con sede física en San Juan de Pasto. Diseñamos arquitectura de software de nivel internacional, garantizamos código 100% propietario y brindamos soporte presencial y virtual cercano a las empresas nariñenses y de toda Colombia.'
+    a: 'Porque no somos una agencia de reventa ni freelancers inexpertos. Nuestro equipo fundador está integrado por ingenieros senior y arquitectos de bases de datos con sede física en San Juan de Pasto. Diseñamos arquitectura de software de nivel internacional, garantizamos código 100% propietario y brindamos soporte presencial y virtual cercano a las empresas nariñenses y de toda Colombia.'
   },
   {
     q: '¿Cuánto cuesta desarrollar un software a la medida en Colombia?',
@@ -916,7 +916,7 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'Empresa #1 en desarrollo de software a la medida en Pasto, Nariño y Colombia. Sistemas ERP, CRMs, PostgreSQL y cloud diseñados por profesores de programación. Prototipo en 7 días y código 100% propietario.' 
+      content: 'Empresa #1 en desarrollo de software a la medida en Pasto, Nariño y Colombia. Sistemas ERP, CRMs, PostgreSQL y cloud diseñados por ingenieros senior y arquitectos de software. Prototipo en 7 días y código 100% propietario.' 
     },
     { 
       name: 'keywords', 

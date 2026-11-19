@@ -64,9 +64,9 @@
                 </span>
               </div>
 
-              <!-- Value Narrative + Academic & Engineering Authority -->
+              <!-- Value Narrative + Engineering Authority -->
               <p class="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed max-w-xl">
-                We are <strong class="text-white font-semibold">CODEVS</strong>: the elite partner in custom software development, relational/NoSQL database architecture, and 24/7 AI automation. Engineered by <strong class="text-white font-semibold">senior software architects and university professors</strong> who teach computer science and databases.
+                We are <strong class="text-white font-semibold">CODEVS</strong>: the elite partner in custom software development, relational/NoSQL database architecture, and 24/7 AI automation. Engineered by <strong class="text-white font-semibold">senior software architects and cloud database specialists</strong> with enterprise-grade engineering standards.
               </p>
 
               <!-- MindMarket Bounce Action Buttons (.mm-btn) — Red, White & Black -->
@@ -136,31 +136,6 @@
                   <div class="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-semibold text-white">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span>SLA &lt;24h Active</span>
-                  </div>
-
-                  <!-- Bottom Floating Trust Showcase Card -->
-                  <div class="absolute bottom-3 inset-x-3 z-10 p-3 sm:p-3.5 rounded-2xl bg-black/85 backdrop-blur-xl border border-white/20 shadow-2xl flex items-center justify-between gap-3">
-                    <div class="flex items-center gap-3">
-                      <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center font-black text-sm shrink-0 shadow-md">
-                        <i class="bi bi-mortarboard-fill text-sm"></i>
-                      </div>
-                      <div>
-                        <div class="text-xs sm:text-sm font-extrabold text-white leading-tight">Senior Engineers &amp; CS Faculty</div>
-                        <div class="text-[11px] text-zinc-300 flex items-center gap-1.5 mt-0.5">
-                          <span class="text-amber-400 font-bold flex items-center gap-1">
-                            <i class="bi bi-star-fill text-[10px]"></i> 5.0
-                          </span>
-                          <span class="text-zinc-500">•</span>
-                          <span>+45 systems in production</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="hidden sm:flex items-center -space-x-1.5 shrink-0" title="Live enterprise platforms">
-                      <div class="w-7 h-7 rounded-full bg-zinc-800 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">SH</div>
-                      <div class="w-7 h-7 rounded-full bg-[#E7000B] border-2 border-black flex items-center justify-center text-[9px] font-black text-white">MO</div>
-                      <div class="w-7 h-7 rounded-full bg-zinc-700 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">AL</div>
-                    </div>
                   </div>
 
                 </div>
@@ -469,7 +444,7 @@
             Solutions.
           </h2>
           <p class="text-zinc-600 text-lg sm:text-2xl mt-5 font-normal leading-relaxed">
-            Custom software development, high-concurrency database architectures, and AI automations. Engineered by <strong class="text-zinc-950 font-bold">senior architects and university professors of programming &amp; databases</strong> to multiply your ROI.
+            Custom software development, high-concurrency database architectures, and AI automations. Engineered by <strong class="text-zinc-950 font-bold">senior software architects and cloud database specialists</strong> to multiply your ROI.
           </p>
         </div>
 
@@ -715,7 +690,7 @@
             <span class="text-red-600">Software, Databases &amp; Nearshore Squads</span>
           </h2>
           <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
-            Everything you need to know about working with CODEVS’s senior software architects and programming/database professors.
+            Everything you need to know about working with CODEVS’s senior software architects and database engineering leads.
           </p>
         </div>
 
@@ -772,7 +747,7 @@
             </span>
           </h2>
           <p class="text-zinc-400 text-base sm:text-lg mt-5 leading-relaxed">
-            Tell us about your technical roadmap, database bottleneck, or hiring needs. A <strong class="text-white">Senior Software Architect &amp; Database Professor</strong> will reply with a clear proposal within 24 hours.
+            Tell us about your technical roadmap, database bottleneck, or hiring needs. A <strong class="text-white">Senior Software Architect &amp; Cloud Database Lead</strong> will reply with a clear proposal within 24 hours.
           </p>
         </div>
 
@@ -787,8 +762,8 @@
                   <i class="bi bi-mortarboard-fill text-2xl"></i>
                 </div>
                 <div class="space-y-1">
-                  <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Engineering &amp; Academic Authority</span>
-                  <h3 class="text-xl font-bold text-white">Senior Devs &amp; CS/DB Professors</h3>
+                  <span class="text-xs font-bold uppercase text-red-500 tracking-wider">Engineering &amp; Senior Authority</span>
+                  <h3 class="text-xl font-bold text-white">Senior Devs &amp; Cloud DB Architects</h3>
                   <p class="text-zinc-400 text-sm">Real-time EST/CST alignment, SQL/NoSQL mastery, and corporate mentorship.</p>
                 </div>
               </div>
@@ -1033,9 +1008,9 @@ const solutions = [
   },
   {
     number: '09',
-    title: 'Database Architecture & Programming Academy.',
-    subtitle: 'High-concurrency SQL/NoSQL design & mentorship by CS professors.',
-    description: 'Our team includes university professors who teach programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). We design bulletproof data models, optimize slow enterprise queries, execute zero-downtime migrations, and train engineering squads.',
+    title: 'Database Architecture & Technical Mentorship.',
+    subtitle: 'High-concurrency SQL/NoSQL design & specialized technical mentorship.',
+    description: 'Our team includes senior software architects and engineering leaders with deep mastery in programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). We design bulletproof data models, optimize slow enterprise queries, execute zero-downtime migrations, and train engineering squads.',
     tag: 'Databases & Mentorship',
     link: '#contact'
   },
@@ -1043,7 +1018,7 @@ const solutions = [
     number: '10',
     title: 'Software Consulting & Architecture Advisory.',
     subtitle: 'Fractional CTO, code audits, and PostgreSQL query tuning.',
-    description: 'Senior architectural advisory and technical due diligence for US startups and enterprises. We diagnose high-latency database queries, untangle legacy architectures, and guide technical leadership with university computer science professors.',
+    description: 'Senior architectural advisory and technical due diligence for US startups and enterprises. We diagnose high-latency database queries, untangle legacy architectures, and provide fractional CTO direction with senior software architects.',
     tag: 'Advisory & vCTO',
     link: '/en/servicios/consultoria-software'
   }
@@ -1126,12 +1101,12 @@ const toggleFaq = (index) => {
 
 const usFaqs = [
   {
-    question: 'Why does CODEVS’s team of Senior Engineers & Programming/Database Professors deliver superior results?',
-    answer: 'Unlike generic agencies that rely on junior freelancers or slow templates, CODEVS is led by senior software architects and university professors who teach programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis). This guarantees rock-solid data models, millisecond query execution, and zero technical debt.'
+    question: 'Why does CODEVS’s team of Senior Software Architects & Database Specialists deliver superior results?',
+    answer: 'Unlike generic agencies that rely on junior freelancers or slow templates, CODEVS is led by senior software architects and database specialists with deep mastery in programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, MongoDB, Redis). This guarantees rock-solid data models, millisecond query execution, and zero technical debt.'
   },
   {
     question: 'Do you offer database architecture, SQL optimization, and corporate programming training?',
-    answer: 'Yes. Beyond building full-scale custom software and AI agents, we audit, redesign, and optimize slow databases for scaling companies, and our professors provide specialized corporate training and technical mentorship in software engineering and database architecture.'
+    answer: 'Yes. Beyond building full-scale custom software and AI agents, we audit, redesign, and optimize slow databases for scaling companies, and our senior engineers provide specialized corporate training and technical mentorship in software engineering and database architecture.'
   },
   {
     question: 'How does the 7-day interactive prototype and risk-free guarantee work?',
@@ -1231,20 +1206,20 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'CODEVS: #1 in custom software development, SQL/PostgreSQL database architecture, 24/7 WhatsApp AI agents, and web platforms. Led by senior engineers and programming/database professors with EST/CST alignment.' 
+      content: 'CODEVS: #1 in custom software development, SQL/PostgreSQL database architecture, 24/7 WhatsApp AI agents, and web platforms. Led by senior engineers and cloud database specialists with EST/CST alignment.' 
     },
     { 
       name: 'keywords', 
-      content: 'codevs, custom software development, database architecture postgresql sql, programming and database professors, nearshore software development, hire dedicated developers colombia, whatsapp ai agents, custom erp crm development' 
+      content: 'codevs, custom software development, database architecture postgresql sql, senior software architects, nearshore software development, hire dedicated developers colombia, whatsapp ai agents, custom erp crm development' 
     },
     { property: 'og:title', content: 'CODEVS | Custom Software Development, Database Architecture & AI Squads #1' },
-    { property: 'og:description', content: 'Senior software engineers and programming/database professors building custom platforms, high-concurrency databases, and AI automations.' },
+    { property: 'og:description', content: 'Senior software engineers and database specialists building custom platforms, high-concurrency databases, and AI automations.' },
     { property: 'og:image', content: 'https://www.codevs.dev/assets/img/services/omnichannel-dashboard.jpg' },
     { property: 'og:url', content: 'https://www.codevs.dev/en' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'CODEVS | Custom Software Development, Database Architecture & AI Squads #1' },
-    { name: 'twitter:description', content: 'Senior software engineers and programming/database professors building custom platforms, high-concurrency databases, and AI automations.' },
+    { name: 'twitter:description', content: 'Senior software engineers and database specialists building custom platforms, high-concurrency databases, and AI automations.' },
     { name: 'twitter:image', content: 'https://www.codevs.dev/assets/img/services/omnichannel-dashboard.jpg' }
   ],
   link: [
@@ -1261,7 +1236,7 @@ useJsonld(() => ({
   'alternateName': ['CODEVS', 'CODEVS Software Engineering'],
   'url': 'https://www.codevs.dev/en',
   'image': 'https://www.codevs.dev/img/codevs.png',
-  'description': 'Custom Software Development, Database Architecture (SQL/PostgreSQL/NoSQL), and AI Automation led by Senior Engineers and Programming Professors.',
+  'description': 'Custom Software Development, Database Architecture (SQL/PostgreSQL/NoSQL), and AI Automation led by Senior Engineers and Software Architects.',
   'priceRange': '$$$',
   'telephone': '+57 3008051304',
   'areaServed': [

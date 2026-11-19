@@ -36,13 +36,13 @@
             </h1>
 
             <p class="text-zinc-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
-              Code audits, high-performance database tuning, legacy project rescue, and fractional CTO advisory. Led by <strong class="text-white font-semibold">senior software architects and university computer science professors</strong> to de-risk your technology stack and scale your business.
+              Code audits, high-performance database tuning, legacy project rescue, and fractional CTO advisory. Led by <strong class="text-white font-semibold">senior software architects and cloud database specialists</strong> to de-risk your technology stack and scale your business.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-sm text-zinc-300">
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-mortarboard-fill text-red-500 text-base"></i>
-                <span>Direct oversight by university CS professors</span>
+                <span>Direct oversight by senior software architects</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-search text-red-500 text-base"></i>
@@ -157,7 +157,7 @@
             <ul class="text-xs text-zinc-400 space-y-1.5">
               <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Sub-15ms query execution benchmarks</li>
               <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Memory pool and connection tuning</li>
-              <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Led by university database professors</li>
+              <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Led by senior database architects</li>
             </ul>
           </div>
 
@@ -299,20 +299,20 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'Senior software consulting, code audits, PostgreSQL tuning, legacy project rescue, and fractional CTO advisory by university CS professors and architects.' 
+      content: 'Senior software consulting, code audits, PostgreSQL tuning, legacy project rescue, and fractional CTO advisory by senior software architects and database specialists.' 
     },
     { 
       name: 'keywords', 
       content: 'software consulting, technology advisory, code audit, postgresql tuning, fractional cto, tech due diligence, nearshore consulting, codevs' 
     },
     { property: 'og:title', content: 'Software Consulting & Architecture Advisory | CODEVS #1' },
-    { property: 'og:description', content: 'Code audits, database optimization, and fractional CTO advisory by senior computer science professors.' },
+    { property: 'og:description', content: 'Code audits, database optimization, and fractional CTO advisory by senior software architects.' },
     { property: 'og:image', content: 'https://www.codevs.dev/assets/img/services/2.png' },
     { property: 'og:url', content: 'https://www.codevs.dev/en/servicios/consultoria-software' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Software Consulting & Architecture Advisory | CODEVS #1' },
-    { name: 'twitter:description', content: 'De-risk your technology stack with senior software architects and CS professors.' },
+    { name: 'twitter:description', content: 'De-risk your technology stack with senior software architects and database leads.' },
     { name: 'twitter:image', content: 'https://www.codevs.dev/assets/img/services/2.png' }
   ],
   link: [

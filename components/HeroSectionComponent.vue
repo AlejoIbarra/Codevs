@@ -64,7 +64,7 @@
 
             <!-- Párrafo Descriptivo con Alta Autoridad Académica y de Negocio -->
             <p class="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed max-w-xl">
-              Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros senior y profesores que enseñan programación y bases de datos</strong>. Creamos sistemas ERP/CRM, plataformas web y agentes de IA omnicanales 24/7 con código 100% propietario y alto rendimiento.
+              Somos <strong class="text-white font-semibold">CODEVS</strong>. Tu proyecto es diseñado y programado por <strong class="text-white font-semibold">ingenieros senior y arquitectos especialistas en software y bases de datos</strong>. Creamos sistemas ERP/CRM, plataformas web y agentes de IA omnicanales 24/7 con código 100% propietario y alto rendimiento.
             </p>
 
             <!-- Botones de Acción de Alta Conversión con Física de Rebote (.mm-btn) -->
@@ -114,7 +114,7 @@
               <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60">
                 <img
                   src="/img/hero-trust.jpg"
-                  alt="Equipo de ingenieros senior y profesores de arquitectura de software en CODEVS"
+                  alt="Equipo de ingenieros senior y arquitectos de software en CODEVS"
                   fetchpriority="high"
                   loading="eager"
                   decoding="async"
@@ -122,7 +122,7 @@
                 />
                 
                 <!-- Gradientes sutiles para legibilidad de insignias -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
 
                 <!-- Insignia Superior Izquierda: Garantía y Propiedad Intelectual -->
                 <div class="absolute top-3.5 left-3.5 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-bold text-white">
@@ -134,31 +134,6 @@
                 <div class="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-semibold text-white">
                   <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                   <span>SLA &lt;24h Activo</span>
-                </div>
-
-                <!-- Tarjeta Flotante Inferior: Autoridad, Profesores y Métricas Reales -->
-                <div class="absolute bottom-3 inset-x-3 z-10 p-3 sm:p-3.5 rounded-2xl bg-black/85 backdrop-blur-xl border border-white/20 shadow-2xl flex items-center justify-between gap-3">
-                  <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 rounded-xl bg-[#E7000B] text-white flex items-center justify-center font-black text-sm shrink-0 shadow-md">
-                      <i class="bi bi-mortarboard-fill text-sm"></i>
-                    </div>
-                    <div>
-                      <div class="text-xs sm:text-sm font-extrabold text-white leading-tight">Ingenieros Senior &amp; Profesores BD</div>
-                      <div class="text-[11px] text-zinc-300 flex items-center gap-1.5 mt-0.5">
-                        <span class="text-amber-400 font-bold flex items-center gap-1">
-                          <i class="bi bi-star-fill text-[10px]"></i> 5.0
-                        </span>
-                        <span class="text-zinc-500">•</span>
-                        <span>+45 sistemas en producción</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="hidden sm:flex items-center -space-x-1.5 shrink-0" title="Proyectos reales en producción">
-                    <div class="w-7 h-7 rounded-full bg-zinc-800 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">SH</div>
-                    <div class="w-7 h-7 rounded-full bg-[#E7000B] border-2 border-black flex items-center justify-center text-[9px] font-black text-white">MO</div>
-                    <div class="w-7 h-7 rounded-full bg-zinc-700 border-2 border-black flex items-center justify-center text-[9px] font-black text-zinc-200">AL</div>
-                  </div>
                 </div>
 
               </div>

@@ -46,11 +46,11 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'CODEVS: Empresa #1 en desarrollo de software a la medida, arquitectura de bases de datos (SQL/PostgreSQL), agentes de IA en WhatsApp y páginas web. Liderados por ingenieros senior y profesores de programación y bases de datos en Colombia, LATAM y USA.' 
+      content: 'CODEVS: Empresa #1 en desarrollo de software a la medida, arquitectura de bases de datos (SQL/PostgreSQL), agentes de IA en WhatsApp y páginas web. Liderados por ingenieros senior y arquitectos especialistas en software y bases de datos en Colombia, LATAM y USA.' 
     },
     {
       name: 'keywords',
-      content: 'codevs, desarrollo de software, desarrollo de software a la medida, desarrollo de software colombia, arquitectura de bases de datos, profesores de programacion y bases de datos, diseño de bases de datos sql postgresql, empresa de desarrollo de software, paginas web colombia, automatizacion whatsapp ia, erp y crm a la medida, programadores senior colombia, desarrollo mvp startups'
+      content: 'codevs, desarrollo de software, desarrollo de software a la medida, desarrollo de software colombia, arquitectura de bases de datos, diseño de bases de datos sql postgresql, empresa de desarrollo de software, paginas web colombia, automatizacion whatsapp ia, erp y crm a la medida, programadores senior colombia, desarrollo mvp startups'
     }
   ]
 });
@@ -88,7 +88,7 @@ useJsonld(() => [
     'knowsAbout': [
       'Desarrollo de Software a la Medida',
       'Arquitectura y Diseño de Bases de Datos SQL y NoSQL',
-      'Formación y Mentoría por Profesores de Programación y Bases de Datos',
+      'Mentoría Técnica y Capacitación Especializada en Software',
       'Agentes de Inteligencia Artificial y Omnicanalidad WhatsApp API',
       'Sistemas ERP y CRM Empresariales y LegalTech',
       'Desarrollo de Páginas Web de Alta Conversión',
@@ -113,9 +113,9 @@ useJsonld(() => [
           '@type': 'Offer',
           'itemOffered': {
             '@type': 'Service',
-            'name': 'Arquitectura de Bases de Datos & Formación en Programación',
+            'name': 'Arquitectura de Bases de Datos & Mentoría Técnica',
             'url': 'https://www.codevs.dev/#services',
-            'description': 'Diseño, optimización SQL/PostgreSQL/NoSQL y formación especializada liderada por profesores universitarios de programación y bases de datos.'
+            'description': 'Diseño, optimización SQL/PostgreSQL/NoSQL y formación técnica especializada liderada por ingenieros y arquitectos senior de bases de datos.'
           }
         },
         {
@@ -160,15 +160,15 @@ useJsonld(() => [
         'name': '¿Por qué CODEVS es la empresa #1 en desarrollo de software a la medida y arquitectura de bases de datos?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': 'En CODEVS nuestro equipo está conformado por Ingenieros de Software Senior y Profesores que enseñan Programación, Algoritmos y Bases de Datos (SQL, PostgreSQL, MySQL, MongoDB, Redis). Entregamos código 100% propietario, consultas optimizadas al milisegundo y prototipos interactivos en los primeros 7 días.'
+          'text': 'En CODEVS nuestro equipo está conformado por Ingenieros de Software Senior y Arquitectos Especialistas en Programación, Algoritmos y Bases de Datos (SQL, PostgreSQL, MySQL, MongoDB, Redis). Entregamos código 100% propietario, consultas optimizadas al milisegundo y prototipos interactivos en los primeros 7 días.'
         }
       },
       {
         '@type': 'Question',
-        'name': '¿Ofrecen diseño de bases de datos, optimización SQL y clases o mentorías de programación?',
+        'name': '¿Ofrecen diseño de bases de datos, optimización SQL, consultoría y mentorías de programación?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': 'Sí. Además de construir plataformas empresariales completas, lideramos la arquitectura, auditoría y optimización de bases de datos relacionales y NoSQL, y nuestros profesores de programación y bases de datos brindan formación corporativa y mentorías personalizadas.'
+          'text': 'Sí. Además de construir plataformas empresariales completas, lideramos la arquitectura, auditoría y optimización de bases de datos relacionales y NoSQL, y nuestros arquitectos e ingenieros senior brindan formación corporativa y mentorías personalizadas.'
         }
       },
       {

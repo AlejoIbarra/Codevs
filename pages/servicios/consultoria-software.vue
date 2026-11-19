@@ -38,14 +38,14 @@
             </h1>
 
             <p class="text-zinc-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
-              Auditoría de código, optimización extrema de bases de datos, rescate de proyectos fallidos y dirección técnica como CTO fraccional. Asesoría directa por <strong class="text-white font-semibold">ingenieros senior y profesores de programación y bases de datos</strong> para que tu empresa tome decisiones tecnológicas blindadas y rentables.
+              Auditoría de código, optimización extrema de bases de datos, rescate de proyectos fallidos y dirección técnica como CTO fraccional. Asesoría directa por <strong class="text-white font-semibold">ingenieros senior y arquitectos especialistas en bases de datos</strong> para que tu empresa tome decisiones tecnológicas blindadas y rentables.
             </p>
 
             <!-- Puntos Clave de Confianza -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-sm text-zinc-300">
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-mortarboard-fill text-red-500 text-base"></i>
-                <span>Auditoría por profesores de programación &amp; BD</span>
+                <span>Auditoría por arquitectos senior de software &amp; BD</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-search text-red-500 text-base"></i>
@@ -167,7 +167,7 @@
             <ul class="text-xs text-zinc-400 space-y-1.5">
               <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Reducción del 90% en tiempos de consulta</li>
               <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Optimización de memoria y conexiones</li>
-              <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Asesoría directa por profesores de BD</li>
+              <li><i class="bi bi-check2 text-red-500 mr-1.5"></i>Asesoría directa por arquitectos senior de BD</li>
             </ul>
           </div>
 
@@ -440,7 +440,7 @@ const faqs = [
   },
   {
     q: '¿Cuál es la diferencia entre CODEVS y una consultora tradicional?',
-    a: 'Las consultoras tradicionales envían comerciales que subcontratan a juniors y entregan reportes teóricos en PDF de cientos de páginas. En CODEVS somos ingenieros senior y profesores universitarios: diagnosticamos el problema exacto y podemos solucionarlo en el código directamente.'
+    a: 'Las consultoras tradicionales envían comerciales que subcontratan a juniors y entregan reportes teóricos en PDF de cientos de páginas. En CODEVS somos ingenieros senior y arquitectos de software especializados: diagnosticamos el problema exacto y podemos solucionarlo en el código directamente.'
   }
 ];
 
@@ -456,7 +456,7 @@ useHead({
       content: 'consultoria de software pasto, consultora tecnologica pasto nariño, consultora de software colombia, consultoria de ti colombia, auditoria de software, optimizacion postgresql pasto, cto fraccional colombia, codevs consultoria' 
     },
     { property: 'og:title', content: 'Consultoría de Software & Consultora Tecnológica en Pasto y Colombia | CODEVS' },
-    { property: 'og:description', content: 'Auditoría de código, optimización de bases de datos PostgreSQL y asesoría estratégica por ingenieros y profesores universitarios.' },
+    { property: 'og:description', content: 'Auditoría de código, optimización de bases de datos PostgreSQL y asesoría estratégica por ingenieros senior y arquitectos de software.' },
     { property: 'og:image', content: 'https://www.codevs.dev/assets/img/services/2.png' },
     { property: 'og:url', content: 'https://www.codevs.dev/servicios/consultoria-software' },
     { property: 'og:type', content: 'website' },

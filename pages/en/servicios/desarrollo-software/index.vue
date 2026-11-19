@@ -39,14 +39,14 @@
             </h1>
 
             <p class="text-zinc-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
-              We architect and build enterprise-grade ERPs, revenue CRMs, cloud platforms, and resilient database systems. Crafted by <strong class="text-white font-semibold">senior software architects and university computer science professors</strong>. 100% proprietary code ownership, zero per-seat subscription lock-in, and a working prototype delivered in 7 business days.
+              We architect and build enterprise-grade ERPs, revenue CRMs, cloud platforms, and resilient database systems. Crafted by <strong class="text-white font-semibold">senior software architects and cloud database specialists</strong>. 100% proprietary code ownership, zero per-seat subscription lock-in, and a working prototype delivered in 7 business days.
             </p>
 
             <!-- Key Trust & Authority Points -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-sm text-zinc-300">
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-mortarboard-fill text-red-500 text-base"></i>
-                <span>Architected by CS professors &amp; senior engineers</span>
+                <span>Architected by senior software &amp; database engineers</span>
               </div>
               <div class="flex items-center gap-2.5">
                 <i class="bi bi-lightning-charge-fill text-red-500 text-base"></i>
@@ -126,7 +126,7 @@
 
               <div class="mt-6 pt-5 border-t border-zinc-800/80">
                 <p class="text-xs text-zinc-400 leading-relaxed">
-                  <strong class="text-white">Why US Companies Choose CODEVS:</strong> Unlike generic outsourcing shops that cycle junior contractors, your architecture is directly built and governed by computer science professors and principal engineers in Colombia with 60% cost efficiency.
+                  <strong class="text-white">Why US Companies Choose CODEVS:</strong> Unlike generic outsourcing shops that cycle junior contractors, your architecture is directly built and governed by senior software architects and principal engineers in Colombia with 60% cost efficiency.
                 </p>
               </div>
 
@@ -284,7 +284,7 @@
               <tr>
                 <td class="py-4 px-6 font-medium text-white">Database Rigor &amp; Architecture</td>
                 <td class="py-4 px-6 text-emerald-400 font-bold bg-red-950/10 border-x border-zinc-800">
-                  <i class="bi bi-check-circle-fill mr-1.5"></i> Architected by university CS professors
+                  <i class="bi bi-check-circle-fill mr-1.5"></i> Architected by senior database specialists
                 </td>
                 <td class="py-4 px-6 text-zinc-400">
                   Black-box with zero raw SQL access
@@ -483,7 +483,7 @@
             </div>
             <h3 class="text-xl font-bold text-white mb-2">Pasto, Nariño</h3>
             <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-              Our engineering headquarters: university-backed database professors, LegalTech solutions, and local high-touch delivery.
+              Our engineering headquarters: senior software architects and database leads, LegalTech solutions, and local high-touch delivery.
             </p>
             <span class="text-xs text-red-400 font-semibold group-hover:underline">
               Explore Pasto Hub →
@@ -712,7 +712,7 @@ const whatsappUrl = 'https://wa.me/573138066800?text=Hello%20CODEVS%2C%20I%20am%
 const faqs = [
   {
     q: 'How does CODEVS ensure senior-level software quality?',
-    a: 'Our core leadership consists of university computer science professors who actively teach relational database design and advanced algorithms in Colombia. Every line of backend code and schema design adheres to strict architectural principles, preventing technical debt from day one.'
+    a: 'Our core leadership consists of senior software architects and database specialists with deep mastery in relational database design and advanced algorithms. Every line of backend code and schema design adheres to strict architectural principles, preventing technical debt from day one.'
   },
   {
     q: 'Do we own 100% of the source code and IP?',
@@ -740,7 +740,7 @@ useHead({
       content: 'custom software development, nearshore software engineers colombia, software engineering pasto, postgresql database architects, erp development, codevs software' 
     },
     { property: 'og:title', content: 'Custom Software Development & Database Engineering | CODEVS #1' },
-    { property: 'og:description', content: 'Senior engineers & CS professors architecting custom ERPs, CRMs, and PostgreSQL databases. Prototype in 7 business days.' },
+    { property: 'og:description', content: 'Senior software engineers & database architects architecting custom ERPs, CRMs, and PostgreSQL databases. Prototype in 7 business days.' },
     { property: 'og:image', content: 'https://www.codevs.dev/assets/img/services/2.png' },
     { property: 'og:url', content: 'https://www.codevs.dev/en/servicios/desarrollo-software' },
     { property: 'og:type', content: 'website' },

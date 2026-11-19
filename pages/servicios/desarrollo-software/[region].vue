@@ -260,13 +260,13 @@ const regionsMap = {
     badge: 'Sede Principal en San Juan de Pasto • #1 en Google',
     h1Prefix: 'Desarrollo de Software a la Medida en',
     h1Highlight: 'Pasto, Nariño.',
-    heroDescription: 'La empresa de software de referencia en San Juan de Pasto. Creamos sistemas ERP, plataformas web, CRMs y bases de datos relacionales para empresas nariñenses. Diseñado por ingenieros senior y profesores de programación con atención presencial.',
+    heroDescription: 'La empresa de software de referencia en San Juan de Pasto. Creamos sistemas ERP, plataformas web, CRMs y bases de datos relacionales para empresas nariñenses. Diseñado por ingenieros senior y arquitectos de software con atención presencial.',
     ctaButtonText: 'Agendar Cita en Pasto / WhatsApp',
     cardTag: 'Sede Pasto • Nariño',
     supportMode: 'Presencial & Virtual',
     keyPoints: [
       'Sede física y atención presencial en Pasto',
-      'Ingenieros profesores de universidades locales',
+      'Ingenieros senior y especialistas locales',
       'Casos de éxito probados como Sin Huellas LegalTech',
       'Primer prototipo funcional en solo 7 días'
     ],
@@ -277,7 +277,7 @@ const regionsMap = {
     ],
     faqs: [
       { q: '¿Puedo tener reuniones presenciales con el equipo en Pasto?', a: 'Sí. Nuestra sede principal está ubicada en Pasto, lo que te permite reunirte directamente con los ingenieros y directores del proyecto para levantamiento de requisitos o capacitaciones.' },
-      { q: '¿Por qué no contratar freelancers en Pasto?', a: 'Porque con CODEVS cuentas con un contrato formal de empresa, NIT, factura electrónica, código 100% propietario y el respaldo de profesores de bases de datos que garantizan que tu software nunca colapse.' }
+      { q: '¿Por qué no contratar freelancers en Pasto?', a: 'Porque con CODEVS cuentas con un contrato formal de empresa, NIT, factura electrónica, código 100% propietario y el respaldo de arquitectos de bases de datos que garantizan que tu software nunca colapse.' }
     ],
     metaTitle: 'Desarrollo de Software en Pasto, Nariño | Empresa #1 en Tecnología CODEVS',
     metaDesc: 'Empresa líder en desarrollo de software a la medida en Pasto, Nariño. ERPs, bases de datos PostgreSQL y plataformas cloud con atención presencial. Prototipo en 7 días.',
@@ -557,7 +557,7 @@ const regionsMap = {
     ],
     faqs: [
       { q: 'How does the nearshore time zone alignment work?', a: 'Our engineers operate in UTC-5 (equivalent to US Eastern Time during Standard Time and Central Time during Daylight Saving Time), ensuring 100% overlap with your US team.' },
-      { q: 'Are your engineers senior level?', a: 'Yes. Our core team consists of university computer science professors and senior software architects with deep expertise in databases and scalable cloud systems.' }
+      { q: 'Are your engineers senior level?', a: 'Yes. Our core team consists of senior software architects and database engineering leads with deep expertise in databases and scalable cloud systems.' }
     ],
     metaTitle: 'Nearshore Software Development for USA Startups & Enterprises | CODEVS',
     metaDesc: 'Premier nearshore software engineering in Colombia for US companies. Time-zone aligned, bilingual senior engineers, 60% cost reduction. 7-day prototype.',

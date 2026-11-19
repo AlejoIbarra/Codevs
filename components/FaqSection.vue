@@ -11,7 +11,7 @@
           </span>
         </h2>
         <p class="text-zinc-600 text-base sm:text-lg mt-4 leading-relaxed">
-          Resolvemos tus dudas sobre desarrollo de software a la medida, arquitectura de bases de datos, profesores de programación y automatización en Colombia, Latinoamérica y Estados Unidos.
+          Resolvemos tus dudas sobre desarrollo de software a la medida, arquitectura de bases de datos, consultoría técnica y automatización en Colombia, Latinoamérica y Estados Unidos.
         </p>
       </div>
 
@@ -73,11 +73,11 @@ const toggle = (idx) => {
 const faqs = [
   {
     question: '¿Por qué CODEVS es la empresa #1 en desarrollo de software a la medida y arquitectura de bases de datos?',
-    answer: 'En CODEVS tu proyecto no cae en manos de plantillas lentas ni código improvisado. Nuestro equipo está conformado por Ingenieros de Software Senior y Profesores que enseñan Programación, Algoritmos y Bases de Datos (SQL, PostgreSQL, MySQL, MongoDB, Redis). Esto garantiza una arquitectura limpia, consultas de base de datos optimizadas al milisegundo, cero caídas en alta concurrencia y #1 en Google Core Web Vitals.'
+    answer: 'En CODEVS tu proyecto no cae en manos de plantillas lentas ni código improvisado. Nuestro equipo está conformado por Ingenieros de Software Senior y Arquitectos Especialistas en Programación, Algoritmos y Bases de Datos (SQL, PostgreSQL, MySQL, MongoDB, Redis). Esto garantiza una arquitectura limpia, consultas de base de datos optimizadas al milisegundo, cero caídas en alta concurrencia y #1 en Google Core Web Vitals.'
   },
   {
-    question: '¿Ofrecen diseño de bases de datos, optimización SQL y clases o mentorías de programación?',
-    answer: 'Sí. Además de construir plataformas empresariales completas, lideramos la arquitectura, auditoría, migración y optimización de bases de datos relacionales y NoSQL para empresas cuyos sistemas actuales son lentos. Asimismo, nuestros profesores de programación y bases de datos brindan formación corporativa a equipos de TI, asesoría técnica especializada y mentorías personalizadas en desarrollo de software moderno.'
+    question: '¿Ofrecen diseño de bases de datos, optimización SQL, consultoría y mentorías de programación?',
+    answer: 'Sí. Además de construir plataformas empresariales completas, lideramos la arquitectura, auditoría, migración y optimización de bases de datos relacionales y NoSQL para empresas cuyos sistemas actuales son lentos. Asimismo, nuestros arquitectos e ingenieros senior brindan formación corporativa a equipos de TI, asesoría técnica especializada y mentorías personalizadas en desarrollo de software moderno.'
   },
   {
     question: '¿Qué tipo de desarrollo de software a la medida e Inteligencia Artificial realizan?',

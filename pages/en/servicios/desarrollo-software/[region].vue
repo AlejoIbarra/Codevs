@@ -93,7 +93,7 @@
 
               <div class="mt-6 pt-5 border-t border-zinc-800/80">
                 <p class="text-xs text-zinc-400 leading-relaxed">
-                  <strong class="text-white">CODEVS Guarantee:</strong> Scalable enterprise software crafted by university computer science professors with zero licensing lock-in and seamless cross-border delivery.
+                  <strong class="text-white">CODEVS Guarantee:</strong> Scalable enterprise software crafted by senior software architects and database leads with zero licensing lock-in and seamless cross-border delivery.
                 </p>
               </div>
             </div>
@@ -219,13 +219,13 @@ const regionsMap = {
     badge: 'Engineering Headquarters • San Juan de Pasto',
     h1Prefix: 'Custom Software & Database Engineering in',
     h1Highlight: 'Pasto, Nariño.',
-    heroDescription: 'The premier software engineering firm in San Juan de Pasto. Custom ERPs, web platforms, CRMs, and relational databases for regional enterprises. Built by senior engineers and university computer science professors with in-person delivery.',
+    heroDescription: 'The premier software engineering firm in San Juan de Pasto. Custom ERPs, web platforms, CRMs, and relational databases for regional enterprises. Built by senior engineers and cloud database architects with in-person delivery.',
     ctaButtonText: 'Schedule Pasto Consultation / WhatsApp',
     cardTag: 'Pasto HQ • Nariño',
     supportMode: 'On-Site & High-Touch Virtual',
     keyPoints: [
       'Physical engineering headquarters in Pasto',
-      'Senior engineers who teach university CS & databases',
+      'Senior engineers and database architecture specialists',
       'Proven case studies like Sin Huellas LegalTech',
       'Working functional prototype in 7 business days'
     ],
@@ -498,7 +498,7 @@ const regionsMap = {
     badge: 'Nearshore Software Development • US Startups & Enterprises',
     h1Prefix: 'Nearshore Software Engineering for',
     h1Highlight: 'USA Companies & Global Startups.',
-    heroDescription: 'Dedicated squads of senior bilingual engineers and computer science professors based in Colombia. 100% time-zone overlap with US EST and CST, senior software craftsmanship, and a 60% reduction in development costs without compromising quality.',
+    heroDescription: 'Dedicated squads of senior bilingual engineers and software architects based in Colombia. 100% time-zone overlap with US EST and CST, senior software craftsmanship, and a 60% reduction in development costs without compromising quality.',
     ctaButtonText: 'Schedule Nearshore Discovery Call',
     cardTag: 'USA • Nearshore Squads',
     supportMode: 'EST / CST Time Zone Alignment',
@@ -515,7 +515,7 @@ const regionsMap = {
     ],
     faqs: [
       { q: 'How does time-zone alignment work with US teams?', a: 'Our engineers operate in UTC-5 (equivalent to US Eastern Time during Standard Time and Central Time during Daylight Saving Time), ensuring 100% live overlap with your engineering organization.' },
-      { q: 'Are your engineers senior level?', a: 'Yes. Our core engineering leads are university computer science professors with deep academic and enterprise expertise in databases and scalable cloud systems.' }
+      { q: 'Are your engineers senior level?', a: 'Yes. Our core engineering leads are senior software architects with deep enterprise expertise in databases and scalable cloud systems.' }
     ],
     metaTitle: 'Nearshore Software Development for USA Startups & Enterprises | CODEVS',
     metaDesc: 'Premier nearshore software engineering in Colombia for US companies. Time-zone aligned, bilingual senior engineers, 60% cost reduction. 7-day prototype.',

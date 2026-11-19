@@ -22,20 +22,20 @@
           <div class="lg:col-span-6 space-y-6">
             <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0A0A0E] text-white text-xs font-bold uppercase tracking-widest shadow-md">
               <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
-              <span>{{ isEn ? 'Senior Engineers & Programming / DB Professors' : 'Ingenieros Senior & Profesores de Programación y BD' }}</span>
+              <span>{{ isEn ? 'Senior Engineers & Cloud / DB Architects' : 'Ingenieros Senior & Arquitectos de Software y BD' }}</span>
             </div>
 
             <h2 class="text-3xl sm:text-5xl lg:text-[3.15rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.1] text-balance">
               {{ isEn
-                ? 'CODEVS builds custom software, database architectures & AI agents led by senior engineers and programming professors.'
-                : 'CODEVS desarrolla software a la medida, bases de datos de alto rendimiento e IA con ingenieros senior y profesores de programación.'
+                ? 'CODEVS builds custom software, database architectures & AI agents led by senior engineers and software architects.'
+                : 'CODEVS desarrolla software a la medida, bases de datos de alto rendimiento e IA con ingenieros senior y arquitectos de software.'
               }}
             </h2>
 
             <p class="text-base sm:text-xl text-zinc-600 font-medium leading-relaxed max-w-xl">
               {{ isEn
-                ? 'Why trust templates or junior freelancers when your system can be architected by professors who teach software engineering and database design? We deliver clean code, optimized PostgreSQL/SQL engines, autonomous 24/7 WhatsApp AI, and turn-key ERPs designed to multiply your revenue.'
-                : '¿Por qué arriesgar tu inversión con plantillas o código improvisado cuando tu plataforma puede ser creada por profesores que enseñan programación y diseño de bases de datos? Entregamos código limpio, motores SQL/PostgreSQL ultra rápidos, agentes de IA 24/7 en WhatsApp y sistemas ERP listos para multiplicar tus ventas.'
+                ? 'Why trust templates or junior freelancers when your system can be architected by senior engineers who specialize in enterprise software and database design? We deliver clean code, optimized PostgreSQL/SQL engines, autonomous 24/7 WhatsApp AI, and turn-key ERPs designed to multiply your revenue.'
+                : '¿Por qué arriesgar tu inversión con plantillas o código improvisado cuando tu plataforma puede ser creada por ingenieros senior y arquitectos de bases de datos? Entregamos código limpio, motores SQL/PostgreSQL ultra rápidos, agentes de IA 24/7 en WhatsApp y sistemas ERP listos para multiplicar tus ventas.'
               }}
             </p>
 
@@ -122,7 +122,7 @@
                   <div class="text-zinc-400 text-xs mt-0.5">{{ isEn ? 'Web, Mobile, SaaS & WhatsApp AI' : 'Web, Apps, ERP y Agentes WhatsApp 24/7' }}</div>
                 </div>
 
-                <!-- Card Node 2: Database Architecture & Professors -->
+                <!-- Card Node 2: Database Architecture & Senior Architects -->
                 <div class="p-4 rounded-2xl bg-white/[0.05] border border-white/15 hover:border-white transition-colors duration-200">
                   <div class="flex items-center justify-between mb-2">
                     <span class="w-8 h-8 rounded-xl bg-white text-[#0A0A0E] flex items-center justify-center font-bold text-sm">
@@ -131,7 +131,7 @@
                     <span class="text-[11px] font-mono text-[#E7000B] font-bold">SQL / NoSQL</span>
                   </div>
                   <div class="text-white font-bold text-sm">{{ isEn ? 'Database Architecture' : 'Arquitectura de Bases de Datos' }}</div>
-                  <div class="text-zinc-400 text-xs mt-0.5">{{ isEn ? 'Designed by DB & CS Professors' : 'Por profesores de programación y BD' }}</div>
+                  <div class="text-zinc-400 text-xs mt-0.5">{{ isEn ? 'Designed by Senior DB Architects' : 'Por arquitectos senior de software y BD' }}</div>
                 </div>
 
                 <!-- Card Node 3 (Full Width Academic & Enterprise Authority Strip) -->
@@ -211,13 +211,13 @@
             <span class="text-xs font-black uppercase tracking-tight mt-1">&lt; 1s Load</span>
           </div>
 
-          <!-- Sticker 2: Professors of Programming & DB -->
+          <!-- Sticker 2: Senior Architects & Database Specialists -->
           <div
             data-mm-parallax="45"
             class="hidden md:flex absolute top-[26%] right-0 sm:right-2 lg:right-4 z-20 px-5 py-3 rounded-full bg-[#0A0A0E] border-0 shadow-2xl rotate-[6deg] items-center gap-2.5 text-white font-black text-sm"
           >
             <i class="bi bi-mortarboard-fill text-[#E7000B]"></i>
-            <span>{{ isEn ? 'CS & Database Professors' : 'Profesores de Programación y BD' }}</span>
+            <span>{{ isEn ? 'Senior Software & DB Architects' : 'Arquitectos de Software y BD' }}</span>
           </div>
 
           <!-- Sticker 3: AI LegalTech Badge -->
@@ -453,8 +453,8 @@
 
           <p class="text-lg sm:text-2xl text-white/95 font-medium max-w-3xl mx-auto leading-relaxed text-balance">
             {{ isEn
-              ? 'Whether you need custom software, high-concurrency database optimization, 24/7 WhatsApp AI, or corporate training by programming professors, we take you from idea to production in record time.'
-              : 'Ya sea que necesites desarrollo de software a la medida, arquitectura de bases de datos, agentes de IA en WhatsApp o formación especializada con nuestros profesores de programación, llevamos tu proyecto a producción en tiempo récord.'
+              ? 'Whether you need custom software, high-concurrency database optimization, 24/7 WhatsApp AI, or corporate technical training, we take you from idea to production in record time.'
+              : 'Ya sea que necesites desarrollo de software a la medida, arquitectura de bases de datos, agentes de IA en WhatsApp o formación técnica especializada, llevamos tu proyecto a producción en tiempo récord.'
             }}
           </p>
 
@@ -469,8 +469,8 @@
               </div>
               <p class="text-xs sm:text-sm text-zinc-300 mt-1.5 leading-relaxed">
                 {{ isEn
-                  ? 'Talk directly with a Senior Architect & DB Professor. We map your scope, ROI, and exact investment.'
-                  : 'Hablas directo con un Arquitecto Senior y Profesor de BD. Definimos alcance, tiempos y presupuesto exacto.'
+                  ? 'Talk directly with a Senior Architect & DB Lead. We map your scope, ROI, and exact investment.'
+                  : 'Hablas directo con un Arquitecto Senior y Especialista en BD. Definimos alcance, tiempos y presupuesto exacto.'
                 }}
               </p>
             </div>
@@ -543,7 +543,7 @@
           <div class="pt-10 mt-8 border-t border-white/25 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm sm:text-base font-bold text-white">
             <div class="flex items-center justify-center gap-2">
               <i class="bi bi-check-circle-fill text-white"></i>
-              <span>{{ isEn ? 'Senior Engineers & DB Professors' : 'Ingenieros Senior y Profesores de BD' }}</span>
+              <span>{{ isEn ? 'Senior Engineers & DB Architects' : 'Ingenieros Senior y Arquitectos de BD' }}</span>
             </div>
             <div class="flex items-center justify-center gap-2">
               <i class="bi bi-check-circle-fill text-white"></i>
@@ -599,10 +599,10 @@ const timelineTiles = computed(() => {
         isInternal: false
       },
       {
-        badge: '02 • Senior Engineers & Professors',
-        title: 'Built by those who teach code & databases.',
-        description: 'Our team includes senior software architects and university professors who teach programming, algorithms, and relational/NoSQL databases. Whether we are building your enterprise ERP, optimizing slow SQL queries, or mentoring your tech squad, you get academic rigor and commercial speed.',
-        chips: ['Programming Professors', 'Database Modeling', 'Query Optimization', '7-Day Prototype'],
+        badge: '02 • Senior Engineers & Architects',
+        title: 'Built by elite software architects & engineers.',
+        description: 'Our team includes senior software architects and technical leaders with deep mastery in programming, algorithms, and relational/NoSQL databases. Whether we are building your enterprise ERP, optimizing slow SQL queries, or mentoring your tech squad, you get engineering rigor and commercial speed.',
+        chips: ['Senior Software Architects', 'Database Modeling', 'Query Optimization', '7-Day Prototype'],
         accentColor: '#0A0A0E',
         badgeTextColor: '#ffffff',
         btnVariant: '-dark',
@@ -651,10 +651,10 @@ const timelineTiles = computed(() => {
       isInternal: false
     },
     {
-      badge: '02 • Ingenieros Senior y Profesores',
-      title: 'Creado por quienes enseñan programación y BD.',
-      description: 'Nuestro equipo está integrado por arquitectos de software senior y profesores que enseñan programación, estructuras de datos y bases de datos (SQL, PostgreSQL, MySQL, NoSQL). Diseñamos modelos de datos blindados, optimizamos consultas críticas y capacitamos equipos con rigor académico y velocidad comercial.',
-      chips: ['Profesores de Programación', 'Diseño de Bases de Datos', 'Optimización SQL', 'Prototipo en 7 Días'],
+      badge: '02 • Ingenieros Senior y Arquitectos',
+      title: 'Diseñado por arquitectos especialistas en software y BD.',
+      description: 'Nuestro equipo está integrado por arquitectos de software senior y especialistas en desarrollo, estructuras de datos y bases de datos (SQL, PostgreSQL, MySQL, NoSQL). Diseñamos modelos de datos blindados, optimizamos consultas críticas y capacitamos equipos con rigor técnico y velocidad comercial.',
+      chips: ['Arquitectos de Software', 'Diseño de Bases de Datos', 'Optimización SQL', 'Prototipo en 7 Días'],
       accentColor: '#0A0A0E',
       badgeTextColor: '#ffffff',
       btnVariant: '-dark',
@@ -719,7 +719,7 @@ const numberCards = computed(() => {
         tag: 'Software, Databases & AI • US & LATAM',
         number: '45+',
         numberColor: '#ffffff',
-        description: 'Custom web platforms, high-concurrency databases, enterprise ERPs, and startups engineered by senior devs and CS professors.',
+        description: 'Custom web platforms, high-concurrency databases, enterprise ERPs, and startups engineered by senior devs and software architects.',
         bg: '#E7000B',
         textColor: '#ffffff',
         iconBg: '#0A0A0E',
@@ -767,7 +767,7 @@ const numberCards = computed(() => {
       tag: 'Software, Bases de Datos & IA • Colombia & USA',
       number: '45+',
       numberColor: '#ffffff',
-      description: 'Plataformas web, bases de datos de alta concurrencia, sistemas ERP/CRM y startups diseñadas por ingenieros senior y profesores de programación.',
+      description: 'Plataformas web, bases de datos de alta concurrencia, sistemas ERP/CRM y startups diseñadas por ingenieros senior y arquitectos de software.',
       bg: '#E7000B',
       textColor: '#ffffff',
       iconBg: '#0A0A0E',
