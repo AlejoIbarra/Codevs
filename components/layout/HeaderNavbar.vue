@@ -83,6 +83,7 @@ const spanishOptions = [
   { title: "Clientes", url: "/#clientes", highlight: false },
   { title: "Servicios", url: "/#services", highlight: false },
   { title: "Proyectos", url: "/#portfolio", highlight: false },
+  { title: "Carreras", url: "/#carreras", highlight: false },
   { title: "Blog", url: "/blog", highlight: false },
   { title: "Contacto", url: "/#contact", highlight: false }
 ];
@@ -93,6 +94,7 @@ const englishOptions = [
   { title: "Clients", url: "/en#clients", highlight: false },
   { title: "Solutions", url: "/en#services", highlight: false },
   { title: "Case Studies", url: "/en#portfolio", highlight: false },
+  { title: "Careers", url: "/en#careers", highlight: false },
   { title: "Blog", url: "/blog", highlight: false },
   { title: "Contact", url: "/en#contact", highlight: false }
 ];

@@ -24,7 +24,10 @@
     <!-- 8. Sección FAQ para Dominar el Algoritmo de Google y Búsquedas por IA -->
     <FaqSection />
 
-    <!-- 9. Sección de Contacto -->
+    <!-- 9. Carreras & Trabaja con Nosotros (Nivel Globant Engineering Studios) -->
+    <CareersSection />
+
+    <!-- 10. Sección de Contacto -->
     <ContactSection />
   </div>
 </template>
@@ -38,6 +41,7 @@ import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';
 import BlogSection from '~/components/BlogSection.vue';
 import FaqSection from '~/components/FaqSection.vue';
+import CareersSection from '~/components/CareersSection.vue';
 import ContactSection from '~/components/ContactSection.vue';
 
 // Metadatos SEO de Alta Precisión e Indexación Global (#1 en CODEVS, Desarrollo de Software y Bases de Datos)

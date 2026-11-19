@@ -712,7 +712,10 @@
       </div>
     </section>
 
-    <!-- 8. Contact & Discovery Form Section (Flat Solid Dark Card) -->
+    <!-- 8. Careers & Engineering Studios Section (Globant Caliber) -->
+    <CareersSection />
+
+    <!-- 9. Contact & Discovery Form Section (Flat Solid Dark Card) -->
     <section
       id="contact"
       class="contact-section bg-[#07070a] text-gray-200 py-28 lg:py-36 border-t border-zinc-900 relative overflow-hidden"
@@ -887,6 +890,7 @@ import { ref, reactive, computed, onMounted, onBeforeUnmount } from 'vue';
 import MindMarketTimelineSection from '~/components/MindMarketTimelineSection.vue';
 import NeverDoneSection from '~/components/NeverDoneSection.vue';
 import BlogSection from '~/components/BlogSection.vue';
+import CareersSection from '~/components/CareersSection.vue';
 
 const whatsappUSUrl = 'https://wa.me/573008051304?text=Hello%20CODEVS%2C%20I%20would%20like%20to%20quote%20a%20custom%20software%20or%20database%20engineering%20project.';
 
