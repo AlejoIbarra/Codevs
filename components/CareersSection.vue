@@ -1,7 +1,7 @@
 <template>
   <section
     :id="isEn ? 'careers' : 'carreras'"
-    class="relative py-28 lg:py-36 bg-[#07070a] text-white overflow-hidden border-t border-white/10"
+    class="relative py-8 lg:py-12 bg-transparent text-white overflow-hidden"
   >
     <!-- Invisible scroll anchors for perfect navigation in both languages -->
     <span id="carreras" class="absolute -top-24 pointer-events-none"></span>

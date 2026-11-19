@@ -24,8 +24,25 @@
     <!-- 8. Sección FAQ para Dominar el Algoritmo de Google y Búsquedas por IA -->
     <FaqSection />
 
-    <!-- 9. Carreras & Trabaja con Nosotros (Nivel Globant Engineering Studios) -->
-    <CareersSection />
+    <!-- 9. Teaser de Carreras & Trabaja con Nosotros (Enlace a /carreras) -->
+    <section class="py-16 bg-[#0a0a0f] border-t border-white/10 text-white relative overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/15 border border-red-500/30 text-xs font-bold text-red-400 uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span>Estamos Contratando • Engineering Studios</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-black text-white">¿Eres Ingeniero Senior o Arquitecto de Software?</h3>
+          <p class="text-zinc-400 text-sm max-w-2xl">
+            Construye sistemas empresariales cloud de alta concurrencia y agentes de IA con el equipo de CODEVS. Trabajo 100% remoto, sin burocracia y con compensación competitiva.
+          </p>
+        </div>
+        <NuxtLink to="/carreras" class="shrink-0 px-6 py-3.5 rounded-xl bg-white hover:bg-zinc-200 text-zinc-950 font-extrabold text-sm flex items-center gap-2 transition-all shadow-xl group">
+          <span>Ver Vacantes &amp; Postularme</span>
+          <i class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </NuxtLink>
+      </div>
+    </section>
 
     <!-- 10. Sección de Contacto -->
     <ContactSection />
@@ -41,7 +58,6 @@ import ServicesSection from '~/components/ServicesSection.vue';
 import PortfolioSection from '~/components/PortfolioSection.vue';
 import BlogSection from '~/components/BlogSection.vue';
 import FaqSection from '~/components/FaqSection.vue';
-import CareersSection from '~/components/CareersSection.vue';
 import ContactSection from '~/components/ContactSection.vue';
 
 // Metadatos SEO de Alta Precisión e Indexación Global (#1 en CODEVS, Desarrollo de Software y Bases de Datos)

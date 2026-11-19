@@ -57,6 +57,8 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/en',
+        '/carreras',
+        '/en/careers',
         '/blog',
         '/blog/agentes-ia-flujos-trabajo-automatizacion-software',
         '/blog/geo-posicionamiento-motores-ia-google-overviews',

@@ -47,10 +47,10 @@
           <li><a :href="isEnglish ? '/en#services' : '/#services'" class="hover:text-red-500 transition">{{ isEnglish ? 'Solutions' : 'Servicios' }}</a></li>
           <li><a :href="isEnglish ? '/en#portfolio' : '/#portfolio'" class="hover:text-red-500 transition">{{ isEnglish ? 'Case Studies' : 'Proyectos' }}</a></li>
           <li>
-            <a :href="isEnglish ? '/en#careers' : '/#carreras'" class="hover:text-white text-[#ff4d55] font-bold transition flex items-center gap-1.5">
+            <NuxtLink :to="isEnglish ? '/en/careers' : '/carreras'" class="hover:text-white text-[#ff4d55] font-bold transition flex items-center gap-1.5">
               <span>{{ isEnglish ? 'Careers (Join the Team)' : 'Trabaja con Nosotros' }}</span>
               <span class="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-red-600/20 text-[#ff4d55] border border-red-500/30">Hiring</span>
-            </a>
+            </NuxtLink>
           </li>
           <li><NuxtLink to="/blog" class="hover:text-red-500 text-zinc-300 transition font-medium">{{ isEnglish ? 'Tech Blog' : 'Blog de Tecnología' }}</NuxtLink></li>
           <li><a :href="isEnglish ? '/en#contact' : '/#contact'" class="hover:text-red-500 transition">{{ isEnglish ? 'Contact Leadership' : 'Contacto' }}</a></li>
