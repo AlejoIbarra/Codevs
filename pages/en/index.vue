@@ -131,8 +131,8 @@
 
           <!-- Integrated Technology Logos Row (White Monochrome) -->
           <div class="relative z-10 mt-10 pt-7 border-t border-white/15 flex flex-col items-center">
-            <span class="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mb-5">
-              Enterprise Stack: Spring Boot • Nuxt 3 • PostgreSQL • SQL • AWS • Flutter • Meta AI
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-zinc-300 mb-5 text-center">
+              Expertise in Autonomous AI Agents, Languages, Frameworks &amp; Enterprise Database Engines
             </span>
 
             <div class="w-full overflow-hidden relative">

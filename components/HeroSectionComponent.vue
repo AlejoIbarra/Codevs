@@ -130,7 +130,7 @@
         <!-- Tecnologías Integradas en el Mismo Flujo -->
         <div class="relative z-10 mt-10 pt-8 border-t border-white/15 max-w-5xl mx-auto">
           <p class="text-xs sm:text-sm font-bold uppercase tracking-widest text-zinc-300 mb-6 text-center">
-            Dominio Experto en Lenguajes, Frameworks & Motores de Bases de Datos
+            Dominio Experto en Agentes de Inteligencia Artificial, Lenguajes, Frameworks & Motores de Bases de Datos
           </p>
 
           <Swiper
