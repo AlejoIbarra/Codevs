@@ -6,10 +6,6 @@
 
       <!-- Encabezado Monumental en Español -->
       <div class="max-w-3xl mb-16 lg:mb-24 services-header">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950 text-white text-xs font-bold uppercase tracking-wider mb-5">
-          <span class="w-2 h-2 rounded-full bg-red-600"></span>
-          <span>Ingeniería de Software • Bases de Datos • Inteligencia Artificial</span>
-        </div>
         <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
           Soluciones.
         </h2>

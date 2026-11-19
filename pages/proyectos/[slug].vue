@@ -117,10 +117,6 @@
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-4 backdrop-blur-xl">
-            <i class="bi bi-display text-red-500"></i>
-            Ecosistema en Producción
-          </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Arquitectura de <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Software & UI</span>
           </h2>
@@ -379,10 +375,6 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <i class="bi bi-question-circle text-red-500"></i>
-            Preguntas Frecuentes
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
             Preguntas sobre este <span class="text-red-500">Caso de Éxito</span>
           </h2>

@@ -327,10 +327,6 @@
           
           <!-- Left Column: Sticky Title with Continuous Animated Wavy Underline -->
           <div class="lg:col-span-6 lg:sticky lg:top-28 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0A0A0E] text-white text-xs font-bold uppercase tracking-wider">
-              <span class="w-2 h-2 rounded-full bg-[#E7000B]"></span>
-              <span>{{ isEn ? 'Verified Engineering Metrics' : 'Métricas Reales de Ingeniería' }}</span>
-            </div>
 
             <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0A0A0E] tracking-tight leading-[1.08]">
               <template v-if="isEn">
@@ -437,11 +433,6 @@
         <div class="absolute -bottom-40 -right-24 w-[450px] h-[450px] rounded-full border-[44px] border-black/25 pointer-events-none"></div>
 
         <div class="container mx-auto max-w-5xl relative z-10 text-center space-y-8">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A0A0E] border border-white/20 text-xs font-bold uppercase tracking-widest text-white shadow-md">
-            <i class="bi bi-shield-check text-[#E7000B]"></i>
-            <span>{{ isEn ? 'Zero-Risk Software & Database Engineering' : 'Contratación Simple, Rápida y Garantizada por Contrato' }}</span>
-          </div>
-
           <h2 class="text-5xl sm:text-7xl lg:text-[5.5rem] font-extrabold text-white tracking-tight leading-[1.02]">
             {{ isEn ? 'Ready when' : '¡Listos cuando' }}<br />
             <span class="text-[#0A0A0E] bg-white px-5 py-1 rounded-3xl inline-block mt-2 shadow-lg">{{ isEn ? 'you are!' : 'tú lo estés!' }}</span>

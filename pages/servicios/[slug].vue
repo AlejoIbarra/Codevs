@@ -28,11 +28,6 @@
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <!-- Text -->
           <div class="lg:w-7/12 space-y-6">
-            <div
-              class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/80 border border-red-500/30 backdrop-blur-xl">
-              <i :class="service.icon" class="text-red-500"></i>
-              <span class="text-red-400 font-bold uppercase tracking-widest text-xs">Servicio Premium</span>
-            </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1]">
               {{ service.title.split(' ').slice(0, -1).join(' ') }}

@@ -207,9 +207,6 @@
 
           <!-- Explicación Técnica del Flujo -->
           <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-              Flujos que trabajan mientras duermes
-            </div>
 
             <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               Automatizaciones que multiplican la capacidad de tu equipo

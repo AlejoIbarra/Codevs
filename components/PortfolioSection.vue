@@ -6,10 +6,6 @@
       <!-- Section Header con Estilo Editorial Huge Inc -->
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12 portfolio-header">
         <div class="max-w-2xl">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4">
-            <i class="bi bi-code-slash text-xs"></i>
-            <span>Ingeniería en Producción</span>
-          </div>
           <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
             Proyectos <br />
             <span class="text-red-600">

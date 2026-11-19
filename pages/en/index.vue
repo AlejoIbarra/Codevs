@@ -178,16 +178,9 @@
             <!-- Left Column: Story & Metrics -->
             <div class="lg:col-span-7 space-y-6">
               
-              <div class="flex flex-wrap items-center gap-3">
-                <span class="px-3.5 py-1 rounded-full text-xs font-black tracking-wider uppercase bg-red-600 text-white shadow-md shadow-red-600/30">
-                  Featured Case Study
-                </span>
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
-                  Law Firm • LegalTech AI
-                </span>
-                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-zinc-950 border border-white/20">
-                  +70% Operational Time Saved
-                </span>
+              <!-- Category & Metric Summary -->
+              <div class="text-xs font-bold tracking-wider uppercase text-red-500">
+                Featured Case Study • LegalTech AI Firm • +70% Operational Time Saved
               </div>
 
               <!-- Official Client Logo -->
@@ -282,45 +275,25 @@
         </div>
 
         <!-- Marquee Ribbon: Verified US Nearshore Trust & Metrics (frontend-identidad & ui-ux-pro-max) -->
-        <div class="relative w-full overflow-hidden py-6 mb-16 border-y border-white/10 bg-white/[0.02]">
-          <div class="marquee-track flex items-center gap-8 whitespace-nowrap will-change-transform">
-            <div v-for="loop in 2" :key="loop" class="flex items-center gap-8 shrink-0">
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                <span>Sin Huellas Law Firm</span>
-                <span class="text-zinc-400 font-normal">• LegalTech AI</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                <span>+70% Operational Time Saved</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                <span>Moments Gallery</span>
-                <span class="text-zinc-400 font-normal">• Marketplace Startup</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                <span>24/7 WhatsApp Cloud AI Engine</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                <span>Alacranes AFC</span>
-                <span class="text-zinc-400 font-normal">• #1 Google Organic</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                <span>100% US IP Ownership &amp; NDAs</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                <span>IPTV Max</span>
-                <span class="text-zinc-400 font-normal">• 60 FPS Media Streaming</span>
-              </div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                <span>EST / CST Real-time Overlap</span>
-              </div>
+        <div class="relative w-full overflow-hidden py-5 mb-16 border-y border-white/10 bg-white/[0.02]">
+          <div class="marquee-track flex items-center gap-12 whitespace-nowrap will-change-transform">
+            <div v-for="loop in 2" :key="loop" class="flex items-center gap-12 shrink-0 text-sm font-semibold text-zinc-300">
+              <span class="text-white font-bold">Sin Huellas Law Firm</span>
+              <span class="text-red-500">•</span>
+              <span class="text-zinc-400">+70% Operational Time Saved</span>
+              <span class="text-red-500">•</span>
+              <span class="text-white font-bold">Moments Gallery</span>
+              <span class="text-red-500">•</span>
+              <span class="text-zinc-400">24/7 WhatsApp Cloud AI</span>
+              <span class="text-red-500">•</span>
+              <span class="text-white font-bold">Alacranes AFC</span>
+              <span class="text-red-500">•</span>
+              <span class="text-zinc-400">100% US IP Ownership</span>
+              <span class="text-red-500">•</span>
+              <span class="text-white font-bold">IPTV Max</span>
+              <span class="text-red-500">•</span>
+              <span class="text-zinc-400">EST / CST Time-Zone Alignment</span>
+              <span class="text-red-500">•</span>
             </div>
           </div>
         </div>
@@ -414,10 +387,6 @@
 
         <!-- Monumental Section Header -->
         <div class="max-w-3xl mb-16 lg:mb-24">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-950 text-white text-xs font-bold uppercase tracking-wider mb-5">
-            <span class="w-2 h-2 rounded-full bg-red-600"></span>
-            <span>Software Engineering • Databases • Artificial Intelligence</span>
-          </div>
           <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black text-zinc-950 tracking-tight leading-[0.98]">
             Solutions.
           </h2>
@@ -525,10 +494,6 @@
         <!-- Section Header with Metrics Counter Pill -->
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12">
           <div class="max-w-2xl">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100/80 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4">
-              <i class="bi bi-code-slash text-xs"></i>
-              <span>Production-Grade Engineering</span>
-            </div>
             <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
               Featured <br />
               <span class="text-red-600">Case Studies.</span>
