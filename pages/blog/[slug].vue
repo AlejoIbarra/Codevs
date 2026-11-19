@@ -47,7 +47,7 @@
               <div class="text-xs text-zinc-400">Ingeniería & Soluciones Tecnológicas en Pasto, Nariño</div>
             </div>
           </div>
-          <span class="hidden sm:inline-flex text-[11px] font-mono text-zinc-500 bg-black/60 px-3 py-1 rounded-lg border border-zinc-800">
+          <span class="hidden sm:inline-flex text-[11px] font-bold text-zinc-500 bg-black/60 px-3 py-1 rounded-lg border border-zinc-800 tracking-wider">
             CODEVS Research & Tech
           </span>
         </div>
@@ -99,7 +99,7 @@
 
             <!-- Code or Architecture block -->
             <div v-if="section.code" class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 my-6 shadow-2xl">
-              <div class="px-4 py-2.5 bg-zinc-900/90 border-b border-zinc-800 flex items-center justify-between text-xs text-zinc-400 font-mono">
+              <div class="px-4 py-2.5 bg-zinc-900/90 border-b border-zinc-800 flex items-center justify-between text-xs text-zinc-400 font-semibold">
                 <div class="flex items-center gap-2">
                   <span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
                   <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
@@ -107,14 +107,14 @@
                 </div>
                 <span>{{ section.codeTitle || 'Estructura Técnica' }}</span>
               </div>
-              <pre class="p-4 sm:p-6 overflow-x-auto text-xs sm:text-sm font-mono text-zinc-300 leading-relaxed"><code>{{ section.code }}</code></pre>
+              <pre class="p-4 sm:p-6 overflow-x-auto text-xs sm:text-sm text-zinc-300 leading-relaxed font-sans"><code>{{ section.code }}</code></pre>
             </div>
 
             <!-- Subsections -->
             <div v-if="section.subsections && section.subsections.length" class="space-y-6 pt-4">
               <div v-for="(sub, sIdx) in section.subsections" :key="sIdx" class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-850 space-y-3">
                 <h3 class="text-xl font-bold text-white flex items-center gap-2">
-                  <span class="text-red-500 font-mono text-sm">#{{ sIdx + 1 }}</span>
+                  <span class="text-red-500 font-bold text-sm tracking-wider">#{{ sIdx + 1 }}</span>
                   {{ sub.title }}
                 </h3>
                 <p class="text-sm sm:text-base text-zinc-400 leading-relaxed">{{ sub.text }}</p>
@@ -182,6 +182,287 @@ const route = useRoute();
 const slug = route.params.slug;
 
 const postsData = {
+  'tecnologias-arquitectura-gta-6-rage-engine': {
+    title: 'La Ingeniería Detrás de GTA 6: RAGE 9, Física Procedural en GPU, Redes Neuronales para NPCs y Streaming en Tiempo Real',
+    category: 'Ingeniería de Software',
+    image: '/img/blog/blog-inside-post.jpg',
+    date: '19 Noviembre, 2026',
+    author: 'Laboratorio de Arquitectura CODEVS',
+    readTime: '16 min de lectura',
+    summary: 'Análisis técnico exhaustivo de la arquitectura de software del motor RAGE 9 de Rockstar Games para Grand Theft Auto VI: renderizado nanométrico PBR, hidrodinámica y destrucción procedural en GPU, agentes autónomos con redes neuronales y qué principios de concurrencia y bajo nivel aplican directamente al software empresarial moderno.',
+    sections: [
+      {
+        heading: '1. El Motor RAGE 9: Revolución en Renderizado PBR y Micro-Geometría Dinámica',
+        paragraphs: [
+          'El lanzamiento de Grand Theft Auto VI marca un punto de inflexión definitivo en la historia de la computación gráfica interactiva y la arquitectura de software en tiempo real. En el corazón de esta obra maestra técnica se encuentra la novena iteración del Rockstar Advanced Game Engine (RAGE 9), un motor propietario diseñado desde sus cimientos en C++23 y Compute Shaders de bajo nivel para exprimir hasta el último ciclo de reloj de las GPUs y CPUs de actual generación.',
+          'A diferencia de los motores convencionales que dependen de mallas poligonales estáticas cocinadas de antemano, RAGE 9 implementa una pipeline de micro-geometría continua y virtualizada, capaz de calcular el nivel de detalle (LOD) dinámicamente en GPU según la distancia focal, la velocidad angular de la cámara y el búfer de oclusión de sub-píxeles.',
+          'La iluminación global ya no recurre a mapas de luz precalculados (baked lightmaps). RAGE 9 utiliza un sistema híbrido de Ray Tracing por hardware combinado con sondas de radiancia volumétrica en tiempo real (Spatial Hash Grids), lo que permite simular la dispersión de luz atmosférica, refracción en gotas de lluvia sobre asfalto caliente y penetración sub-superficial en la piel de los personajes con una tasa de refresco bloqueada a 60 FPS.'
+        ],
+        bullets: [
+          '<strong>Compute Shaders Asíncronos:</strong> Desacoplamiento total del renderizado de geometría respecto al cálculo de iluminación difusa en hilos paralelos de GPU.',
+          '<strong>Virtual Texturing de 16K:</strong> Carga segmentada de texturas en memoria VRAM utilizando páginas de 64KB indexadas por proximidad espacial.',
+          '<strong>Simulación Atmosférica Volumétrica:</strong> Densidad de vapor, neblina marina de Vice City y partículas de humedad calculadas mediante ecuaciones de Navier-Stokes en GPU.'
+        ],
+        codeTitle: 'Arquitectura de Pipeline Gráfica y Buffer Asíncrono en C++',
+        code: `// Rockstar RAGE 9 Architecture Concept: Async Compute Pipeline
+struct FrameContext {
+    GPUCommandQueue* computeQueue;
+    GPUCommandQueue* directQueue;
+    VRAMVirtualAllocator* memoryPool;
+};
+
+void DispatchVolumetricAtmosphere(FrameContext& ctx, const CameraFrustum& frustum) {
+    // Cálculo de niebla volumétrica y dispersión de Rayleigh en Compute Queue
+    auto computeCmd = ctx.computeQueue->AllocateBuffer();
+    computeCmd->SetComputePipeline(RAGE_PIPELINE_VOLUMETRIC_FOG);
+    computeCmd->BindResource(0, frustum.GetOctreeGrid());
+    computeCmd->DispatchThreads(frustum.width / 8, frustum.height / 8, 16);
+    
+    // Sincronización mediante barreras de hardware sin detener el Rasterizer
+    ctx.directQueue->InsertGPUWait(computeCmd->GetFence());
+}`,
+        tip: 'La optimización gráfica extrema no se logra aumentando la resolución de texturas, sino reduciendo las transferencias redundantes entre la memoria del sistema (RAM) y la memoria de video (VRAM).'
+      },
+      {
+        heading: '2. Simulación Física Procedural en GPU & Deformación de Materiales',
+        paragraphs: [
+          'Uno de los mayores hitos técnicos de GTA 6 es la eliminación casi absoluta de animaciones enlatadas para la interacción con el entorno. La hidrodinámica del estado de Leonida (pantanos, costas oceánicas y canales urbanos) se calcula en tiempo real mediante física de partículas acopladas (Smoothed Particle Hydrodynamics). Cada ola generada por una embarcación de alta velocidad interactúa de manera matemáticamente precisa con los cascos de otros vehículos, la arena de la playa y la fauna circundante.',
+          'El modelo de daños de vehículos ya no emplea zonas de impacto predefinidas. En su lugar, RAGE 9 introduce una arquitectura de deformación por elementos finitos simplificados: la carrocería absorbe y transfiere energía cinética vectorialmente a través del chasis, calculando la torsión del metal, la fractura del vidrio templado y el desprendimiento de piezas según el ángulo de incidencia y la masa de colisión.'
+        ],
+        subsections: [
+          {
+            title: 'Física de Fluidos & Dinámica de Superficie',
+            text: 'Las masas de agua generan fuerzas de flotabilidad y resistencia hidrodinámica en tiempo real sobre los objetos sumergidos, calculadas a más de 120 Hz en hilos secundarios dedicados.'
+          },
+          {
+            title: 'Aerodinámica y Comportamiento de Neumáticos',
+            text: 'Cada neumático cuenta con un modelo de fricción elástica que calcula la temperatura de la banda de rodadura, la presión de inflado y el coeficiente de adherencia sobre barro, pavimento seco o superficies inundadas.'
+          }
+        ]
+      },
+      {
+        heading: '3. Inteligencia Artificial Emergente: De Behavior Trees a Redes Neuronales en NPCs',
+        paragraphs: [
+          'Históricamente, los videojuegos de mundo abierto han controlado a los personajes no jugables (NPCs) mediante árboles de comportamiento finitos (Finite State Machines y Behavior Trees). Si bien esta técnica es predecible y ligera, genera patrones mecánicos y respuestas repetitivas que rompen la inmersión del jugador.',
+          'Para GTA 6, el equipo de ingeniería de Rockstar Games integró modelos de Machine Learning y aprendizaje por refuerzo profundo (Deep Reinforcement Learning) para la toma de decisiones emergente. Cada ciudadano virtual posee un vector de estado interno que modula su nivel de alerta, empatía, agresividad, curiosidad y aversión al riesgo.',
+          'Los peatones no se limitan a caminar sobre rutas pre-trazadas (navmesh nodes): perciben el campo de visión de otros peatones, forman grupos sociales espontáneos, graban incidentes con teléfonos móviles ante situaciones inusuales y coordinan reacciones en cadena ante disturbios o persecuciones policiales.'
+        ],
+        bullets: [
+          '<strong>Memoria Situacional a Corto Plazo:</strong> Los NPCs recuerdan vehículos sospechosos, agresiones verbales o comportamientos anómalos durante varios minutos en un radio espacial definido.',
+          '<strong>Tráfico Inteligente con Prevención de Cuellos de Botella:</strong> Los vehículos del tráfico autónomo calculan rutas alternativas dinámicas ante accidentes o cortes de vía sin generar atascos infinitos.',
+          '<strong>Tácticas Policiales de Flanqueo:</strong> La IA de las fuerzas de seguridad utiliza algoritmos de optimización de enjambre (Swarm Intelligence) para rodear al jugador considerando coberturas balísticas y líneas de fuego.'
+        ]
+      },
+      {
+        heading: '4. DirectStorage, Descompresión por Hardware & Zero-Latency Asset Streaming',
+        paragraphs: [
+          'En un mapa con cientos de kilómetros cuadrados de detalle hiperrealista y sin tiempos de carga, el cuello de botella tradicional de los discos duros y SATA SSDs ha quedado obsoleto. GTA 6 aprovecha la tecnología DirectStorage y las unidades de descompresión integradas en el silicio de PlayStation 5, Xbox Series X y GPUs modernas.',
+          'En las arquitecturas legacy, los datos comprimidos debían pasar del SSD a la memoria RAM, ser descomprimidos por el CPU consumiendo valiosos ciclos de procesamiento, y finalmente copiarse a la VRAM de la GPU. RAGE 9 implementa una autopista directa (Direct Memory Access - DMA): los datos viajan directamente del bus PCIe NVMe a la VRAM, donde los chips de descompresión por hardware procesan gigabytes por segundo a velocidades superiores a 14 GB/s.',
+          'Este avance permite que el jugador viaje en un jet supersónico a ras de los rascacielos de Vice City sin que se produzca el más mínimo fenómeno de popping de texturas ni congelamientos de fotograma.'
+        ]
+      },
+      {
+        heading: '5. ¿Qué Puede Aprender el Software Empresarial de la Arquitectura de GTA 6?',
+        paragraphs: [
+          'A primera vista, un videojuego AAA y un sistema ERP o pasarela fintech parecen mundos opuestos. Sin embargo, en el fondo, ambos enfrentan el mismo desafío crítico: cómo procesar millones de eventos por segundo con recursos de hardware limitados y cero latencia perceptible.',
+          'En el desarrollo de software corporativo moderno, la tendencia predominante ha sido abusar de capas abstractas de abstracción, contenedores inflados y bases de datos relacionales sin índices optimizados, confiando en que "la nube escalará automáticamente". El resultado son facturas millonarias de AWS y aplicaciones lentas que frustran a los usuarios.',
+          'El diseño orientado a datos (Data-Oriented Design) que sustenta a RAGE 9 demuestra que organizar la memoria en arrays planos (Structure of Arrays - SoA) para maximizar los aciertos en la caché L1/L2 del CPU es entre 10 y 50 veces más rápido que los patrones orientados a objetos tradicionales. En CODEVS aplicamos estos mismos principios de concurrencia y optimización de bajo nivel en nuestras arquitecturas de Spring Boot, Nuxt 3 y PostgreSQL.'
+        ],
+        tip: 'No resuelvas problemas de arquitectura ineficiente agregando más servidores en la nube. Revisa la estructura de datos en memoria, elimina bloqueos innecesarios en bases de datos y adopta arquitecturas asíncronas de alto rendimiento.'
+      }
+    ],
+    keyTakeaways: [
+      'RAGE 9 revoluciona el renderizado en tiempo real combinando micro-geometría procedural con Ray Tracing volumétrico por hardware.',
+      'La inteligencia artificial de los NPCs evoluciona de árboles de decisión estáticos hacia redes neuronales reactivas con memoria situacional.',
+      'El streaming DirectStorage de NVMe a VRAM elimina los cuellos de botella del CPU y hace posible mundos abiertos masivos sin pantallas de carga.',
+      'El Data-Oriented Design (DoD) y el aprovechamiento de la caché del CPU son aplicables tanto a videojuegos de última generación como a software corporativo crítico.',
+      'La ingeniería de software de élite prioriza la optimización algorítmica y el uso eficiente de la memoria antes que el gasto indiscriminado en infraestructura.'
+    ]
+  },
+  'bases-de-datos-vectoriales-rag-empresarial-ia': {
+    title: 'Bases de Datos Vectoriales y Arquitectura RAG en 2026: Cómo Dotar a la IA Empresarial de Memoria Exacta sin Alucinaciones',
+    category: 'Bases de Datos',
+    image: '/img/blog/blog-4.jpg',
+    date: '17 Noviembre, 2026',
+    author: 'División de Datos & IA CODEVS',
+    readTime: '15 min de lectura',
+    summary: 'Guía técnica profunda para arquitectar sistemas RAG (Retrieval-Augmented Generation) empresariales: integración de pgvector en PostgreSQL, indexación HNSW e IVFFlat, búsqueda híbrida densa/dispersa con BM25, caché semántico con Redis y reducción del 80% en costos de inferencia en OpenAI y Anthropic.',
+    sections: [
+      {
+        heading: '1. El Límite de los LLMs Puros: Por Qué los Context Windows Gigantes No Resuelven el Problema Corporativo',
+        paragraphs: [
+          'Con la llegada de modelos de lenguaje capaces de procesar ventanas de contexto de hasta 1 o 2 millones de tokens, muchas organizaciones asumieron erróneamente que la indexación de bases de datos había quedado obsoleta. La realidad empírica en producción ha demostrado lo contrario: inyectar cientos de documentos directamente en el prompt genera una degradación severa de la atención algorítmica (el fenómeno documentado como Lost in the Middle) y una factura de inferencia astronómica en cada llamada a la API.',
+          'En el ámbito corporativo y judicial, una alucinación del 2% no es un margen tolerable: es una contingencia legal y financiera inaceptable. Las empresas requieren respuestas que no solo sean verosímiles, sino 100% auditables, con referencias exactas al folio, cláusula de contrato o registro de base de datos de donde se extrajo la información.',
+          'Aquí es donde la arquitectura RAG (Retrieval-Augmented Generation) se convierte en el pilar innegociable de la inteligencia artificial empresarial moderna: desacopla el razonamiento del modelo de su memoria de almacenamiento, convirtiendo a la base de datos en la única fuente de verdad inmutable.'
+        ],
+        bullets: [
+          '<strong>Cero Alucinaciones Fácticas:</strong> El LLM actúa como un sintetizador y redactor, pero tiene estrictamente prohibido responder a partir de conocimiento no provisto en el contexto recuperado.',
+          '<strong>Gobernanza y Permisos RBAC:</strong> Los vectores heredan las políticas de seguridad de la base de datos (Row Level Security), impidiendo que un empleado acceda a documentos confidenciales a través de consultas en lenguaje natural.',
+          '<strong>Actualización en Tiempo Real:</strong> Cuando un documento o producto se modifica en la base de datos, el vector se recalcula en milisegundos sin necesidad de reentrenar costosos modelos fundacionales.'
+        ]
+      },
+      {
+        heading: '2. Del Modelo Relacional a los Embeddings: pgvector en PostgreSQL vs Bases Vectoriales Dedicadas',
+        paragraphs: [
+          'Durante el auge inicial de la IA generativa, proliferaron bases de datos vectoriales dedicadas (Pinecone, Weaviate, Milvus, Qdrant). Sin embargo, en el 90% de las arquitecturas corporativas, introducir una base de datos especializada adicional crea un grave problema de sincronización (Split-Brain), latencia de red y duplicación de datos transaccionales.',
+          'La extensión pgvector transforma a PostgreSQL en un motor vectorial de primer nivel mundial. Permite almacenar vectores multidimensionales directamente junto a las columnas relacionales existentes (IDs de usuario, timestamps, claves foráneas), lo que hace posible filtrar metadatos en una sola consulta SQL transaccional y ACID con indexación HNSW.'
+        ],
+        codeTitle: 'Configuración de pgvector con Índice HNSW en PostgreSQL',
+        code: `-- Habilitar extensión vectorial en PostgreSQL
+CREATE EXTENSION IF NOT EXISTS vector;
+
+-- Tabla corporativa con embeddings generados por text-embedding-3-small (1536 dimensiones)
+CREATE TABLE enterprise_knowledge_chunks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    organization_id UUID NOT NULL,
+    document_title VARCHAR(255) NOT NULL,
+    chunk_content TEXT NOT NULL,
+    embedding vector(1536) NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Creación de Índice HNSW para Búsqueda Vecinal Ultra-Rápida con Distancia Coseno
+CREATE INDEX idx_knowledge_embedding_hnsw 
+ON enterprise_knowledge_chunks 
+USING hnsw (embedding vector_cosine_ops)
+WITH (m = 16, ef_construction = 64);
+
+-- Consulta de similitud vectorial filtrada por organización
+SELECT document_title, chunk_content, 
+       1 - (embedding <=> $query_embedding) AS similarity_score
+FROM enterprise_knowledge_chunks
+WHERE organization_id = $org_id
+ORDER BY embedding <=> $query_embedding
+LIMIT 5;`,
+        tip: 'Prefiere índices HNSW sobre IVFFlat para producción. Aunque ocupan más memoria RAM, ofrecen una tasa de recuperación superior al 98% con tiempos de respuesta por debajo de los 4 milisegundos.'
+      },
+      {
+        heading: '3. Arquitectura RAG Híbrida: Búsqueda Semántica Densa + Búsqueda Léxica Dispersa (BM25)',
+        paragraphs: [
+          'La búsqueda puramente semántica (vectorial) es brillante para entender conceptos abstractos, pero falla con frecuencia cuando el usuario busca identificadores exactos, números de factura, códigos SKU o apellidos específicos. Por ejemplo, al buscar "Factura FAC-2026-89", la distancia vectorial puede devolver facturas conceptualmente similares pero numéricamente incorrectas.',
+          'La solución arquitectónica es el RAG Híbrido: combinar la búsqueda léxica tradicional (BM25 o Full-Text Search con tsvector de PostgreSQL) con la búsqueda vectorial densa mediante Reciprocal Rank Fusion (RRF). Posteriormente, un modelo Cross-Encoder (como Cohere Rerank) evalúa y reordena los 20 mejores resultados para enviar únicamente los 5 fragmentos con mayor relevancia probada al prompt del LLM.'
+        ],
+        subsections: [
+          {
+            title: 'Reciprocal Rank Fusion (RRF)',
+            text: 'Algoritmo probabilístico que asigna puntuaciones ponderadas a los resultados de ambos métodos sin importar que sus métricas de distancia pertenezcan a escalas diferentes.'
+          },
+          {
+            title: 'Cross-Encoder Reranking',
+            text: 'Filtro semántico profundo que analiza la interacción bidireccional entre la pregunta y el fragmento, eliminando ruido contextual irrelevante y reduciendo el consumo de tokens en un 70%.'
+          }
+        ]
+      },
+      {
+        heading: '4. Caché Semántico con Redis y Reducción del 80% en Costos de Inferencia',
+        paragraphs: [
+          'En entornos empresariales, entre el 40% y el 65% de las consultas de los usuarios son preguntas redundantes formuladas con diferentes palabras (ejemplo: "¿Cuáles son los métodos de pago?" vs "¿Cómo puedo pagar mi factura?"). Enviar cada una de estas preguntas al modelo de lenguaje genera un desperdicio masivo de dinero y tiempo.',
+          'Mediante un Caché Semántico implementado con Redis Vector Search, el sistema compara el embedding de la consulta entrante contra las consultas históricas cacheadas. Si la similitud del coseno supera un umbral riguroso (por ejemplo, 0.95), el sistema retorna inmediatamente la respuesta validada en menos de 15 milisegundos, reduciendo el costo de inferencia a cero.'
+        ]
+      },
+      {
+        heading: '5. Casos de Estudio Reales CODEVS: LegalTech y Asistentes en WhatsApp con Cero Alucinaciones',
+        paragraphs: [
+          'En CODEVS diseñamos ecosistemas RAG en producción para firmas jurídicas y entidades financieras que gestionan millones de registros confidenciales. Al combinar bases de datos relacionales PostgreSQL blindadas con pgvector, agentes en WhatsApp Cloud API y validación estricta de citas documentales, hemos logrado reducir los tiempos de respuesta de 3 horas a menos de 2 segundos, con una satisfacción de usuario comprobada del 99.4%.'
+        ]
+      }
+    ],
+    keyTakeaways: [
+      'El RAG empresarial es la única arquitectura viable para garantizar precisión fáctica absoluta y auditoría legal en IA corporativa.',
+      'PostgreSQL con pgvector y HNSW resuelve simultáneamente las consultas relacionales y vectoriales sin fragmentar la infraestructura.',
+      'La búsqueda híbrida (Dense Vector + BM25) elimina los puntos ciegos de la búsqueda semántica aislada.',
+      'El caché semántico en Redis permite ahorrar hasta un 80% en costos de APIs de LLMs como OpenAI y Claude.',
+      'El reranking con Cross-Encoders es el paso decisivo para alimentar al modelo únicamente con información de alto valor fáctico.'
+    ]
+  },
+  'arquitectura-microfrontends-edge-computing-2026': {
+    title: 'Microfrontends en el Edge con Nuxt 3 y Cloudflare Workers: Eliminando Cuellos de Botella en Plataformas de Alto Tráfico',
+    category: 'Arquitectura Web',
+    image: '/img/blog/blog-3.jpg',
+    date: '12 Noviembre, 2026',
+    author: 'División Cloud & Edge CODEVS',
+    readTime: '14 min de lectura',
+    summary: 'Cómo descomponer monolitos web lentos en microfrontends modulares desacoplados desplegados en el Edge con Nuxt 3, Module Federation y Cloudflare Workers. Latencias globales inferiores a 25 milisegundos, despliegues independientes por squad y 100% de uptime sin caídas de servicio.',
+    sections: [
+      {
+        heading: '1. El Ocaso del Monolito Frontend en Plataformas de Alta Escala',
+        paragraphs: [
+          'Durante la última década, las aplicaciones web de una sola página (SPAs) y los monolitos de frontend se convirtieron en la norma indiscutida de la industria digital. Sin embargo, a medida que las plataformas corporativas crecen para albergar múltiples verticales de negocio (e-commerce, pasarelas de pago, paneles administrativos, portales de clientes), el monolito frontend comienza a exhibir síntomas críticos de agotamiento.',
+          'Tiempos de compilación CI/CD que superan los 45 minutos, bloqueos organizacionales entre equipos que esperan el despliegue del otro para salir a producción, y bundles de JavaScript inflados que superan los 5 MB descargados en los teléfonos móviles de los usuarios. Cuando un cambio menor en el pie de página o en una tipografía rompe el módulo crítico de checkout, la arquitectura ha fracasado.',
+          'La arquitectura de Microfrontends descompone la interfaz de usuario en aplicaciones independientes y autónomas, desarrolladas, probadas y desplegadas por squads especializados sin acoplamiento de repositorio ni de ciclo de vida.'
+        ],
+        bullets: [
+          '<strong>Autonomía Real por Squad:</strong> El equipo de pagos puede desplegar 5 veces al día sin consultar al equipo de catálogo o al equipo de blog.',
+          '<strong>Aislamiento de Fallos (Blast Radius = 0):</strong> Si un microfrontend secundario falla o arroja una excepción, el resto de la plataforma continúa funcionando sin degradar la sesión del cliente.',
+          '<strong>Evolución Tecnológica Progresiva:</strong> Permite modernizar partes del sistema sin necesidad de reescribir toda la aplicación desde cero.'
+        ]
+      },
+      {
+        heading: '2. Ensamblaje Dinámico en el Edge: Server-Driven UI y Edge Workers',
+        paragraphs: [
+          'El error tradicional de los microfrontends de primera generación era ensamblarlos en el navegador del cliente mediante múltiples iframes pesados o bibliotecas de runtime complejas que descargaban React o Vue tres veces seguidas, arruinando los Core Web Vitals.',
+          'En 2026, la arquitectura de vanguardia traslada el ensamblaje al Edge Computing: redes globales de centros de datos distribuidos (Cloudflare Workers, Vercel Edge, AWS CloudFront Functions) que reciben la solicitud del usuario y componen los fragmentos HTML en el punto de presencia más cercano a su ubicación física.',
+          'Con Nuxt 3 y el motor Nitro, cada microfrontend se compila como un Edge Worker ultra-ligero con arranque en frío inferior a 5 milisegundos. El orquestador del borde ensambla el cascarón (Shell) y transmite el HTML mediante Streaming SSR (Server-Side Rendering con chunked transfer encoding).'
+        ],
+        codeTitle: 'Orquestador de Microfrontends en el Edge con Cloudflare Workers',
+        code: `// Edge Worker Orchestrator (Cloudflare Workers / Nitro Edge)
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+    
+    // Rutas dirigidas a Microfrontends independientes
+    let targetWorkerUrl;
+    if (url.pathname.startsWith('/checkout') || url.pathname.startsWith('/pagos')) {
+      targetWorkerUrl = env.MICROFRONTEND_CHECKOUT_URL;
+    } else if (url.pathname.startsWith('/cuenta') || url.pathname.startsWith('/perfil')) {
+      targetWorkerUrl = env.MICROFRONTEND_AUTH_URL;
+    } else {
+      targetWorkerUrl = env.MICROFRONTEND_CORE_URL;
+    }
+
+    // Solicitud en paralelo con reescritura de cabeceras y Stale-While-Revalidate
+    const response = await fetch(new Request(targetWorkerUrl + url.pathname + url.search, request), {
+      cf: {
+        cacheTtl: 3600,
+        cacheEverything: true
+      }
+    });
+
+    // Inyección de cabeceras de seguridad y métricas en el Edge
+    const newHeaders = new Headers(response.headers);
+    newHeaders.set('X-Edge-Origin', 'CODEVS-Global-Edge-v4');
+    newHeaders.set('Server-Timing', 'edge;dur=12');
+
+    return new Response(response.body, {
+      status: response.status,
+      headers: newHeaders
+    });
+  }
+};`,
+        tip: 'Evita cargar bibliotecas base duplicadas. Configura Module Federation para compartir Vue 3, Tailwind y utilitarios comunes en el caché global del navegador con versiones semánticas estrictas.'
+      },
+      {
+        heading: '3. Streaming SSR y Experiencia Instantánea a 60 FPS',
+        paragraphs: [
+          'Al combinar Microfrontends con Streaming SSR en Nuxt 3, el navegador recibe el primer byte de HTML en menos de 80 milisegundos (TTFB mínimo). Las secciones críticas como el menú superior y el héroe visual se pintan de inmediato, mientras que los widgets de recomendaciones pesadas o analítica se transmiten asíncronamente tan pronto están listos en el servidor.',
+          'El resultado es una experiencia de usuario fluida, sin saltos visuales (CLS = 0) y con un Interaction to Next Paint (INP) inferior a 20 milisegundos, lo que impulsa directamente las conversiones en transacciones de e-commerce y plataformas SaaS.'
+        ]
+      },
+      {
+        heading: '4. Impacto Económico: Reducción del 65% en Costos de Infraestructura Cloud',
+        paragraphs: [
+          'Desplegar microfrontends en el Edge elimina la necesidad de mantener costosos servidores dedicados o clústeres de Kubernetes funcionando al 100% las 24 horas solo para servir interfaces web. El modelo serverless en el borde escala a cero cuando no hay tráfico y absorbe picos masivos de millones de usuarios simultáneos (como en eventos de Black Friday o lanzamientos de producto) sin ninguna degradación de servicio.'
+        ]
+      }
+    ],
+    keyTakeaways: [
+      'Los Microfrontends desacoplan el ciclo de vida de los equipos de ingeniería, permitiendo múltiples despliegues diarios sin fricción.',
+      'El ensamblaje en el Edge Computing elimina la sobrecarga de iframes y bibliotecas duplicadas en el cliente.',
+      'Nuxt 3 con Nitro permite exportar microfrontends ultraligeros con arranque en frío inferior a 5 milisegundos.',
+      'El Streaming SSR garantiza una entrega progresiva de HTML con un First Contentful Paint prácticamente instantáneo.',
+      'La arquitectura Serverless en el Edge reduce costos de infraestructura fija hasta en un 65% con escalabilidad global automática.'
+    ]
+  },
   'posicionar-empresa-google-pasto-seo': {
     title: 'Cómo Posicionar tu Empresa en el #1 de Google en Pasto y Nariño: Guía Maestra de SEO Local y Técnico',
     category: 'SEO & Posicionamiento',

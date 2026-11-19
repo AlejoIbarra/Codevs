@@ -321,6 +321,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.codevs.dev/blog/tecnologias-arquitectura-gta-6-rage-engine</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/bases-de-datos-vectoriales-rag-empresarial-ia</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.codevs.dev/blog/arquitectura-microfrontends-edge-computing-2026</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.codevs.dev/blog/agentes-ia-flujos-trabajo-automatizacion-software</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>

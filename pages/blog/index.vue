@@ -149,6 +149,36 @@ const categories = [
 
 const posts = [
   {
+    slug: 'tecnologias-arquitectura-gta-6-rage-engine',
+    title: 'La Ingeniería Detrás de GTA 6: RAGE 9, Física Procedural en GPU, Redes Neuronales para NPCs y Streaming en Tiempo Real',
+    excerpt: 'Análisis técnico exhaustivo de la arquitectura de software del motor RAGE 9 de Rockstar Games para Grand Theft Auto VI: renderizado nanométrico PBR, hidrodinámica en GPU y agentes autónomos.',
+    category: 'Ingeniería de Software',
+    image: '/img/blog/blog-inside-post.jpg',
+    date: '19 Noviembre, 2026',
+    author: 'Laboratorio de Arquitectura CODEVS',
+    readTime: '16 min de lectura'
+  },
+  {
+    slug: 'bases-de-datos-vectoriales-rag-empresarial-ia',
+    title: 'Bases de Datos Vectoriales y Arquitectura RAG en 2026: Cómo Dotar a la IA Empresarial de Memoria Exacta sin Alucinaciones',
+    excerpt: 'Guía técnica profunda para arquitectar sistemas RAG empresariales: integración de pgvector en PostgreSQL, indexación HNSW e IVFFlat, búsqueda híbrida y caché semántico con Redis.',
+    category: 'Bases de Datos',
+    image: '/img/blog/blog-4.jpg',
+    date: '17 Noviembre, 2026',
+    author: 'División de Datos & IA CODEVS',
+    readTime: '15 min de lectura'
+  },
+  {
+    slug: 'arquitectura-microfrontends-edge-computing-2026',
+    title: 'Microfrontends en el Edge con Nuxt 3 y Cloudflare Workers: Eliminando Cuellos de Botella en Plataformas de Alto Tráfico',
+    excerpt: 'Cómo descomponer monolitos web lentos en microfrontends modulares desacoplados desplegados en el Edge con Nuxt 3, Module Federation y Cloudflare Workers con latencias sub-25ms.',
+    category: 'Arquitectura Web',
+    image: '/img/blog/blog-3.jpg',
+    date: '12 Noviembre, 2026',
+    author: 'División Cloud & Edge CODEVS',
+    readTime: '14 min de lectura'
+  },
+  {
     slug: 'agentes-ia-flujos-trabajo-automatizacion-software',
     title: 'Agentes Autónomos de IA en 2026: Cómo los Workflows Agénticos Están Reemplazando el Desarrollo Tradicional',
     excerpt: 'Análisis sobre la evolución de asistentes de código hacia sistemas multi-agente autónomos, el protocolo MCP y la automatización de software en empresas.',

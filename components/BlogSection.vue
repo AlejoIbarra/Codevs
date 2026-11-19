@@ -6,13 +6,16 @@
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 blog-header">
         <div class="max-w-2xl">
           <h2 class="text-4xl sm:text-6xl font-black text-zinc-950 tracking-tight leading-[1.05]">
-            Blog de <br />
+            {{ isEn ? 'Engineering &' : 'Blog de' }} <br />
             <span class="text-red-600">
-              Tecnología & SEO.
+              {{ isEn ? 'Tech Insights.' : 'Tecnología & SEO.' }}
             </span>
           </h2>
           <p class="text-zinc-600 text-base sm:text-lg mt-5 leading-relaxed">
-            Estrategias de desarrollo de software, posicionamiento en Google y arquitectura cloud para Colombia y el mundo.
+            {{ isEn 
+              ? 'Deep technical analysis on game engine architecture, vector databases, and extreme-scale edge computing.' 
+              : 'Estrategias de desarrollo de software, arquitectura cloud y tecnologías de alto rendimiento para Colombia y el mundo.'
+            }}
           </p>
         </div>
 
@@ -21,7 +24,7 @@
             to="/blog"
             class="inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-zinc-950 hover:bg-red-600 text-white font-bold text-sm transition-all duration-300 shadow-md group hover:scale-105"
           >
-            <span>Ver Todos los Artículos</span>
+            <span>{{ isEn ? 'Explore All Articles' : 'Ver Todos los Artículos' }}</span>
             <i class="bi bi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
           </NuxtLink>
         </div>
@@ -82,7 +85,7 @@
                 :to="`/blog/${post.slug}`"
                 class="inline-flex items-center gap-2 text-sm font-bold text-zinc-950 hover:text-red-600 transition-colors group/link"
               >
-                <span>Leer Artículo</span>
+                <span>{{ isEn ? 'Read Technical Deep-Dive' : 'Leer Artículo' }}</span>
                 <i class="bi bi-arrow-right text-xs group-hover/link:translate-x-1 transition-transform"></i>
               </NuxtLink>
               <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider">CODEVS</span>
@@ -96,9 +99,13 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue';
+import { onMounted, onBeforeUnmount, ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const route = useRoute();
+const isEn = computed(() => route?.path ? route.path.startsWith('/en') : false);
 
 const blogSection = ref(null);
 let ctx = null;
@@ -141,36 +148,73 @@ onBeforeUnmount(() => {
   if (ctx) ctx.revert();
 });
 
-const featuredPosts = [
-  {
-    slug: 'agentes-ia-flujos-trabajo-automatizacion-software',
-    title: 'Agentes Autónomos de IA en 2026: Cómo los Workflows Agénticos Están Reemplazando el Desarrollo Tradicional',
-    excerpt: 'Análisis sobre la evolución de asistentes de código hacia sistemas multi-agente autónomos, el protocolo MCP y la automatización de software en empresas.',
-    category: 'Inteligencia Artificial & IA',
-    image: '/img/blog/blog-inside-post.jpg',
-    date: '18 Octubre, 2026',
-    author: 'Equipo de IA CODEVS',
-    readTime: '15 min de lectura'
-  },
-  {
-    slug: 'geo-posicionamiento-motores-ia-google-overviews',
-    title: 'GEO vs SEO: La Guía Definitiva para Posicionar tu Negocio en Google AI Overviews, Perplexity y ChatGPT Search',
-    excerpt: 'Estrategias de Generative Engine Optimization (GEO), marcado llms.txt y técnicas de citación algorítmica para liderar en motores de búsqueda de IA.',
-    category: 'SEO & Posicionamiento',
-    image: '/img/blog/blog-author.jpg',
-    date: '15 Octubre, 2026',
-    author: 'Laboratorio SEO CODEVS',
-    readTime: '14 min de lectura'
-  },
-  {
-    slug: 'optimizacion-inp-edge-computing-streaming-ssr',
-    title: 'Dominando la Métrica INP de Google a 60 FPS: Arquitecturas en el Edge, Streaming SSR y Rendimiento Web Extremo',
-    excerpt: 'Guía técnica para reducir el Interaction to Next Paint (INP) a menos de 50ms mediante renderizado en el Edge, desagregación de JavaScript y Streaming.',
-    category: 'Rendimiento & UX',
-    image: '/img/blog/blog-recent-1.jpg',
-    date: '08 Octubre, 2026',
-    author: 'División Frontend CODEVS',
-    readTime: '13 min de lectura'
+const featuredPosts = computed(() => {
+  if (isEn.value) {
+    return [
+      {
+        slug: 'tecnologias-arquitectura-gta-6-rage-engine',
+        title: 'The Engineering Behind GTA 6: RAGE 9, GPU Procedural Physics, Neural Network NPCs & Zero-Latency Streaming',
+        excerpt: 'In-depth systems architecture analysis of Rockstar Games RAGE 9 engine: micro-geometry rasterization, GPU Navier-Stokes hydrodynamics, autonomous agent memory, and direct NVMe-to-VRAM streaming.',
+        category: 'Software Engineering',
+        image: '/img/blog/blog-inside-post.jpg',
+        date: 'Nov 19, 2026',
+        author: 'CODEVS Architecture Lab',
+        readTime: '16 min read'
+      },
+      {
+        slug: 'bases-de-datos-vectoriales-rag-empresarial-ia',
+        title: 'Vector Databases & Enterprise RAG in 2026: Architecting Zero-Hallucination AI Memory for Scaleups',
+        excerpt: 'Engineering guide to production RAG: PostgreSQL pgvector integration, HNSW indexing, hybrid dense/sparse retrieval with BM25, Cohere cross-encoder reranking, and Redis semantic caching.',
+        category: 'Cloud Databases',
+        image: '/img/blog/blog-4.jpg',
+        date: 'Nov 17, 2026',
+        author: 'CODEVS Data & AI Division',
+        readTime: '15 min read'
+      },
+      {
+        slug: 'arquitectura-microfrontends-edge-computing-2026',
+        title: 'Microfrontends on the Edge with Nuxt 3 & Cloudflare Workers: Eliminating High-Traffic Bottlenecks',
+        excerpt: 'How to decompose monolithic web architectures into autonomous microfrontends deployed on edge CDNs. Sub-25ms global latency, isolated blast radius, and 100% uptime under extreme concurrency.',
+        category: 'Web Architecture',
+        image: '/img/blog/blog-3.jpg',
+        date: 'Nov 12, 2026',
+        author: 'CODEVS Cloud & Edge Team',
+        readTime: '14 min read'
+      }
+    ];
   }
-];
+
+  return [
+    {
+      slug: 'tecnologias-arquitectura-gta-6-rage-engine',
+      title: 'La Ingeniería Detrás de GTA 6: RAGE 9, Física Procedural en GPU, Redes Neuronales para NPCs y Streaming en Tiempo Real',
+      excerpt: 'Análisis técnico exhaustivo de la arquitectura del motor RAGE 9 de Rockstar Games para Grand Theft Auto VI: renderizado nanométrico PBR, hidrodinámica en GPU y agentes autónomos.',
+      category: 'Ingeniería de Software',
+      image: '/img/blog/blog-inside-post.jpg',
+      date: '19 Noviembre, 2026',
+      author: 'Laboratorio de Arquitectura CODEVS',
+      readTime: '16 min de lectura'
+    },
+    {
+      slug: 'bases-de-datos-vectoriales-rag-empresarial-ia',
+      title: 'Bases de Datos Vectoriales y Arquitectura RAG en 2026: Cómo Dotar a la IA Empresarial de Memoria Exacta sin Alucinaciones',
+      excerpt: 'Guía técnica profunda para arquitectar sistemas RAG empresariales: integración de pgvector en PostgreSQL, indexación HNSW e IVFFlat, búsqueda híbrida y caché semántico con Redis.',
+      category: 'Bases de Datos',
+      image: '/img/blog/blog-4.jpg',
+      date: '17 Noviembre, 2026',
+      author: 'División de Datos & IA CODEVS',
+      readTime: '15 min de lectura'
+    },
+    {
+      slug: 'arquitectura-microfrontends-edge-computing-2026',
+      title: 'Microfrontends en el Edge con Nuxt 3 y Cloudflare Workers: Eliminando Cuellos de Botella en Plataformas de Alto Tráfico',
+      excerpt: 'Cómo descomponer monolitos web lentos en microfrontends modulares desacoplados desplegados en el Edge con Nuxt 3, Module Federation y Cloudflare Workers con latencias sub-25ms.',
+      category: 'Arquitectura Web',
+      image: '/img/blog/blog-3.jpg',
+      date: '12 Noviembre, 2026',
+      author: 'División Cloud & Edge CODEVS',
+      readTime: '14 min de lectura'
+    }
+  ];
+});
 </script>
