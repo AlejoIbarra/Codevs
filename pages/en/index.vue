@@ -985,7 +985,7 @@ const solutions = [
     subtitle: 'Enterprise architectures engineered for high concurrency.',
     description: 'High-performance cloud platforms, ERPs, and microservices designed for zero downtime and extreme throughput using Java, Spring Boot, PostgreSQL, and AWS.',
     tag: 'Cloud Architecture',
-    link: '#contact'
+    link: '/en/servicios/desarrollo-software'
   },
   {
     number: '02',
@@ -1050,6 +1050,14 @@ const solutions = [
     description: 'Our team includes university professors who teach programming, algorithms, and relational/NoSQL databases (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). We design bulletproof data models, optimize slow enterprise queries, execute zero-downtime migrations, and train engineering squads.',
     tag: 'Databases & Mentorship',
     link: '#contact'
+  },
+  {
+    number: '10',
+    title: 'Software Consulting & Architecture Advisory.',
+    subtitle: 'Fractional CTO, code audits, and PostgreSQL query tuning.',
+    description: 'Senior architectural advisory and technical due diligence for US startups and enterprises. We diagnose high-latency database queries, untangle legacy architectures, and guide technical leadership with university computer science professors.',
+    tag: 'Advisory & vCTO',
+    link: '/en/servicios/consultoria-software'
   }
 ];
 

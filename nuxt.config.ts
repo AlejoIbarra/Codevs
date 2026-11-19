@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   ssr: true,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-jsonld'
@@ -12,7 +12,35 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     'bootstrap-icons/font/bootstrap-icons.css'
   ],
+  vite: {
+    build: {
+      cssMinify: true,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules/gsap')) return 'vendor-gsap'
+            if (id.includes('node_modules/swiper')) return 'vendor-swiper'
+          }
+        }
+      }
+    }
+  },
   routeRules: {
+    '/_nuxt/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=31536000, immutable'
+      }
+    },
+    '/img/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=604800, stale-while-revalidate=86400'
+      }
+    },
+    '/assets/**': {
+      headers: {
+        'Cache-Control': 'public, max-age=604800, stale-while-revalidate=86400'
+      }
+    },
     '/**': {
       headers: {
         'X-Content-Type-Options': 'nosniff',
@@ -23,6 +51,7 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
+    compressPublicAssets: true,
     prerender: {
       crawlLinks: true,
       routes: [
@@ -35,6 +64,29 @@ export default defineNuxtConfig({
         '/politica-privacidad',
         '/servicios/desarrollo-web',
         '/servicios/desarrollo-software',
+        '/servicios/desarrollo-software/pasto',
+        '/servicios/desarrollo-software/narino',
+        '/servicios/desarrollo-software/bogota',
+        '/servicios/desarrollo-software/medellin',
+        '/servicios/desarrollo-software/cali',
+        '/servicios/desarrollo-software/barranquilla',
+        '/servicios/desarrollo-software/bucaramanga',
+        '/servicios/desarrollo-software/eje-cafetero',
+        '/servicios/desarrollo-software/colombia',
+        '/servicios/desarrollo-software/estados-unidos',
+        '/servicios/consultoria-software',
+        '/en/servicios/desarrollo-software',
+        '/en/servicios/desarrollo-software/pasto',
+        '/en/servicios/desarrollo-software/narino',
+        '/en/servicios/desarrollo-software/bogota',
+        '/en/servicios/desarrollo-software/medellin',
+        '/en/servicios/desarrollo-software/cali',
+        '/en/servicios/desarrollo-software/barranquilla',
+        '/en/servicios/desarrollo-software/bucaramanga',
+        '/en/servicios/desarrollo-software/eje-cafetero',
+        '/en/servicios/desarrollo-software/colombia',
+        '/en/servicios/desarrollo-software/estados-unidos',
+        '/en/servicios/consultoria-software',
         '/servicios/seo-avanzado',
         '/servicios/apps-moviles',
         '/servicios/diseno-ux-ui',
@@ -96,6 +148,8 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/img/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
+        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap' }
       ],
       script: [

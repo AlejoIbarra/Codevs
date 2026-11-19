@@ -7,20 +7,20 @@ export default defineNuxtPlugin(() => {
     gsap.registerPlugin(ScrollTrigger)
 
     const lenis = new Lenis({
-      lerp: 0.14,
+      lerp: 0.1,
       smoothWheel: true,
-      wheelMultiplier: 1.05,
-      touchMultiplier: 1.5,
+      wheelMultiplier: 1.0,
+      syncTouch: false,
     })
 
-    // Sincronizar Lenis con GSAP ScrollTrigger sin lag
+    // Sincronizar Lenis con GSAP ScrollTrigger
     lenis.on('scroll', ScrollTrigger.update)
 
-    gsap.ticker.add((time) => {
+    const tickerCallback = (time: number) => {
       lenis.raf(time * 1000)
-    })
-
-    gsap.ticker.lagSmoothing(0)
+    }
+    gsap.ticker.add(tickerCallback)
+    gsap.ticker.lagSmoothing(500, 33)
 
     // Event delegation ligero para enlaces de ancla (#)
     document.addEventListener('click', (e) => {

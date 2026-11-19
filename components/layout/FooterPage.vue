@@ -54,6 +54,7 @@
         <h4 class="text-base font-bold text-white mb-6 border-l-2 border-red-600 pl-3">Servicios Digitales</h4>
         <ul class="space-y-3 text-sm text-gray-400">
           <li><NuxtLink to="/servicios/desarrollo-software" class="hover:text-red-500 transition">Desarrollo de Software a Medida</NuxtLink></li>
+          <li><NuxtLink to="/servicios/consultoria-software" class="hover:text-red-500 transition font-medium text-red-400">Consultoría de Software &amp; Consultora TI</NuxtLink></li>
           <li><NuxtLink to="/servicios/desarrollo-web" class="hover:text-red-500 transition">Páginas Web Profesionales</NuxtLink></li>
           <li><NuxtLink to="/servicios/seo-avanzado" class="hover:text-red-500 transition">Posicionamiento SEO Local Google #1</NuxtLink></li>
           <li><NuxtLink to="/servicios/apps-moviles" class="hover:text-red-500 transition">Aplicaciones Móviles iOS & Android</NuxtLink></li>

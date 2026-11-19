@@ -41,15 +41,15 @@
 
             <!-- High-Conversion Buying Triggers Strip (Red, White & Black) -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-1">
-              <div class="px-3.5 py-2.5 rounded-xl bg-white border-2 border-[#0A0A0E] shadow-[3px_3px_0px_#0A0A0E]">
+              <div class="px-3.5 py-2.5 rounded-xl bg-white text-[#0A0A0E] border-0 shadow-md">
                 <div class="text-xs font-black uppercase text-[#E7000B]">{{ isEn ? '7-Day Prototype' : 'Prototipo en 7 Días' }}</div>
                 <div class="text-[11px] font-bold text-[#0A0A0E] mt-0.5">{{ isEn ? 'See before you scale' : 'Valida antes de invertir' }}</div>
               </div>
-              <div class="px-3.5 py-2.5 rounded-xl bg-[#0A0A0E] text-white border-2 border-[#0A0A0E] shadow-[3px_3px_0px_#E7000B]">
+              <div class="px-3.5 py-2.5 rounded-xl bg-[#0A0A0E] text-white border-0 shadow-md">
                 <div class="text-xs font-black uppercase text-white">{{ isEn ? 'DB & Code Masters' : 'Expertos en BD & SQL' }}</div>
                 <div class="text-[11px] font-bold text-zinc-300 mt-0.5">{{ isEn ? 'Zero slow queries' : 'Cero caídas o lentitud' }}</div>
               </div>
-              <div class="col-span-2 sm:col-span-1 px-3.5 py-2.5 rounded-xl bg-white border-2 border-[#0A0A0E] shadow-[3px_3px_0px_#0A0A0E]">
+              <div class="col-span-2 sm:col-span-1 px-3.5 py-2.5 rounded-xl bg-white text-[#0A0A0E] border-0 shadow-md">
                 <div class="text-xs font-black uppercase text-[#E7000B]">{{ isEn ? '100% IP Guaranteed' : 'Garantía por Contrato' }}</div>
                 <div class="text-[11px] font-bold text-[#0A0A0E] mt-0.5">{{ isEn ? 'Milestone payments' : 'Pagos por avances reales' }}</div>
               </div>
@@ -93,7 +93,7 @@
           <div class="lg:col-span-6 relative">
             <div
               ref="introVisualRef"
-              class="relative mx-auto max-w-lg lg:max-w-none rounded-[36px] bg-[#0A0A0E] p-6 sm:p-8 shadow-[0_28px_70px_rgba(10,10,14,0.28)] border-4 border-[#0A0A0E] overflow-hidden group"
+              class="relative mx-auto max-w-lg lg:max-w-none rounded-[36px] bg-[#0A0A0E] p-6 sm:p-8 shadow-[0_28px_70px_rgba(10,10,14,0.28)] border-0 overflow-hidden group"
             >
               <!-- Top Window Bar -->
               <div class="relative z-10 flex items-center justify-between pb-4 border-b border-white/10">
@@ -163,157 +163,160 @@
       <!-- =====================================================================
            1.2 WINDING SVG RIBBON CANVAS ("THE THREAD") + 4 BOUNCE TILES
            ===================================================================== -->
-      <div ref="threadCanvasRef" class="relative w-full mt-12 sm:mt-20 min-h-[2150px] md:min-h-[2650px] lg:min-h-[2900px]">
+      <div ref="threadCanvasRef" class="relative w-full mt-12 sm:mt-20 overflow-hidden">
         
-        <!-- THE GIANT WINDING SVG RIBBON (Single GPU-Accelerated Path for 120 FPS Scroll) -->
-        <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1944.2 6151.5"
-            preserveAspectRatio="none"
-            class="w-full h-full"
-          >
-            <!-- Base Track Guide (Clean Soft Neutral Path on Pure White so user sees the road ahead) -->
-            <path
-              fill="none"
-              stroke="#EFEFF3"
-              stroke-linecap="round"
-              stroke-width="440"
-              d="M1085 250c-868 126.5-961 907-29.5 1453S1397 3353 733 3318s-606-718-53.6-808c552.3-90 1689.3 743.4 475.6 1689-985 767.5-234 1313-234 1702.5"
-            />
+        <!-- Max-W-7xl Centered Stage: Locks the SVG, Badges and Cards to the EXACT SAME Coordinate Box across 1080p, 2K, 4K & Mobile -->
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-10 lg:px-16 min-h-[2150px] md:min-h-[2650px] lg:min-h-[2800px]">
 
-            <!-- Single Unified Animated Ribbon (Solid #E7000B Stroke = 10x Faster Rasterization) -->
-            <path
-              ref="mainPathRef"
-              fill="none"
-              stroke="#E7000B"
-              stroke-linecap="round"
-              stroke-width="440"
-              style="will-change: stroke-dashoffset;"
-              d="M1085 250c-868 126.5-961 907-29.5 1453S1397 3353 733 3318s-606-718-53.6-808c552.3-90 1689.3 743.4 475.6 1689-985 767.5-234 1313-234 1702.5"
-            />
-          </svg>
-        </div>
-
-        <!-- FLOATING PARALLAX VECTOR BADGES ALONG THE THREAD (Strict Red, White & Black Stickers) -->
-        <!-- Sticker 1: Speed Clock / Sub-second SLA -->
-        <div
-          data-mm-parallax="-35"
-          class="hidden md:flex absolute top-[5%] left-[10%] z-10 w-28 h-28 rounded-3xl bg-white border-4 border-[#0A0A0E] shadow-[6px_6px_0px_#0A0A0E] rotate-[-8deg] flex-col items-center justify-center text-[#0A0A0E] p-3"
-        >
-          <i class="bi bi-lightning-charge-fill text-3xl text-[#E7000B]"></i>
-          <span class="text-xs font-black uppercase tracking-tight mt-1">&lt; 1s Load</span>
-        </div>
-
-        <!-- Sticker 2: Professors of Programming & DB -->
-        <div
-          data-mm-parallax="45"
-          class="hidden md:flex absolute top-[21%] right-[12%] z-10 px-5 py-3 rounded-full bg-[#0A0A0E] border-4 border-[#0A0A0E] shadow-[6px_6px_0px_#E7000B] rotate-[6deg] items-center gap-2.5 text-white font-black text-sm"
-        >
-          <i class="bi bi-mortarboard-fill text-[#E7000B]"></i>
-          <span>{{ isEn ? 'CS & Database Professors' : 'Profesores de Programación y BD' }}</span>
-        </div>
-
-        <!-- Sticker 3: AI LegalTech Badge -->
-        <div
-          data-mm-parallax="-40"
-          class="hidden md:flex absolute top-[46%] left-[8%] z-10 px-5 py-3 rounded-2xl bg-[#E7000B] border-4 border-[#0A0A0E] shadow-[6px_6px_0px_#0A0A0E] rotate-[-5deg] items-center gap-2.5 text-white font-black text-sm"
-        >
-          <i class="bi bi-whatsapp text-lg"></i>
-          <span>{{ isEn ? '24/7 AI Agents' : 'Agentes IA 24/7' }}</span>
-        </div>
-
-        <!-- Sticker 4: 100% IP Shield -->
-        <div
-          data-mm-parallax="35"
-          class="hidden md:flex absolute top-[72%] right-[10%] z-10 w-32 h-32 rounded-full bg-[#0A0A0E] border-4 border-[#0A0A0E] shadow-[6px_6px_0px_#E7000B] rotate-[10deg] flex-col items-center justify-center text-white text-center p-3"
-        >
-          <i class="bi bi-shield-lock-fill text-2xl text-[#E7000B]"></i>
-          <span class="text-[11px] font-black uppercase leading-tight mt-1">100% IP<br/>Ownership</span>
-        </div>
-
-        <!-- ===================================================================
-             THE 4 ANIMATED POP-IN STORY TILES (MindMarket .c-tile-animated in Red, White & Black)
-             =================================================================== -->
-        <div class="container mx-auto px-5 sm:px-10 lg:px-16 max-w-7xl relative z-10 flex flex-col gap-16 md:gap-32 pt-8 sm:pt-16">
-          
-          <div
-            v-for="(tile, idx) in timelineTiles"
-            :key="idx"
-            ref="tileRefs"
-            class="mm-tile-row flex w-full"
-            :class="idx % 2 === 0 ? 'md:justify-end' : 'md:justify-start'"
-          >
-            <div
-              class="mm-tile group relative w-full md:w-[58%] lg:w-[50%] rounded-[28px] sm:rounded-[34px] p-1.5 transition-transform duration-500"
-              :style="{ '--tile-accent': tile.accentColor }"
+          <!-- THE ELONGATED RESPONSIVE WINDING SVG RIBBON -->
+          <div class="absolute inset-0 pointer-events-none z-0 overflow-visible">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1280 2700"
+              preserveAspectRatio="none"
+              class="w-full h-full mm-winding-svg"
             >
-              <!-- Outer Colored Offset Frame (Alternating Crimson Red #E7000B and Carbon Black #0A0A0E) -->
+              <!-- Base Track Guide (Soft Neutral Path so user sees the aerodynamic road ahead) -->
+              <path
+                fill="none"
+                stroke="#F0F0F5"
+                class="mm-ribbon-path"
+                d="M 640 0 C 420 50, 120 180, 90 400 C 60 640, 280 760, 620 730 C 960 700, 1210 560, 1190 350 C 1170 160, 940 190, 740 420 C 480 700, 140 1020, 90 1280 C 40 1540, 260 1680, 620 1640 C 980 1600, 1210 1440, 1190 1240 C 1170 1040, 920 1060, 720 1320 C 460 1620, 120 1920, 80 2180 C 40 2440, 280 2580, 640 2540 C 1000 2500, 1200 2340, 1170 2140 C 1130 1940, 880 2000, 700 2300 C 540 2540, 600 2660, 640 2700"
+              />
+
+              <!-- Single Unified Animated Ribbon (Solid #E7000B Stroke with Dynamic Scroll Reveal) -->
+              <path
+                ref="mainPathRef"
+                fill="none"
+                stroke="#E7000B"
+                class="mm-ribbon-path mm-ribbon-active"
+                style="will-change: stroke-dashoffset;"
+                d="M 640 0 C 420 50, 120 180, 90 400 C 60 640, 280 760, 620 730 C 960 700, 1210 560, 1190 350 C 1170 160, 940 190, 740 420 C 480 700, 140 1020, 90 1280 C 40 1540, 260 1680, 620 1640 C 980 1600, 1210 1440, 1190 1240 C 1170 1040, 920 1060, 720 1320 C 460 1620, 120 1920, 80 2180 C 40 2440, 280 2580, 640 2540 C 1000 2500, 1200 2340, 1170 2140 C 1130 1940, 880 2000, 700 2300 C 540 2540, 600 2660, 640 2700"
+              />
+            </svg>
+          </div>
+
+          <!-- FLOATING PARALLAX VECTOR BADGES ALONG THE THREAD (Locked inside max-w-7xl) -->
+          <!-- Sticker 1: Speed Clock / Sub-second SLA -->
+          <div
+            data-mm-parallax="-35"
+            class="hidden md:flex absolute top-[5%] left-0 sm:left-2 lg:left-4 z-20 w-28 h-28 rounded-3xl bg-white border-0 shadow-2xl rotate-[-8deg] flex-col items-center justify-center text-[#0A0A0E] p-3"
+          >
+            <i class="bi bi-lightning-charge-fill text-3xl text-[#E7000B]"></i>
+            <span class="text-xs font-black uppercase tracking-tight mt-1">&lt; 1s Load</span>
+          </div>
+
+          <!-- Sticker 2: Professors of Programming & DB -->
+          <div
+            data-mm-parallax="45"
+            class="hidden md:flex absolute top-[26%] right-0 sm:right-2 lg:right-4 z-20 px-5 py-3 rounded-full bg-[#0A0A0E] border-0 shadow-2xl rotate-[6deg] items-center gap-2.5 text-white font-black text-sm"
+          >
+            <i class="bi bi-mortarboard-fill text-[#E7000B]"></i>
+            <span>{{ isEn ? 'CS & Database Professors' : 'Profesores de Programación y BD' }}</span>
+          </div>
+
+          <!-- Sticker 3: AI LegalTech Badge -->
+          <div
+            data-mm-parallax="-40"
+            class="hidden md:flex absolute top-[51%] left-0 sm:left-2 lg:left-4 z-20 px-5 py-3 rounded-2xl bg-[#E7000B] border-0 shadow-2xl rotate-[-5deg] items-center gap-2.5 text-white font-black text-sm"
+          >
+            <i class="bi bi-whatsapp text-lg"></i>
+            <span>{{ isEn ? '24/7 AI Agents' : 'Agentes IA 24/7' }}</span>
+          </div>
+
+          <!-- Sticker 4: 100% IP Shield -->
+          <div
+            data-mm-parallax="35"
+            class="hidden md:flex absolute top-[76%] right-0 sm:right-2 lg:right-4 z-20 w-32 h-32 rounded-full bg-[#0A0A0E] border-0 shadow-2xl rotate-[10deg] flex-col items-center justify-center text-white text-center p-3"
+          >
+            <i class="bi bi-shield-lock-fill text-2xl text-[#E7000B]"></i>
+            <span class="text-[11px] font-black uppercase leading-tight mt-1">100% IP<br/>Ownership</span>
+          </div>
+
+          <!-- ===================================================================
+               THE 4 ANIMATED POP-IN STORY TILES (MindMarket .c-tile-animated in Red, White & Black)
+               =================================================================== -->
+          <div class="relative z-10 flex flex-col gap-16 md:gap-32 pt-8 sm:pt-16 pb-12">
+            
+            <div
+              v-for="(tile, idx) in timelineTiles"
+              :key="idx"
+              ref="tileRefs"
+              class="mm-tile-row flex w-full"
+              :class="idx % 2 === 0 ? 'md:justify-end' : 'md:justify-start'"
+            >
               <div
-                class="mm-tile-bg-colored absolute inset-0 rounded-[28px] sm:rounded-[34px] border-2 border-[#0A0A0E] shadow-[0_22px_50px_rgba(10,10,14,0.16)]"
-                :style="{ backgroundColor: tile.accentColor }"
-              ></div>
+                class="mm-tile group relative w-full md:w-[58%] lg:w-[50%] rounded-[28px] sm:rounded-[34px] p-1.5 transition-transform duration-500"
+                :style="{ '--tile-accent': tile.accentColor }"
+              >
+                <!-- Outer Colored Offset Frame (Alternating Crimson Red #E7000B and Carbon Black #0A0A0E) -->
+                <div
+                  class="mm-tile-bg-colored absolute inset-0 rounded-[28px] sm:rounded-[34px] border-0 shadow-[0_22px_50px_rgba(10,10,14,0.12)]"
+                  :style="{ backgroundColor: tile.accentColor }"
+                ></div>
 
-              <!-- Inner White Editorial Card -->
-              <div class="mm-tile-bg-white relative bg-white text-[#0A0A0E] rounded-[24px] sm:rounded-[30px] p-7 sm:p-11 lg:p-12 border-2 border-[#0A0A0E] flex flex-col gap-6">
-                
-                <!-- Top Pill Tag + Number -->
-                <div class="flex items-center justify-between gap-3">
-                  <span
-                    class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#0A0A0E]"
-                    :style="{ backgroundColor: tile.accentColor, color: tile.badgeTextColor }"
-                  >
-                    <span>{{ tile.badge }}</span>
-                  </span>
-                  <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
-                </div>
-
-                <!-- Monumental Tile Title (Clean Outfit Tracking) -->
-                <h3 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.12]">
-                  {{ tile.title }}
-                </h3>
-
-                <!-- Tile Description -->
-                <p class="text-base sm:text-lg text-zinc-600 font-medium leading-relaxed text-balance">
-                  {{ tile.description }}
-                </p>
-
-                <!-- Highlight Metric Chip inside Tile -->
-                <div class="flex flex-wrap items-center gap-2 pt-1">
-                  <span
-                    v-for="(chip, cIdx) in tile.chips"
-                    :key="cIdx"
-                    class="text-xs font-bold px-3 py-1 rounded-lg bg-zinc-100 text-[#0A0A0E] border border-zinc-200"
-                  >
-                    {{ chip }}
-                  </span>
-                </div>
-
-                <!-- MindMarket Bounce Button CTA -->
-                <div class="pt-2">
-                  <component
-                    :is="tile.isInternal ? NuxtLinkComponent : 'a'"
-                    :to="tile.isInternal ? tile.ctaLink : undefined"
-                    :href="!tile.isInternal ? tile.ctaLink : undefined"
-                    class="mm-btn"
-                    :class="tile.btnVariant"
-                  >
-                    <span class="mm-btn-icon -hover">
-                      <i class="bi bi-arrow-right text-sm"></i>
+                <!-- Inner White Editorial Card -->
+                <div class="mm-tile-bg-white relative bg-white text-[#0A0A0E] rounded-[24px] sm:rounded-[30px] p-7 sm:p-11 lg:p-12 border-0 shadow-xl flex flex-col gap-6">
+                  
+                  <!-- Top Pill Tag + Number -->
+                  <div class="flex items-center justify-between gap-3">
+                    <span
+                      class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider border-0 shadow-sm"
+                      :style="{ backgroundColor: tile.accentColor, color: tile.badgeTextColor }"
+                    >
+                      <span>{{ tile.badge }}</span>
                     </span>
-                    <span class="mm-btn-label">
-                      {{ tile.ctaLabel }}
-                    </span>
-                    <span class="mm-btn-icon -default">
-                      <i class="bi bi-arrow-right text-sm"></i>
-                    </span>
-                  </component>
-                </div>
+                    <span class="font-mono text-xs font-black text-zinc-400">0{{ idx + 1 }} / 04</span>
+                  </div>
 
+                  <!-- Monumental Tile Title (Clean Outfit Tracking) -->
+                  <h3 class="text-3xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.12]">
+                    {{ tile.title }}
+                  </h3>
+
+                  <!-- Tile Description -->
+                  <p class="text-base sm:text-lg text-zinc-600 font-medium leading-relaxed text-balance">
+                    {{ tile.description }}
+                  </p>
+
+                  <!-- Highlight Metric Chip inside Tile -->
+                  <div class="flex flex-wrap items-center gap-2 pt-1">
+                    <span
+                      v-for="(chip, cIdx) in tile.chips"
+                      :key="cIdx"
+                      class="text-xs font-bold px-3 py-1 rounded-lg bg-zinc-100 text-[#0A0A0E] border border-zinc-200"
+                    >
+                      {{ chip }}
+                    </span>
+                  </div>
+
+                  <!-- MindMarket Bounce Button CTA -->
+                  <div class="pt-2">
+                    <component
+                      :is="tile.isInternal ? NuxtLinkComponent : 'a'"
+                      :to="tile.isInternal ? tile.ctaLink : undefined"
+                      :href="!tile.isInternal ? tile.ctaLink : undefined"
+                      class="mm-btn"
+                      :class="tile.btnVariant"
+                    >
+                      <span class="mm-btn-icon -hover">
+                        <i class="bi bi-arrow-right text-sm"></i>
+                      </span>
+                      <span class="mm-btn-label">
+                        {{ tile.ctaLabel }}
+                      </span>
+                      <span class="mm-btn-icon -default">
+                        <i class="bi bi-arrow-right text-sm"></i>
+                      </span>
+                    </component>
+                  </div>
+
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -394,7 +397,7 @@
               :style="{ top: `calc(6.5rem + ${sIdx * 1.5}rem)`, zIndex: sIdx + 1 }"
             >
               <div
-                class="mm-stat-card rounded-[36px] sm:rounded-[44px] min-h-[340px] sm:min-h-[410px] p-8 sm:p-12 border-2 border-[#0A0A0E] shadow-[0_20px_50px_rgba(10,10,14,0.14)] flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+                class="mm-stat-card rounded-[36px] sm:rounded-[44px] min-h-[340px] sm:min-h-[410px] p-8 sm:p-12 border-0 shadow-[0_25px_60px_rgba(0,0,0,0.08)] flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
                 :style="{ backgroundColor: stat.bg, color: stat.textColor }"
               >
                 <!-- Top Right Circular Icon Badge -->
@@ -403,7 +406,7 @@
                     {{ stat.tag }}
                   </span>
                   <div
-                    class="w-14 h-14 rounded-full flex items-center justify-center text-xl border-2 border-[#0A0A0E] shadow-md"
+                    class="w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-md border-0"
                     :style="{ backgroundColor: stat.iconBg, color: stat.iconColor }"
                   >
                     <i :class="stat.icon"></i>
@@ -461,7 +464,7 @@
 
           <!-- 3-Step Fast-Track Buying Roadmap (Black & White Cards on Crimson Red) -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left max-w-4xl mx-auto pt-2">
-            <div class="p-6 rounded-2xl bg-[#0A0A0E] border-2 border-white/20 shadow-xl">
+            <div class="p-6 rounded-2xl bg-[#0A0A0E] border-0 shadow-2xl">
               <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
                 {{ isEn ? 'STEP 01 • TODAY (FREE)' : 'PASO 01 • HOY (GRATIS)' }}
               </div>
@@ -476,7 +479,7 @@
               </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-white text-[#0A0A0E] border-2 border-[#0A0A0E] shadow-xl">
+            <div class="p-6 rounded-2xl bg-white text-[#0A0A0E] border-0 shadow-2xl">
               <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
                 {{ isEn ? 'STEP 02 • IN 7 DAYS' : 'PASO 02 • EN 7 DÍAS' }}
               </div>
@@ -491,7 +494,7 @@
               </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-[#0A0A0E] border-2 border-white/20 shadow-xl">
+            <div class="p-6 rounded-2xl bg-[#0A0A0E] border-0 shadow-2xl">
               <div class="text-xs font-mono font-black text-[#E7000B] uppercase">
                 {{ isEn ? 'STEP 03 • TURN-KEY DELIVERY' : 'PASO 03 • ENTREGA LLAVE EN MANO' }}
               </div>
@@ -581,6 +584,7 @@ const tileRefs = ref([]);
 const statCardRefs = ref([]);
 
 let ctx = null;
+let handleResize = null;
 
 // 4 Story Tiles along "The Thread" (Strict Red #E7000B & Carbon Black #0A0A0E Alternating Palette)
 const timelineTiles = computed(() => {
@@ -859,10 +863,49 @@ onMounted(() => {
         });
       });
     }
+    // 4. Reactive Window Resize Handler
+    handleResize = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener('resize', handleResize, { passive: true });
   }, rootRef.value);
 });
 
 onBeforeUnmount(() => {
   if (ctx) ctx.revert();
+  if (handleResize) window.removeEventListener('resize', handleResize);
 });
 </script>
+
+<style scoped>
+/* Responsive Ribbon Width: Sleek on Mobile, Dynamic on Tablet, Bold Architectural on Desktop */
+.mm-ribbon-path {
+  stroke-width: 70px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-width 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .mm-ribbon-path {
+    stroke-width: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mm-ribbon-path {
+    stroke-width: 160px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .mm-ribbon-path {
+    stroke-width: 175px;
+  }
+}
+
+/* Subtle Dynamic Elevation Drop-Shadow for 3D Depth */
+.mm-ribbon-active {
+  filter: drop-shadow(0 14px 34px rgba(231, 0, 11, 0.22));
+}
+</style>

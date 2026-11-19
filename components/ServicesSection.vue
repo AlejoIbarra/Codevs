@@ -231,6 +231,14 @@ const solutions = [
     description: 'Contamos con profesores universitarios y especialistas que enseñan programación, estructuras de datos y bases de datos (PostgreSQL, MySQL, SQL Server, MongoDB, Redis). Diseñamos modelos relacionales blindados, optimizamos consultas lentas, migramos datos críticos sin caídas y entrenamos a equipos o estudiantes en ingeniería de software real.',
     tag: 'Bases de Datos & Academia',
     link: '#contact'
+  },
+  {
+    number: '10',
+    title: 'Consultoría de Software & Consultora TI.',
+    subtitle: 'Auditoría de código, optimización de bases de datos y vCTO estratégico.',
+    description: 'Asesoría técnica de alto nivel para directores y gerencias: auditoría de arquitecturas críticas, rescate de proyectos fallidos, optimización de consultas SQL y dirección como CTO fraccional por profesores de ingeniería de software.',
+    tag: 'Consultora & Auditoría',
+    link: '/servicios/consultoria-software'
   }
 ];
 </script>
