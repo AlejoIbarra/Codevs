@@ -94,12 +94,20 @@
   a {
     color: var(--accent-color);
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s ease;
   }
   
-  a:hover {
+  a:where(:not(.mm-btn):not([class*="btn"]):not([class*="bg-"])):hover {
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
     text-decoration: none;
+  }
+
+  /* Ensure buttons and white-text elements retain their text contrast on hover */
+  a.text-white:hover,
+  a[class*="text-white"]:hover,
+  a[class*="bg-"]:hover,
+  button.text-white:hover {
+    color: inherit;
   }
   
   h1,
@@ -2699,12 +2707,20 @@
     min-height: 3.35rem;
     padding: 0.375rem;
     border-radius: 9999px;
-    color: var(--btn-text);
+    color: var(--btn-text) !important;
     font-weight: 700;
     font-size: 0.925rem;
     letter-spacing: -0.02em;
     cursor: pointer;
     z-index: 1;
+    text-decoration: none !important;
+  }
+
+  .mm-btn,
+  .mm-btn:hover,
+  .mm-btn:focus,
+  .mm-btn:active {
+    color: var(--btn-text) !important;
     text-decoration: none !important;
   }
 
@@ -2729,10 +2745,14 @@
     z-index: 3;
     display: inline-block;
     padding: 0 0.85rem 0 1.15rem;
+    color: var(--btn-text) !important;
     transition: transform 0.45s var(--mm-ease-bounce);
   }
 
-  .mm-btn:hover .mm-btn-label {
+  .mm-btn:hover .mm-btn-label,
+  .mm-btn:focus .mm-btn-label,
+  .mm-btn:active .mm-btn-label {
+    color: var(--btn-text) !important;
     transform: translate3d(2.65rem, 0, 0);
   }
 
@@ -2741,7 +2761,7 @@
     height: 2.6rem;
     border-radius: 9999px;
     background-color: var(--btn-icon-bg);
-    color: var(--btn-icon-color);
+    color: var(--btn-icon-color) !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2749,6 +2769,15 @@
     z-index: 2;
     transition: transform 0.45s var(--mm-ease-bounce);
     flex-shrink: 0;
+  }
+
+  .mm-btn-icon i {
+    color: var(--btn-icon-color) !important;
+  }
+
+  .mm-btn:hover .mm-btn-icon,
+  .mm-btn:hover .mm-btn-icon i {
+    color: var(--btn-icon-color) !important;
   }
 
   .mm-btn-icon.-default {
