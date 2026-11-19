@@ -113,7 +113,7 @@
               <div class="relative group rounded-[28px] sm:rounded-[32px] p-2 bg-gradient-to-b from-white/15 to-white/5 border border-white/20 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-[#E7000B]/50 hover:shadow-[0_20px_50px_rgba(231,0,11,0.2)]">
                 
                 <!-- Image Container with Aspect Ratio and Sleek Curves -->
-                <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60">
+                <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60 shadow-inner">
                   <img
                     src="/img/hero-trust.jpg"
                     alt="CODEVS senior software engineering team and database architects"
@@ -122,22 +122,6 @@
                     decoding="async"
                     class="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
                   />
-                  
-                  <!-- Subtle Gradient Overlays for High Badge Contrast -->
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none"></div>
-
-                  <!-- Top Left Badge: IP Ownership & Contract Warranty -->
-                  <div class="absolute top-3.5 left-3.5 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-bold text-white">
-                    <i class="bi bi-shield-check text-[#E7000B] text-xs"></i>
-                    <span>100% IP Ownership &amp; Warranty</span>
-                  </div>
-
-                  <!-- Top Right Badge: Live SLA Status -->
-                  <div class="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-semibold text-white">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>SLA &lt;24h Active</span>
-                  </div>
-
                 </div>
 
               </div>

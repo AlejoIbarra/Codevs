@@ -111,7 +111,7 @@
             <div class="relative group rounded-[28px] sm:rounded-[32px] p-2 bg-gradient-to-b from-white/15 to-white/5 border border-white/20 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-[#E7000B]/50 hover:shadow-[0_20px_50px_rgba(231,0,11,0.2)]">
               
               <!-- Contenedor de la Imagen con Relación de Aspecto y Bordes Curvos -->
-              <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60">
+              <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-[22px] sm:rounded-[26px] overflow-hidden bg-black/60 shadow-inner">
                 <img
                   src="/img/hero-trust.jpg"
                   alt="Equipo de ingenieros senior y arquitectos de software en CODEVS"
@@ -120,22 +120,6 @@
                   decoding="async"
                   class="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                
-                <!-- Gradientes sutiles para legibilidad de insignias -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
-
-                <!-- Insignia Superior Izquierda: Garantía y Propiedad Intelectual -->
-                <div class="absolute top-3.5 left-3.5 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-bold text-white">
-                  <i class="bi bi-shield-check text-[#E7000B] text-xs"></i>
-                  <span>100% Garantía &amp; Código Propio</span>
-                </div>
-
-                <!-- Insignia Superior Derecha: SLA Activo en Vivo -->
-                <div class="absolute top-3.5 right-3.5 z-10 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 shadow-lg text-[11px] font-semibold text-white">
-                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>SLA &lt;24h Activo</span>
-                </div>
-
               </div>
 
             </div>
