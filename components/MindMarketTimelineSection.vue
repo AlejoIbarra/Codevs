@@ -431,10 +431,14 @@
          3. DELUXE CALLOUT BANNER + 3-STEP FAST-TRACK BUYING PROCESS (Red, White & Black)
          ========================================================================= -->
     <section class="relative bg-[#07070a] px-3 sm:px-6 pt-4 pb-12">
-      <div class="relative rounded-[36px] sm:rounded-[52px] bg-[#E7000B] text-white py-20 sm:py-28 px-6 sm:px-12 overflow-hidden border-2 border-white/15 shadow-2xl">
+      <div class="relative rounded-[36px] sm:rounded-[52px] bg-gradient-to-br from-[#B50009] via-[#6B0005] to-[#1E0002] text-white py-20 sm:py-28 px-6 sm:px-12 overflow-hidden border border-white/15 shadow-[0_30px_90px_rgba(181,0,9,0.3)]">
+        <!-- Ambient Depth Highlights (Silky Sheen on Top + Subtle Shadow in Corner) -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.1),_transparent_65%)] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_rgba(0,0,0,0.5),_transparent_75%)] pointer-events-none"></div>
+
         <!-- Decorative Rings -->
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full border-[36px] border-white/10 pointer-events-none"></div>
-        <div class="absolute -bottom-40 -right-24 w-[450px] h-[450px] rounded-full border-[44px] border-black/15 pointer-events-none"></div>
+        <div class="absolute -bottom-40 -right-24 w-[450px] h-[450px] rounded-full border-[44px] border-black/25 pointer-events-none"></div>
 
         <div class="container mx-auto max-w-5xl relative z-10 text-center space-y-8">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A0A0E] border border-white/20 text-xs font-bold uppercase tracking-widest text-white shadow-md">
