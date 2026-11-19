@@ -21,10 +21,6 @@
       <!-- Transparent Hiring Roadmap (Globant Style) -->
       <section class="mt-20 pt-16 border-t border-white/10">
         <div class="max-w-3xl mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-zinc-300 mb-4">
-            <span class="w-2 h-2 rounded-full bg-red-500"></span>
-            <span>HIRING ROADMAP</span>
-          </div>
           <h2 class="text-3xl sm:text-4xl font-black text-white">Our Fast, Engineering-First Hiring Process</h2>
           <p class="text-zinc-400 text-sm sm:text-base mt-2">
             We respect your time. No 8-week corporate interviews. Our process takes 3 to 7 business days, and you talk directly to principal software architects, not non-technical gatekeepers.

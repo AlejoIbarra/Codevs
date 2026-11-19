@@ -20,10 +20,6 @@
           
           <!-- Left Column: Human + Engineering + Academic Authority Narrative -->
           <div class="lg:col-span-6 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0A0A0E] text-white text-xs font-bold uppercase tracking-widest shadow-md">
-              <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
-              <span>{{ isEn ? 'Senior Engineers & Cloud / DB Architects' : 'Ingenieros Senior & Arquitectos de Software y BD' }}</span>
-            </div>
 
             <h2 class="text-3xl sm:text-5xl lg:text-[3.15rem] font-extrabold text-[#0A0A0E] tracking-tight leading-[1.1] text-balance">
               {{ isEn

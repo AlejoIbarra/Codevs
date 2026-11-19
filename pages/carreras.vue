@@ -21,10 +21,6 @@
       <!-- Proceso de Selección Ágil (Globant Style) -->
       <section class="mt-20 pt-16 border-t border-white/10">
         <div class="max-w-3xl mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-zinc-300 mb-4">
-            <span class="w-2 h-2 rounded-full bg-red-500"></span>
-            <span>PROCESO TRANSPARENTE</span>
-          </div>
           <h2 class="text-3xl sm:text-4xl font-black text-white">Cómo es nuestro proceso de contratación</h2>
           <p class="text-zinc-400 text-sm sm:text-base mt-2">
             Odiamos los procesos burocráticos de 8 semanas. Nuestro proceso dura entre 3 y 7 días hábiles y hablas directamente con líderes técnicos y arquitectos de software.

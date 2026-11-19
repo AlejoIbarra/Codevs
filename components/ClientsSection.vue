@@ -28,16 +28,9 @@
           <!-- Left Column: Story & Metrics -->
           <div class="lg:col-span-7 space-y-6">
             
-            <div class="flex flex-wrap items-center gap-3">
-              <span class="px-3.5 py-1 rounded-full text-xs font-black tracking-wider uppercase bg-red-600 text-white shadow-md shadow-red-600/30">
-                Caso de Éxito Destacado
-              </span>
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-zinc-300 border border-white/10">
-                Firma de Abogados • LegalTech
-              </span>
-              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-zinc-950 border border-white/20">
-                +70% Tiempo Ahorrado
-              </span>
+            <!-- Category & Metric Summary -->
+            <div class="text-xs font-bold tracking-wider uppercase text-red-500">
+              Caso de Éxito Destacado • Firma LegalTech • +70% Tiempo Ahorrado
             </div>
 
             <!-- Official Client Logo -->
@@ -132,45 +125,25 @@
       </div>
 
       <!-- Marquee Ribbon: Verified Trust & Metrics (Frontend-Identidad & UI-UX Pro Max) -->
-      <div class="relative w-full overflow-hidden py-6 mb-16 border-y border-white/10 bg-white/[0.02]">
-        <div class="marquee-track flex items-center gap-8 whitespace-nowrap will-change-transform">
-          <div v-for="loop in 2" :key="loop" class="flex items-center gap-8 shrink-0">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-              <span>Sin Huellas Nuevas Oportunidades</span>
-              <span class="text-zinc-400 font-normal">• Firma Legal</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-              <span>+70% Tiempo Operativo Ahorrado</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-              <span>Moments Gallery</span>
-              <span class="text-zinc-400 font-normal">• Startup Marketplace</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-              <span>24/7 Agentes de IA en WhatsApp</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-              <span>Club Alacranes AFC</span>
-              <span class="text-zinc-400 font-normal">• #1 Google SEO</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-              <span>100% Código Propietario &amp; Sin Plantillas</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-              <span>IPTV Max</span>
-              <span class="text-zinc-400 font-normal">• Streaming 60 FPS</span>
-            </div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.04] border border-white/10 text-xs font-bold text-white">
-              <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-              <span>99.9% Uptime Cloud Garantizado</span>
-            </div>
+      <div class="relative w-full overflow-hidden py-5 mb-16 border-y border-white/10 bg-white/[0.02]">
+        <div class="marquee-track flex items-center gap-12 whitespace-nowrap will-change-transform">
+          <div v-for="loop in 2" :key="loop" class="flex items-center gap-12 shrink-0 text-sm font-semibold text-zinc-300">
+            <span class="text-white font-bold">Sin Huellas Nuevas Oportunidades</span>
+            <span class="text-red-500">•</span>
+            <span class="text-zinc-400">+70% Tiempo Ahorrado</span>
+            <span class="text-red-500">•</span>
+            <span class="text-white font-bold">Moments Gallery</span>
+            <span class="text-red-500">•</span>
+            <span class="text-zinc-400">Agentes de IA WhatsApp 24/7</span>
+            <span class="text-red-500">•</span>
+            <span class="text-white font-bold">Club Alacranes AFC</span>
+            <span class="text-red-500">•</span>
+            <span class="text-zinc-400">100% Código Propietario</span>
+            <span class="text-red-500">•</span>
+            <span class="text-white font-bold">IPTV Max</span>
+            <span class="text-red-500">•</span>
+            <span class="text-zinc-400">99.9% Uptime Cloud</span>
+            <span class="text-red-500">•</span>
           </div>
         </div>
       </div>

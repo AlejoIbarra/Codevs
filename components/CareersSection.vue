@@ -15,11 +15,6 @@
 
       <!-- Header Section: High-End Studio Headline -->
       <div class="max-w-4xl mb-16 sm:mb-20">
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-white/15 text-xs font-bold uppercase tracking-widest text-zinc-300 mb-6 backdrop-blur-md">
-          <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
-          <span>{{ isEn ? 'Careers & Engineering Studios' : 'Trabaja con Nosotros • Carreras CODEVS' }}</span>
-        </div>
-
         <h2 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.04]">
           {{ isEn ? 'Build the future of' : 'Construye el futuro del' }} <br />
           <span class="text-[#E7000B] bg-gradient-to-r from-[#E7000B] via-rose-500 to-red-600 bg-clip-text text-transparent">

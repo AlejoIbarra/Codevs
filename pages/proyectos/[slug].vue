@@ -235,10 +235,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <i class="bi bi-arrow-left-right"></i>
-            Diagnóstico Operacional & Transformación
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
             El Estudio Previo: <span class="text-red-500">Antes vs. Con CODEVS</span>
           </h2>
@@ -269,7 +265,7 @@
           <!-- Column After -->
           <div class="rounded-3xl bg-gradient-to-b from-red-950/20 to-zinc-950/90 border border-red-500/40 p-8 sm:p-10 relative overflow-hidden shadow-2xl">
             <div class="flex items-center gap-3 mb-6">
-              <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
               <h3 class="text-2xl font-black text-white">
                 {{ project.beforeAfter.after.title }}
               </h3>
@@ -291,10 +287,6 @@
     <section class="py-24 border-t border-zinc-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <i class="bi bi-gear-wide-connected text-red-500"></i>
-            Ingeniería de la Solución
-          </div>
           <h2 class="text-3xl sm:text-4xl font-black text-white">Módulos Desarrollados a la <span class="text-red-500">Medida</span></h2>
           <div class="w-20 h-1.5 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -324,10 +316,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div class="max-w-3xl mb-16">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/50 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            Capacidades Centrales CODEVS
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
             {{ project.codevsCapabilities.title }}
           </h2>
@@ -435,9 +423,6 @@
         <div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-zinc-800 rounded-3xl p-10 sm:p-16 relative overflow-hidden shadow-2xl">
           <div class="absolute -top-24 -left-24 w-72 h-72 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
           
-          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-widest mb-6">
-            Transformación Digital Comprobada
-          </span>
           <h2 class="text-3xl sm:text-5xl font-black text-white mb-6">
             ¿Listo para Ahorrar <span class="text-red-500">+70% de Tiempo</span> en tu Organización?
           </h2>

@@ -37,12 +37,6 @@
             <!-- Primary Content Column (Left - 7 cols) -->
             <div class="lg:col-span-7 space-y-5 sm:space-y-6">
 
-              <!-- Ecosystem Tag & Status -->
-              <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/80 border border-white/20 text-xs font-semibold text-zinc-300 shadow-md">
-                <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
-                <span class="tracking-wide">CODEVS // Nearshore Software &amp; Cloud DBs</span>
-              </div>
-
               <!-- Monumental Headline -->
               <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
                 Nearshore Software <br />
@@ -716,10 +710,6 @@
     <section class="py-16 bg-[#0a0a0f] border-t border-white/10 text-white relative overflow-hidden">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="space-y-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/15 border border-red-500/30 text-xs font-bold text-red-400 uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span>We Are Hiring • Engineering Studios</span>
-          </div>
           <h3 class="text-2xl sm:text-3xl font-black text-white">Senior Software Architect or AI Engineer?</h3>
           <p class="text-zinc-400 text-sm max-w-2xl">
             Architect high-concurrency cloud systems and autonomous AI solutions with our elite engineering squads. 100% remote across LATAM with US time-zone overlap.
@@ -740,10 +730,6 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         
         <div class="max-w-3xl mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span>Free 15-Minute Architecture Diagnosis • Zero Risk</span>
-          </div>
           <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
             Quote Your Custom <br />
             <span class="text-[#E7000B]">
@@ -813,12 +799,6 @@
           <div class="lg:col-span-7">
             <div class="bg-[#0e0e13] border border-white/15 p-8 sm:p-12 rounded-[32px] shadow-2xl">
               
-              <!-- SLA Guarantee Pill -->
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
-                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                <span>SLA Guarantee: &lt; 24h Formal Quote by Lead Solutions Architect</span>
-              </div>
-
               <form @submit.prevent="submitContact" class="space-y-6">
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">

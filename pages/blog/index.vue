@@ -16,11 +16,6 @@
         </nav>
 
         <div class="max-w-3xl space-y-6 text-left">
-          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-red-500/30 backdrop-blur-xl">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span class="text-red-400 font-bold uppercase tracking-widest text-xs">CODEVS Knowledge Hub</span>
-          </div>
-
           <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-[1.1]">
             Artículos, Tendencias & <span class="bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">Ingeniería Digital</span>
           </h1>

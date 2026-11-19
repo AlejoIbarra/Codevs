@@ -21,12 +21,6 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-red-500/40 backdrop-blur-xl shadow-lg shadow-red-950/20">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-              <span class="text-red-400 font-extrabold uppercase tracking-widest text-xs">
-                {{ regionData.badge }}
-              </span>
-            </div>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.03]">
               {{ regionData.h1Prefix }}

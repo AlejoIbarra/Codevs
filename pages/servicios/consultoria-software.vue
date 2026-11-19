@@ -23,12 +23,6 @@
           
           <!-- Columna Texto & Propuesta de Valor -->
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-red-500/40 backdrop-blur-xl shadow-lg shadow-red-950/20">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-              <span class="text-red-400 font-extrabold uppercase tracking-widest text-xs">
-                Consultora Tecnológica • Sede en Pasto &amp; Cobertura Nacional
-              </span>
-            </div>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.03]">
               Consultoría de Software
@@ -125,10 +119,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/40 border border-red-500/30 text-xs font-semibold text-red-400 mb-3">
-            <i class="bi bi-briefcase"></i>
-            <span>Nuestras Especialidades</span>
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
             Servicios de Consultoría <span class="text-red-500">Estratégica</span>
           </h2>
@@ -291,10 +281,6 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/40 border border-red-500/30 text-xs font-semibold text-red-400">
-              <i class="bi bi-geo-alt"></i>
-              <span>Sede Central en Pasto, Nariño</span>
-            </div>
             
             <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
               Consultora Tecnológica con <span class="text-red-500">Presencia Física en Pasto</span>

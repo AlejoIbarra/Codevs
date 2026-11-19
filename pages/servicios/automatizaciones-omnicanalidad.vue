@@ -23,10 +23,6 @@
           
           <!-- Columna Texto & Propuesta de Valor -->
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-red-500/40 backdrop-blur-xl shadow-lg shadow-red-950/20">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-              <span class="text-red-400 font-extrabold uppercase tracking-widest text-xs">Somos Expertos en Automatización & Omnicanalidad</span>
-            </div>
 
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.02]">
               Centraliza tus Canales.
@@ -109,9 +105,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-xs font-bold uppercase tracking-wider text-red-400">
-            Nivel de Ingeniería CODEVS
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
             ¿Por qué somos los <span class="text-red-500">expertos indicados</span> para tu negocio?
           </h2>
@@ -407,10 +400,6 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div class="p-10 sm:p-16 rounded-[40px] bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-950 border border-zinc-800 shadow-2xl shadow-red-950/30 space-y-8">
           
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/50 border border-red-500/40 text-xs font-bold text-red-400 uppercase tracking-wider">
-            Consultoría Técnica Sin Costo
-          </div>
-
           <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
             ¿Listo para llevar la comunicación de tu empresa al <span class="text-red-500">siguiente nivel</span>?
           </h2>

@@ -35,12 +35,6 @@
           <!-- Columna Principal de Contenido (Izquierda - 7 columnas) -->
           <div class="lg:col-span-7 space-y-5 sm:space-y-6">
 
-            <!-- Tag de Ecosistema & Disponibilidad -->
-            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/80 border border-white/20 text-xs font-semibold text-zinc-300 shadow-md">
-              <span class="w-2 h-2 rounded-full bg-[#E7000B] animate-pulse"></span>
-              <span class="tracking-wide">CODEVS // Software &amp; Bases de Datos</span>
-            </div>
-
             <!-- Titular Monumental con Saltos Armónicos y Énfasis Cromático -->
             <h1 class="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
               Desarrollo de <br />

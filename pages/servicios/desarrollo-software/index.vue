@@ -24,13 +24,6 @@
           <!-- Columna Texto & Propuesta de Valor -->
           <div class="lg:col-span-7 space-y-6">
             
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-zinc-900/90 border border-red-500/40 backdrop-blur-xl shadow-lg shadow-red-950/20">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-              <span class="text-red-400 font-extrabold uppercase tracking-widest text-xs">
-                Sede Central en Pasto, Nariño • Alcance Nacional &amp; Global
-              </span>
-            </div>
-
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.03]">
               Desarrollo de Software
               <span class="block bg-gradient-to-r from-red-500 via-rose-500 to-red-600 bg-clip-text text-transparent">
@@ -145,10 +138,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/40 border border-red-500/30 text-xs font-semibold text-red-400 mb-3">
-            <i class="bi bi-geo-alt"></i>
-            <span>Liderazgo Tecnológico Local</span>
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
             La Empresa de Software de Referencia en <span class="text-red-500">Pasto y Nariño</span>
           </h2>
@@ -443,10 +432,6 @@
         <!-- Callout Destacado de Consultora Tecnológica & Auditoría -->
         <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-900 border border-red-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl shadow-red-950/20">
           <div class="space-y-2">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/50 text-red-400 text-xs font-bold uppercase tracking-wider">
-              <i class="bi bi-briefcase"></i>
-              <span>Servicio de Consultora Tecnológica</span>
-            </div>
             <h3 class="text-2xl font-black text-white">¿Necesitas Auditoría de Código, Rescate de Software o un CTO Fraccional?</h3>
             <p class="text-zinc-400 text-sm max-w-2xl">
               También operamos como consultora técnica en Pasto y Colombia: diagnosticamos bases de datos PostgreSQL lentas, auditamos arquitecturas antes de salir a producción y rescatamos sistemas fallidos de otros proveedores.
@@ -519,10 +504,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-950/40 border border-red-500/30 text-xs font-semibold text-red-400 mb-3">
-            <i class="bi bi-map"></i>
-            <span>Red Nacional &amp; Nearshore Internacional</span>
-          </div>
           <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
             Cobertura de Desarrollo de Software por <span class="text-red-500">Región</span>
           </h2>

@@ -7,10 +7,6 @@
     <!-- Encabezado Superior (Bilingüe Español / Inglés) -->
     <div class="container mx-auto px-6 sm:px-12 max-w-7xl relative z-20">
       <div class="max-w-3xl space-y-3">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
-          <span>{{ isEn ? 'Continuous Co-Creation' : 'Co-Creación & Evolución' }}</span>
-        </div>
         <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.08]">
           {{ isEn 
             ? 'We co-create the future with our partners, measure real impact, and continuously innovate.' 
@@ -83,7 +79,6 @@
 
       <div class="flex items-center justify-between text-xs text-zinc-400">
         <span class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
           <span>{{ isEn ? 'Scroll down to explore case showcase' : 'Desplaza para explorar proyectos destacados' }}</span>
         </span>
         <span class="font-mono uppercase tracking-widest text-zinc-500">

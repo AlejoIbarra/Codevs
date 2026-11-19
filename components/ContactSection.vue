@@ -8,10 +8,6 @@
       
       <!-- Encabezado de la Sección -->
       <div class="max-w-3xl mb-16 contact-header">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-4">
-          <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-          <span>Diagnóstico Técnico Gratuito • Sin Compromiso</span>
-        </div>
         <h2 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.05]">
           Cotiza hoy tu <br />
           <span class="text-[#E7000B]">
@@ -85,12 +81,6 @@
         <!-- Columna Derecha: Formulario Interactivo -->
         <div class="lg:col-span-7 bg-[#0e0e13] border border-white/15 p-8 sm:p-10 rounded-[32px] shadow-2xl">
           
-          <!-- SLA Guarantee Pill -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/50 border border-red-500/30 text-red-300 text-xs font-bold uppercase tracking-wider mb-6">
-            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span>Garantía SLA: Cotización Formal en &lt; 24h por Ingeniero Senior</span>
-          </div>
-
           <!-- Selector Rápido de Tipo de Proyecto -->
           <div class="mb-6 space-y-3">
             <label class="block text-xs font-bold text-zinc-400 uppercase tracking-wider">
