@@ -17,25 +17,34 @@ import { onMounted, onBeforeUnmount, ref } from 'vue';
 
 const rocketSvg = ref(null); 
 let handleScroll = null;
+let ticking = false;
 
 onMounted(() => {
   const section = document.querySelector('#about');
   if (!section) return;
 
-  handleScroll = () => {
+  const updateRocket = () => {
     const rect = section.getBoundingClientRect();
-    const sectionHeight = section.offsetHeight;
+    const sectionHeight = section.offsetHeight || 1;
     const windowHeight = window.innerHeight;
     
     // Progreso exacto del scroll por la seccion
     const progress = Math.min(Math.max((windowHeight - rect.top) / (sectionHeight + windowHeight), 0), 1);
 
-    const maxX = section.offsetWidth - 70;
+    const maxX = Math.max(0, section.offsetWidth - 70);
     const x = progress * maxX;
     const y = Math.sin(progress * Math.PI * 2) * 55; // Ondulación visible y dinámica
 
     if (rocketSvg.value) {
       rocketSvg.value.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${y * 0.5 + 15}deg)`;
+    }
+    ticking = false;
+  };
+
+  handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateRocket);
+      ticking = true;
     }
   };
 
@@ -62,23 +71,21 @@ onBeforeUnmount(() => {
 }
 
 .rocket {
-  transition: transform 0.04s linear;
-  filter: drop-shadow(0 0 16px rgba(231, 0, 11, 0.85));
   will-change: transform;
 }
 
 .flame {
   transform-origin: center;
-  animation: scaleFire 0.3s ease-in-out infinite alternate;
+  animation: scaleFire 0.4s ease-in-out infinite alternate;
 }
 
 @keyframes scaleFire {
   from {
     transform: scale(0.9);
-    opacity: 0.8;
+    opacity: 0.85;
   }
   to {
-    transform: scale(1.35);
+    transform: scale(1.25);
     opacity: 1;
   }
 }

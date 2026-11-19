@@ -7,9 +7,9 @@ export default defineNuxtPlugin(() => {
     gsap.registerPlugin(ScrollTrigger)
 
     const lenis = new Lenis({
-      lerp: 0.1,
+      lerp: 0.14,
       smoothWheel: true,
-      wheelMultiplier: 1.0,
+      wheelMultiplier: 1.15,
       syncTouch: false,
     })
 

@@ -166,34 +166,37 @@
       <div ref="threadCanvasRef" class="relative w-full mt-12 sm:mt-20 overflow-hidden">
         
         <!-- Max-W-7xl Centered Stage: Locks the SVG, Badges and Cards to the EXACT SAME Coordinate Box across 1080p, 2K, 4K & Mobile -->
-        <div class="relative mx-auto max-w-7xl px-5 sm:px-10 lg:px-16 min-h-[2150px] md:min-h-[2650px] lg:min-h-[2800px]">
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-10 lg:px-16 min-h-[2500px] md:min-h-[3000px] lg:min-h-[3400px]">
 
-          <!-- THE ELONGATED RESPONSIVE WINDING SVG RIBBON -->
-          <div class="absolute inset-0 pointer-events-none z-0 overflow-visible">
+          <!-- THE ORIGINAL ELONGATED RESPONSIVE WINDING SVG RIBBON (Harmonic 1:1 Aspect Ratio) -->
+          <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
             <svg
               aria-hidden="true"
               focusable="false"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1280 2700"
-              preserveAspectRatio="none"
-              class="w-full h-full mm-winding-svg"
+              viewBox="0 0 1944.2 6151.5"
+              preserveAspectRatio="xMidYMid slice"
+              class="w-full h-full"
             >
               <!-- Base Track Guide (Soft Neutral Path so user sees the aerodynamic road ahead) -->
               <path
                 fill="none"
                 stroke="#F0F0F5"
-                class="mm-ribbon-path"
-                d="M 640 0 C 420 50, 120 180, 90 400 C 60 640, 280 760, 620 730 C 960 700, 1210 560, 1190 350 C 1170 160, 940 190, 740 420 C 480 700, 140 1020, 90 1280 C 40 1540, 260 1680, 620 1640 C 980 1600, 1210 1440, 1190 1240 C 1170 1040, 920 1060, 720 1320 C 460 1620, 120 1920, 80 2180 C 40 2440, 280 2580, 640 2540 C 1000 2500, 1200 2340, 1170 2140 C 1130 1940, 880 2000, 700 2300 C 540 2540, 600 2660, 640 2700"
+                stroke-linecap="round"
+                stroke-width="440"
+                d="M1085 250c-868 126.5-961 907-29.5 1453S1397 3353 733 3318s-606-718-53.6-808c552.3-90 1689.3 743.4 475.6 1689-985 767.5-234 1313-234 1702.5"
               />
 
-              <!-- Single Unified Animated Ribbon (Solid #E7000B Stroke with Dynamic Scroll Reveal) -->
+              <!-- Single Unified Animated Ribbon (Solid #E7000B Stroke with Dynamic Scroll Reveal - Zero GPU Lag) -->
               <path
                 ref="mainPathRef"
                 fill="none"
                 stroke="#E7000B"
-                class="mm-ribbon-path mm-ribbon-active"
+                stroke-linecap="round"
+                stroke-width="440"
+                class="mm-ribbon-active"
                 style="will-change: stroke-dashoffset;"
-                d="M 640 0 C 420 50, 120 180, 90 400 C 60 640, 280 760, 620 730 C 960 700, 1210 560, 1190 350 C 1170 160, 940 190, 740 420 C 480 700, 140 1020, 90 1280 C 40 1540, 260 1680, 620 1640 C 980 1600, 1210 1440, 1190 1240 C 1170 1040, 920 1060, 720 1320 C 460 1620, 120 1920, 80 2180 C 40 2440, 280 2580, 640 2540 C 1000 2500, 1200 2340, 1170 2140 C 1130 1940, 880 2000, 700 2300 C 540 2540, 600 2660, 640 2700"
+                d="M1085 250c-868 126.5-961 907-29.5 1453S1397 3353 733 3318s-606-718-53.6-808c552.3-90 1689.3 743.4 475.6 1689-985 767.5-234 1313-234 1702.5"
               />
             </svg>
           </div>
@@ -238,7 +241,7 @@
           <!-- ===================================================================
                THE 4 ANIMATED POP-IN STORY TILES (MindMarket .c-tile-animated in Red, White & Black)
                =================================================================== -->
-          <div class="relative z-10 flex flex-col gap-16 md:gap-32 pt-8 sm:pt-16 pb-12">
+          <div class="relative z-10 flex flex-col gap-20 md:gap-36 lg:gap-40 pt-8 sm:pt-16 pb-12">
             
             <div
               v-for="(tile, idx) in timelineTiles"
@@ -867,34 +870,8 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-/* Responsive Ribbon Width: Sleek on Mobile, Dynamic on Tablet, Bold Architectural on Desktop */
-.mm-ribbon-path {
-  stroke-width: 70px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: stroke-width 0.3s ease;
-}
-
-@media (min-width: 640px) {
-  .mm-ribbon-path {
-    stroke-width: 110px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .mm-ribbon-path {
-    stroke-width: 160px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .mm-ribbon-path {
-    stroke-width: 175px;
-  }
-}
-
-/* Subtle Dynamic Elevation Drop-Shadow for 3D Depth */
+/* High-performance hardware acceleration */
 .mm-ribbon-active {
-  filter: drop-shadow(0 14px 34px rgba(231, 0, 11, 0.22));
+  transform: translateZ(0);
 }
 </style>
